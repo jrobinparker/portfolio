@@ -1,10 +1,11 @@
 import React from 'react';
+import Nav from './components/Nav';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-        <h1>Portfolio</h1>
+        <Nav />
     </div>
   );
 }
