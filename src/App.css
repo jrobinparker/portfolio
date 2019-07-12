@@ -1,3 +1,16 @@
+.App {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-image: url('./03. Snowy Mint.png');
+  background-size: 100%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+  }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -8,4 +21,62 @@
 
 a {
   text-decoration: none;
+}
+
+.home-text {
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  font-family: 'Oswald', sans-serif;
+  padding-left: 10px;
+  border-left: 3px solid black;
+  animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0);
+        opacity: 0
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.image {
+  background-image: url('./11745078.jpg')
+}
+
+.welcome-text {
+  font-size: 3rem;
+}
+
+.languages {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.links {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
