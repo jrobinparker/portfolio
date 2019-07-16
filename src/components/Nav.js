@@ -1,11 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-export default function Nav(props) {
+export default function Nav() {
   return (
     <div className="nav">
-      <a>jeremy parker</a>
-      <a>about</a>
-      <a>sites</a>
+      <NavLink to ="/">jeremy parker</NavLink>
+      <NavLink to ="/about">about</NavLink>
+      <NavLink to ="/sites">sites</NavLink>
     </div>
   )
 }

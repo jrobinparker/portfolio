@@ -13,7 +13,7 @@ class Body extends React.Component {
         <div className="languages">an aspiring web developer from los angeles, ca</div>
         <div className="links">
           <Link to ="/about">about</Link>
-          <a>sites</a>
+          <Link to ="/sites">sites</Link>
           <a>contact</a>
         </div>
       </div>
