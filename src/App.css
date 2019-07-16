@@ -35,7 +35,7 @@ a {
   border-left: 3px solid black;
 }
 
-.fadein {
+.fadein-up {
   animation: fadeInUp 1s;
 }
 
@@ -58,6 +58,30 @@ a {
 
     to {
         transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.fadein {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0
+    }
+
+    to {
         opacity: 1
     }
 }

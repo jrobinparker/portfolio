@@ -7,7 +7,7 @@ class Body extends React.Component {
 
   return (
     <div>
-    <div className="home-text fadein">
+    <div className="home-text fadein-up">
       <div className="welcome-text">
         <div>i'm <span style={{ color: 'blue' }}>jeremy parker</span>,</div>
         <div className="languages">an aspiring web developer from los angeles, ca</div>
