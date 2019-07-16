@@ -1,6 +1,35 @@
 import React from 'react';
+import Skills from './Skills';
+import Education from './Education';
+import Experience from './Experience';
+import Other from './Other';
 
-export default function About() {
+class About extends React.Component {
+  state = {
+    navigation: ''
+  }
+
+  render() {
+
+    let pageContent
+
+    if (this.state.navigation === 'skills') {
+      pageContent = <Skills />
+    }
+
+    if (this.state.navigation === 'experience') {
+      pageContent = <Experience />
+    }
+
+    if (this.state.navigation === 'education') {
+      pageContent = <Education />
+    }
+
+    if (this.state.navigation === 'other') {
+      pageContent = <Other />
+    }
+
+
   return (
     <div className="content">
       <div className="about-me">
@@ -10,39 +39,18 @@ export default function About() {
         <div className="about-me-text">
           <div className="name">jeremy parker</div>
           <div>location: los angeles, ca</div>
-          <div>interests: the 80's, retro video games, japanese art</div>
         </div>
       </div>
-        <div className="skills-matrix fadein">
-          <div className="box">
-            <i class="fas fa-layer-group skill-icon" />
-            <div>full-stack development</div>
-            <ul>
-              <li>MERN stack</li>
-              <li>ruby on rails</li>
-            </ul>
-          </div>
-          <div className="box">
-            <i className="fas fa-desktop skill-icon" />
-            <div>front-end design</div>
-            <ul className="front-end">
-              <li>react | redux</li>
-              <li>vanilla JS</li>
-              <li>HTML | CSS</li>
-            </ul>
-          </div>
-          <div className="box">
-            <i className="fab fa-git-alt"></i>
-            <div>development best practices</div>
-            <ul>
-              <li>git | version control</li>
-              <li>TDD | BDD</li>
-              <li>mocha | rspec</li>
-            </ul>
-          </div>
-        </div>
-        <div className="skills-list">
-        </div>
+      <div className="content-nav">
+        <a onClick={() => this.setState({ navigation: 'skills' })}>dev skills</a>
+        <a onClick={() => this.setState({ navigation: 'experience' })}>experience</a>
+        <a onClick={() => this.setState({ navigation: 'education' })}>education</a>
+        <a onClick={() => this.setState({ navigation: 'other' })}>interests</a>
+      </div>
+        {pageContent}
       </div>
   )
 }
+}
+
+export default About

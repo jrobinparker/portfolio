@@ -122,7 +122,25 @@ a {
 .skills-matrix {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.education-matrix {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.experience-matrix {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin-top: 40px;
 }
@@ -153,4 +171,22 @@ li {
 .front-end {
   position: relative;
   right: 15%;
+}
+
+.content-nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 20px;
+}
+
+.content-nav a {
+  cursor: pointer;
+}
+
+::selection {
+  background: royalblue;
+}
+::-moz-selection {
+  background: royalblue;
 }
