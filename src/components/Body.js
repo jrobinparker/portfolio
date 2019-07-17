@@ -12,9 +12,9 @@ class Body extends React.Component {
         <div>i'm <span style={{ color: 'blue' }}>jeremy parker</span>,</div>
         <div className="languages">an aspiring web developer from los angeles, ca</div>
         <div className="links">
-          <Link to ="/about">about</Link>
-          <Link to ="/sites">sites</Link>
-          <a>contact</a>
+          <a onClick={() => document.getElementById('about').scrollIntoView({behavior: 'smooth'})}>about</a>
+          <a onClick={() => document.getElementById('sites').scrollIntoView({behavior: 'smooth'})}>sites</a>
+          <a onClick={() => document.getElementById('contact').scrollIntoView({behavior: 'smooth'})}><span style={{ color: 'black'}}>contact</span></a>
         </div>
       </div>
     </div>

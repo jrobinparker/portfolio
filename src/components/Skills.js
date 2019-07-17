@@ -6,12 +6,10 @@ export default function Skills() {
     <div className="skills-matrix fadein">
       <div className="box">
         <i class="fas fa-layer-group skill-icon" />
-        <div>back-end development</div>
+        <div>full-stack development</div>
           <ul>
-            <li>node.js</li>
+            <li>mern stack</li>
             <li>ruby on rails</li>
-            <li>SQL</li>
-            <li>mongoDB</li>
           </ul>
       </div>
       <div className="box">

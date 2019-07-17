@@ -4,11 +4,72 @@
 
 body {
   margin: 0;
-  background-image: url('./03. Snowy Mint.png');
-  background-size: 100%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+  background-color: white;
+  color: black;
+}
+
+a {
+  cursor: pointer;
+}
+
+.bg2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.bg2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #52D2BC;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.bg3 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.bg3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #52D2BC;
+  -webkit-clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
+.bg4 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.bg4::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #52D2BC;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 0);
 }
 
 * {
@@ -16,24 +77,43 @@ body {
 }
 
 .nav {
+  background-color: #52D2BC;
   display: flex;
   justify-content: space-around;
   padding: 15px 0 15px 0;
   font-size: 1.5rem;
 }
 
-a {
+.nav a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+.welcome {
+  height: 100vh;
+}
+
+.about {
+  position: relative;
+  top: 100;
+  height: 100vh;
+}
+
+.sites {
+  position: relative;
+  margin-top: -40px;
+  top: 100;
+  height: 100vh;
 }
 
 .home-text {
   display: inline-block;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 25%;
   padding-left: 10px;
-  border-left: 3px solid black;
+  border-left: 3px solid white;
+  color: white;
 }
 
 .fadein-up {
@@ -108,12 +188,14 @@ a {
 }
 
 .content {
+  z-index: 999;
   margin: 0 auto;
   width: 70%;
   position: absolute;
   top: 15%;
   left: 15%;
   font-size: 3rem;
+  color: black;
 }
 
 .about-me {
@@ -170,6 +252,14 @@ a {
   margin-top: 40px;
 }
 
+.sites-matrix {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
 .box {
   margin-right: 20px;
   padding: 10px;
@@ -214,4 +304,45 @@ li {
 }
 ::-moz-selection {
   background: royalblue;
+}
+
+.site-container {
+  display: flex;
+  margin: 50px 50px 0px 50px;
+  align-items: center;
+}
+
+.site-container h3 {
+  margin-bottom: -10px;
+}
+
+.site-images-container {
+  width: 75%;
+  height: 50%;
+}
+
+.site-features-list {
+  position: relative;
+  left: -7%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: .9rem;
+}
+
+.site-features-list li {
+  margin-right: 10px;
+  padding: 2px;
+  background: green;
+  border-radius: 5px;
+}
+
+.text {
+  font-size: 2rem;
+  margin-top: -7%;
+  margin-left: 10px;
+}
+
+.features {
+  font-size: 1.5rem;
+  margin-top: 10px;
 }

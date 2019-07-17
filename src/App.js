@@ -4,18 +4,21 @@ import Body from './components/Body';
 import About from './components/About';
 import Sites from './components/Sites';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
     <div className="App">
         <Nav />
-        <Route exact path="/" component={Body} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/sites" component={Sites} />
-    </div>
-    </Router>
+        <div className="welcome bg2">
+          <Body />
+        </div>
+        <div className="about bg3" id="about">
+          <About />
+        </div>
+        <div className="sites bg4" id="sites">
+          <Sites />
+        </div>
+      </div>
   );
 }
 

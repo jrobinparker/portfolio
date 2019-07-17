@@ -31,24 +31,24 @@ class About extends React.Component {
 
 
   return (
-    <div className="content fadein-up">
-      <div className="about-me">
-        <div className="about-me-image">
-          <img src="https://avatars0.githubusercontent.com/u/11745078?s=460&v=4" />
+      <div className="content fadein-up">
+        <div className="about-me">
+          <div className="about-me-image">
+            <img src="https://avatars0.githubusercontent.com/u/11745078?s=460&v=4" />
+          </div>
+          <div className="about-me-text">
+            <div className="name">jeremy parker</div>
+            <div>location: los angeles, ca</div>
+          </div>
         </div>
-        <div className="about-me-text">
-          <div className="name">jeremy parker</div>
-          <div>location: los angeles, ca</div>
+        <div className="content-nav">
+          <a onClick={() => this.setState({ navigation: 'skills' })}>dev skills</a>
+          <a onClick={() => this.setState({ navigation: 'experience' })}>experience</a>
+          <a onClick={() => this.setState({ navigation: 'education' })}>education</a>
+          <a onClick={() => this.setState({ navigation: 'other' })}>interests</a>
         </div>
-      </div>
-      <div className="content-nav">
-        <a onClick={() => this.setState({ navigation: 'skills' })}>dev skills</a>
-        <a onClick={() => this.setState({ navigation: 'experience' })}>experience</a>
-        <a onClick={() => this.setState({ navigation: 'education' })}>education</a>
-        <a onClick={() => this.setState({ navigation: 'other' })}>interests</a>
-      </div>
-        {pageContent}
-      </div>
+          {pageContent}
+        </div>
   )
 }
 }
