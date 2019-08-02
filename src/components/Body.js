@@ -3,18 +3,19 @@ import { Link } from 'react-router-dom';
 
 class Body extends React.Component {
 
+
   render() {
 
   return (
     <div>
     <div className="home-text fadein-up">
       <div className="welcome-text">
-        <div>i'm <span style={{ color: 'blue' }}>jeremy parker</span>,</div>
+        <div>i'm <span style={{ color: '#0084A1' }}>jeremy parker</span>,</div>
         <div className="languages">an aspiring web developer from los angeles, ca</div>
         <div className="links">
-          <a onClick={() => document.getElementById('about').scrollIntoView({behavior: 'smooth'})}>about</a>
+          <a onClick={() => document.getElementById('about').scrollIntoView({behavior: 'smooth'})}>about me</a>
           <a onClick={() => document.getElementById('sites').scrollIntoView({behavior: 'smooth'})}>sites</a>
-          <a onClick={() => document.getElementById('contact').scrollIntoView({behavior: 'smooth'})}><span style={{ color: 'black'}}>contact</span></a>
+          <a onClick={() => document.getElementById('contact').scrollIntoView({behavior: 'smooth'})}>contact</a>
         </div>
       </div>
     </div>

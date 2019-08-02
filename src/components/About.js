@@ -31,14 +31,13 @@ class About extends React.Component {
 
 
   return (
-      <div className="content fadein-up">
+      <div className="content" id="about">
         <div className="about-me">
           <div className="about-me-image">
             <img src="https://avatars0.githubusercontent.com/u/11745078?s=460&v=4" />
           </div>
           <div className="about-me-text">
-            <div className="name">jeremy parker</div>
-            <div>location: los angeles, ca</div>
+            <div>github linkedin resume</div>
           </div>
         </div>
         <div className="content-nav">

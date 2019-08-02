@@ -3,23 +3,26 @@ import Nav from './components/Nav';
 import Body from './components/Body';
 import About from './components/About';
 import Sites from './components/Sites';
+import Sea from './components/Sea';
 import './App.css';
 
-function App() {
+class App extends React.Component {
+
+  componentDidMount() {
+
+  }
+
+  render() {
+
   return (
     <div className="App">
-        <Nav />
-        <div className="welcome bg2">
-          <Body />
-        </div>
-        <div className="about bg3" id="about">
-          <About />
-        </div>
-        <div className="sites bg4" id="sites">
-          <Sites />
-        </div>
-      </div>
+      <Body />
+      <Sea />
+      <About />
+      <Sites />
+    </div>
   );
+}
 }
 
 export default App;
