@@ -7,30 +7,31 @@ export default function Skills() {
       <div className="box">
         <i class="fas fa-layer-group skill-icon" />
         <div>back-end | full-stack</div>
-          <ul className="skills-list">
-            <li>nodejs | express</li>
-            <li>ruby on rails</li>
-            <li>mern stack</li>
-            <li>sql | mongoDB</li>
-          </ul>
+          <div className="skills-list">
+            <div>nodejs | express</div>
+            <div>ruby on rails</div>
+            <div>mern stack</div>
+            <div>sql | mongoDB</div>
+          </div>
       </div>
       <div className="box">
         <i className="fas fa-desktop skill-icon" />
         <div>front-end design</div>
-        <ul className="skills-list">
-          <li>react | redux</li>
-          <li>vanilla JS</li>
-          <li>HTML5 | CSS3</li>
-        </ul>
+        <div className="skills-list">
+          <div>react | redux</div>
+          <div>vanilla JS</div>
+          <div>HTML5 | CSS3</div>
+          <div>semantic UI | material UI | bootstrap</div>
+        </div>
       </div>
       <div className="box">
         <i className="fab fa-git-alt"></i>
         <div>development best practices</div>
-        <ul className="skills-list">
-          <li>git | version control</li>
-          <li>TDD | BDD</li>
-          <li>mocha | rspec</li>
-        </ul>
+        <div className="skills-list">
+          <div>git | version control</div>
+          <div>TDD | BDD</div>
+          <div>mocha | rspec</div>
+        </div>
       </div>
     </div>
     </React.Fragment>

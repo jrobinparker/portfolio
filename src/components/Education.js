@@ -7,25 +7,25 @@ export default function Education() {
       <div className="box">
         <i class="fas fa-code skill-icon" />
         <div>full-stack developer</div>
-          <ul style={{ marginLeft: '-7%' }}>
-            <li>flatiron school (online)</li>
-          </ul>
+          <div className="skills-list">
+            <div>flatiron school (online)</div>
+          </div>
       </div>
-      <div className="box grad">
+      <div className="box">
         <i className="fas fa-university skill-icon" />
         <div>MSLIS</div>
-        <ul>
-          <li>library and information science</li>
-          <li>catholic university of america</li>
-        </ul>
+        <div className="skills-list">
+          <div>library and information science</div>
+          <div>catholic university of america</div>
+        </div>
       </div>
-      <div className="box ba">
+      <div className="box">
         <i className="fas fa-globe-asia skill-icon"></i>
         <div>BA</div>
-        <ul>
-          <li>history and east asian studies</li>
-          <li>northeastern university</li>
-        </ul>
+        <div className="skills-list">
+          <div>history and east asian studies</div>
+          <div>northeastern university</div>
+        </div>
       </div>
     </div>
     </React.Fragment>

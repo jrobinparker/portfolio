@@ -3,10 +3,18 @@ import Skills from './Skills';
 import Education from './Education';
 import Experience from './Experience';
 import Other from './Other';
+import { TweenMax, TimelineMax } from "gsap/TweenMax";
+import * as ScrollMagic from 'scrollmagic';
+import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 
 class About extends React.Component {
   state = {
     navigation: ''
+  }
+
+  componentDidMount() {
+
+
   }
 
   render() {
@@ -33,12 +41,10 @@ class About extends React.Component {
   return (
       <div className="content" id="about">
         <div className="about-me">
-          <div className="about-me-image">
-            <img src="https://avatars0.githubusercontent.com/u/11745078?s=460&v=4" />
-          </div>
-          <div className="about-me-text">
-            <div>github linkedin resume</div>
-          </div>
+              <img src="https://avatars0.githubusercontent.com/u/11745078?s=460&v=4" className="about-me-img"/>
+              <i className="fab fa-github-square about-me-icon" />
+              <i className="fab fa-linkedin about-me-icon" />
+              <i className="fas fa-file about-me-icon" />
         </div>
         <div className="content-nav">
           <a onClick={() => this.setState({ navigation: 'skills' })}>dev skills</a>
