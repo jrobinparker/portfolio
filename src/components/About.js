@@ -42,8 +42,12 @@ class About extends React.Component {
       <div className="content" id="about">
         <div className="about-me">
               <img src="https://avatars0.githubusercontent.com/u/11745078?s=460&v=4" className="about-me-img"/>
-              <i className="fab fa-github-square about-me-icon" />
-              <i className="fab fa-linkedin about-me-icon" />
+              <a href="https://github.com/jrobinparker" target="_blank">
+                <i className="fab fa-github-square about-me-icon" />
+              </a>
+              <a href="https://www.linkedin.com/in/jrobinparker/" target="_blank">
+                <i className="fab fa-linkedin about-me-icon" />
+              </a>
               <i className="fas fa-file about-me-icon" />
         </div>
         <div className="content-nav">
