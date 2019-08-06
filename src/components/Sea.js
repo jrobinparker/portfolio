@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactComponent as Waves } from './Waves.svg';
+import { ReactComponent as Seascape } from './Seascape.svg';
 import { TweenMax, TimelineMax } from "gsap/TweenMax";
 import * as ScrollMagic from 'scrollmagic';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
@@ -40,7 +40,7 @@ class Sea extends React.Component {
       scaleY: 1.25,
       scaleX: 1.05,
       y: 10,
-      x: 1,
+      x: 2,
       repeat: -1,
       yoyo: true
     })
@@ -55,7 +55,7 @@ class Sea extends React.Component {
   render() {
   return(
     <div id="waves" className="trigger">
-      <Waves />
+      <Seascape />
     </div>
   )
 }}

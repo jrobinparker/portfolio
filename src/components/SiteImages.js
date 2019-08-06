@@ -1,5 +1,6 @@
 import React from 'react';
-import Flickity from 'react-flickity-component';
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
 
 export default function SiteImages(props) {
 
@@ -13,15 +14,8 @@ export default function SiteImages(props) {
 }
 
   return (
-    <Flickity
-      className={'carousel'} // default ''
-      elementType={'div'} // default 'div'
-      options={flickityOptions} // takes flickity options {}
-      disableImagesLoaded={false} // default false
-      reloadOnUpdate // default false
-      static // default false
-    >
+    <AliceCarousel>
       {images}
-    </Flickity>
+    </AliceCarousel>
   )
 }

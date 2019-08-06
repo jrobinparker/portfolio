@@ -3,18 +3,15 @@ import Skills from './Skills';
 import Education from './Education';
 import Experience from './Experience';
 import Other from './Other';
-import { TweenMax, TimelineMax } from "gsap/TweenMax";
-import * as ScrollMagic from 'scrollmagic';
-import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
+import { TweenMax } from "gsap/TweenMax";
 
 class About extends React.Component {
   state = {
     navigation: ''
   }
 
-  componentDidMount() {
-
-
+  setSkillsAppear() {
+    TweenMax.to('.box', 1, {opacity: 1})
   }
 
   render() {
@@ -36,7 +33,6 @@ class About extends React.Component {
     if (this.state.navigation === 'other') {
       pageContent = <Other />
     }
-
 
   return (
       <div className="content" id="about">

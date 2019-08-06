@@ -3,14 +3,13 @@ import React from 'react';
 export default function Skills() {
   return (
     <React.Fragment>
-    <div className="skills-matrix fadein">
+    <div className="skills-matrix fadein" id="skills-matrix">
       <div className="box">
         <i class="fas fa-layer-group skill-icon" />
         <div>back-end | full-stack</div>
           <div className="skills-list">
             <div>nodejs | express</div>
             <div>ruby on rails</div>
-            <div>mern stack</div>
             <div>sql | mongoDB</div>
           </div>
       </div>
