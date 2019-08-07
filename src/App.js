@@ -4,6 +4,7 @@ import Sea from './components/Sea';
 import Body from './components/Body';
 import About from './components/About';
 import Sites from './components/Sites';
+import Contact from './components/Contact';
 import './App.css';
 
 class App extends React.Component {
@@ -20,6 +21,8 @@ class App extends React.Component {
       <Sea />
       <About />
       <Sites />
+      <Contact />
+      <img src={require('./assets/Vector.png')} id="seafloor"/>
     </div>
   );
 }

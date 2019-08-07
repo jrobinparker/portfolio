@@ -47,10 +47,10 @@ class About extends React.Component {
               <i className="fas fa-file about-me-icon" />
         </div>
         <div className="content-nav">
-          <a onClick={() => this.setState({ navigation: 'skills' })}>dev skills</a>
-          <a onClick={() => this.setState({ navigation: 'experience' })}>experience</a>
-          <a onClick={() => this.setState({ navigation: 'education' })}>education</a>
-          <a onClick={() => this.setState({ navigation: 'other' })}>interests</a>
+          <a onClick={() => this.setState({ navigation: 'skills' })} id="dev">dev skills</a>
+          <a onClick={() => this.setState({ navigation: 'experience' })} id="exp">experience</a>
+          <a onClick={() => this.setState({ navigation: 'education' })} id="edu">education</a>
+          <a onClick={() => this.setState({ navigation: 'other' })} id="int">interests</a>
         </div>
           {pageContent}
         </div>

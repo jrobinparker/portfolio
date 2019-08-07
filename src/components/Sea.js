@@ -52,9 +52,60 @@ class Sea extends React.Component {
       yoyo: true
     })
   }
+
+  toggleMode() {
+    const sea = document.getElementById('waves')
+    const hometext = document.getElementById('home-text')
+    const toggle = document.getElementById('toggle')
+    const toggleMoon = document.getElementById('toggle-moon')
+    const toggleSun = document.getElementById('toggle-sun')
+    const toggleName = document.getElementById('name')
+    if (sea.classList.contains('day')) {
+      sea.classList.remove('day')
+      hometext.classList.remove('border-gradient-day')
+      toggle.classList.remove('toggle-day')
+      toggleName.classList.remove('name-day')
+      document.body.style.backgroundColor = '#195190';
+      sea.classList.add('night')
+      toggle.classList.add('toggle-night')
+      toggleSun.classList.remove('not-active')
+      toggleMoon.classList.add('not-active')
+      hometext.classList.add('border-gradient-night')
+      toggleName.classList.add('name-night')
+
+      const tlNight = new TimelineMax();
+
+      tlNight
+        .set('.day' && '.clouds', {opacity: 0})
+        .set('#sun', {opacity: 0})
+        .to('.night' && '#moon', 1, {opacity: 1})
+
+    } else if (sea.classList.contains('night')) {
+      sea.classList.remove('night')
+      hometext.classList.remove('border-gradient-night')
+      toggle.classList.remove('toggle-night')
+      toggleName.classList.remove('name-night')
+      document.body.style.backgroundColor = '#DC793E';
+      sea.classList.add('day')
+      toggle.classList.add('toggle-day')
+      toggleMoon.classList.remove('not-active')
+      toggleSun.classList.add('not-active')
+      hometext.classList.add('border-gradient-day')
+      toggleName.classList.add('name-day')
+      const tlDay = new TimelineMax();
+
+      tlDay
+        .set('.night' && '#moon', {opacity: 0})
+        .set('#sun', {opacity: 1})
+        .to('#sun' && '.clouds', 1, {opacity: 1})
+    }
+    }
   render() {
   return(
-    <div id="waves" className="trigger">
+    <div id="waves" className="day trigger">
+      <div onClick={this.toggleMode} className="toggle toggle-day shadow" id="toggle">
+        <i className="fas fa-moon" id="toggle-moon"/> | <i className="fas fa-sun not-active" id="toggle-sun" />
+      </div>
       <Seascape />
     </div>
   )

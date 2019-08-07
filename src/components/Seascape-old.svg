@@ -1,6 +1,5 @@
-<svg id="seascape" width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
-<rect width="1440" height="1024" fill="none"/>
 <g filter="url(#filter0_d)">
 <ellipse id="sun" cx="720.5" cy="733" rx="263.5" ry="233" fill="#FFDA29"/>
 </g>
@@ -29,22 +28,19 @@
 <path class="leaf" d="M1318.65 735.623C1307.88 734.85 1287.32 715.718 1291.22 645.366C1301.98 639.892 1320.49 631.662 1308.49 642.542C1296.49 653.422 1310.26 709.129 1318.65 735.623Z" fill="#184A45"/>
 </g>
 <g filter="url(#filter9_d)">
-<path class="leaf"  d="M1292.19 725.066C1282.38 720.574 1268.32 694.122 1296.59 629.585C1295.8 617.431 1351.28 626.255 1315.4 633.201C1299.5 636.28 1293.61 697.313 1292.19 725.066Z" fill="#184A45"/>
+<path class="leaf" d="M1292.19 725.066C1282.38 720.574 1268.32 694.122 1296.59 629.585C1295.8 617.431 1351.28 626.255 1315.4 633.201C1299.5 636.28 1293.61 697.313 1292.19 725.066Z" fill="#184A45"/>
 </g>
 <g filter="url(#filter10_d)">
-<path class="leaf"  d="M1328.14 723.623C1317.37 722.85 1296.82 703.718 1300.71 633.366C1311.47 627.892 1329.98 619.662 1317.98 630.542C1305.98 641.422 1319.75 697.129 1328.14 723.623Z" fill="#184A45"/>
+<path class="leaf" d="M1328.14 723.623C1317.37 722.85 1296.82 703.718 1300.71 633.366C1311.47 627.892 1329.98 619.662 1317.98 630.542C1305.98 641.422 1319.75 697.129 1328.14 723.623Z" fill="#184A45"/>
 </g>
 <g filter="url(#filter11_d)">
-<path class="leaf"  d="M1340.55 673.988C1333 654.534 1315.1 642.431 1307.1 638.811L1314.39 630.561C1318.83 630.867 1337.77 637.47 1350.43 672.415L1353.8 706.306C1352.53 703.639 1348.1 693.442 1340.55 673.988Z" fill="#184A45"/>
+<path class="leaf" d="M1340.55 673.988C1333 654.534 1315.1 642.431 1307.1 638.811L1314.39 630.561C1318.83 630.867 1337.77 637.47 1350.43 672.415L1353.8 706.306C1352.53 703.639 1348.1 693.442 1340.55 673.988Z" fill="#184A45"/>
 </g>
 <g filter="url(#filter12_d)">
-<path class="leaf"  d="M1331.49 704.713C1331.81 692.492 1326.56 661.94 1303 637.493C1306.78 636.861 1315.03 636.088 1317.8 638.058C1321.25 640.522 1331.95 659.009 1335.9 670.515C1339.07 679.719 1334.28 697.148 1331.49 704.713Z" fill="#184A45"/>
+<path class="leaf" d="M1331.49 704.713C1331.81 692.492 1326.56 661.94 1303 637.493C1306.78 636.861 1315.03 636.088 1317.8 638.058C1321.25 640.522 1331.95 659.009 1335.9 670.515C1339.07 679.719 1334.28 697.148 1331.49 704.713Z" fill="#184A45"/>
 </g>
 <g filter="url(#filter13_d)">
 <path class="leaf" d="M1366.12 674.552C1360.08 663.924 1339.8 640.476 1307 631.716C1309.91 629.221 1316.58 624.296 1319.96 624.555C1324.19 624.88 1342.9 635.182 1352.23 642.991C1359.69 649.237 1364.6 666.635 1366.12 674.552Z" fill="#184A45"/>
-</g>
-<g filter="url(#filter14_d)">
-<path id="moon" d="M1181.63 240.944C1185.19 198.578 1124.52 137.8 1099 117.16C1146.88 112.232 1198.89 137.542 1226.15 157.336C1253.41 177.13 1287.29 231.635 1250.14 302.633C1212.99 373.631 1099.91 379.064 1112.88 376.779C1125.85 374.493 1177.18 293.901 1181.63 240.944Z" fill="#F8E59A"/>
 </g>
 </g>
 <defs>
@@ -169,15 +165,6 @@
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-<filter id="filter14_d" x="1099" y="116" width="182" height="270.221" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dx="10" dy="5"/>
 <feGaussianBlur stdDeviation="2"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>

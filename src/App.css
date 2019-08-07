@@ -6,15 +6,21 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  background-color: #0084A1;
 }
 
 a {
+  z-index: 999;
   cursor: pointer;
 }
 
 li {
   list-style: none;
+}
+
+.shadow {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(38, 48, 86, 1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(38, 48, 86, 1);
+  box-shadow: 5px 5px 5px 0px rgba(38, 48, 86, 1);
 }
 
 .water-bg {
@@ -64,8 +70,57 @@ li {
   left: 30%;
 }
 
-#waves {
-  background-color: #DE98AB;
+#seascape {
+  position: relative;
+  top: -10%;
+  height: 100%;
+  width: 100%;
+}
+
+#moon {
+  opacity: 0
+}
+
+.toggle {
+  display: inline-block;
+  position: relative;
+  right: -95%;
+  margin-top: 1%;
+  padding: 0px 5px 0px 5px;
+  border: 2px solid white;
+  border-radius: 25%;
+  color: white;
+  cursor: pointer;
+}
+
+.toggle-day {
+  background-color: #195190;
+}
+
+.toggle-night {
+  background-color: #DC793E;
+}
+
+.name-day {
+  color: #195190;
+}
+
+.name-night {
+  color: #DC793E;
+}
+
+.not-active {
+  opacity: 0;
+}
+
+.day {
+  background: url('./assets/day.png');
+  background-size: cover;
+}
+
+.night {
+  background: url('./assets/night.png');
+  background-size: cover;
 }
 
 .separator {
@@ -96,6 +151,10 @@ background: linear-gradient(to top, rgba(0,132,161,1) 0%, rgba(222,152,171,1) 10
   left: 30%;
   padding-left: 10px;
   padding-right: 10px;
+  color: white;
+}
+
+.border-gradient-day {
   border-width: 3px;
   border-style: solid;
   border-image:
@@ -104,7 +163,17 @@ background: linear-gradient(to top, rgba(0,132,161,1) 0%, rgba(222,152,171,1) 10
       rgba(255,188,31,1),
       rgba(255,111,97,1)
     ) 1 100%;
-  color: white;
+}
+
+.border-gradient-night {
+  border-width: 3px;
+  border-style: solid;
+  border-image:
+    linear-gradient(
+      to bottom,
+      rgba(25,81,144,1),
+      rgba(152,221,222,1)
+    ) 1 100%;
 }
 
 .fadein-up {
@@ -222,6 +291,42 @@ box-shadow: 5px 5px 5px 0px rgba(38, 48, 86, 1);
   padding: 10px;
 }
 
+#dev::after {
+  content: 'dev skills';
+  z-index: -1;
+  position: relative;
+  top: 5%;
+  left: -49%;
+  color: #263056;
+}
+
+#exp::after {
+  content: 'experience';
+  z-index: -1;
+  position: relative;
+  top: 5%;
+  left: -49%;
+  color: #263056;
+}
+
+#edu::after {
+  content: 'education';
+  z-index: -1;
+  position: relative;
+  top: 5%;
+  left: -49%;
+  color: #263056;
+}
+
+#int::after {
+  content: 'interests';
+  z-index: -1;
+  position: relative;
+  top: 5%;
+  left: -49%;
+  color: #263056;
+}
+
 .skills-matrix {
   display: flex;
   flex-direction: row;
@@ -297,7 +402,7 @@ box-shadow: 10px 10px 5px 0px rgba(38, 48, 86, 1);
   left: -2.5%;
 }
 
-i {
+.icons {
   background-color: white;
   border-radius: 50%;
   padding: 20px;
@@ -333,10 +438,13 @@ i {
 }
 
 .content-nav {
+  position: relative;
+  left: 5%;
   display: flex;
   justify-content: space-around;
   align-content: center;
   margin-top: 20px;
+  font-size: 2.25rem;
 }
 
 .content-nav a {
@@ -516,4 +624,16 @@ i {
 .site-wave {
   z-index: 999;
   background-color: black;
+}
+
+.contact {
+  position: relative;
+  top: 250%;
+  text-align: center;
+}
+
+#seafloor {
+    z-index: 999;
+    position: relative;
+    top: 250%;
 }
