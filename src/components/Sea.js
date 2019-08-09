@@ -65,7 +65,6 @@ class Sea extends React.Component {
       hometext.classList.remove('border-gradient-day')
       toggle.classList.remove('toggle-day')
       toggleName.classList.remove('name-day')
-      document.body.style.backgroundColor = '#195190';
       sea.classList.add('night')
       toggle.classList.add('toggle-night')
       toggleSun.classList.remove('not-active')
@@ -85,7 +84,6 @@ class Sea extends React.Component {
       hometext.classList.remove('border-gradient-night')
       toggle.classList.remove('toggle-night')
       toggleName.classList.remove('name-night')
-      document.body.style.backgroundColor = '#DC793E';
       sea.classList.add('day')
       toggle.classList.add('toggle-day')
       toggleMoon.classList.remove('not-active')

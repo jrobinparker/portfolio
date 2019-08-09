@@ -39,12 +39,12 @@ class Sites extends React.Component {
   }
 
   render() {
-  
+
   return (
     <div className="sites" id="sites">
-      <span className="header-text">
-        sites
-      </span>
+        <span className="header-text">
+          sites
+        </span>
       {this.state.sites.map(site => {
         return <Site site={site} />
       })}

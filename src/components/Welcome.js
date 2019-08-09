@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class Body extends React.Component {
+class Welcome extends React.Component {
 
 
   render() {
@@ -24,4 +24,4 @@ class Body extends React.Component {
 }
 }
 
-export default Body
+export default Welcome

@@ -1,11 +1,11 @@
 import React from 'react';
-import { ReactComponent as WaveSVG } from './Wave.svg';
+import { ReactComponent as Waves } from './Waves.svg';
 
 
 class Wave extends React.Component {
   render() {
   return(
-      <WaveSVG id="sea-wave"/>
+      <Waves id="sea-waves"/>
   )
 }}
 

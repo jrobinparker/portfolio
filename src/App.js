@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './components/Nav';
 import Sea from './components/Sea';
-import Body from './components/Body';
+import Welcome from './components/Welcome';
 import About from './components/About';
 import Sites from './components/Sites';
 import Contact from './components/Contact';
@@ -17,12 +17,13 @@ class App extends React.Component {
 
   return (
     <div className="App">
-      <Body />
+      <Welcome />
       <Sea />
-      <About />
-      <Sites />
-      <Contact />
-      <img src={require('./assets/Vector.png')} id="seafloor"/>
+      <div className="sea-bg">
+        <About />
+        <Sites />
+        <Contact />
+      </div>
     </div>
   );
 }
