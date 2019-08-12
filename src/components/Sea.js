@@ -70,7 +70,7 @@ class Sea extends React.Component {
       const tlNight = new TimelineMax();
 
       tlNight
-        .set('.day' && '.clouds', {opacity: 0})
+        .set('.clouds', {opacity: 0})
         .set('#sun', {opacity: 0})
         .to('.night' && '#moon', 1, {opacity: 1})
 
@@ -80,7 +80,7 @@ class Sea extends React.Component {
       tlDay
         .set('.night' && '#moon', {opacity: 0})
         .set('#sun', {opacity: 1})
-        .to('#sun' && '.clouds', 1, {opacity: 1})
+        .to('.clouds', 1, {opacity: 1})
 
     }
   }

@@ -9,6 +9,7 @@ class Site extends React.Component {
   }
 
   render() {
+
     if (this.props.site.title === 'renshu' && this.state.visible) {
       TweenMax.to(`#${this.props.site.title}-img`, 1, {opacity: 1, x: 100})
       TweenMax.to(`#${this.props.site.title}-box`, 1, {opacity: 1, x: -100})

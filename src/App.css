@@ -43,8 +43,8 @@ li {
 .nav {
   z-index: 10;
   position: sticky;
-  top: 2.5%;
-  left: 2%;
+  top: 2%;
+  left: 1.25%;
   width: 10vh;
   font-size: 1.5rem;
 }
@@ -60,7 +60,7 @@ li {
 .line {
   height: 5px;
   width: 100%;
-  background-color: #195190;
+  background-color: #98DDDE;
   display: block;
   border-radius: 5%;
   transition: 0.3s ease;
@@ -68,6 +68,10 @@ li {
 
 #line1 {
   transform: translateY(-4px);
+}
+
+#line1::after {
+  background-color: #98DDDE;
 }
 
 #line3 {
@@ -104,7 +108,7 @@ li {
 .display-menu {
   display: block;
   opacity: 1;
-  animation: fadeIn 2.5s;
+  animation: fadeIn 1.75s;
 }
 
 .nav-links ul {
@@ -131,7 +135,7 @@ li {
   width: 0;
   height: 0;
   margin-top: -10%;
-  background-color: #195190;
+  background-color: #98DDDE;
   border-radius: 50%;
   transition: 0.3s ease;
 }
@@ -172,11 +176,10 @@ li {
   right: -95%;
   margin-top: 1%;
   padding: 0px 5px 0px 5px;
-  border: 1px solid white;
   border-radius: 5px;
   color: white;
   cursor: pointer;
-  background-color: #195190;
+  background-color: #98DDDE;
 }
 
 .toggle-night {
