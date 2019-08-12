@@ -9,14 +9,12 @@ import './App.css';
 
 class App extends React.Component {
 
-  componentDidMount() {
-
-  }
 
   render() {
 
   return (
-    <div className="App">
+    <div className="App" id="top">
+    <Nav />
       <Welcome />
       <Sea />
       <div className="sea-bg">

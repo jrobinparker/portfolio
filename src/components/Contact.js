@@ -23,17 +23,15 @@ class Contact extends React.Component {
         values: [
           {x: 100, y: -20},
           {x: 300, y: 10},
-          {x: 500, y: 100},
+          {x: 500, y: 20},
+          {x: 300, y: 10},
+          {x: 100, y: -20},
+          {x: 100, y: -20},
+          {x: 300, y: 10},
           {x: -100, y: 20},
           {x: 100, y: -20},
           {x: 100, y: -20},
           {x: 300, y: 10},
-          {x: 500, y: 100},
-          {x: -100, y: 20},
-          {x: 100, y: -20},
-          {x: 100, y: -20},
-          {x: 300, y: 10},
-          {x: 500, y: 100},
           {x: -100, y: 20},
           {x: 100, y: -20}
         ]
@@ -88,7 +86,7 @@ class Contact extends React.Component {
           repeat: -1,
         })
 
-      TweenMax.to('.contact-header', 1, {
+      TweenMax.to('.contact-header', 2, {
         y: -400
       })
     }

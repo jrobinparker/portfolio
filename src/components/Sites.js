@@ -22,7 +22,7 @@ class Sites extends React.Component {
         url: "https://jrobinparker.github.io/jdictsearch/",
         about: "searches 3 english-japanese dictionaries",
         highlights: ["client-side scraper using cheerio"],
-        tech: ["cheerio", "react", "vanilla js", "material ui"],
+        tech: ["cheerio", "react", "axios", "vanilla js", "material ui"],
         image: "jdict-gif.gif"
       },
       {
