@@ -10,7 +10,7 @@ class Welcome extends React.Component {
     <div>
     <div className="home-text border-gradient-day fadein-up" id="home-text">
       <div className="welcome-text">
-        <div>i'm <span className="name-day" id="name">jeremy parker</span>,</div>
+        <div>i'm <span className="name" id="name">jeremy parker</span>,</div>
         <div className="languages">a web developer from los angeles, ca</div>
         <div className="links">
           <a onClick={() => document.getElementById('about').scrollIntoView({behavior: 'smooth'})}>about me</a>

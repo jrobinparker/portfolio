@@ -60,7 +60,7 @@ li {
 .line {
   height: 5px;
   width: 100%;
-  background-color: #263056;
+  background-color: #195190;
   display: block;
   border-radius: 5%;
   transition: 0.3s ease;
@@ -74,8 +74,12 @@ li {
   transform: translateY(4px);
 }
 
+.line-night {
+  background-color: #DE98AB;
+}
+
 .change-icon .line {
-  background-color: black;
+  background-color: white;
 }
 
 .change-icon #line1 {
@@ -127,9 +131,13 @@ li {
   width: 0;
   height: 0;
   margin-top: -10%;
-  background-color: #FF6F61;
+  background-color: #195190;
   border-radius: 50%;
   transition: 0.3s ease;
+}
+
+.nav-bg-night {
+  background-color: #DE98AB;
 }
 
 #nav-icon, #nav-menu {
@@ -165,22 +173,20 @@ li {
   margin-top: 1%;
   padding: 0px 5px 0px 5px;
   border: 1px solid white;
-  border-radius: 25%;
+  border-radius: 5px;
   color: white;
   cursor: pointer;
-}
-
-.toggle-day {
   background-color: #195190;
 }
 
 .toggle-night {
-  background-color: #DC793E;
+  background-color: #DE98AB;
 }
 
-.day {
-  background: url('./assets/day.png');
+.sea {
+  background: url('./assets/box-bg.png');
   background-size: cover;
+  transition: 1s ease;
 }
 
 .night {
@@ -188,41 +194,9 @@ li {
   background-size: cover;
 }
 
-.name-day {
-  color: #195190;
-}
-
-.name-night {
-  color: #DC793E;
-}
-
 .not-active {
   opacity: 0;
 }
-
-.border-gradient-day {
-  border-width: 3px;
-  border-style: solid;
-  border-image:
-    linear-gradient(
-      to bottom,
-      rgba(255,188,31,1),
-      rgba(255,111,97,1)
-    ) 1 100%;
-}
-
-.border-gradient-night {
-  border-width: 3px;
-  border-style: solid;
-  border-image:
-    linear-gradient(
-      to bottom,
-      rgba(25,81,144,1),
-      rgba(152,221,222,1)
-    ) 1 100%;
-}
-
-
 
 .separator {
   position: relative;
@@ -276,6 +250,37 @@ background: linear-gradient(to top, rgba(0,132,161,1) 0%, rgba(222,152,171,1) 10
   padding-left: 10px;
   padding-right: 10px;
   color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image:
+      linear-gradient(
+        to bottom,
+        rgba(25,81,144,1),
+        rgba(152,221,222,1)
+      ) 1 100%;
+}
+
+.border-gradient-night {
+  border-width: 3px;
+  border-style: solid;
+  border-image:
+    linear-gradient(
+      to bottom,
+      rgba(222,152,171,1) ,
+      rgba(255,111,97,1)
+    ) 1 100%;
+}
+
+#name {
+  font-size: 3rem;
+}
+
+.name {
+    color: #195190;
+}
+
+.name-night {
+  color: #FF6F61;
 }
 
 .fadein-up {

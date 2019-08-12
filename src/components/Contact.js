@@ -1,6 +1,5 @@
 import React from 'react';
 import { ReactComponent as Diver } from '../assets/diving.svg';
-import { ReactComponent as Shark } from '../assets/shark.svg';
 import VisibilitySensor from 'react-visibility-sensor';
 import { TweenMax, TimelineMax, Power0 } from "gsap/TweenMax";
 
