@@ -13,9 +13,9 @@ class Welcome extends React.Component {
         <div>i'm <span className="name" id="name">jeremy parker</span>,</div>
         <div className="languages">a web developer from los angeles, ca</div>
         <div className="links">
-          <a onClick={() => document.getElementById('about').scrollIntoView({behavior: 'smooth'})}>about me</a>
-          <a onClick={() => document.getElementById('sites').scrollIntoView({behavior: 'smooth'})}>sites</a>
-          <a onClick={() => document.getElementById('contact').scrollIntoView({behavior: 'smooth'})}>contact</a>
+          <a onClick={() => document.querySelector('.about-me').scrollIntoView({behavior: 'smooth'})}>about me</a>
+          <a onClick={() => document.querySelector('.sites-header-text').scrollIntoView({behavior: 'smooth'})}>sites</a>
+          <a onClick={() => document.querySelector('.contact-header').scrollIntoView({behavior: 'smooth'})}>contact</a>
         </div>
       </div>
     </div>

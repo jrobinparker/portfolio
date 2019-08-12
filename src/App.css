@@ -658,7 +658,7 @@ background: linear-gradient(to top, rgba(0,132,161,1) 0%, rgba(222,152,171,1) 10
   position: relative;
 }
 
-.header-text {
+.sites-header-text {
     z-index: 1;
     position: relative;
     left: 5%;
@@ -668,7 +668,7 @@ background: linear-gradient(to top, rgba(0,132,161,1) 0%, rgba(222,152,171,1) 10
     text-align: center;
 }
 
-.header-text::after {
+.sites-header-text::after {
   content: 'sites';
   z-index: -1;
   position: relative;

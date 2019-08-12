@@ -41,8 +41,8 @@ class Sites extends React.Component {
   render() {
 
   return (
-    <div className="sites" id="sites">
-        <span className="header-text">
+    <div className="sites">
+        <span className="sites-header-text">
           sites
         </span>
       {this.state.sites.map(site => {

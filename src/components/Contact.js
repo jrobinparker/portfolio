@@ -97,7 +97,7 @@ class Contact extends React.Component {
           visible: isVisible
         })
       }}>
-      <div className="contact" id="contact">
+      <div className="contact">
         <Diver />
         <div className="contact-header shadow">
             <h2>contact me at:</h2>

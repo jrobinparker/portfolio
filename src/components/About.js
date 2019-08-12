@@ -7,7 +7,7 @@ import { TweenMax } from "gsap/TweenMax";
 
 class About extends React.Component {
   state = {
-    navigation: ''
+    navigation: 'skills'
   }
 
   setSkillsAppear() {
@@ -35,8 +35,8 @@ class About extends React.Component {
     }
 
   return (
-      <div className="about-content" id="about">
-        <div className="about-me" >
+      <div className="about-content">
+        <div className="about-me">
               <img src="https://avatars0.githubusercontent.com/u/11745078?s=460&v=4" className="about-me-img shadow"/>
               <a href="https://github.com/jrobinparker" target="_blank">
                 <i className="fab fa-github-square icon shadow" />
