@@ -12,7 +12,7 @@ export default function Experience() {
       <div className="box shadow">
         <ul style={{ fontSize: '1rem' }}>
           <li>LMS system admin and project co-lead</li>
-          <li>create site pages and email notifications (HTML/CSS), manage sitewide CSS styles, and provision new users</li>
+          <li>create site pages and email notifications (HTML/CSS), manage sitewide CSS styles, and set user logic</li>
           <li>develop custom JavaScript solutions for Articulate Storyline</li>
           <li>build SharePoint sites for project teams with time-saving workflows</li>
           <li>curate content on the firm intranet</li>
