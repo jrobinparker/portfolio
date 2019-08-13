@@ -26,7 +26,7 @@ class Nav extends React.Component {
               this.expandNav()
             }}>home</li>
             <li onClick={() => {
-              document.querySelector('.about-me').scrollIntoView({behavior: 'smooth'})
+              document.querySelector('.about-content').scrollIntoView({behavior: 'smooth'})
               this.expandNav()
             }}>about me</li>
             <li onClick={() => {
