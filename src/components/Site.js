@@ -49,14 +49,14 @@ class Site extends React.Component {
           </a>
         </div>
           <ul className="site-info">
-            <div className="site-info-header">
+            <div className="site-info-header" id="site-info-header">
               <li>{this.props.site.about}</li>
               {this.props.site.highlights.map(hl => {
                 return <div style={{ display: 'inline-block'}}>{hl}</div>
               })}
             </div>
               {this.props.site.tech.map(t => {
-                return <li>{t}</li>
+                return <li className="site-feature">{t}</li>
               })}
           </ul>
       </div>

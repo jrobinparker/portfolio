@@ -3,14 +3,13 @@ import React from 'react';
 export default function Experience() {
   return (
     <div className="experience-matrix fadein">
-      <div style={{ fontSize: '2rem' }}>
-        <i class="far fa-chart-bar icon shadow" style={{ fontSize: '5rem' }} />
+      <div className="experience-info">
         <div>analysis group</div>
         <div>learning & development technology specialist</div>
         <div>10/2011 - current</div>
       </div>
-      <div className="box shadow">
-        <ul style={{ fontSize: '1rem' }}>
+      <div className="box exp-box shadow">
+        <ul>
           <li>LMS system admin and project co-lead</li>
           <li>create site pages and email notifications (HTML/CSS), manage sitewide CSS styles, and set user logic</li>
           <li>develop custom JavaScript solutions for Articulate Storyline</li>
