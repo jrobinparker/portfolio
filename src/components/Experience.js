@@ -10,12 +10,12 @@ export default function Experience() {
       </div>
       <div className="box exp-box shadow">
         <ul>
-          <li>LMS system admin and project co-lead</li>
-          <li>create site pages and email notifications (HTML/CSS), manage sitewide CSS styles, and set user logic</li>
+          <li>co-led a firm-wide initiative to modernize training offerings with the firm's first learning management system</li>
+          <li>create responsive HTML5 pages in the firm's learning management system, manage CSS styles, and set system logic for automatic user assignments</li>
           <li>develop custom JavaScript solutions for Articulate Storyline</li>
-          <li>build SharePoint sites for project teams with time-saving workflows</li>
-          <li>curate content on the firm intranet</li>
-          <li>efficiently plan and oversee technical aspects (app, A/V) of yearly new hire orientation event in Boston</li>          <li>translate japanese language financial and medical data</li>
+          <li>collaborated with key stakeholders and intranet team to modernize and improve the UI/UX of firm’s intranet, resulting in significantly increased user engagement and satisfaction</li>
+          <li>developed custom SharePoint task management workflow solutions for compliance teams, saving over $15,000 in yearly vendor fees</li>
+          <li>translate japanese language financial and medical data</li>
         </ul>
       </div>
     </div>
