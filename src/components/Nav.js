@@ -1,5 +1,4 @@
 import React from 'react';
-import { TweenMax, TimelineMax } from "gsap/TweenMax";
 
 class Nav extends React.Component {
 

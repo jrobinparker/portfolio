@@ -1,6 +1,5 @@
 import React from 'react';
 import Site from './Site';
-import Wave from './Wave';
 
 class Sites extends React.Component {
   state = {

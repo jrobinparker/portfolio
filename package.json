@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "http://jrobinparker.github.io/portfolio",
+  "homepage": "https://jrobinparker.github.io/portfolio",
   "private": true,
   "dependencies": {
     "gsap": "^2.1.3",

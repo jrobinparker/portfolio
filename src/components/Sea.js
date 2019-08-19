@@ -12,7 +12,7 @@ class Sea extends React.Component {
     const tlScroll1 = new TimelineMax();
 
     tlScroll1
-      .set('#sun', {y: 1500})
+      .set('#sun', {y: 2000})
       .to('#sun', 3, {y: 0})
 
     const controller = new ScrollMagic.Controller();

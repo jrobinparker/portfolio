@@ -37,14 +37,14 @@ class About extends React.Component {
   return (
       <div className="about-content">
         <div className="about-me">
-              <img src="https://avatars0.githubusercontent.com/u/11745078?s=460&v=4" className="about-me-img shadow"/>
-              <a href="https://github.com/jrobinparker" target="_blank">
+              <img src="https://avatars0.githubusercontent.com/u/11745078?s=460&v=4" className="about-me-img shadow" alt="avatar"/>
+              <a href="https://github.com/jrobinparker" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github-square icon shadow" />
               </a>
-              <a href="https://www.linkedin.com/in/jrobinparker/" target="_blank">
+              <a href="https://www.linkedin.com/in/jrobinparker/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin icon shadow" />
               </a>
-              <a href={require('../assets/Jeremy Parker Resume.pdf')} target="_blank">
+              <a href={require('../assets/Jeremy Parker Resume.pdf')} target="_blank" rel="noopener noreferrer">
                 <i className="fas fa-file icon shadow" />
               </a>
         </div>

@@ -175,10 +175,11 @@ li {
 /* "dark" mode styling */
 
 .toggle {
+  z-index: 100;
   display: inline-block;
-  position: relative;
-  right: -95%;
-  margin-top: 1%;
+  position: absolute;
+  right: 1%;
+  top: 1.5%;
   padding: 0px 5px 0px 5px;
   border-radius: 5px;
   color: white;
@@ -221,7 +222,7 @@ li {
   margin-left: -2%;
 }
 
-.links {
+.welcome-links {
   margin-top: 30px;
   margin-bottom: 20px;
   font-size: 1.5rem;
@@ -230,6 +231,10 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.welcome-link {
+  cursor: pointer;
 }
 
 .sites {
@@ -918,7 +923,7 @@ li {
     margin-bottom: -11%;
   }
 
-  .links {
+  .welcome-links {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1188,7 +1193,7 @@ li {
     position: relative;
     top: 19%;
     left: 10%;
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .site-container {
@@ -1784,7 +1789,7 @@ li {
     margin-bottom: -11%;
   }
 
-  .links {
+  .welcome-links {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1923,17 +1928,6 @@ li {
     font-size: .9rem;
   }
 
-  .sites-matrix {
-    position: relative;
-    top: -5%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    color: white;
-    background-color: #0084A1;
-  }
-
   .box {
     font-size: 1.5rem;
     padding-bottom: 10px;
@@ -2060,4 +2054,69 @@ li {
     left: 23%;
   }
 
+}
+
+/* laptop monitors */
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+
+  /* home text styling */
+
+  .home-text {
+    left: 34%;
+    top: 30%;
+    z-index: 1;
+  }
+
+}
+
+
+/* yuge monitors */
+@media only screen and (min-width: 1601px) {
+
+  /* home text styling */
+
+  .home-text {
+    left: 38%;
+    top: 30%;
+    z-index: 1;
+  }
+
+  /* sea styling */
+
+  .sea {
+    margin-top: -5%;
+  }
+
+  /* about styling */
+
+  #full-stack {
+    height: auto;
+  }
+
+  #dev-box {
+    width: 100%;
+  }
+
+  /* sites styling */
+  .sites {
+    margin-bottom: 20%;
+  }
+
+  .site-container:first-of-type .site-info-header {
+    margin-left: 1%;
+  }
+
+  .site-box {
+    width: auto;
+  }
+
+  .site-info-header {
+    width: 100%;
+  }
+
+  /* contact styling */
+
+  .contact {
+    transform: translateY(-20%);
+  }
 }
