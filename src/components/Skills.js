@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <React.Fragment>
     <div className="skills-matrix fadein" id="skills-matrix">
-    <div className="box skill-box shadow">
+    <div className="box skill-box shadow" id="languages">
       <div className="skills-icon">
         <i class="fas fa-laptop-code icon" />
         <div className="skill-type">languages</div>
@@ -22,7 +22,7 @@ export default function Skills() {
           <div className="skill-type">full-stack</div>
         </div>
           <div className="skills-list">
-            <div>nodejs | express</div>
+            <div id="node">nodejs | express</div>
             <div>ruby on rails</div>
             <div>django</div>
           </div>

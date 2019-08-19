@@ -44,7 +44,9 @@ class About extends React.Component {
               <a href="https://www.linkedin.com/in/jrobinparker/" target="_blank">
                 <i className="fab fa-linkedin icon shadow" />
               </a>
-              <i className="fas fa-file icon shadow" />
+              <a href={require('../assets/Jeremy Parker Resume.pdf')} target="_blank">
+                <i className="fas fa-file icon shadow" />
+              </a>
         </div>
         <div className="about-nav">
           <a onClick={() => this.setState({ navigation: 'skills' })} id="dev">dev skills</a>
