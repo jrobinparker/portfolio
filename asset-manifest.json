@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bda6448d.chunk.css",
+    "main.css": "/portfolio/static/css/main.3c8fc9dc.chunk.css",
     "main.js": "/portfolio/static/js/main.224a0fb0.chunk.js",
     "main.js.map": "/portfolio/static/js/main.224a0fb0.chunk.js.map",
     "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
@@ -8,9 +8,9 @@
     "static/js/2.cb35dd7a.chunk.js": "/portfolio/static/js/2.cb35dd7a.chunk.js",
     "static/js/2.cb35dd7a.chunk.js.map": "/portfolio/static/js/2.cb35dd7a.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.b5d074c6a56462f590a42756f98a6cd5.js": "/portfolio/precache-manifest.b5d074c6a56462f590a42756f98a6cd5.js",
+    "precache-manifest.b62f99dc4f36e8b9486dabc5ed138d37.js": "/portfolio/precache-manifest.b62f99dc4f36e8b9486dabc5ed138d37.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.bda6448d.chunk.css.map": "/portfolio/static/css/main.bda6448d.chunk.css.map",
+    "static/css/main.3c8fc9dc.chunk.css.map": "/portfolio/static/css/main.3c8fc9dc.chunk.css.map",
     "static/media/Jeremy Parker Resume.pdf": "/portfolio/static/media/Jeremy Parker Resume.5f320861.pdf",
     "static/media/Seascape.779d8a9c.svg": "/portfolio/static/media/Seascape.779d8a9c.svg",
     "static/media/App.css": "/portfolio/static/media/night.fe49cf6b.png",
