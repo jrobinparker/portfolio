@@ -8,7 +8,7 @@ body {
 
 }
 
-#home, #about {
+#home, #about, #skills {
   position: absolute;
   top: 20%;
   left: 10%;
@@ -37,17 +37,20 @@ body {
   left: 5%;
 }
 
-.home-links {
+.items {
   display: flex;
   flex-direction: column;
   font-size: 2rem;
   padding: 20px;
 }
 
-.home-link {
+.item {
   background-color: #BED38E;
   color: #2A2A35;
   margin-bottom: 10px;
+}
+
+.link {
   cursor: pointer;
 }
 
@@ -156,4 +159,34 @@ body {
 
 .about-links .fab:first-of-type {
   margin-right: 20px;
+}
+
+.skills-header {
+  font-family: 'Muli', sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -7px;
+  color: #2A2A35;
+  text-shadow:
+   -1px -1px 0 #BED38E,
+    1px -1px 0 #BED38E,
+    -1px 1px 0 #BED38E,
+     1px 1px 0 #BED38E;
+}
+
+.skills-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.subheader {
+  font-size: 3rem;
+  letter-spacing: -7px;
+}
+
+.skill {
+  width: 40%;
 }
