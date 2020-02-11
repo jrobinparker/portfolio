@@ -12,7 +12,7 @@ class Home extends React.Component {
   render() {
     return (
       <div id="home">
-        <div className="home-header">jeremy parker</div>
+        <div className="header">jeremy parker</div>
         <div className="home-links">
           <div className="home-link" id="link1">about me</div>
           <div className="home-link" id="link2">skills</div>

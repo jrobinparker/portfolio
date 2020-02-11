@@ -1,19 +1,20 @@
 body {
   background-color: #2A2A35;
+  font-family: 'Work Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
-  padding-left: 20px;
+
 }
 
-#home {
+#home, #about {
   position: absolute;
   top: 20%;
   left: 10%;
 }
 
-.home-header {
-  opacity: 0;
+.header {
   font-family: 'Muli', sans-serif;
   font-size: 5rem;
   font-weight: 900;
@@ -39,7 +40,6 @@ body {
 .home-links {
   display: flex;
   flex-direction: column;
-  font-family: 'Work Sans', sans-serif;
   font-size: 2rem;
   padding: 20px;
 }
@@ -93,4 +93,67 @@ body {
   left: 6%;
   top: 80.5%;
   z-index: -10;
+}
+
+#about {
+
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about-text-container {
+  font-size: 1.5rem;
+  padding: 5px 10px 5px 10px;
+  background-color: #BED38E;
+  color: #2A2A35;
+}
+
+.about-text-container::after {
+  content: '';
+  height: 76%;
+  width: 61.5%;
+  border: 1px solid #BED38E;
+  position: absolute;
+  left: 1%;
+  top: 25%;
+  z-index: -10;
+}
+
+.about-text {
+  opacity: 0;
+}
+
+.about-img {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-img img {
+  border-radius: 5px;
+}
+
+.about-links {
+  font-size: 3rem;
+  color: #BED38E;
+}
+
+.fab {
+  color: #2A2A35;
+  text-shadow:
+   -1px -1px 0 #BED38E,
+    1px -1px 0 #BED38E,
+    -1px 1px 0 #BED38E,
+     1px 1px 0 #BED38E;
+  cursor: pointer;
+}
+
+.about-links .fab:first-of-type {
+  margin-right: 20px;
 }
