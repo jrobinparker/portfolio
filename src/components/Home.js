@@ -4,9 +4,6 @@ import gsap from 'gsap';
 class Home extends React.Component {
 
   componentDidMount() {
-    const header = document.querySelector('.home-header')
-
-    gsap.to(header, .5, {opacity: 1, x: -5})
   }
 
   render() {

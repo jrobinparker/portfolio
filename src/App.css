@@ -10,7 +10,7 @@ body {
 
 #home, #about, #skills {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 10%;
 }
 
@@ -176,10 +176,8 @@ body {
 }
 
 .skills-container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  height: 40vh;
+  width: 60vw;
 }
 
 .subheader {
@@ -188,5 +186,7 @@ body {
 }
 
 .skill {
-  width: 40%;
+  display: inline-block;
+  height: 100%;
+  width: 50%;
 }

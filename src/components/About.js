@@ -8,6 +8,7 @@ gsap.registerPlugin(CSSRulePlugin)
 class About extends React.Component {
 
   componentDidMount() {
+    const header = document.querySelector('.header')
     const abtImg = document.querySelector('.about-img')
     const abtTextCt = document.querySelector('.about-text-container')
     const abtText = document.querySelector('.about-text')
