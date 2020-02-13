@@ -1,6 +1,5 @@
 import React from 'react';
-import gsap from 'gsap';
-import { Power1 } from 'gsap';
+import Skill from './Skill';
 
 class Skills extends React.Component {
   state = {
@@ -10,96 +9,18 @@ class Skills extends React.Component {
     dataScience: [ 'pandas', 'bokeh', 'nltk', 'web scraping' ]
   }
 
-  componentDidMount() {
-    const skills = document.querySelectorAll('.skill')
-    const skillItems = document.querySelectorAll('.item')
-    const skillText = document.querySelectorAll('.skill-text')
-
-    skills.forEach(skill => {
-      gsap.set(skill, {opacity: 0, y: 15})
-      gsap.to(skill, {duration: .5, opacity: 1, y: 0})
-    })
-
-    skillItems.forEach(item => {
-      gsap.set(item, {height: '5vh', width: '0vw'})
-      gsap.to(item, {delay: .5, duration: .5, ease: Power1.easeIn, width: '20vw', opacity: 1})
-    })
-
-    skillText.forEach(text => {
-      gsap.set(text, {opacity: 0})
-      gsap.to(text, {delay: 1, duration: .5, opacity: 1})
-    })
-  }
-
   render() {
-    let languages, frontEnd, backEnd, dataScience
-
-    languages =
-      <div className="items">
-        {this.state.languages.map(item => {
-          return (
-              <div className="item">
-                <span className="skill-text">{item}</span>
-              </div>
-          )
-        })}
-      </div>
-
-    frontEnd =
-      <div className="items">
-        {this.state.frontEnd.map(item => {
-          return (
-            <div className="item">
-              <span className="skill-text">{item}</span>
-            </div>
-          )
-        })}
-      </div>
-
-    backEnd =
-      <div className="items">
-        {this.state.backEnd.map(item => {
-          return (
-            <div className="item">
-              <span className="skill-text">{item}</span>
-            </div>
-          )
-        })}
-      </div>
-
-    dataScience =
-      <div className="items">
-        {this.state.dataScience.map(item => {
-          return (
-            <div className="item">
-              <span className="skill-text">{item}</span>
-            </div>
-          )
-        })}
-      </div>
 
     return (
       <div id="skills">
         <div className="skills-header">skills</div>
         <div className="skills-container">
-            <div className="skill">
-              <div className="header subheader">languages</div>
-                {languages}
-            </div>
-            <div className="skill">
-              <div className="header subheader">front end</div>
-                {frontEnd}
-            </div>
+          <Skill skillName={'languages'} skills={this.state.languages} />
+          <Skill skillName={'front end'} skills={this.state.frontEnd} />
         </div>
         <div className="skills-container">
-            <div className="skill">
-              <div className="header subheader">back end</div>
-                  {backEnd}
-            </div>
-            <div className="skill">
-              <div className="header subheader">data science</div>
-                {dataScience}
-            </div>
+          <Skill skillName={'back end'} skills={this.state.backEnd} />
+          <Skill skillName={'data science'} skills={this.state.dataScience} />
         </div>
       </div>
     )
