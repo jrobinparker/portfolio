@@ -11,17 +11,23 @@ class Skills extends React.Component {
   }
 
   componentDidMount() {
-    const skills = document.querySelectorAll('.item')
+    const skills = document.querySelectorAll('.skill')
+    const skillItems = document.querySelectorAll('.item')
     const skillText = document.querySelectorAll('.skill-text')
 
     skills.forEach(skill => {
-      gsap.set(skill, {height: '5vh', width: '0vw'})
-      gsap.to(skill, {duration: .5, ease: Power1.easeIn, width: '20vw', opacity: 1})
+      gsap.set(skill, {opacity: 0, y: 15})
+      gsap.to(skill, {duration: .5, opacity: 1, y: 0})
+    })
+
+    skillItems.forEach(item => {
+      gsap.set(item, {height: '5vh', width: '0vw'})
+      gsap.to(item, {delay: .5, duration: .5, ease: Power1.easeIn, width: '20vw', opacity: 1})
     })
 
     skillText.forEach(text => {
       gsap.set(text, {opacity: 0})
-      gsap.to(text, {delay: .5, opacity: 1})
+      gsap.to(text, {delay: 1, duration: .5, opacity: 1})
     })
   }
 
