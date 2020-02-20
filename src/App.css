@@ -233,14 +233,18 @@ body {
 .project-item {
   height: 90vh;
   width: 80vw;
-  margin-top: 10px;
   display: flex;
 }
 
 .project-img {
   width: 50%;
-  height: 60%;
-  background-color: red;
+  height: 50%;
+  align-self: center;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .project-about {
@@ -248,6 +252,10 @@ body {
   width: 50%;
   margin-left: 10px;
   padding: 0px 10px 0px 10px;
+}
+
+.project-header {
+  letter-spacing: -6px;
 }
 
 .project-item ul {
@@ -269,4 +277,5 @@ body {
   color: #2A2A35;
   width: 100%;
   font-size: 1.5rem;
+  margin-top: -5px;
 }
