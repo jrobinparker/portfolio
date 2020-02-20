@@ -2,15 +2,15 @@ body {
   background-color: #2A2A35;
   font-family: 'Work Sans', sans-serif;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .container {
-  margin: 10%;
+  margin: .5% 10% 0% 10%;
 }
 
 #home, #about, #skills, #exp {
   height: 100vh;
-  position: relative;
 }
 
 .header {
@@ -25,15 +25,6 @@ body {
     1px -1px 0 #BED38E,
     -1px 1px 0 #BED38E,
      1px 1px 0 #BED38E;
-}
-
-.vert-line {
-  display: inline-block;
-  height: 20vh;
-  width: 4px;
-  background-color: black;
-  position: relative;
-  left: 5%;
 }
 
 .items {
@@ -228,4 +219,54 @@ body {
 .other-exp-text {
   position: relative;
   top: 25%;
+}
+
+.projects-container {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-item {
+  height: 90vh;
+  width: 80vw;
+  margin-top: 10px;
+  display: flex;
+}
+
+.project-img {
+  width: 50%;
+  height: 60%;
+  background-color: red;
+}
+
+.project-about {
+  height: 100vh;
+  width: 50%;
+  margin-left: 10px;
+  padding: 0px 10px 0px 10px;
+}
+
+.project-item ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -7%;
+}
+
+.project-item li {
+  margin: 0px 10px 10px 0px;
+  background-color: #BED38E;
+  color: #2A2A35;
+}
+
+.project-text {
+  background-color: #BED38E;
+  color: #2A2A35;
+  width: 100%;
+  font-size: 1.5rem;
 }

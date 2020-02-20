@@ -37,7 +37,6 @@ class About extends React.Component {
                 <div>I've also expanded my company's online learning offerings with the latest in L&D tech and co-led the effort to modernize the firm's online curriculum with a new LMS.</div>
                 <div>I have a number of personal projects, including a community-driven Japanese language learning app built on the MERN stack, available in my GitHub repository.</div>
                 <div>Aside from the world of L&D, data science, and web development, I'm also a Japanese speaker and a big fan of all things 80's, art, nature, sushi, and crab cakes.</div>
-
               </div>
             </div>
             <div className="about-img">
