@@ -32,7 +32,13 @@ class About extends React.Component {
           <div className="header">about me</div>
           <div className="about-content">
             <div className="about-text-container">
-              <div className="about-text">Lorem ipsum dolor amet portland pabst +1 seitan fashion axe hella subway tile viral green juice tacos flexitarian direct trade plaid cornhole roof party. Lyft single-origin coffee jianbing brunch, poke etsy retro intelligentsia. Direct trade quinoa migas before they sold out post-ironic. Four loko street art pinterest portland echo park occupy gluten-free beard plaid. Waistcoat lyft etsy letterpress cold-pressed fashion axe church-key celiac. Banh mi irony shoreditch keytar health goth cornhole. Jean shorts fashion axe occupy snackwave tofu meditation next level.</div>
+              <div className="about-text">
+                <div>I've improved employee data reporting using data science tools in Python, built a full-stack data visualization app for firm's Orientation event data with Flask and React, created responsive HTML5 pages for the firm's learning management system, and developed custom JavaScript solutions for the Articulate Storyline training software.</div>
+                <div>I've also expanded my company's online learning offerings with the latest in L&D tech and co-led the effort to modernize the firm's online curriculum with a new LMS.</div>
+                <div>I have a number of personal projects, including a community-driven Japanese language learning app built on the MERN stack, available in my GitHub repository.</div>
+                <div>Aside from the world of L&D, data science, and web development, I'm also a Japanese speaker and a big fan of all things 80's, art, nature, sushi, and crab cakes.</div>
+
+              </div>
             </div>
             <div className="about-img">
               <img src={require('../assets/photo.jpeg')} />

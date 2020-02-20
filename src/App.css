@@ -5,13 +5,12 @@ body {
 }
 
 .container {
-
+  margin: 10%;
 }
 
-#home, #about, #skills {
-  position: absolute;
-  top: 10%;
-  left: 10%;
+#home, #about, #skills, #exp {
+  height: 100vh;
+  position: relative;
 }
 
 .header {
@@ -44,7 +43,7 @@ body {
   padding: 20px;
 }
 
-.item {
+.item, .exp-item, .other-exp-item {
   background-color: #BED38E;
   color: #2A2A35;
   margin-bottom: 10px;
@@ -53,54 +52,52 @@ body {
 .link {
   cursor: pointer;
 }
-
+/*
 #link1::after {
   content: '';
-  height: 11%;
-  width: 90%;
+  height: 5%;
+  width: 20%;
   border: 1px solid #BED38E;
   position: absolute;
-  left: 6%;
-  top: 37%;
+  left: 2%;
+  top: 15%;
   z-index: -10;
 }
 
 #link2::after {
   content: '';
-  height: 11%;
-  width: 90%;
+  height: 5%;
+  width: 20%;
   border: 1px solid #BED38E;
   position: absolute;
-  left: 6%;
-  top: 51.5%;
+  left: 2%;
+  top: 21.25%;
   z-index: -10;
 }
 
 #link3::after {
   content: '';
-  height: 11%;
-  width: 90%;
+  height: 5%;
+  width: 20%;
   border: 1px solid #BED38E;
   position: absolute;
-  left: 6%;
-  top: 66%;
+  left: 2%;
+  top: 27.5%;
   z-index: -10;
 }
 
 #link4::after {
   content: '';
-  height: 11%;
-  width: 90%;
+  height: 5%;
+  width: 20%;
   border: 1px solid #BED38E;
   position: absolute;
-  left: 6%;
-  top: 80.5%;
+  left: 2%;
+  top: 33.5%;
   z-index: -10;
 }
+*/
 
-#about {
-
-}
 
 .about-content {
   display: flex;
@@ -108,13 +105,14 @@ body {
   width: 100%;
 }
 
-.about-text-container {
+.about-text-container, .exp-text-container {
   font-size: 1.5rem;
   padding: 5px 10px 5px 10px;
   background-color: #BED38E;
   color: #2A2A35;
 }
 
+/*
 .about-text-container::after {
   content: '';
   height: 76%;
@@ -125,6 +123,7 @@ body {
   top: 25%;
   z-index: -10;
 }
+*/
 
 .about-text {
   opacity: 0;
@@ -175,7 +174,7 @@ body {
      1px 1px 0 #BED38E;
 }
 
-.skills-container {
+.skills-container, .edu-container {
   height: 40vh;
   width: 60vw;
 }
@@ -189,4 +188,44 @@ body {
   display: inline-block;
   height: 100%;
   width: 50%;
+}
+
+.exp-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.exp-area {
+  height: 50vh;
+}
+
+.exp-text-container {
+  padding: 0px;
+  margin-left: 20px;
+}
+
+.exp-text {
+  font-size: 1rem;
+}
+
+.exp-item-text {
+  font-size: 1.5rem;
+}
+
+.other-exp-container {
+
+}
+
+.other-exp-items {
+  display: inline-block;
+  width: 33%;
+}
+
+.other-exp-item {
+  font-size: 1.5rem;
+}
+
+.other-exp-text {
+  position: relative;
+  top: 25%;
 }
