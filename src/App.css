@@ -137,7 +137,7 @@ body {
   color: #BED38E;
 }
 
-.fab {
+.fab, .fas {
   color: #2A2A35;
   text-shadow:
    -1px -1px 0 #BED38E,
@@ -221,25 +221,61 @@ body {
   top: 25%;
 }
 
-.projects-container {
+.slider {
   height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
-.project-item {
+.slide {
+  position: relative;
   height: 90vh;
   width: 80vw;
+  padding: 20px;
+  padding-top: 100px;
   display: flex;
+  justify-content: center;
+  margin-right: 70px;
+}
+
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%;
+  height: 90%;
+  background: #2A2A35;
+  border: none;
+}
+
+button i {
+  font-size: 2rem;
+  color: #2A2A35;
+  text-shadow:
+   -1px -1px 0 #BED38E,
+    1px -1px 0 #BED38E,
+    -1px 1px 0 #BED38E,
+     1px 1px 0 #BED38E;
+}
+
+button i:hover {
+  cursor: pointer;
+}
+
+#left {
+  left: 0%;
+}
+
+#right {
+  right: 0%;
 }
 
 .project-img {
   width: 50%;
   height: 50%;
-  align-self: center;
+  margin-top: 5%;
 }
 
 .project-img img {
@@ -252,13 +288,19 @@ body {
   width: 50%;
   margin-left: 10px;
   padding: 0px 10px 0px 10px;
+  align-self: center;
+}
+
+.no-img {
+  position: relative;
+  left: -27%;
 }
 
 .project-header {
   letter-spacing: -6px;
 }
 
-.project-item ul {
+.slide ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -266,7 +308,7 @@ body {
   margin-left: -7%;
 }
 
-.project-item li {
+.slide li {
   margin: 0px 10px 10px 0px;
   background-color: #BED38E;
   color: #2A2A35;
@@ -278,4 +320,18 @@ body {
   width: 100%;
   font-size: 1.5rem;
   margin-top: -5px;
+}
+
+.project-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.proj-icon {
+  font-size: 4rem;
+}
+
+.proj-icon:first-of-type {
+  margin-right: 50px;
 }

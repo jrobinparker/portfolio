@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Project = props => {
-  const { name, tech, about, github, img } = props
+  const { name, tech, about, github, img, url } = props
   return(
-    <div className="project-item">
+    <div className="slide">
       {img ? (
         <React.Fragment>
           <div className="project-img">
@@ -21,18 +21,31 @@ const Project = props => {
             <p className="project-text">
               {about}
             </p>
-            <div className="git">
-              {!github ? (
-                <p className="project-text">work project -- not shareable</p>
-              ) : (
-                <p>link></p>
-              )}
-            </div>
+            <div className="project-links">
+                {!github ? (
+                  null
+                ) : (
+                  <div className="git">
+                    <i className="fab fa-github-square proj-icon"
+                      onClick={() => window.open(github, '_blank')}
+                    />
+                  </div>
+                )}
+                {!url ? (
+                  null
+                ) : (
+                  <div className="git">
+                    <i className="fas fa-external-link-square-alt proj-icon"
+                      onClick={() => window.open(url, '_blank')}
+                    />
+                  </div>
+                )}
+              </div>
           </div>
         </React.Fragment>
       ) : (
         <React.Fragment>
-        <div className="project-about" style={{position: 'relative', top: '15%'}}>
+        <div className="project-about no-img" style={{position: 'relative', top: '15%'}}>
           <div className="header subheader project-header">{name}</div>
           <ul>
             {
@@ -44,13 +57,22 @@ const Project = props => {
           <p className="project-text" style={{width: '70vw'}}>
             {about}
           </p>
-          <div className="git">
-            {!github ? (
-              <p className="project-text">work project -- code not shareable</p>
+          <div className="project-links">
+              {!github ? (
+                null
+              ) : (
+                  <i className="fab fa-github-square proj-icon"
+                  onClick={() => window.open(github, '_blank')}
+                  />
+              )}
+            {!url ? (
+              null
             ) : (
-              <p>link></p>
+                <i className="fas fa-external-link-square-alt proj-icon"
+                  onClick={() => window.open(url, '_blank')}
+                />
             )}
-          </div>
+            </div>
         </div>
         </React.Fragment>
       )}
