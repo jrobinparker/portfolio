@@ -233,22 +233,31 @@ body {
   height: 90vh;
   width: 80vw;
   padding: 20px;
-  padding-top: 100px;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   margin-right: 70px;
 }
 
-.filters div {
-  display: inline-block;
-  margin-right: 10px;
+.filters {
+  display: flex;
   margin-top: 10px;
+}
+
+.filters div {
+  display: inline-flex;
+  flex-direction: column;
   cursor: pointer;
   font-size: 2rem;
   letter-spacing: -3px;
+  margin-right: 5px;
+  width: 10%;
 }
 
 .highlight {
+  margin-top: 5px;
+  width: 0%;
+  height: 2px;
   background-color: #BED38E;
 }
 

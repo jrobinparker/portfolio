@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Project from './Project';
+import FilterButton from './FilterButton';
 
 const Slider = props => {
   const [ x, setX ] = useState(0);
-  const [projects, setProjects] = useState(props.projects)
+  const [ projects, setProjects ] = useState(props.projects)
 
   const goLeft = () => {
     x === 0 ? setX(-100 * (projects.length - 1)) : setX(x + 100)
@@ -15,37 +16,36 @@ const Slider = props => {
     console.log(x)
   }
 
+  const filterAll = () => {
+    setProjects(props.projects)
+    setX(0)
+  }
+
+  const filterWork = () => {
+    setProjects(props.projects.filter(project => project.type === 'work'))
+    setX(0)
+  }
+
+  const filterPersonal = () => {
+    setProjects(props.projects.filter(project => project.type === 'personal'))
+    setX(0)
+  }
+
   return (
     <div>
       <div className="filters">
-        <div
-          className="header"
-          id="all"
-          onClick={() => {
-            setProjects(props.projects)
-            setX(0)
-        }}
-        >
-          all
-        </div>
-        <div
-          className="header"
-          onClick={() => {
-            setProjects(props.projects.filter(project => project.type === 'work'))
-            setX(0)
-            console.log(x)
-        }}>
-          work
-        </div>
-        <div
-          className="header"
-          onClick={() => {
-            setProjects(props.projects.filter(project => project.type === 'personal'))
-            setX(0)
-            console.log(x)
-        }}>
-          personal
-        </div>
+        <FilterButton
+          name='all'
+          filter={filterAll}
+        />
+        <FilterButton
+          name='work'
+          filter={filterWork}
+        />
+        <FilterButton
+          name='personal'
+          filter={filterPersonal}
+        />
       </div>
     <div className="slider">
       {projects.map((project, i) => {
