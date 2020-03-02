@@ -239,13 +239,25 @@ body {
   margin-right: 70px;
 }
 
+.filters div {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  letter-spacing: -3px;
+}
+
+.highlight {
+  background-color: #BED38E;
+}
 
 .slider-button {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   width: 5%;
-  height: 90%;
+  height: 80%;
   background: #2A2A35;
   border: none;
 }
