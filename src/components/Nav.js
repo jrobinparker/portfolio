@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import gsap from 'gsap';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const expandNav = () => {
@@ -20,22 +21,11 @@ const Nav = () => {
       <div className="nav-menu" id="nav-menu">
         <div className="nav-links">
           <ul className="nav-links-list">
-            <li onClick={() => {
-              document.getElementById('top').scrollIntoView({behavior: 'smooth'})
-              this.expandNav()
-            }}>home</li>
-            <li onClick={() => {
-              document.querySelector('.about-content').scrollIntoView({behavior: 'smooth'})
-              this.expandNav()
-            }}>about me</li>
-            <li onClick={() => {
-              document.querySelector('.sites-header-text').scrollIntoView({behavior: 'smooth'})
-              this.expandNav()
-            }}>sites</li>
-            <li onClick={() => {
-              document.querySelector('.contact-header').scrollIntoView({behavior: 'smooth'})
-              this.expandNav()
-            }}>contact</li>
+            <li><Link to={'/'} onClick={expandNav}>home</Link></li>
+            <li><Link to={'/about'} onClick={expandNav}>about me</Link></li>
+            <li><Link to={'/skills'} onClick={expandNav}>skills</Link></li>
+            <li><Link to={'/experience'} onClick={expandNav}>experience</Link></li>
+            <li><Link to={'/projects'} onClick={expandNav}>projects</Link></li>
           </ul>
         </div>
       </div>

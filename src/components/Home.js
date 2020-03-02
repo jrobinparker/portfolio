@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 
 class Home extends React.Component {
@@ -11,10 +12,10 @@ class Home extends React.Component {
       <div id="home">
         <div className="header">jeremy parker</div>
         <div className="items">
-          <div className="item link" id="link1">about me</div>
-          <div className="item link" id="link2">skills</div>
-          <div className="item link" id="link3">experience</div>
-          <div className="item link" id="link4">projects</div>
+          <div className="item link" id="link1"><Link to={'/about'}>about me</Link></div>
+          <div className="item link" id="link2"><Link to={'/skills'}>skills</Link></div>
+          <div className="item link" id="link3"><Link to={'/experience'}>experience</Link></div>
+          <div className="item link" id="link4"><Link to={'/projects'}>projects</Link></div>
         </div>
       </div>
     )
