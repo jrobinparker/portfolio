@@ -37,8 +37,8 @@ class Projects extends React.Component {
         tech: ['javascript', 'node', 'express', 'mongodb', 'mongoose', 'bcrypt', 'jwt', 'react', 'react router', 'redux'],
         about: 'I developed this full-stack app as a platform for Japanese learners to create and share lessons with rich text, videos from YouTube and other platforms, and flash card decks. Users can also combine multiple lessons into a course and view a list of courses created and completed. The app uses express and mongodb on the back end, bcrypt and jwt for authentication, redux for state management, and react for the front end.',
         github: 'https://github.com/jrobinparker/renshu',
-        img: 'ago-app-gif.gif',
-        url: 'https://jrobinparker.github.io/renshu',
+        img: 'renshu-gif.gif',
+        url: 'https://guarded-escarpment-15012.herokuapp.com/',
         type: 'personal'
       },
       {
@@ -46,7 +46,7 @@ class Projects extends React.Component {
         tech: ['javascript', 'axios', 'cheerio', 'gsap', 'react'],
         about: 'When translating, its useful to search multiple dictionaries to get a wide array of terms. This app searches three separate Japanese-English dictionaries in one search, saving time, effort, and overlap using axios. It scrapes the returned data using cheerio and returns the list of results back to the querySelector.',
         github: 'https://github.com/jrobinparker/jdictsearch',
-        img: 'ago-app-gif.gif',
+        img: 'jdict-gif.gif',
         url: 'https://jrobinparker.github.io/jdictsearch',
         type: 'personal'
       },
@@ -55,7 +55,7 @@ class Projects extends React.Component {
         tech: ['javascript', 'gsap', 'react', 'vectary'],
         about: 'This is a home page for a fictional blockchain. In addition to an animated timeline that resizes based on the viewport size, I also created a hero image using Vectary, an online 3d modeling tool.',
         github: 'https://github.com/jrobinparker/jchain',
-        img: 'ago-app-gif.gif',
+        img: 'jchain-gif.gif',
         url: 'https://jrobinparker.github.io/jchain',
         type: 'personal'
       },
@@ -64,7 +64,7 @@ class Projects extends React.Component {
         tech: ['javascript', 'gsap', 'react'],
         about: 'This is the proposed page for an upcoming martial arts tournament in southern New Jersey.',
         github: 'https://github.com/jrobinparker/battle-at-the-shore',
-        img: 'ago-app-gif.gif',
+        img: 'bats-gif.gif',
         url: 'https://jrobinparker.github.io/battle-at-the-shore',
         type: 'personal'
       }

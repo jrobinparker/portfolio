@@ -59,6 +59,7 @@ const Slider = props => {
               img={project.img}
               url={project.url}
               type={project.type}
+              number={i}
             />
           </div>
         )

@@ -233,7 +233,7 @@ body {
   height: 90vh;
   width: 80vw;
   padding: 20px;
-  margin-top: 5%;
+  margin-top: 2.5%;
   display: flex;
   justify-content: center;
   margin-right: 70px;
@@ -355,4 +355,19 @@ button i:hover {
 
 .proj-icon:first-of-type {
   margin-right: 50px;
+}
+
+.git {
+  display: flex;
+  flex-direction: column;
+}
+
+.git-link, .web-link {
+  opacity: 0;
+  margin-left: 2px;
+  background-color: #BED38E;
+  color: #2A2A35;
+  width: 50%;
+  align-self: flex-start;
+  text-align: center;
 }

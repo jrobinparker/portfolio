@@ -1,7 +1,19 @@
 import React from 'react';
+import gsap from 'gsap';
 
 const Project = props => {
-  const { name, tech, about, github, img, url } = props
+  const { name, tech, about, github, img, url, number } = props
+
+  const showLink = className => {
+    const git = document.getElementById(`${className}`)
+    gsap.to(git, .2, {y: 5, opacity: 1})
+  }
+
+  const hideLink = className => {
+    const git = document.getElementById(`${className}`)
+    gsap.to(git, .2, {y: -5, opacity: 0})
+  }
+
   return(
     <div className="slide">
       {img ? (
@@ -28,7 +40,14 @@ const Project = props => {
                   <div className="git">
                     <i className="fab fa-github-square proj-icon"
                       onClick={() => window.open(github, '_blank')}
+                      onMouseEnter={() =>
+                        showLink(`git-${name}-${number}`)
+                      }
+                      onMouseLeave={() =>
+                        hideLink(`git-${name}-${number}`)
+                      }
                     />
+                    <span className="git-link" id={`git-${name}-${number}`}>github</span>
                   </div>
                 )}
                 {!url ? (
@@ -37,7 +56,14 @@ const Project = props => {
                   <div className="git">
                     <i className="fas fa-external-link-square-alt proj-icon"
                       onClick={() => window.open(url, '_blank')}
+                      onMouseEnter={() =>
+                        showLink(`web-${name}-${number}`)
+                      }
+                      onMouseLeave={() =>
+                        hideLink(`web-${name}-${number}`)
+                      }
                     />
+                    <span className="web-link" id={`web-${name}-${number}`}>visit</span>
                   </div>
                 )}
               </div>
@@ -61,16 +87,30 @@ const Project = props => {
               {!github ? (
                 null
               ) : (
+                <div className="git">
                   <i className="fab fa-github-square proj-icon"
                   onClick={() => window.open(github, '_blank')}
+                  onMouseEnter={showLink}
+                  onMouseLeave={hideLink}
                   />
+                  <span className="git-link">github</span>
+                </div>
               )}
             {!url ? (
               null
             ) : (
+              <div className="git">
                 <i className="fas fa-external-link-square-alt proj-icon"
                   onClick={() => window.open(url, '_blank')}
+                  onMouseEnter={() =>
+                    showLink('web-link')
+                  }
+                  onMouseLeave={() =>
+                    hideLink('web-link')
+                  }
                 />
+                <span className="web-link">visit</span>
+              </div>
             )}
             </div>
         </div>
