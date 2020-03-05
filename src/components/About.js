@@ -19,7 +19,7 @@ class About extends React.Component {
     gsap.set(abtTextCt, {height: '0vh', width: '0vh'})
     gsap.set(rule, {cssRule: {opacity: 0}})
 
-    tl.to(abtTextCt, {duration: .5, ease: Power1.easeIn, height: '38vh', width: '60vw' })
+    tl.to(abtTextCt, {duration: .5, ease: Power1.easeIn, height: '60vh', width: '60vw' })
       .to(rule, .1, {cssRule: {opacity: 1}})
       .to(abtText, .1, { opacity: 1 })
       .to(abtImg, .25, { visibility: 'visible', opacity: 1 })

@@ -46,11 +46,12 @@ body {
 }
 
 .link {
-
+  width: 20%;
 }
 
 .link a {
-
+  text-decoration: none;
+  color: #2A2A35;
 }
 /*
 #link1::after {
@@ -254,6 +255,7 @@ body {
 }
 
 .filters div {
+  z-index: 100;
   display: inline-flex;
   flex-direction: column;
   cursor: pointer;

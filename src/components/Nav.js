@@ -11,8 +11,8 @@ class Nav extends React.Component {
     const menu = document.querySelector('.nav-menu')
     const icon = document.getElementById('nav-icon')
     if (!this.state.expand) {
-      gsap.set(menu, {zIndex: 100})
-      gsap.set(icon, {zIndex: 200})
+      gsap.set(menu, {zIndex: 200})
+      gsap.set(icon, {zIndex: 300})
       document.getElementById('nav-icon').classList.toggle('change-icon')
       gsap.to(menu, .25, {y: 20})
     } else {
