@@ -32,7 +32,7 @@ const Slider = props => {
   }
 
   return (
-    <div>
+    <div id="slider">
       <div className="filters">
         <FilterButton
           name='all'

@@ -13,6 +13,11 @@ body {
   height: 100vh;
 }
 
+#home-content {
+  position: relative;
+  top: 25%;
+}
+
 .header {
   font-family: 'Muli', sans-serif;
   font-size: 5rem;
@@ -41,7 +46,11 @@ body {
 }
 
 .link {
-  cursor: pointer;
+
+}
+
+.link a {
+
 }
 /*
 #link1::after {
@@ -375,14 +384,14 @@ button i:hover {
 /* nav styles */
 
 .nav {
-  z-index: 100;
   position: absolute;
   top: 2%;
   left: 1.25%;
 }
 
 .nav-icon {
-  position: absolute;
+  z-index: 100;
+  position: sticky;
   top: 0;
   width: 2.5%;
   height: auto;
@@ -411,7 +420,7 @@ button i:hover {
 }
 
 .change-icon .line {
-  background-color: #BED38E;
+  background-color: #2A2A35;
 }
 
 .change-icon #line1 {
@@ -427,13 +436,13 @@ button i:hover {
 }
 
 .nav-menu {
+  position: sticky;
   height: 105vh;
   width: 100vw;
+  transform: translateY(-100%);
   margin-top: -2.5%;
   margin-left: -1%;
-  background-color: #2A2A35;
-  opacity: 0;
-  visibility: hidden;
+  background-color: #BED38E;
 }
 
 .nav-links {

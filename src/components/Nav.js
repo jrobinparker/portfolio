@@ -10,13 +10,14 @@ class Nav extends React.Component {
   expandNav() {
     const menu = document.querySelector('.nav-menu')
     const icon = document.getElementById('nav-icon')
-    const tl = gsap.timeline()
     if (!this.state.expand) {
+      gsap.set(menu, {zIndex: 100})
+      gsap.set(icon, {zIndex: 200})
       document.getElementById('nav-icon').classList.toggle('change-icon')
-      gsap.to(menu, .25, {visibility: 'visible', opacity: 1})
+      gsap.to(menu, .25, {y: 20})
     } else {
       document.getElementById('nav-icon').classList.toggle('change-icon')
-      gsap.to(menu, .25, {visibility: 'hidden', opacity: 0})
+      gsap.to(menu, .25, {y: -1000})
     }
   }
 
