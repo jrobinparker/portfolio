@@ -24,7 +24,7 @@ const FilterButton = props => {
 
     return (
         <div
-          className="header"
+          className="header filter"
           onClick={filter}
           onMouseEnter={addHighlight}
           onMouseLeave={removeHighlight}

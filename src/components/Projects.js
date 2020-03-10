@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from './Project';
 import Slider from './Slider';
+import gsap from 'gsap';
 
 class Projects extends React.Component {
   state = {
@@ -44,7 +45,7 @@ class Projects extends React.Component {
       {
         name: 'jDictSearch',
         tech: ['javascript', 'axios', 'cheerio', 'gsap', 'react'],
-        about: 'When translating, its useful to search multiple dictionaries to get a wide array of terms. This app searches three separate Japanese-English dictionaries in one search, saving time, effort, and overlap using axios. It scrapes the returned data using cheerio and returns the list of results back to the querySelector.',
+        about: 'When translating, its useful to search multiple dictionaries to get a wide array of terms. This app searches three separate Japanese-English dictionaries in one search, saving time, effort, and overlap using axios. It scrapes the returned data using cheerio and returns the list of results back to the user.',
         github: 'https://github.com/jrobinparker/jdictsearch',
         img: 'jdict-gif.gif',
         url: 'https://jrobinparker.github.io/jdictsearch',
@@ -70,11 +71,28 @@ class Projects extends React.Component {
       }
     ]
   }
+
+  componentDidMount() {
+    const header = document.getElementById('projects-header')
+    const filters = document.querySelectorAll('.filter')
+    const slider = document.querySelector('.slider')
+    gsap.set(header, {opacity: 0, y: 50})
+    gsap.set(slider, {opacity: 0})
+    gsap.to(header, .5, {opacity: 1, y: 0})
+
+    filters.forEach(item => {
+      gsap.set(item, {opacity: 0, y: 50})
+      gsap.to(item, {delay: .5, duration: .5, opacity: 1, y: 0})
+    })
+
+    gsap.to(slider, .5, {delay: 1, opacity: 1})
+  }
+
   render() {
 
     return (
       <div id="projects">
-        <div className="header">Projects</div>
+        <div className="header" id="projects-header">Projects</div>
         <Slider projects={this.state.projects} />
       </div>
     )
