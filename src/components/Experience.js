@@ -73,37 +73,41 @@ class Experience extends React.Component {
   render() {
     return (
       <div id="exp">
-      <div className="header">experience</div>
-        <div className="exp-container">
-            <div className="items">
-              <div className="exp-item">
-                <span className="exp-item-text">Analysis Group</span>
+      <div id="exp-content">
+        <div className="header">experience</div>
+          <div className="exp-container">
+              <div className="items">
+                <div className="exp-item">
+                  <span className="exp-item-text">Analysis Group</span>
+                </div>
+                <div className="exp-item">
+                  <span className="exp-item-text">Senior Learning Tech Specialist</span>
+                </div>
+                <div className="exp-item">
+                  <span className="exp-item-text">10/2011 - present</span>
+                </div>
               </div>
-              <div className="exp-item">
-                <span className="exp-item-text">Senior Learning Tech Specialist</span>
-              </div>
-              <div className="exp-item">
-                <span className="exp-item-text">10/2011 - present</span>
-              </div>
-            </div>
-            <div className="exp-area">
-              <div className="exp-text-container">
-                <div className="exp-text">
-                  <p>Developed a solution to deliver higher quality employee metrics for case staffing and marketing initiatives by analyzing employee resumes using natural language processing and Pandas.</p>
-                  <p>Built a desktop GUI app using tkinter, Selenium, and pandas to get language proficiency data from 1000+ employee profiles, providing essential data for international marketing initiatives.</p>
-                  <p>Created a data visualization dashboard to analyze deeply-nested JSON data from the firm's events app with Pandas, Bokeh, Flask, React, and Bulma.</p>
-                  <p>Create responsive HTML5 pages for LMS.</p>
-                  <p>Develop custom JavaScript solutions for the Articulate Storyline course builder software.</p>
-                  <p>Build detailed SharePoint workflows to manage compliance tasks, from task allocation for medical writing teams to a compliance management system for new hire onboarding, saving over $15,000 in yearly vendor fees.</p>
+              <div className="exp-area">
+                <div className="exp-text-container">
+                  <div className="exp-text">
+                    <p>Developed a solution to deliver higher quality employee metrics for case staffing and marketing initiatives by analyzing employee resumes using natural language processing and Pandas.</p>
+                    <p>Built a desktop GUI app using tkinter, Selenium, and pandas to get language proficiency data from 1000+ employee profiles, providing essential data for international marketing initiatives.</p>
+                    <p>Created a data visualization dashboard to analyze deeply-nested JSON data from the firm's events app with Pandas, Bokeh, Flask, React, and Bulma.</p>
+                    <p>Create responsive HTML5 pages for LMS.</p>
+                    <p>Develop custom JavaScript solutions for the Articulate Storyline course builder software.</p>
+                    <p>Build detailed SharePoint workflows to manage compliance tasks, from task allocation for medical writing teams to a compliance management system for new hire onboarding, saving over $15,000 in yearly vendor fees.</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="header subheader other-header">other experience</div>
-          <div className="other-exp-container">
-            {this.state.otherExp.map(exp => {
-              return <OtherExp expData={exp} />
-            })}
+            <div id="other-exp">
+              <div className="header subheader other-header">other experience</div>
+              <div className="other-exp-container">
+                {this.state.otherExp.map(exp => {
+                  return <OtherExp expData={exp} />
+                })}
+              </div>
+            </div>
           </div>
       </div>
     )

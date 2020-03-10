@@ -8,18 +8,20 @@ gsap.registerPlugin(CSSRulePlugin)
 class About extends React.Component {
 
   componentDidMount() {
-    const header = document.querySelector('.header')
+    const header = document.getElementById('about-header')
     const abtImg = document.querySelector('.about-img')
     const abtTextCt = document.querySelector('.about-text-container')
     const abtText = document.querySelector('.about-text')
     const rule = CSSRulePlugin.getRule(".about-text-container:after")
     const tl = gsap.timeline()
 
+    gsap.set(header, {opacity: 0, y: 50})
     gsap.set(abtImg, {visibility: 'hidden', opacity: 0})
-    gsap.set(abtTextCt, {height: '0vh', width: '0vh'})
+    gsap.set(abtTextCt, {height: '0vh', width: '0vh', visibility: 'hidden'})
     gsap.set(rule, {cssRule: {opacity: 0}})
 
-    tl.to(abtTextCt, {duration: .5, ease: Power1.easeIn, height: '60vh', width: '60vw' })
+    tl.to(header, .5, {opacity: 1, y: 0})
+      .to(abtTextCt, {delay: .1, duration: .5, ease: Power1.easeIn, visibility: 'visible', height: '60vh', width: '60vw' })
       .to(rule, .1, {cssRule: {opacity: 1}})
       .to(abtText, .1, { opacity: 1 })
       .to(abtImg, .25, { visibility: 'visible', opacity: 1 })
@@ -29,7 +31,8 @@ class About extends React.Component {
   render() {
     return (
       <div id="about">
-          <div className="header">about me</div>
+        <div id="about-content">
+          <div className="header" id="about-header">about me</div>
           <div className="about-content">
             <div className="about-text-container">
               <div className="about-text">
@@ -47,6 +50,7 @@ class About extends React.Component {
               </div>
             </div>
           </div>
+        </div>
       </div>
     )
   }

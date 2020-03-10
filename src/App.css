@@ -40,7 +40,7 @@ body {
 }
 
 .items a {
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .item, .exp-item, .other-exp-item {
@@ -130,6 +130,12 @@ body {
 }
 */
 
+#about-content {
+  position: relative;
+  top: 10%;
+  left: 5%;
+}
+
 .about-text {
   opacity: 0;
 }
@@ -165,6 +171,12 @@ body {
   margin-right: 20px;
 }
 
+#skills-content {
+  position: relative;
+  top: 5%;
+  left: 0%;
+}
+
 .skills-header {
   font-family: 'Muli', sans-serif;
   font-size: 5rem;
@@ -181,7 +193,7 @@ body {
 
 .skills-container, .edu-container {
   height: 40vh;
-  width: 60vw;
+  width: 100vw;
 }
 
 .subheader {
@@ -192,7 +204,12 @@ body {
 .skill {
   display: inline-block;
   height: 100%;
-  width: 50%;
+  width: 30%;
+}
+
+#exp-content {
+  position: relative;
+  top: 2%;
 }
 
 .exp-container {
@@ -217,8 +234,8 @@ body {
   font-size: 1.5rem;
 }
 
-.other-exp-container {
-
+#other-exp {
+  margin-top: -4%;
 }
 
 .other-exp-items {
