@@ -39,6 +39,10 @@ body {
   padding: 20px;
 }
 
+.items a {
+  text-decoration: none;  
+}
+
 .item, .exp-item, .other-exp-item {
   background-color: #BED38E;
   color: #2A2A35;
