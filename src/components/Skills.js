@@ -1,34 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Skill from './Skill';
+import VisibilitySensor from 'react-visibility-sensor';
 
-class Skills extends React.Component {
-  state = {
-    languages: [ 'javascript', 'python', 'ruby', 'sql' ],
-    frontEnd: [ 'html | css', 'react | redux', 'gsap', 'css frameworks' ],
-    backEnd: [ 'node.js | express', 'django | flask', 'rails | sinatra', 'mongoose' ],
-    dataScience: [ 'pandas', 'bokeh', 'nltk', 'web scraping' ],
-    other: ['sharepoint', 'training software', 'japanese (n2)']
-  }
-
-  render() {
+const Skills = () => {
+  const [ languages ] = useState(['javascript', 'python', 'ruby', 'sql' ])
+  const [ frontEnd ] = useState([ 'html | css', 'react | redux', 'gsap', 'css frameworks' ])
+  const [ backEnd ] = useState([ 'node.js | express', 'django | flask', 'rails | sinatra', 'mongoose' ])
+  const [ dataScience ] = useState([ 'pandas', 'bokeh', 'nltk', 'web scraping' ])
+  const [ other ] = useState(['sharepoint', 'training software', 'japanese (n2)'])
 
     return (
-      <div id="skills">
-        <div id="skills-content">
-          <div className="skills-header">skills</div>
-          <div className="skills-container">
-            <Skill skillName={'languages'} skills={this.state.languages} />
-            <Skill skillName={'front end'} skills={this.state.frontEnd} />
-            <Skill skillName={'other'} skills={this.state.other} />
-          </div>
-          <div className="skills-container">
-            <Skill skillName={'back end'} skills={this.state.backEnd} />
-            <Skill skillName={'data science'} skills={this.state.dataScience} />
+        <div id="skills">
+          <div id="skills-content">
+            <div className="skills-header">skills</div>
+            <div className="skills-container">
+              <Skill skillName={'languages'} skills={languages} />
+              <Skill skillName={'front end'} skills={frontEnd} />
+              <Skill skillName={'other'} skills={other} />
+            </div>
+            <div className="skills-container">
+              <Skill skillName={'back end'} skills={backEnd} />
+              <Skill skillName={'data science'} skills={dataScience} />
+            </div>
           </div>
         </div>
-      </div>
     )
-  }
 }
 
 export default Skills

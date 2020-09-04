@@ -93,7 +93,6 @@ class Projects extends React.Component {
     return (
       <div id="projects">
         <div className="header" id="projects-header">Projects</div>
-        <Slider projects={this.state.projects} />
       </div>
     )
   }

@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import OtherExp from './OtherExp';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
+import VisibilitySensor from 'react-visibility-sensor';
 
-class Experience extends React.Component {
+const Experience = () => {
 
-  state = {
-    otherExp: [
+  const [ experience ] = useState([
       {
         company: 'Noyes Museum of Art',
         location: 'Oceanville, NJ',
@@ -25,10 +25,9 @@ class Experience extends React.Component {
         title: 'Japanese Patent Consultant',
         length: '3/2011 - 3/2013'
       }
-    ]
-  }
+  ])
 
-  componentDidMount() {
+  useEffect(() => {
       const expTextCt = document.querySelector('.exp-text-container')
       const expText = document.querySelector('.exp-text')
       const expItems = document.querySelectorAll('.exp-item')
@@ -67,10 +66,8 @@ class Experience extends React.Component {
       otherText.forEach(text => {
         gsap.to(text, {delay: 2.5, duration: .5, opacity: 1})
       })
+    }, [])
 
-  }
-
-  render() {
     return (
       <div id="exp">
       <div id="exp-content">
@@ -103,7 +100,7 @@ class Experience extends React.Component {
             <div id="other-exp">
               <div className="header subheader other-header">other experience</div>
               <div className="other-exp-container">
-                {this.state.otherExp.map(exp => {
+                {experience.map(exp => {
                   return <OtherExp expData={exp} />
                 })}
               </div>
@@ -111,7 +108,6 @@ class Experience extends React.Component {
           </div>
       </div>
     )
-  }
 }
 
 export default Experience

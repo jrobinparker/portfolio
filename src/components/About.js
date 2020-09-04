@@ -1,34 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
 import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
-
+import VisibilitySensor from 'react-visibility-sensor';
 gsap.registerPlugin(CSSRulePlugin)
 
-class About extends React.Component {
+const About = () => {
 
-  componentDidMount() {
-    const header = document.getElementById('about-header')
-    const abtImg = document.querySelector('.about-img')
-    const abtTextCt = document.querySelector('.about-text-container')
-    const abtText = document.querySelector('.about-text')
-    const rule = CSSRulePlugin.getRule(".about-text-container:after")
-    const tl = gsap.timeline()
+  useEffect(() => {
+      const header = document.getElementById('about-header')
+      const abtImg = document.querySelector('.about-img')
+      const abtTextCt = document.querySelector('.about-text-container')
+      const abtText = document.querySelector('.about-text')
+      const rule = CSSRulePlugin.getRule(".about-text-container:after")
+      const tl = gsap.timeline()
 
-    gsap.set(header, {opacity: 0, y: 50})
-    gsap.set(abtImg, {visibility: 'hidden', opacity: 0})
-    gsap.set(abtTextCt, {height: '0vh', width: '0vh', visibility: 'hidden'})
-    gsap.set(rule, {cssRule: {opacity: 0}})
+      gsap.set(header, {opacity: 0, y: 50})
+      gsap.set(abtImg, {visibility: 'hidden', opacity: 0})
+      gsap.set(abtTextCt, {height: '0vh', width: '0vh', visibility: 'hidden'})
+      gsap.set(rule, {cssRule: {opacity: 0}})
 
-    tl.to(header, .5, {opacity: 1, y: 0})
-      .to(abtTextCt, {delay: .1, duration: .5, ease: Power1.easeIn, visibility: 'visible', height: '60vh', width: '60vw' })
-      .to(rule, .1, {cssRule: {opacity: 1}})
-      .to(abtText, .1, { opacity: 1 })
-      .to(abtImg, .25, { visibility: 'visible', opacity: 1 })
+      tl.to(header, .5, {opacity: 1, y: 0})
+        .to(abtTextCt, {delay: .1, duration: .5, ease: Power1.easeIn, visibility: 'visible', height: '60vh', width: '60vw' })
+        .to(rule, .1, {cssRule: {opacity: 1}})
+        .to(abtText, .1, { opacity: 1 })
+        .to(abtImg, .25, { visibility: 'visible', opacity: 1 })
+  }, [])
 
-  }
-
-  render() {
     return (
       <div id="about">
         <div id="about-content">
@@ -53,7 +51,6 @@ class About extends React.Component {
         </div>
       </div>
     )
-  }
 }
 
 export default About
