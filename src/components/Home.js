@@ -34,7 +34,7 @@ const Home = () => {
           <div className="items">
             <div
               className="item link"
-              onClick={() => document.getElementById('about').scrollIntoView({behavior: 'smooth'})}
+              onClick={() => document.getElementById('about-content').scrollIntoView({behavior: 'smooth'})}
               >
               <span className="link-text">about me</span>
             </div>

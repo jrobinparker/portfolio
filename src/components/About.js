@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
 import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
@@ -25,7 +25,7 @@ const About = () => {
         .to(rule, .1, {cssRule: {opacity: 1}})
         .to(abtText, .1, { opacity: 1 })
         .to(abtImg, .25, { visibility: 'visible', opacity: 1 })
-  }, [])
+    }, [])
 
     return (
       <div id="about">
