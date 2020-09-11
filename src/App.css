@@ -356,6 +356,10 @@ button i:hover {
   margin-left: 2.5%;
 }
 
+.project-about h3 {
+  cursor: pointer;
+}
+
 .tech-list {
   list-style: none;
   margin-left: -10%;
@@ -429,6 +433,48 @@ button i:hover {
   width: 50%;
   align-self: flex-start;
   text-align: center;
+}
+
+.project-modal {
+  position: absolute;
+  top: 390%;
+  left: -1%;
+  height: 105vh;
+  width: 105vw;
+  background-color: rgba(0, 0, 0, .75)
+}
+
+.modal-card {
+  position: relative;
+  top: 20%;
+  left: 25%;
+  max-height: 80vh;
+  width: 50%;
+  background-color: white;
+  border-radius: 5%;
+  color: #5d13e7;
+  padding: 2%;
+  box-shadow: 12px 12px 12px 0 rgba(0,0,0,0.3);
+}
+
+.modal-card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 2.5%;
+}
+
+.modal-body {
+  max-height: 50vh;
+  overflow-y: scroll;
+  font-size: 1.5rem;
+}
+
+.modal-close {
+  margin-left: auto;
+  cursor: pointer
 }
 
 /* nav styles */
