@@ -43,7 +43,7 @@ class Nav extends React.Component {
                 })
                 this.expandNav()
               }}>home</Link></div>
-              <div className="header"><Link to={'/about'} onClick={() => {
+              <div className="header"><Link to={'/about-me'} onClick={() => {
                 this.setState({
                   expand: !this.state.expand
                 })

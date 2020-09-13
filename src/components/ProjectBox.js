@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import ProjectLanguages from './ProjectLanguages';
 import ProjectModal from './ProjectModal';
+import gsap from 'gsap';
 
 const ProjectBox = ({ proj }) => {
   const [ modal, toggleModal ] = useState(false);
@@ -9,13 +10,17 @@ const ProjectBox = ({ proj }) => {
 
   const openModal = () => {
     toggleModal(true)
-    document.body.style.overflowY = 'hidden'
-    document.getElementById(`${name}`).scrollIntoView({ behavior: 'smooth' })
   }
 
   const closeModal = () => {
+    const modalBg = document.querySelector('.project-modal')
+    const modalCard = document.querySelector('.modal-card')
+    const tl = gsap.timeline();
+
+    tl.to(modalCard, .25, {opacity: 0, y: 50});
+    tl.to(modalBg, .25, {className: 'fade-out'})
+
     toggleModal(false)
-    document.body.style.overflowY = 'scroll'
   }
 
   return (

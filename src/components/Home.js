@@ -32,29 +32,17 @@ const Home = () => {
         <div id="home-content">
           <div className="header" id="home-header">jeremy parker</div>
           <div className="items">
-            <div
-              className="item link"
-              onClick={() => document.getElementById('about-content').scrollIntoView({behavior: 'smooth'})}
-              >
-              <span className="link-text">about me</span>
+            <div className="item link">
+              <Link to='/about-me'><span className="link-text">about me</span></Link>
             </div>
-            <div
-              className="item link"
-              onClick={() => document.getElementById('skills').scrollIntoView({behavior: 'smooth'})}
-              >
-              <span className="link-text">skills</span>
+            <div className="item link">
+              <Link to='skills'><span className="link-text">skills</span></Link>
             </div>
-            <div
-              className="item link"
-              onClick={() => document.getElementById('exp').scrollIntoView({behavior: 'smooth'})}
-              >
-              <span className="link-text">experience</span>
+            <div className="item link">
+              <Link to='/experience'><span className="link-text">experience</span></Link>
             </div>
-            <div
-              className="item link"
-              onClick={() => document.getElementById('projects').scrollIntoView({behavior: 'smooth'})}
-              >
-              <span className="link-text">projects</span>
+            <div className="item link">
+              <Link to='/projects'><span className="link-text">projects</span></Link>
             </div>
           </div>
         </div>
