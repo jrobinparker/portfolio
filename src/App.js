@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment, Suspense } from 'react';
 import Home from './components/Home';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import About from './components/About';
@@ -7,22 +7,33 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Nav from './components/Nav';
 import './App.css';
-import * as THREE from 'three';
+import { Canvas, Dom } from 'react-three-fiber';
+import { Box } from 'drei';
+import Scene from './components/Scene';
+import perlin from './components/perlin';
 
 const App = () => {
     return (
-      <Router>
-        <Switch>
-          <div className="container">
-              <Nav />
-              <Route exact path='/' component={Home} />
-              <Route exact path='/about-me' component={About} />
-              <Route exact path='/skills' component={Skills} />
-              <Route exact path='/experience' component={Experience} />
-              <Route exact path='/projects' component={Projects} />
-          </div>
-        </Switch>
-      </Router>
+      <Fragment>
+        <Router>
+          <Switch>
+            <div className="container">
+                <Nav />
+                <Route exact path='/' component={Home} />
+                <Route exact path='/about-me' component={About} />
+                <Route exact path='/skills' component={Skills} />
+                <Route exact path='/experience' component={Experience} />
+                <Route exact path='/projects' component={Projects} />
+            </div>
+          </Switch>
+
+        </Router>
+        <Canvas camera={{ zoom: 10, position: [0, 2, 50]}}>
+            <Suspense fallback={<Dom center className="loading" children="Loading..." />}>
+              <Scene />
+            </Suspense>
+        </Canvas>
+    </Fragment>
   );
 }
 

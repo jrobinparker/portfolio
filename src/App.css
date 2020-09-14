@@ -1,23 +1,43 @@
+@font-face {
+  font-family: "Streamster";
+  src: url('./assets/Streamster.woff')
+}
+
+@font-face {
+  font-family: "VCR";
+  src: url('./assets/VCROSDMono.woff')
+}
+
 body {
-  font-family: 'Work Sans', sans-serif;
-  background-color: #2A2A35;
-  overflow-x: hidden;
+  font-family: 'VCR', sans-serif;
+  overflow: hidden;
+}
+
+html, body, canvas {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 canvas {
-  position: absolute;
-  top: -.01%;
-  left: -.01%;
+  height: 100vh;
+  width: 100vw;
+  background-color: #020209;
+}
+
+#root {
 }
 
 .container {
   margin: 0 auto;
-  padding: 0% 5% 0% 5%;
+  padding: 0;
 }
 
-#home, #about, #skills, #exp {
+#home, #about, #skills, #exp, #projects {
   height: 100vh;
   width: 100%;
+  position: absolute;
+  z-index: 100;
 }
 
 #home-content {
@@ -26,22 +46,27 @@ canvas {
 }
 
 .header {
-  font-family: 'Muli', sans-serif;
-  font-size: 5rem;
-  font-weight: 900;
-  font-style: italic;
-  letter-spacing: -9px;
-  color: #2A2A35;
-  text-shadow:
-   -1px -1px 0 #BED38E,
-    1px -1px 0 #BED38E,
-    -1px 1px 0 #BED38E,
-     1px 1px 0 #BED38E;
+  font-family: 'Streamster', sans-serif;
+  font-size: 7rem;
+  color: purple;
+  position: relative;
+  left: 30%;
+}
+
+.header::after {
+  content: 'Jeremy Parker';
+  font-family: 'Streamster', sans-serif;
+  font-size: 7rem;
+  color: white;
+  z-index: -10;
+  position: relative;
+  left: -37%;
 }
 
 .items {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: 2rem;
   padding: 20px;
 }
