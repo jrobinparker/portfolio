@@ -53,7 +53,7 @@ canvas {
   left: 30%;
 }
 
-.header::after {
+#home-header::after {
   content: 'Jeremy Parker';
   font-family: 'Streamster', sans-serif;
   font-size: 7rem;
@@ -66,8 +66,8 @@ canvas {
 .items {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  font-size: 2rem;
+  justify-content: space-evenly;
+  font-size: 2.5rem;
   padding: 20px;
 }
 
@@ -76,8 +76,7 @@ canvas {
 }
 
 .item, .exp-item, .other-exp-item {
-  background-color: #BED38E;
-  color: #2A2A35;
+  color: hotpink;
   margin-bottom: 10px;
 }
 
@@ -88,7 +87,25 @@ canvas {
 
 .link a {
   text-decoration: none;
-  color: #2A2A35;
+  color: hotpink;
+}
+
+.link::after {
+  content: " ";
+  position: absolute;
+  width: 1%;
+  height: 15%;
+  background-color: hotpink;
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
 }
 /*
 #link1::after {
@@ -581,6 +598,7 @@ button i:hover {
 
 .nav {
   position: absolute;
+  z-index: 200;
   top: 2%;
   left: 1.25%;
 }

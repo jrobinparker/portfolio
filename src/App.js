@@ -18,7 +18,6 @@ const App = () => {
         <Router>
           <Switch>
             <div className="container">
-                <Nav />
                 <Route exact path='/' component={Home} />
                 <Route exact path='/about-me' component={About} />
                 <Route exact path='/skills' component={Skills} />
