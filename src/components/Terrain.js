@@ -29,28 +29,33 @@ const Terrain = () => {
   const ground = useRef();
 
   useFrame(() => {
-    ground.current.position.z += 0.1;
+    ground.current.position.z += 1;
   })
 
   return (
     <Fragment>
-      <mesh ref={ground} rotation={[-Math.PI / 2, 0, 0]}>
-        <planeBufferGeometry attach="geometry" args={[5000, 5000, 128, 128]} />
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 1, 0]}>
+        <planeBufferGeometry attach="geometry" args={[100000, 100000, 128, 128]} />
         <meshPhongMaterial
           attach="material"
-          color={"aliceblue"}
-          specular={"aliceblue"}
-          side="front"
-          wireframe
-          wireframeLineWidth={2}
+          color={"black"}
         />
       </mesh>
-      <mesh ref={mesh} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, -900]}>
+      <mesh ref={ground} rotation={[-Math.PI / 2, 0, 0]} position={[0, 1, 0]}>
+        <planeBufferGeometry attach="geometry" args={[5000, 5000, 128, 128]} />
+        <meshLambertMaterial
+          attach="material"
+          color={"hotpink"}
+          wireframe
+        />
+      </mesh>
+
+      <mesh ref={mesh} rotation={[-Math.PI / 2, 0, 0]} position={[0, 1, -700]}>
         <planeBufferGeometry attach="geometry" args={[300, 1000, 400, 500]} />
         <meshPhongMaterial
           attach="material"
-          color={"aliceblue"}
-          specular={"aliceblue"}
+          color={"hotpink"}
+          specular={"hotpink"}
           shininess={3}
           smoothShading
         />

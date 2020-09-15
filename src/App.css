@@ -22,7 +22,8 @@ html, body, canvas {
 canvas {
   height: 100vh;
   width: 100vw;
-  background-color: #020209;
+  background: rgb(209,4,231);
+  background: linear-gradient(0deg, rgba(209,4,231,1) 53%, rgba(0,0,0,1) 100%);
 }
 
 #root {
@@ -49,7 +50,8 @@ canvas {
   font-size: 7rem;
   color: #FF6F61;
   position: relative;
-  left: 30%;
+  left: 35%;
+  top: 5%;
 }
 
 #home-header::after {
@@ -295,9 +297,14 @@ canvas {
   width: 100vw;
 }
 
+.skill-items {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
 .subheader {
   font-size: 3rem;
-  letter-spacing: -7px;
 }
 
 .skill {
@@ -307,17 +314,30 @@ canvas {
 }
 
 #exp-content {
-  position: relative;
-  top: 2%;
+  width: 80%;
+  align-self: center;
 }
 
 .exp-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-content {
   display: flex;
   flex-direction: row;
 }
 
 .exp-area {
   height: 50vh;
+}
+
+.exp-items {
+  flex-direction: column;
+  background-color: green;
+  width: 30%;
+  justify-content: flex-start;
+  font-size: 1.5rem;
 }
 
 .exp-text-container {
@@ -327,10 +347,6 @@ canvas {
 
 .exp-text {
   font-size: 1rem;
-}
-
-.exp-item-text {
-  font-size: 1.5rem;
 }
 
 #other-exp {

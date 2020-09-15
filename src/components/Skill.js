@@ -30,7 +30,7 @@ const Skill = ({ skills, skillName }) => {
             {skills.map(skill => {
               return (
                   <div className="item">
-                    <span className="skill-text">{skill}</span>
+                    <span className="skill-text" style={{ fontSize: '1rem'}}>{skill}</span>
                   </div>
               )
             })}
