@@ -1,6 +1,8 @@
 import React, { Fragment, useState } from 'react';
 import ProjectLanguages from './ProjectLanguages';
 import ProjectModal from './ProjectModal';
+import { Power1 } from 'gsap';
+import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
 import gsap from 'gsap';
 
 const ProjectBox = ({ proj }) => {
@@ -25,17 +27,25 @@ const ProjectBox = ({ proj }) => {
 
   return (
     <Fragment>
-      <div className="project-box" id={`${name}`}>
-        {img ? (
-          <div className="project-img">
-            <img src={require(`../assets/${img}`)} />
+      <div className="about-box project-box" id={`${name}`} onClick={e => {
+        e.preventDefault()
+        openModal(true)}
+      }>
+      <div className="about-bar project-bar">
+        {name}
+      </div>
+        <div className="about-content project-content">
+          <div className="about-img project-img">
+            {img ? (
+              <img src={require(`../assets/${img}`)} />
+            ): (<Fragment></Fragment>)}
+            <div className="about-info project-info">
+              <div className="project-languages">
+                <ProjectLanguages languages={languages} />
+              </div>
+            </div>
           </div>
-        ) : <Fragment></Fragment>}
-        <div className="project-about">
-          <h3 onClick={() => openModal(true)}>{name}</h3>
-          <div className="project-languages">
-            <ProjectLanguages languages={languages} />
-          </div>
+
         </div>
       </div>
       { !modal ? <></> : <ProjectModal proj={proj} closeModal={() => closeModal(false)} /> }
