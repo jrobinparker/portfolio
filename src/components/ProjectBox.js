@@ -10,19 +10,33 @@ const ProjectBox = ({ proj }) => {
 
   const { name, languages, tech, about, github, img, url, number } = proj
 
-  const openModal = () => {
+  const openModal = async () => {
     toggleModal(true)
   }
 
-  const closeModal = () => {
+  const closeAnimation = async () => {
+    const modalParent = document.querySelector('.project-modal')
     const modalBg = document.querySelector('.project-modal')
-    const modalCard = document.querySelector('.modal-card')
-    const tl = gsap.timeline();
+    const modalCard = document.querySelector('.modal')
+    const title = document.querySelector('.project-bar-title')
+    const icon = document.querySelector('.fas')
+    const abtImg = document.querySelector('.modal-img')
+    const abtTextCt = document.querySelector('.modal')
+    const abtText = document.querySelector('.modal-content')
+    const rule = CSSRulePlugin.getRule(".about-text-container:after")
+    const tl = gsap.timeline()
 
-    tl.to(modalCard, .25, {opacity: 0, y: 50});
-    tl.to(modalBg, .25, {className: 'fade-out'})
 
-    toggleModal(false)
+    await tl
+      .to(abtText, .2, { opacity: 0 })
+      .to(abtTextCt, {delay: .25, duration: .5, ease: Power1.easeIn, opacity: 0, height: '0vh', width: '0vw' })
+      .to(title, .2, {opacity: 0})
+      .to(modalParent, .25, {opacity: 0})
+  }
+
+  const closeModal = async () => {
+    await closeAnimation()
+    await toggleModal(false)
   }
 
   return (

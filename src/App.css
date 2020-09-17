@@ -61,7 +61,7 @@ canvas {
   color: white;
   z-index: -10;
   position: relative;
-  left: -37%;
+  left: -36.75%;
 }
 
 .items {
@@ -436,15 +436,25 @@ button i:hover {
   right: 0%;
 }
 
+#projects-header::after {
+  content: 'Projects';
+  font-family: 'Streamster', sans-serif;
+  font-size: 7rem;
+  color: white;
+  z-index: -10;
+  position: relative;
+  left: -18.5%;
+}
+
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   height: 50%;
-  margin-top: 2.5%;
   position: relative;
   left: -10%;
+  top: 2%;
 }
 
 .project-box {
@@ -461,8 +471,17 @@ button i:hover {
   display: flex;
   align-items: flex-start;
   align-content: baseline;
-  align-self: baseline;
   font-family: 'VCR';
+  font-size: 1rem;
+}
+
+.project-bar-title {
+  margin-top: 2.5px;
+  margin-left: 5px;
+  align-self: baseline;
+}
+
+.project-bar i {
   font-size: 1rem;
 }
 
@@ -478,7 +497,8 @@ button i:hover {
 }
 
 .project-languages {
-  margin-top: 5%;
+  margin-top: 2.5%;
+  text-align: center;
 }
 
 .project-button {
@@ -515,7 +535,6 @@ button i:hover {
   list-style: none;
   font-size: 1.5rem;
   text-align: center;
-  margin-left: -10%;
 }
 
 .tech-list li {
@@ -597,12 +616,15 @@ button i:hover {
   height: 110vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, .8);
+  animation: fadeIn ease .25s;
+  -webkit-animation: fadeIn ease .25s;
+  -moz-animation: fadeIn ease .25s;
 }
 
   .fade-in {
-  animation: fadeIn ease .5s;
-  -webkit-animation: fadeIn ease .5s;
-  -moz-animation: fadeIn ease .5s;
+  animation: fadeIn ease .25s;
+  -webkit-animation: fadeIn ease .25s;
+  -moz-animation: fadeIn ease .25s;
   }
 
   @keyframes fadeIn {
@@ -653,6 +675,16 @@ button i:hover {
   opacity: 0;
 }
 
+.project-modal .about-bar {
+  display: flex;
+  align-self: flex-start;
+  font-family: 'VCR';
+}
+
+.project-modal .about-bar i {
+  margin-left: auto;
+}
+
 .modal-card-header {
   display: flex;
   flex-direction: row;
@@ -667,32 +699,63 @@ button i:hover {
   letter-spacing: -5px;
 }
 
+.modal-content {
+  opacity: 0;
+  display: flex;
+  padding: 2.5% 2.5% 0% 2.5%;
+}
+
 .modal-body {
   overflow-y: scroll;
   display: flex;
 }
 
 .modal-img {
-  width: 50%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  align-content: center;
 }
 
 .modal-img img {
-  height: 50%;
+  height: 90%;
   width: 100%;
 }
 
 .modal-languages {
-  margin-top: 10%;
-  display: flex;
-  justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-languages div, .tech-list div {
+  font-family: 'VCR';
+}
+
+.modal-languages i {
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+.tech-list {
+  width: 100%;
+}
+
+.tech-list ul {
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+.about-header {
+  font-family: 'VCR';
+  font-size: 1.5rem;
+  margin-bottom: 2.5%;
 }
 
 .modal-text {
-  width: 50%;
+  width: 70%;
   padding-left: 2.5%;
   padding-right: 2.5%;
   font-size: 1.25rem;
