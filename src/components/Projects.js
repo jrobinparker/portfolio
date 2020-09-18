@@ -103,11 +103,10 @@ class Projects extends React.Component {
     const displayProjects = gsap.timeline();
 
     gsap.set(header, {opacity: 0, y: 50})
-    gsap.to(header, .5, {opacity: 1, y: 0})
     gsap.set(projects, {opacity: 0, y: 50})
 
     displayProjects
-        .to(header, {opacity: 1, y: 0})
+        .to(header, .25, {delay: .25, opacity: 1, y: 0})
         .to(project1, .25, {opacity: 1, y: 0})
         .to(project2, .25, {opacity: 1, y: 0})
         .to(project3, .25, {opacity: 1, y: 0})

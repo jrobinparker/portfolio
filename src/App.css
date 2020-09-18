@@ -161,7 +161,7 @@ canvas {
   align-items: flex-start;
   width: 80%;
   position: relative;
-  top: 10%;
+  top: 5%;
   left: 10%;
   background-color: rgba(38, 48, 86, .75);
   color: white;
@@ -169,16 +169,28 @@ canvas {
 }
 
 .about-bar {
-  height: 25px;
+  height: 20px;
   width: 100%;
   background-color: #7E5E9A;
-  text-align: right;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  align-content: baseline;
+  font-family: 'VCR';
+  font-size: 1rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.about-bar-title {
+  margin-left: 11px;
 }
 
 .about-bar i {
-  padding-right: 10px;
-  padding-top: 5px;
+  padding-right: 11px;
   color: white;
+  margin-left: auto;
+
 }
 
 #about-header::after {
@@ -193,63 +205,63 @@ canvas {
 
 .about-content {
   display: flex;
+  padding: 10px;
 };
 
 .about-img {
   height: 100%;
   width: 100%;
+  color: white;
 }
 
 .about-info {
   width: 110%;
+  color: white;
 };
+
+.about-icons i {
+  color: white;
+}
+
+.about-data-item {
+  color: white;
+}
 
 .about-data-item::after {
   content: " ";
   position: absolute;
   width: 1%;
-  height: 15%;
+  height: 4%;
   background-color: hotpink;
   animation: blink 0.5s infinite ease;
-}
+};
 
 .exp-text-container {
   font-size: 1.5rem;
   color: #2A2A35;
 }
 
-/*
-.about-text-container::after {
-  content: '';
-  height: 76%;
-  width: 61.5%;
-  border: 1px solid #BED38E;
-  position: absolute;
-  left: 1%;
-  top: 25%;
-  z-index: -10;
-}
-*/
-
 .about-text {
   opacity: 0;
   width: 80%;
+  height: 100%;
   padding-left: 2%;
   padding-right: 2%;
   margin-left: auto;
   align-self: flex-start;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
-.about-text div {
-  margin-bottom: 2%;
-}
-
-.about-img {
-
+.about-text span {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
   background-color: rgba(200, 200, 200, .5);
 }
 
@@ -462,7 +474,7 @@ button i:hover {
   height: 60%;
   margin-bottom: 1.5%;
   margin-right: 1.5%;
-  padding: 0;
+  padding-left: 0px;
   cursor: pointer;
 }
 
@@ -489,6 +501,7 @@ button i:hover {
   height: 100%;
   width: 100%;
   text-align: center;
+  padding: 0px;
 }
 
 .project-info {

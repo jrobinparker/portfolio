@@ -29,7 +29,7 @@ const AboutInfo = ({ text, number }) => {
 
   return (
     <div className="item">
-      <span className="about-data-item"></span>
+      <span className="about-data-item" style={{ color: 'white' }}></span>
     </div>
   )
 };
