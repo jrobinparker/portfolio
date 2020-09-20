@@ -1,40 +1,19 @@
 import React, { useEffect } from 'react';
+import AboutInfo from './AboutInfo';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
 
-const Skill = ({ skills, skillName }) => {
-
-  useEffect(() => {
-      const skill = document.querySelectorAll('.skill')
-      const skillItems = document.querySelectorAll('.item')
-      const skillText = document.querySelectorAll('.skill-text')
-
-      gsap.set(skill, {opacity: 0, y: 50})
-      gsap.to(skill, {duration: .5, opacity: 1, y: 0})
-
-      skillItems.forEach(item => {
-        gsap.set(item, {height: '5vh', width: '0vw'})
-        gsap.to(item, {delay: .5, duration: .5, ease: Power1.easeIn, width: '20vw', opacity: 1})
-      })
-
-      skillText.forEach(text => {
-        gsap.set(text, {opacity: 0})
-        gsap.to(text, {delay: 1, duration: .5, opacity: 1})
-      })
-  }, [])
+const Skill = ({ skills, skillName, close }) => {
 
     return (
-      <div className="skill">
-        <div className="header subheader">{skillName}</div>
-          <div className="items">
-            {skills.map(skill => {
-              return (
-                  <div className="item">
-                    <span className="skill-text" style={{ fontSize: '1rem'}}>{skill}</span>
-                  </div>
-              )
-            })}
-          </div>
+      <div className="about-box project-box" id={`${skillName}`} style={{ cursor: 'default' }}>
+        <div className="about-bar project-bar">
+          <span>{skillName}</span>
+          <i class="fas fa-times" onClick={() => close()}/>
+        </div>
+        <div className="about-content skills-content fade-in">
+          {skills.map((skill, i) => <p key={i}>{skill}</p>)}
+        </div>
       </div>
     )
 }

@@ -35,7 +35,7 @@ canvas {
 
 #home, #about, #skills, #exp, #projects {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: absolute;
   z-index: 100;
 }
@@ -283,21 +283,17 @@ canvas {
 #skills-content {
   position: relative;
   top: 5%;
-  left: 0%;
 }
 
-.skills-header {
-  font-family: 'Muli', sans-serif;
-  font-size: 5rem;
-  font-weight: 900;
-  font-style: italic;
-  letter-spacing: -7px;
-  color: #2A2A35;
-  text-shadow:
-   -1px -1px 0 #BED38E,
-    1px -1px 0 #BED38E,
-    -1px 1px 0 #BED38E,
-     1px 1px 0 #BED38E;
+
+#skills-header::after {
+  content: 'Skills';
+  font-family: 'Streamster', sans-serif;
+  font-size: 7rem;
+  color: white;
+  z-index: -10;
+  position: relative;
+  left: -14.75%;
 }
 
 .skills-container, .edu-container {
@@ -305,20 +301,17 @@ canvas {
   width: 100vw;
 }
 
-.skill-items {
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+.skills-content {
+  display: block;
 }
 
-.subheader {
-  font-size: 3rem;
-}
-
-.skill {
-  display: inline-block;
-  height: 100%;
-  width: 30%;
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  position: relative;
+  top: 2%;
 }
 
 #exp-content {
@@ -487,9 +480,8 @@ button i:hover {
   font-size: 1rem;
 }
 
-.project-bar-title {
-  margin-top: 2.5px;
-  margin-left: 5px;
+.project-bar span {
+  padding-left: 5px;
   align-self: baseline;
 }
 

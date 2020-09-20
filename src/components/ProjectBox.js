@@ -46,7 +46,7 @@ const ProjectBox = ({ proj }) => {
         openModal(true)}
       }>
       <div className="about-bar project-bar">
-        {name}
+        <span>{name}</span>
       </div>
         <div className="about-content project-content">
           <div className="about-img project-img">
