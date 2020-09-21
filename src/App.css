@@ -315,8 +315,37 @@ canvas {
 }
 
 #exp-content {
-  width: 80%;
-  align-self: center;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  left: -3%;
+}
+
+#exp-content .about-box:first-of-type {
+  max-width: 80%;
+  max-height: 100%;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+#exp-content .other-box {
+  max-width: 20%;
+}
+
+.exp-header::after {
+  content: 'Experience';
+  font-family: 'Streamster', sans-serif;
+  font-size: 7rem;
+  color: white;
+  z-index: -10;
+  position: relative;
+  left: -26.25%;
+}
+
+#exp-content .about-box .about-content .about-text {
+  width: 90%;
+  font-size: 1.1rem;
 }
 
 .exp-container {
@@ -324,10 +353,6 @@ canvas {
   flex-direction: column;
 }
 
-.exp-content {
-  display: flex;
-  flex-direction: row;
-}
 
 .exp-area {
   height: 50vh;
@@ -351,7 +376,6 @@ canvas {
 }
 
 #other-exp {
-  margin-top: -4%;
 }
 
 .other-exp-items {
@@ -364,8 +388,7 @@ canvas {
 }
 
 .other-exp-text {
-  position: relative;
-  top: 25%;
+  margin-bottom: 10px;
 }
 
 .slider {

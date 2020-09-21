@@ -7,7 +7,7 @@ import AboutInfo from './AboutInfo';
 import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
 gsap.registerPlugin(CSSRulePlugin);
 
-const Experience = () => {
+const Experience = ({ history }) => {
   const [ agInfo ] = useState(['Analysis Group', 'Senior L&D Tech Specialist', '10/2011 - present'])
   const [ experience ] = useState([
       {
@@ -30,8 +30,7 @@ const Experience = () => {
       }
   ])
 
-  useEffect(() => {
-
+  const closeAnimation = async () => {
     const header = document.getElementById('about-header')
     const abtImg = document.querySelector('.about-img')
     const abtTextCt = document.querySelector('.about-box')
@@ -42,60 +41,83 @@ const Experience = () => {
     const expItems = document.querySelectorAll('.exp-item')
     const expItemText = document.querySelectorAll('.exp-item-text')
     const otherCont = document.querySelector('.other-box')
-    const otherExp = document.querySelectorAll('.other-exp-item')
-    const otherText = document.querySelectorAll('.other-exp-container')
+    const otherText = document.querySelectorAll('.other-box .about-text')
+
+    const tl = gsap.timeline()
+
+    await tl
+      .to(otherText, .25, { opacity: 0 })
+      .to(otherCont, .25, { ease: Power1.easeIn, opacity: 0, height: '0vh', width: '0vw' })
+      .to(abtText, .25, { opacity: 0 })
+      .to(abtImg, .25, { opacity: 0 })
+      .to(abtTextCt, .25, { ease: Power1.easeIn, opacity: 0, height: '0vh', width: '0vw' })
+      .to(header, .25, {opacity: 0, y: -50})
+
+  }
+
+  const close = async () => {
+    await closeAnimation()
+    history.push('/')
+  }
+
+  useEffect(() => {
+
+    const header = document.getElementById('about-header')
+    const bar = document.querySelectorAll('.about-bar-title')[0]
+    const close = document.querySelectorAll('.fas')[0]
+    const otherBar = document.querySelectorAll('.about-bar-title')[1]
+    const otherBarClose = document.querySelectorAll('.fas')[1]
+    const abtImg = document.querySelector('.about-img')
+    const abtTextCt = document.querySelector('.about-box')
+    const abtText = document.querySelector('.about-text')
+    const rule = CSSRulePlugin.getRule(".about-text-container:after")
+    const expTextCt = document.querySelector('.exp-text-container')
+    const expText = document.querySelector('.exp-text')
+    const expItems = document.querySelectorAll('.exp-item')
+    const expItemText = document.querySelectorAll('.exp-item-text')
+    const otherCont = document.querySelector('.other-box')
+    const otherText = document.querySelectorAll('.other-box .about-text')
 
     const tl = gsap.timeline()
 
     gsap.set(header, {opacity: 0, y: 50})
-    gsap.set(abtImg, {visibility: 'hidden', opacity: 0})
-    gsap.set(abtTextCt, {height: '0vh', width: '0vh', visibility: 'hidden'})
+    gsap.set(abtImg, {opacity: 0})
+    gsap.set(bar, {opacity: 0})
+    gsap.set(otherBar, {opacity: 0})
+    gsap.set(close, {opacity: 0})
+    gsap.set(otherBarClose, {opacity: 0})
+
+    gsap.set(abtTextCt, {height: '0vh', width: '0vh'})
     gsap.set(rule, {cssRule: {opacity: 0}})
-    gsap.set(expTextCt, {height: '0vh', width: '0vh', visibility: 'hidden'})
+    gsap.set(expTextCt, {height: '0vh', width: '0vh'})
     gsap.set(expText, { opacity: 0 })
     gsap.set(expItems, {height: '5vh', width: '0vw'})
     gsap.set(expItemText, {opacity: 0})
-    gsap.set(otherCont, {height: '0vh', width: '0vh', visibility: 'hidden'})
+    gsap.set(otherCont, {opacity: 0, height: '0vh', width: '0vh'})
     gsap.set(otherText, {opacity: 0})
 
     tl.to(header, .5, {opacity: 1, y: 0})
-      .to(abtTextCt, {delay: .1, duration: .5, ease: Power1.easeIn, visibility: 'visible', height: '50vh', width: '80vw' })
-      .to(rule, .1, {cssRule: {opacity: 1}})
-      .to(abtText, .1, { opacity: 1 })
-      .to(abtImg, .25, { visibility: 'visible', opacity: 1 })
-      .to(otherCont, {delay: .1, duration: .5, ease: Power1.easeIn, visibility: 'visible', height: '50vh', width: '80vw' })
-      .to(otherText, .1, { opacity: 1 })
+      .to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '50vh', width: '80vw' })
+      .to(bar, .25, {opacity: 1})
+      .to(close, .1, {opacity: 1})
+      .to(abtText, .25, { opacity: 1 })
+      .to(abtImg, .25, { opacity: 1 })
+      .to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '50vh', width: '80vw' })
+      .to(otherBar, .25, {opacity: 1})
+      .to(otherBarClose, .1, {opacity: 1})
+      .to(otherText, .25, { opacity: 1 })
 
-
-
-      expItems.forEach(item => {
-        gsap.to(item, {delay: .5, duration: .5, ease: Power1.easeIn, width: '30vw', opacity: 1})
-      })
-
-      expItemText.forEach(text => {
-        gsap.to(text, {delay: 1, duration: .5, opacity: 1})
-      })
-
-      tl.to(expTextCt, {delay: 1, duration: .5, ease: Power1.easeIn, height: '43vh', width: 'auto', visibility: 'visible' })
-        .to(expText, .1, { opacity: 1 })
-
-      otherExp.forEach(item => {
-        gsap.to(item, {delay: 2, duration: .5, ease: Power1.easeIn, width: '24.15vw', opacity: 1})
-      })
-
-      otherText.forEach(text => {
-        gsap.to(text, {delay: 2.5, duration: .5, opacity: 1})
-      })
     }, [])
 
     return (
       <div id="exp">
+      <div className="header exp-header">Experience</div>
       <div id="exp-content">
-        <div className="header">experience</div>
 
-        <div className="about-box" style={{ marginBottom: '10px' }}>
+        <div className="about-box">
           <div className="about-bar">
-            <i class="fas fa-times" />
+            <span className="about-bar-title">Experience</span>
+            <i class="fas fa-times" style={{ marginLeft: 'auto' }} onClick={() => close()}/>
           </div>
             <div className="about-content">
             <div className="about-img" style={{ width: '25%', marginRight: '10px' }}>
@@ -103,29 +125,34 @@ const Experience = () => {
                 {agInfo.map((abt, i) => <AboutInfo text={abt} number={i} />)}
               </div>
             </div>
-              <div className="about-text" style={{ width: '75%', fontSize: '1rem', alignSelf: 'flex-start' }}>
-              <p>Developed a solution to deliver higher quality employee metrics for case staffing and marketing initiatives by analyzing employee resumes using natural language processing and Pandas.</p>
-              <p>Built a desktop GUI app using tkinter, Selenium, and pandas to get language proficiency data from 1000+ employee profiles, providing essential data for international marketing initiatives.</p>
-              <p>Created a data visualization dashboard to analyze deeply-nested JSON data from the firm's events app with Pandas, Bokeh, Flask, React, and Bulma.</p>
-              <p>Create responsive HTML5 pages for LMS.</p>
-              <p>Develop custom JavaScript solutions for the Articulate Storyline course builder software.</p>
-              <p>Build detailed SharePoint workflows to manage compliance tasks, from task allocation for medical writing teams to a compliance management system for new hire onboarding, saving over $15,000 in yearly vendor fees.</p>
+              <div className="about-text">
+              <span>Developed a solution to deliver higher quality employee metrics for case staffing and marketing initiatives by analyzing employee resumes using natural language processing and Pandas.</span>
+              <span>Built a desktop GUI app using tkinter, Selenium, and pandas to get language proficiency data from 1000+ employee profiles, providing essential data for international marketing initiatives.</span>
+              <span>Created a data visualization dashboard to analyze deeply-nested JSON data from the firm's events app with Pandas, Bokeh, Flask, React, and Bulma.</span>
+              <span>Create responsive HTML5 pages for LMS.</span>
+              <span>Develop custom JavaScript solutions for the Articulate Storyline course builder software.</span>
+              <span>Build detailed SharePoint workflows to manage compliance tasks, from task allocation for medical writing teams to a compliance management system for new hire onboarding, saving over $15,000 in yearly vendor fees.</span>
             </div>
           </div>
           </div>
 
           <div className="about-box other-box">
-            <div className="about-bar other-bar" style={{ display: 'flex', alignItems: 'flex-start', fontFamily: 'VCR' }}>
-              Other Experience
-              <i class="fas fa-times" style={{ marginLeft: 'auto' }}/>
+            <div className="about-bar other-bar">
+              <span className="about-bar-title">Other Experience</span>
+              <i class="fas fa-times" style={{ marginLeft: 'auto' }} onClick={() => close()}/>
             </div>
               <div className="about-content">
-                <div className="about-text" style={{ fontSize: '1rem' }}>
-                <div className="other-exp-container">
+                <div className="about-text">
                   {experience.map(exp => {
-                    return <OtherExp expData={exp} />
+                    return (
+                      <div className="other-exp-text">
+                        {exp.company} <br />
+                        {exp.location} <br />
+                        {exp.title} <br />
+                        {exp.length} <br />
+                      </div>
+                    )
                   })}
-                </div>
               </div>
             </div>
             </div>
