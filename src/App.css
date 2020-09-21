@@ -45,13 +45,18 @@ canvas {
   top: 25%;
 }
 
+.header-container {
+  position: relative;
+  top: 50%;
+  left: 30%;
+}
+
 .header {
   font-family: 'Streamster', sans-serif;
   font-size: 7rem;
   color: #FF6F61;
+  align-self: center;
   position: relative;
-  left: 35%;
-  top: 5%;
 }
 
 #home-header::after {
@@ -62,6 +67,14 @@ canvas {
   z-index: -10;
   position: relative;
   left: -36.75%;
+}
+
+svg {
+  position: absolute;
+  z-index: -300;
+  top: 70%;
+  left: -5%;
+  transform: rotate(-2deg);
 }
 
 .items {

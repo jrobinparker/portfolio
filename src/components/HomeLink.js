@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const HomeLink = ({ link, text, number }) => {
@@ -24,7 +24,9 @@ const HomeLink = ({ link, text, number }) => {
   };
 
   useEffect(() => {
-    type()
+    setTimeout(() => {
+      type()
+    }, 1500)
   }, [])
 
   return (
