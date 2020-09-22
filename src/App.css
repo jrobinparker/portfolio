@@ -90,7 +90,7 @@ svg {
 }
 
 .item, .exp-item, .other-exp-item {
-  color: hotpink;
+  color: #7E5E9A;
   font-family: 'VCR', sans-serif;
   margin-bottom: 10px;
 }
@@ -102,7 +102,7 @@ svg {
 
 .link a {
   text-decoration: none;
-  color: hotpink;
+  color: white;
 }
 
 .link::after {

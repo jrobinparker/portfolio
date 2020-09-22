@@ -1,4 +1,4 @@
-import React, { Fragment, Suspense } from 'react';
+import React, { Fragment, Suspense, useRef } from 'react';
 import Home from './components/Home';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import About from './components/About';
@@ -7,12 +7,13 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Nav from './components/Nav';
 import './App.css';
-import { Canvas, Dom } from 'react-three-fiber';
+import { Canvas, Dom, useFrame } from 'react-three-fiber';
 import { Box } from 'drei';
 import Scene from './components/Scene';
 import perlin from './components/perlin';
 
 const App = () => {
+
     return (
       <Fragment>
         <Router>
