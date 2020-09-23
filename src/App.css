@@ -110,7 +110,7 @@ svg {
   position: absolute;
   width: 1%;
   height: 15%;
-  background-color: hotpink;
+  background-color: #FF6F61;
   animation: blink 0.5s infinite ease;
 }
 
