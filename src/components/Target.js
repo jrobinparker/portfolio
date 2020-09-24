@@ -54,6 +54,10 @@ const Target = () => {
 
 }, [])
 
+useFrame(() => {
+  rTarget.current.visible = !rTarget.current.visible
+})
+
   return (
     <group>
       <sprite position={[0, 0.5, -8]} scale={[-1, -1, -1]} ref={rTarget}>
