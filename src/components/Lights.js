@@ -29,6 +29,7 @@ export default () => {
       <Moon />
       <ambientLight ref={ref2} position={[40, -1, -900]} intensity={0.5} />
       <directionalLight intensity={1} position={[40, -1, -900]} color={'white'} />
+      <directionalLight intensity={2.5} position={[0, 5, 10]} color={'white'} />
       <pointLight
         ref={ref}
         intensity={10}

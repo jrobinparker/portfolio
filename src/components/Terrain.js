@@ -106,6 +106,34 @@ const Terrain = () => {
     road.current.position.z += 1;
   })
 
+  useEffect(() => {
+
+    function handleKeyDown(e) {
+      if (e.keyCode === 38) {
+        road.current.position.z += 1
+
+        if (road.current.position.z === 1109) {
+          road.current.position.z -= 1
+        }
+      }
+
+      if (e.keyCode === 40) {
+        road.current.position.z -= 1
+        if (road.current.position.z === 0) {
+          road.current.position.z += 1
+        }
+      }
+
+    }
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    // Don't forget to clean up
+    return function cleanup() {
+      document.removeEventListener('keydown', handleKeyDown);
+    }
+  }, [])
+
 
   return (
     <Fragment>
