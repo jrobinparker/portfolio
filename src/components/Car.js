@@ -20,7 +20,6 @@ const Car = () => {
     function handleKeyDown(e) {
       if (e.keyCode === 38) {
         car.current.position.z -= 1
-
         if (car.current.position.z === -5) {
           car.current.position.z += 1
         }
