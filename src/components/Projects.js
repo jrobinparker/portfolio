@@ -121,7 +121,9 @@ class Projects extends React.Component {
 
     return (
       <div id="projects">
-        <div className="header" id="projects-header">Projects</div>
+        <div className="header-container">
+          <div className="header" id="projects-header">Projects</div>
+        </div>
         <div className="projects-grid">
           {this.state.projects.map(proj => <ProjectBox proj={proj} />)}
         </div>

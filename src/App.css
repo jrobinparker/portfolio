@@ -45,10 +45,16 @@ canvas {
   top: 25%;
 }
 
-.header-container {
+.home-header-container {
   position: relative;
   top: 50%;
   left: 30%;
+}
+
+.header-container {
+  position: relative;
+  top: 5%;
+  left: 35%;
 }
 
 .header {
@@ -57,16 +63,8 @@ canvas {
   color: #FF6F61;
   align-self: center;
   position: relative;
-}
-
-#home-header::after {
-  content: 'Jeremy Parker';
-  font-family: 'Streamster', sans-serif;
-  font-size: 7rem;
-  color: white;
-  z-index: -10;
-  position: relative;
-  left: -36.75%;
+  text-shadow:
+  0.02em 0 0 white;
 }
 
 svg {
@@ -206,16 +204,6 @@ svg {
 
 }
 
-#about-header::after {
-  content: 'About Me';
-  font-family: 'Streamster', sans-serif;
-  font-size: 7rem;
-  color: white;
-  z-index: -10;
-  position: relative;
-  left: -28%;
-}
-
 .about-content {
   display: flex;
   padding: 10px;
@@ -298,17 +286,6 @@ svg {
   top: 5%;
 }
 
-
-#skills-header::after {
-  content: 'Skills';
-  font-family: 'Streamster', sans-serif;
-  font-size: 7rem;
-  color: white;
-  z-index: -10;
-  position: relative;
-  left: -14.75%;
-}
-
 .skills-container, .edu-container {
   height: 40vh;
   width: 100vw;
@@ -344,16 +321,6 @@ svg {
 
 #exp-content .other-box {
   max-width: 20%;
-}
-
-.exp-header::after {
-  content: 'Experience';
-  font-family: 'Streamster', sans-serif;
-  font-size: 7rem;
-  color: white;
-  z-index: -10;
-  position: relative;
-  left: -26.25%;
 }
 
 #exp-content .about-box .about-content .about-text {
@@ -475,16 +442,6 @@ button i:hover {
 
 #right {
   right: 0%;
-}
-
-#projects-header::after {
-  content: 'Projects';
-  font-family: 'Streamster', sans-serif;
-  font-size: 7rem;
-  color: white;
-  z-index: -10;
-  position: relative;
-  left: -18.5%;
 }
 
 .projects-grid {

@@ -111,7 +111,9 @@ const Experience = ({ history }) => {
 
     return (
       <div id="exp">
-      <div className="header exp-header">Experience</div>
+      <div className="header-container">
+        <div className="header" id="skills-header">Experience</div>
+      </div>
       <div id="exp-content">
 
         <div className="about-box">

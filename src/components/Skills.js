@@ -56,7 +56,9 @@ const Skills = ({ history }) => {
     return (
         <div id="skills">
           <div id="skills-content">
-          <div className="header" id="skills-header">Skills</div>
+            <div className="header-container">
+              <div className="header" id="skills-header">Skills</div>
+            </div>
             <div className="skills-grid">
               <Skill skillName={'Languages'} skills={languages} close={close} />
               <Skill skillName={'Front End'} skills={frontEnd} close={close} />

@@ -51,7 +51,9 @@ const About = ({ history }) => {
 
     return (
       <div id="about">
-          <div className="header" id="about-header">About Me</div>
+          <div className="header-container">
+            <div className="header" id="about-header">About Me</div>
+          </div>
           <div className="about-box">
             <div className="about-bar">
               <span className="about-bar-title">About Me</span>
