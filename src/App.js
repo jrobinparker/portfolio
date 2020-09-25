@@ -11,6 +11,8 @@ import { Canvas, Dom, useFrame } from 'react-three-fiber';
 import { Box } from 'drei';
 import Scene from './components/Scene';
 import perlin from './components/perlin';
+import { RecoilRoot } from "recoil";
+
 
 const App = () => {
 
@@ -29,9 +31,11 @@ const App = () => {
 
         </Router>
         <Canvas camera={{ zoom: 10, position: [0, 2, 40]}}>
+          <RecoilRoot>
             <Suspense fallback={<Dom center className="loading" children="Loading..." />}>
               <Scene />
             </Suspense>
+          </RecoilRoot>
         </Canvas>
     </Fragment>
   );

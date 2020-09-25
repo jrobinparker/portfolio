@@ -1,8 +1,8 @@
 import { atom } from "recoil";
 
-export const shipPositionState = atom({
+export const carPositionState = atom({
   key: "carPosition",
-  default: { position: {}, rotation: {} }
+  default: { position: {x: 0, y: 0, z: 20}, rotation: {x: .15, y: 3.15, z: 0} }
 });
 
 export const enemyPositionState = atom({

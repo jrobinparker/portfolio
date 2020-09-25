@@ -3,6 +3,8 @@ import Lights from './Lights';
 import Terrain from './Terrain';
 import Car from './Car';
 import Target from './Target';
+import Laser from './Laser';
+import LaserController from './LaserController';
 
 const Scene = () => {
 
@@ -13,6 +15,8 @@ const Scene = () => {
       <Target />
       <Car />
       <Terrain />
+      <Laser />
+      <LaserController />
     </Fragment>
   )
 };

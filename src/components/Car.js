@@ -2,51 +2,86 @@ import React, {useRef, Fragment, useEffect, useState, Suspense } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useFrame, useUpdate, useResource, useLoader } from "react-three-fiber";
 import * as THREE from 'three';
+import { RecoilRoot, useRecoilState } from "recoil";
+import { carPositionState } from "../gameState";
+
 
 const Car = () => {
   const [model, setModel] = useState();
-  const [carPosition, setCarPosition] = useState();
+  const [carPosition, setCarPosition] = useRecoilState(carPositionState);
 
   const scene = useLoader(GLTFLoader, 'car.glb')
 
 
-  const accelerate = new KeyboardEvent('keypress', {
-    key: 'enter',
-  });
-
   useEffect(() => {
     setModel(scene)
-
     function handleKeyDown(e) {
       if (e.keyCode === 38) {
         car.current.position.z -= 1
+        setCarPosition({
+          position: { x: car.current.position.x, y: car.current.position.y, z: car.current.position.z},
+          rotation: { x: car.current.rotation.x, y: car.current.rotation.y, z: car.current.rotation.z},
+        })
+
         if (car.current.position.z === -5) {
           car.current.position.z += 1
+          setCarPosition({
+            position: { x: car.current.position.x, y: car.current.position.y, z: car.current.position.z},
+            rotation: { x: car.current.rotation.x, y: car.current.rotation.y, z: car.current.rotation.z},
+          })
+
         }
       }
 
       if (e.keyCode === 40) {
         car.current.position.z += 1
+        setCarPosition({
+          position: { x: car.current.position.x, y: car.current.position.y, z: car.current.position.z},
+          rotation: { x: car.current.rotation.x, y: car.current.rotation.y, z: car.current.rotation.z},
+        })
 
         if (car.current.position.z >= 20) {
           car.current.position.z -= 1
+          setCarPosition({
+            position: { x: car.current.position.x, y: car.current.position.y, z: car.current.position.z},
+            rotation: { x: car.current.rotation.x, y: car.current.rotation.y, z: car.current.rotation.z},
+          })
+
         }
       }
 
       if (e.keyCode === 37) {
         car.current.rotation.y = car.current.rotation.y + .1
+        setCarPosition({
+          position: { x: car.current.position.x, y: car.current.position.y, z: car.current.position.z},
+          rotation: { x: car.current.rotation.x, y: car.current.rotation.y, z: car.current.rotation.z},
+        })
 
         if (car.current.rotation.y === 3.45) {
           car.current.rotation.y -= .1
+          setCarPosition({
+            position: { x: car.current.position.x, y: car.current.position.y, z: car.current.position.z},
+            rotation: { x: car.current.rotation.x, y: car.current.rotation.y, z: car.current.rotation.z},
+          })
+
         }
       }
 
       if (e.keyCode === 39) {
         car.current.rotation.y = car.current.rotation.y - .1
+        setCarPosition({
+          position: { x: car.current.position.x, y: car.current.position.y, z: car.current.position.z},
+          rotation: { x: car.current.rotation.x, y: car.current.rotation.y, z: car.current.rotation.z},
+        })
+
         if (car.current.rotation.y === 2.8499999999999996) {
           car.current.rotation.y += .1
-        }
+          setCarPosition({
+            position: { x: car.current.position.x, y: car.current.position.y, z: car.current.position.z},
+            rotation: { x: car.current.rotation.x, y: car.current.rotation.y, z: car.current.rotation.z},
+          })
 
+        }
 
     }}
 
@@ -70,16 +105,11 @@ const Car = () => {
 
   const car = useRef();
 
-  useFrame(() => {
-
-  })
-
-  model ? console.log(model) : console.log('not loaded')
 
   return (
     model ? (
       <Fragment>
-        <primitive object={model.nodes.car} ref={car} position={[0, 0, 20]} rotation={[.15, 3.15, 0]}scale={[20, 20, 20]}/>
+        <primitive object={model.nodes.car} ref={car} position={[carPosition.position.x, carPosition.position.y, carPosition.position.z]} rotation={[carPosition.rotation.x, carPosition.rotation.y, carPosition.rotation.z]}scale={[20, 20, 20]}/>
         <pointLight
           intensity={10}
           position={[1, 2, 0]}
