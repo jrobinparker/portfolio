@@ -5,6 +5,7 @@ import Car from './Car';
 import Target from './Target';
 import Laser from './Laser';
 import LaserController from './LaserController';
+import GameTimer from './GameTimer';
 
 const Scene = () => {
 
@@ -17,6 +18,7 @@ const Scene = () => {
       <Terrain />
       <Laser />
       <LaserController />
+      <GameTimer />
     </Fragment>
   )
 };

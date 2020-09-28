@@ -1,11 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { RecoilRoot, useRecoilState, useRecoilValue } from "recoil";
+import { useFrame } from 'react-three-fiber';
 import { TextureLoader } from "three";
-import { carPositionState, laserPositionState } from "../gameState";
+import { carPositionState, targetPositionState, laserPositionState } from "../gameState";
 
 const LaserController = () => {
   const carPosition = useRecoilValue(carPositionState);
+  const targetPosition = useRecoilValue(targetPositionState);
+
   const [lasers, setLasers] = useRecoilState(laserPositionState);
+  const [ currentCarPos, setCurrentCarPos ] = useState();
 
   const shoot = e => {
     if (e.keyCode === 32) {
@@ -13,14 +17,15 @@ const LaserController = () => {
         ...lasers,
         {
           id: Math.random(),
-          x: 0,
-          y: 0,
-          z: 0,
-          velocity: [
-            carPosition.rotation.x = carPosition.rotation.x * 100,
-            carPosition.rotation.y = carPosition.rotation.y * 100
-          ],
-        },
+           x: .15,
+           y: 0,
+           z: 21,
+           velocity: [
+             -Math.sin(carPosition.rotation.y),
+             0,
+             Math.sin(carPosition.rotation.y),
+           ]
+        }
       ])
     }
   }
@@ -31,7 +36,7 @@ const LaserController = () => {
 
   return (
     <mesh
-      position={[0, 0, -8]}
+      position={[0, 0, 0]}
     >
       <planeBufferGeometry attach="geometry" args={[100, 100]} />
       <meshStandardMaterial

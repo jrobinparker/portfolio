@@ -13,7 +13,6 @@ import Scene from './components/Scene';
 import perlin from './components/perlin';
 import { RecoilRoot } from "recoil";
 
-
 const App = () => {
 
     return (

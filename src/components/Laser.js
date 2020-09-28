@@ -1,7 +1,6 @@
 import React from 'react';
-import { RecoilRoot, useRecoilState, useRecoilValue } from "recoil";
-import { TextureLoader } from "three";
-import { carPositionState, laserPositionState } from "../gameState";
+import { RecoilRoot, useRecoilValue } from "recoil";
+import { laserPositionState } from "../gameState";
 
 const Lasers = () => {
   const lasers = useRecoilValue(laserPositionState);
@@ -9,8 +8,8 @@ const Lasers = () => {
     <group>
       {lasers.map((laser) => (
         <mesh position={[laser.x, laser.y, laser.z]} key={`${laser.id}`}>
-          <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
-          <meshStandardMaterial attach="material" emissive="white" wireframe />
+          <boxBufferGeometry attach="geometry" args={[.25, .25, 1]} />
+          <meshStandardMaterial attach="material" color="hotpink" />
         </mesh>
       ))}
     </group>
