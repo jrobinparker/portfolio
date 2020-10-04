@@ -7,10 +7,8 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Nav from './components/Nav';
 import './App.css';
-import { Canvas, Dom, useFrame } from 'react-three-fiber';
-import { Box } from 'drei';
+import { Canvas, Dom } from 'react-three-fiber';
 import Scene from './components/Scene';
-import perlin from './components/perlin';
 import { RecoilRoot } from "recoil";
 
 const App = () => {
