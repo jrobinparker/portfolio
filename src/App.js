@@ -6,10 +6,9 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Nav from './components/Nav';
-import './App.css';
+import './App.scss';
 import { Canvas, Dom } from 'react-three-fiber';
 import Scene from './components/Scene';
-import { RecoilRoot } from "recoil";
 
 const App = () => {
 
@@ -25,14 +24,11 @@ const App = () => {
                 <Route exact path='/projects' component={Projects} />
             </div>
           </Switch>
-
         </Router>
-        <Canvas camera={{ zoom: 10, position: [0, 2, 40]}}>
-          <RecoilRoot>
+        <Canvas camera={{ zoom: 10, position: [0, 0, 40]}}>
             <Suspense fallback={<Dom center className="loading" children="Loading..." />}>
               <Scene />
             </Suspense>
-          </RecoilRoot>
         </Canvas>
     </Fragment>
   );

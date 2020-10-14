@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
@@ -27,6 +27,7 @@ const Home = () => {
   }, [])
 
     return (
+      <Fragment>
       <div id="home">
         <div id="home-content">
           <div className="home-header-container">
@@ -41,6 +42,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      </Fragment>
     )
 }
 
