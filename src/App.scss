@@ -25,7 +25,7 @@ html, body, canvas {
 canvas {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to bottom, rgba(10, 29, 30, 0.9), rgba(100, 110, 93, 1)),
+  background: linear-gradient(to top, rgba(255,105,180, .5) 0%, rgba(120,120,120, .75) 100%),
     url('https://images.wallpaperscraft.com/image/stars_galaxy_milky_way_starry_sky_night_sky_119125_3840x2160.jpg');
     background-size: cover;
 }
