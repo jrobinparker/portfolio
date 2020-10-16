@@ -58,7 +58,7 @@ const Terrain = () => {
 
   if (texture) {
         texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-        texture.repeat.set(25, 1000);
+        texture.repeat.set(10, 1500);
     }
 
 

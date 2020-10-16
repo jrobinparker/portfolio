@@ -25,7 +25,7 @@ const App = () => {
             </div>
           </Switch>
         </Router>
-        <Canvas camera={{ zoom: 10, position: [0, 0, 40]}}>
+        <Canvas camera={{ zoom: 10, position: [-5, 0, 40]}}>
             <Suspense fallback={<Dom center className="loading" children="Loading..." />}>
               <Scene />
             </Suspense>
