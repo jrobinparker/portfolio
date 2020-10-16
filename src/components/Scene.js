@@ -7,7 +7,7 @@ const Scene = () => {
 
   return (
     <Fragment>
-      <fog attach="fog" args={['hotpink', 200, 900]} />
+      <fog attach="fog" args={['hotpink', 200, 1200]} />
       <Lights />
       <Car />
       <Terrain />
