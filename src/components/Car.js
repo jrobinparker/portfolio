@@ -17,6 +17,7 @@ const Car = () => {
   useFrame(() => {
     model.nodes.Front_Wheels.rotation.z += .1
     model.nodes.Back_Wheels.rotation.z += .1
+    model.nodes.DMC_Plane001.rotation.x = Math.sin(new Date() * 0.005) * 0.003;
   })
 
   return (
