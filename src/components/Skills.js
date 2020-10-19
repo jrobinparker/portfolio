@@ -13,7 +13,7 @@ const Skills = ({ history }) => {
   const [ other ] = useState(['SharePoint | SP Workflows', 'Training Software', 'Video & Audio Editing', 'Japanese (JLPT N2)'])
 
   const openAnimation = () => {
-    const header = document.getElementById('projects-header')
+    const header = document.getElementById('skills-header')
     const skills = document.querySelectorAll('.project-box')
     const skill1 = document.querySelectorAll('.project-box')[0]
     const skill2 = document.querySelectorAll('.project-box')[1]
@@ -38,11 +38,13 @@ const Skills = ({ history }) => {
     }
 
   const closeAnimation = async () => {
+    const header = document.getElementById('skills-header')
     const skills = document.querySelectorAll('.project-box')
     const tl = gsap.timeline();
 
-    await gsap
-      .to(skills, .2, { opacity: 0, y: -50 })
+    await tl
+      .to(skills, .25, { opacity: 0, y: 50 })
+      .to(header, .25, { opacity: 0, y: 50 })
   }
 
   const close = async () => {

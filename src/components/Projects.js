@@ -128,7 +128,7 @@ const Projects = ({ history }) => {
 
     await removeProjects
       .to(projects, .2, { opacity: 0, y: 50 })
-      .to(header, .2, { delay: .25, opacity: 0, y: 50 })
+      .to(header, .2, { opacity: 0, y: 50 })
   }
 
   const close = async () => {
