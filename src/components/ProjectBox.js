@@ -5,7 +5,7 @@ import { Power1 } from 'gsap';
 import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
 import gsap from 'gsap';
 
-const ProjectBox = ({ proj }) => {
+const ProjectBox = ({ proj, close }) => {
   const [ modal, toggleModal ] = useState(false);
 
   const { name, languages, tech, about, github, img, url, number } = proj
@@ -16,16 +16,10 @@ const ProjectBox = ({ proj }) => {
 
   const closeAnimation = async () => {
     const modalParent = document.querySelector('.project-modal')
-    const modalBg = document.querySelector('.project-modal')
-    const modalCard = document.querySelector('.modal')
     const title = document.querySelector('.project-bar-title')
-    const icon = document.querySelector('.fas')
-    const abtImg = document.querySelector('.modal-img')
     const abtTextCt = document.querySelector('.modal')
     const abtText = document.querySelector('.modal-content')
-    const rule = CSSRulePlugin.getRule(".about-text-container:after")
     const tl = gsap.timeline()
-
 
     await tl
       .to(abtText, .2, { opacity: 0 })
@@ -47,6 +41,8 @@ const ProjectBox = ({ proj }) => {
       }>
       <div className="about-bar project-bar">
         <span>{name}</span>
+        <i class="fas fa-times" onClick={() => close()}/>
+
       </div>
         <div className="about-content project-content">
           <div className="about-img project-img">

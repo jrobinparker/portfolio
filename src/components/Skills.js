@@ -39,6 +39,7 @@ const Skills = ({ history }) => {
 
   const closeAnimation = async () => {
     const skills = document.querySelectorAll('.project-box')
+    const tl = gsap.timeline();
 
     await gsap
       .to(skills, .2, { opacity: 0, y: -50 })

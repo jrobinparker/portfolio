@@ -14,19 +14,16 @@ const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, 
     const title = document.querySelector('.project-bar-title')
     const abtTextCt = document.querySelector('.modal')
     const abtText = document.querySelector('.modal-content')
-    const rule = CSSRulePlugin.getRule(".about-text-container:after")
     const tl = gsap.timeline()
 
     gsap.set(header, {opacity: 0, y: 50})
     gsap.set(title, {opacity: 0})
     gsap.set(abtTextCt, {height: '0vh', width: '0vh', visibility: 'hidden', opacity: 0})
     gsap.set(abtText, { opacity: 0 })
-    gsap.set(rule, {cssRule: {opacity: 0}})
 
     tl.to(header, .5, {opacity: 1, y: 0})
       .to(abtTextCt, { duration: .5, ease: Power1.easeIn, visibility: 'visible', opacity: 1, height: '75vh', width: '80vw' })
       .to(title, {opacity: 1})
-      .to(rule, .1, {cssRule: {opacity: 1}})
       .to(abtText, .25, { opacity: 1 })
 
   }, []);

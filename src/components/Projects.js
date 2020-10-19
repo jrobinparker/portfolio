@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Project from './Project';
 import ProjectBox from './ProjectBox';
+import Header from './Header';
 import gsap from 'gsap';
 
-const Projects = () => {
+const Projects = ({ history }) => {
   const [ projectInfo ] = useState([
       {
         name: 'Event App Data Dashboard',
@@ -119,14 +120,30 @@ const Projects = () => {
     openAnimation()
   }, [])
 
+  const closeAnimation = async () => {
+    const header = document.getElementById('projects-header')
+    const projects = document.querySelectorAll('.project-box')
+    const modal = document.querySelector('.project-modal')
+    const removeProjects = gsap.timeline();
+
+    gsap.set(modal, {opacity: 0})
+
+    await removeProjects
+      .to(projects, .2, { opacity: 0, y: 50 })
+      .to(header, .2, { delay: .25, opacity: 0, y: 50 })
+  }
+
+  const close = async () => {
+    await closeAnimation()
+    history.push('/')
+  }
+
 
     return (
       <div id="projects">
-        <div className="header-container">
-          <div className="header" id="projects-header">Projects</div>
-        </div>
+        <Header headerId={'projects-header'} headerText={'Projects'} />
         <div className="projects-grid">
-          {projectInfo.map((proj, i) => <ProjectBox proj={proj} key={i} />)}
+          {projectInfo.map((proj, i) => <ProjectBox proj={proj} close={close} key={i} />)}
         </div>
       </div>
     )
