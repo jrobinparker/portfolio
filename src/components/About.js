@@ -8,7 +8,26 @@ import { Redirect, withRouter } from 'react-router-dom';
 gsap.registerPlugin(CSSRulePlugin);
 
 const About = ({ history }) => {
-  const [ aboutInfo ] = useState(['Name: Jeremy Parker', 'Location: Los Angeles'])
+  const [ aboutInfo ] = useState([
+    {
+      type: 'text',
+      text: 'Name: Jeremy Parker'
+    },
+    {
+      type: 'text',
+      text: 'Location: Los Angeles'
+    },
+    {
+      type: 'link',
+      text: 'Github: jrobinparker',
+      url: 'https://github.com/jrobinparker'
+    },
+    {
+      type: 'link',
+      text: 'LinkedIn: jrobinparker',
+      url: 'https://www.linkedin.com/in/jrobinparker/'
+    }
+  ])
 
   useEffect(() => {
       const header = document.getElementById('about-header')
@@ -19,15 +38,16 @@ const About = ({ history }) => {
       const tl = gsap.timeline()
 
       gsap.set(header, { opacity: 0, y: 50 })
-      gsap.set(abtImg, { opacity: 0})
+      gsap.set(abtImg, { opacity: 0 })
       gsap.set(abtTextCt, {height: '0vh', width: '0vh', opacity: 0 })
+      gsap.set(abtText, {opacity: 0 })
       gsap.set(bar, { opacity: 0 })
 
-      tl.to(header, .5, {opacity: 1, y: 0})
-        .to(abtTextCt, {delay: .1, duration: .5, opacity: 1, ease: Power1.easeIn, height: '60vh', width: '80vw' })
-        .to(bar, {opacity: 1 })
-        .to(abtText, .1, { opacity: 1 })
-        .to(abtImg, .25, { visibility: 'visible', opacity: 1 })
+      tl.to(header, .5, { opacity: 1, y: 0 })
+        .to(abtTextCt, .5, { opacity: 1, ease: Power1.easeIn, height: '60vh', width: '80vw' })
+        .to(bar, { opacity: 1 })
+        .to(abtText, .25, { opacity: 1 })
+        .to(abtImg, .25, { opacity: 1 })
     }, [])
 
     const closeAnimation = async () => {
@@ -42,6 +62,7 @@ const About = ({ history }) => {
       await tl
         .to(abtText, .2, { opacity: 0 })
         .to(abtTextCt, {delay: .25, duration: .5, ease: Power1.easeIn, opacity: 0, height: '0vh', width: '0vw' })
+        .to(header, .5, {opacity: 0, y: 50})
     }
 
     const close = async () => {
@@ -63,11 +84,7 @@ const About = ({ history }) => {
                 <div className="about-img">
                   <img src={require('../assets/photo.jpeg')}/>
                   <div className="about-info">
-                    {aboutInfo.map((abt, i) => <AboutInfo text={abt} number={i} />)}
-                  </div>
-                  <div className="about-icons">
-                    <i class="fab fa-github-square"  style={{ color: 'white' }} />
-                    <i class="fab fa-linkedin"  style={{ color: 'white' }} />
+                    {aboutInfo.map((abt, i) => <AboutInfo itemType={abt.type} itemText={abt.text} itemLink={abt.url} number={i} />)}
                   </div>
                 </div>
                 <div className="about-text">

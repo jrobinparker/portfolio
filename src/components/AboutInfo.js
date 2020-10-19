@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const AboutInfo = ({ text, number, order }) => {
+const AboutInfo = ({ itemType, itemText, number, order, itemLink }) => {
   let count = 0;
   let index = 0;
   let currentText = '';
@@ -10,13 +10,14 @@ const AboutInfo = ({ text, number, order }) => {
 
   useEffect(() => {
     type()
+    console.log(itemLink)
   }, [])
 
   function type() {
       if (!document.querySelectorAll('.about-data-item')[number]) {
         return
       } else {
-        currentText = text;
+        currentText = itemText;
         letter = currentText.slice(0, ++index)
         document.querySelectorAll('.about-data-item')[number].textContent = letter
 
@@ -27,12 +28,18 @@ const AboutInfo = ({ text, number, order }) => {
       }
     };
 
-
-      return (
+    return itemType !== 'link' ? (
         <div className="item">
           <span className="about-data-item" style={{ color: 'white' }}></span>
         </div>
+      ) : (
+        <div className="item">
+          <a href={`${itemLink}`} target='blank'>
+            <span className="about-data-item" style={{ color: 'white' }}></span>
+          </a>
+        </div>
       )
+
 };
 
 export default AboutInfo;

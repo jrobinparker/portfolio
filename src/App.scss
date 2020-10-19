@@ -281,12 +281,8 @@ svg {
   color: white;
 };
 
-.about-icons i {
-  color: white;
-}
-
-.about-icons i:first-of-type {
-  margin-right: 30px;
+.item a {
+  text-decoration: none;
 }
 
 .about-data-item {
@@ -309,12 +305,9 @@ svg {
 
 .about-text {
   opacity: 0;
-  width: 80%;
-  height: 100%;
   padding-left: 2%;
   padding-right: 2%;
   margin-left: auto;
-  align-self: flex-start;
   font-size: 1.25rem;
 }
 
