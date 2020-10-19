@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Project from './Project';
 import ProjectBox from './ProjectBox';
 import gsap from 'gsap';
 
-class Projects extends React.Component {
-  state = {
-    projects: [
+const Projects = () => {
+  const [ projectInfo ] = useState([
       {
         name: 'Event App Data Dashboard',
         languages: ['js', 'python', 'html', 'css'],
@@ -86,10 +85,9 @@ class Projects extends React.Component {
         url: 'https://jrobinparker.github.io/jchain',
         type: 'personal'
       }
-    ]
-  }
+    ])
 
-  componentDidMount() {
+  const openAnimation = () => {
     const header = document.getElementById('projects-header')
     const projects = document.querySelectorAll('.project-box')
     const project1 = document.querySelectorAll('.project-box')[0]
@@ -117,7 +115,10 @@ class Projects extends React.Component {
         .to(project8, .25, {opacity: 1, y: 0})
   }
 
-  render() {
+  useEffect(() => {
+    openAnimation()
+  }, [])
+
 
     return (
       <div id="projects">
@@ -125,11 +126,10 @@ class Projects extends React.Component {
           <div className="header" id="projects-header">Projects</div>
         </div>
         <div className="projects-grid">
-          {this.state.projects.map(proj => <ProjectBox proj={proj} />)}
+          {projectInfo.map((proj, i) => <ProjectBox proj={proj} key={i} />)}
         </div>
       </div>
     )
-  }
 }
 
 export default Projects
