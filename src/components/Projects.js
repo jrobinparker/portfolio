@@ -122,11 +122,9 @@ const Projects = ({ history }) => {
 
   const closeAnimation = async () => {
     const header = document.getElementById('projects-header')
-    const projects = document.querySelectorAll('.project-box')
+    const projects = document.querySelector('.projects-grid')
     const modal = document.querySelector('.project-modal')
     const removeProjects = gsap.timeline();
-
-    gsap.set(modal, {opacity: 0})
 
     await removeProjects
       .to(projects, .2, { opacity: 0, y: 50 })

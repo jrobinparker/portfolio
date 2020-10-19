@@ -35,16 +35,19 @@ const ProjectBox = ({ proj, close }) => {
 
   return (
     <Fragment>
-      <div className="about-box project-box" id={`${name}`} onClick={e => {
-        e.preventDefault()
-        openModal(true)}
-      }>
+      <div className="about-box project-box" id={`${name}`}>
       <div className="about-bar project-bar">
         <span>{name}</span>
         <i class="fas fa-times" onClick={() => close()}/>
 
       </div>
-        <div className="about-content project-content">
+        <div
+          className="about-content project-content"  
+          onClick={e => {
+            e.preventDefault()
+            openModal(true)}
+          }
+        >
           <div className="about-img project-img">
             {img ? (
               <img src={require(`../assets/${img}`)} />
