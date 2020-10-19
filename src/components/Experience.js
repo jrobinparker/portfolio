@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Header from './Header';
 import OtherExp from './OtherExp';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
@@ -30,36 +31,6 @@ const Experience = ({ history }) => {
       }
   ])
 
-  const closeAnimation = async () => {
-    const header = document.getElementById('about-header')
-    const abtImg = document.querySelector('.about-img')
-    const abtTextCt = document.querySelector('.about-box')
-    const abtText = document.querySelector('.about-text')
-    const rule = CSSRulePlugin.getRule(".about-text-container:after")
-    const expTextCt = document.querySelector('.exp-text-container')
-    const expText = document.querySelector('.exp-text')
-    const expItems = document.querySelectorAll('.exp-item')
-    const expItemText = document.querySelectorAll('.exp-item-text')
-    const otherCont = document.querySelector('.other-box')
-    const otherText = document.querySelectorAll('.other-box .about-text')
-
-    const tl = gsap.timeline()
-
-    await tl
-      .to(otherText, .25, { opacity: 0 })
-      .to(otherCont, .25, { ease: Power1.easeIn, opacity: 0, height: '0vh', width: '0vw' })
-      .to(abtText, .25, { opacity: 0 })
-      .to(abtImg, .25, { opacity: 0 })
-      .to(abtTextCt, .25, { ease: Power1.easeIn, opacity: 0, height: '0vh', width: '0vw' })
-      .to(header, .25, {opacity: 0, y: -50})
-
-  }
-
-  const close = async () => {
-    await closeAnimation()
-    history.push('/')
-  }
-
   useEffect(() => {
 
     const header = document.getElementById('about-header')
@@ -70,11 +41,6 @@ const Experience = ({ history }) => {
     const abtImg = document.querySelector('.about-img')
     const abtTextCt = document.querySelector('.about-box')
     const abtText = document.querySelector('.about-text')
-    const rule = CSSRulePlugin.getRule(".about-text-container:after")
-    const expTextCt = document.querySelector('.exp-text-container')
-    const expText = document.querySelector('.exp-text')
-    const expItems = document.querySelectorAll('.exp-item')
-    const expItemText = document.querySelectorAll('.exp-item-text')
     const otherCont = document.querySelector('.other-box')
     const otherText = document.querySelectorAll('.other-box .about-text')
 
@@ -86,13 +52,7 @@ const Experience = ({ history }) => {
     gsap.set(otherBar, {opacity: 0})
     gsap.set(close, {opacity: 0})
     gsap.set(otherBarClose, {opacity: 0})
-
     gsap.set(abtTextCt, {height: '0vh', width: '0vh'})
-    gsap.set(rule, {cssRule: {opacity: 0}})
-    gsap.set(expTextCt, {height: '0vh', width: '0vh'})
-    gsap.set(expText, { opacity: 0 })
-    gsap.set(expItems, {height: '5vh', width: '0vw'})
-    gsap.set(expItemText, {opacity: 0})
     gsap.set(otherCont, {opacity: 0, height: '0vh', width: '0vh'})
     gsap.set(otherText, {opacity: 0})
 
@@ -109,11 +69,33 @@ const Experience = ({ history }) => {
 
     }, [])
 
+  const closeAnimation = async () => {
+    const header = document.getElementById('about-header')
+    const abtImg = document.querySelector('.about-img')
+    const abtTextCt = document.querySelector('.about-box')
+    const abtText = document.querySelector('.about-text')
+    const otherCont = document.querySelector('.other-box')
+    const otherText = document.querySelectorAll('.other-box .about-text')
+
+    const tl = gsap.timeline()
+
+    await tl
+      .to(otherText, .25, { opacity: 0 })
+      .to(otherCont, .25, { ease: Power1.easeIn, opacity: 0, height: '0vh', width: '0vw' })
+      .to(abtText, .25, { opacity: 0 })
+      .to(abtImg, .25, { opacity: 0 })
+      .to(abtTextCt, .25, { ease: Power1.easeIn, opacity: 0, height: '0vh', width: '0vw' })
+      .to(header, .25, {opacity: 0, y: 50})
+  }
+
+  const close = async () => {
+    await closeAnimation()
+    history.push('/')
+  }
+
     return (
       <div id="exp">
-      <div className="header-container">
-        <div className="header" id="skills-header">Experience</div>
-      </div>
+      <Header headerId={'about-header'} headerText={'Experience'} />
       <div id="exp-content">
 
         <div className="about-box">
@@ -124,7 +106,7 @@ const Experience = ({ history }) => {
             <div className="about-content">
             <div className="about-img" style={{ width: '25%', marginRight: '10px' }}>
               <div className="about-info">
-                {agInfo.map((abt, i) => <AboutInfo text={abt} number={i} />)}
+                {agInfo.map((abt, i) => <AboutInfo itemType={'text'} itemText={abt} number={i} />)}
               </div>
             </div>
               <div className="about-text">

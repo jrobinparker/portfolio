@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import AboutInfo from './AboutInfo';
+import Header from './Header';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
 import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
@@ -72,9 +73,7 @@ const About = ({ history }) => {
 
     return (
       <div id="about">
-          <div className="header-container">
-            <div className="header" id="about-header">About Me</div>
-          </div>
+          <Header headerId={'about-header'} headerText={'About Me'} />
           <div className="about-box">
             <div className="about-bar">
               <span className="about-bar-title">About Me</span>

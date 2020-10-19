@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Header from './Header';
 import Skill from './Skill';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
@@ -56,9 +57,7 @@ const Skills = ({ history }) => {
     return (
         <div id="skills">
           <div id="skills-content">
-            <div className="header-container">
-              <div className="header" id="skills-header">Skills</div>
-            </div>
+            <Header headerId="skills-header" headerText={'Skills'} />
             <div className="skills-grid">
               <Skill skillName={'Languages'} skills={languages} close={close} />
               <Skill skillName={'Front End'} skills={frontEnd} close={close} />
@@ -69,8 +68,8 @@ const Skills = ({ history }) => {
               <Skill skillName={'Research'} skills={research} close={close} />
               <Skill skillName={'Other'} skills={other} close={close} />
             </div>
-            </div>
           </div>
+        </div>
     )
 }
 
