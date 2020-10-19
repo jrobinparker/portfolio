@@ -87,6 +87,11 @@ const Terrain = () => {
         texture.repeat.set(30, 2000);
     }
 
+  if (texture2) {
+        texture2.wrapS = texture2.wrapT = THREE.RepeatWrapping;
+        texture2.repeat.set(1, 1);
+    }
+
 
   let city = [], num = 100, distance = -20, offset = .0001
 
@@ -95,13 +100,13 @@ const Terrain = () => {
     city.push(
       <mesh key={i} position={[distance + offset, -3, -800]}>
         <boxBufferGeometry attach="geometry" args={[Math.random() * 3, Math.random() * 15, 0]} />
-        <meshPhongMaterial attach="material" color={'hotpink'} flatShading={false} />
+        <meshPhongMaterial attach="material" map={texture2} depthTest />
       </mesh>
     )
   }
 
   useFrame(() => {
-    plane.current.position.z += .5
+    plane.current.position.z += 1
   })
 
 

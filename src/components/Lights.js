@@ -31,23 +31,8 @@ export default () => {
   return (
     <group>
       <Moon />
-      <ambientLight ref={ref2} position={[40, -1, -900]} intensity={0.5} />
-      <directionalLight intensity={1} position={[40, -1, -900]} color={'white'} />
-      <directionalLight intensity={2.5} position={[0, 5, 10]} color={'white'} />
-      <pointLight
-        ref={ref}
-        intensity={1}
-        position={[10, -1, -300]}
-        color={'white'}
-      >
-      </pointLight>
-      <pointLight
-        ref={ref3}
-        intensity={1}
-        position={[-10, -1, -500]}
-        color={'white'}
-      >
-      </pointLight>
+      <ambientLight ref={ref2} position={[-1, 0, 0]} intensity={0.5} />
+      <ambientLight position={[-1, 1, -800]} intensity={.25} />
     </group>
   );
 };

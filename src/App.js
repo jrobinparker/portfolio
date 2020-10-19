@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Nav from './components/Nav';
 import './App.scss';
+import { EffectComposer, DepthOfField, Bloom, Noise, Vignette } from '@react-three/postprocessing';
 import { Canvas, Dom } from 'react-three-fiber';
 import Scene from './components/Scene';
 
@@ -25,10 +26,11 @@ const App = () => {
             </div>
           </Switch>
         </Router>
-        <Canvas camera={{ zoom: 10, position: [-5, 0, 40]}}>
+        <Canvas camera={{ zoom: 15, position: [-4, 0, 40]}}>
             <Suspense fallback={<Dom center className="loading" children="Loading..." />}>
               <Scene />
             </Suspense>
+
         </Canvas>
     </Fragment>
   );

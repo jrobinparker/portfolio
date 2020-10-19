@@ -15,9 +15,9 @@ const Car = () => {
   }, [])
 
   useFrame(() => {
-    model.nodes.Front_Wheels.rotation.z += .1
-    model.nodes.Back_Wheels.rotation.z += .1
-    model.nodes.DMC_Plane001.rotation.x = Math.sin(new Date() * 0.005) * 0.003;
+    model.nodes.Front_Wheels.rotation.z += .25
+    model.nodes.Back_Wheels.rotation.z += .25
+    //model.nodes.DMC_Plane001.rotation.x = Math.sin(new Date() * 0.005) * 0.003;
   })
 
   return (
@@ -25,8 +25,8 @@ const Car = () => {
       <Fragment>
         <primitive object={model.nodes.car} position={[0, -1, 15]} rotation={[0, 3.15, 0]} scale={[20, 20, 20]}/>
         <pointLight
-          intensity={10}
-          position={[1, 2, 0]}
+          intensity={5}
+          position={[0, 0, 20]}
           color={'white'}
         />
       </Fragment>
