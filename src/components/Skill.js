@@ -1,5 +1,4 @@
 import React from 'react';
-import gsap from 'gsap';
 
 const Skill = ({ skills, skillName, close }) => {
 

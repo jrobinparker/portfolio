@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
-import OtherExp from './OtherExp';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
-import VisibilitySensor from 'react-visibility-sensor';
 import AboutInfo from './AboutInfo';
-import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
-gsap.registerPlugin(CSSRulePlugin);
 
 const Experience = ({ history }) => {
   const [ agInfo ] = useState(['Analysis Group', 'Senior L&D Tech Specialist', '10/2011 - present'])
