@@ -1,9 +1,7 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Fragment, useEffect } from 'react';
 import gsap from 'gsap';
-import { Power1 } from 'gsap';
 import HomeLink from './HomeLink';
-import {ReactComponent as Line} from '../assets/untitled.svg';
+import { ReactComponent as Line } from '../assets/untitled.svg';
 
 const Home = () => {
 
