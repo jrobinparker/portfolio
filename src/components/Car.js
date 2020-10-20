@@ -1,7 +1,6 @@
-import React, {useRef, Fragment, useEffect, useState, Suspense } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { useFrame, useUpdate, useResource, useLoader } from "react-three-fiber";
-import * as THREE from 'three';
+import { useFrame, useLoader } from "react-three-fiber";
 
 
 const Car = () => {
@@ -11,13 +10,11 @@ const Car = () => {
 
   useEffect(() => {
     setModel(scene)
-    console.log(scene)
-  }, [])
+  }, [scene])
 
   useFrame(() => {
     model.nodes.Front_Wheels.rotation.z += .25
     model.nodes.Back_Wheels.rotation.z += .25
-    //model.nodes.DMC_Plane001.rotation.x = Math.sin(new Date() * 0.005) * 0.003;
   })
 
   return (
