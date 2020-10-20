@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react';
-import AboutInfo from './AboutInfo';
+import React from 'react';
 import gsap from 'gsap';
-import { Power1 } from 'gsap';
 
 const Skill = ({ skills, skillName, close }) => {
 

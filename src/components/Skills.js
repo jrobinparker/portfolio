@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Skill from './Skill';
 import gsap from 'gsap';
-import { Power1 } from 'gsap';
 
 const Skills = ({ history }) => {
   const [ languages ] = useState(['JavaScript', 'Python', 'Ruby', 'SQL' ])
