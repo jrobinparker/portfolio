@@ -3,7 +3,6 @@ import AboutInfo from './AboutInfo';
 import Header from './Header';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
-import { Redirect, withRouter } from 'react-router-dom';
 
 const About = ({ history }) => {
   const [ aboutInfo ] = useState([
@@ -93,4 +92,4 @@ const About = ({ history }) => {
     )
 }
 
-export default withRouter(About);
+export default About;
