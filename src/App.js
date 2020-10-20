@@ -1,13 +1,11 @@
-import React, { Fragment, Suspense, useRef } from 'react';
+import React, { Fragment, Suspense } from 'react';
 import Home from './components/Home';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Nav from './components/Nav';
 import './App.scss';
-import { EffectComposer, DepthOfField, Bloom, Noise, Vignette } from '@react-three/postprocessing';
 import { Canvas, Dom } from 'react-three-fiber';
 import Scene from './components/Scene';
 
