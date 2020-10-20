@@ -2,13 +2,12 @@ import React, { Fragment, useState } from 'react';
 import ProjectLanguages from './ProjectLanguages';
 import ProjectModal from './ProjectModal';
 import { Power1 } from 'gsap';
-import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
 import gsap from 'gsap';
 
 const ProjectBox = ({ proj, close }) => {
   const [ modal, toggleModal ] = useState(false);
 
-  const { name, languages, tech, about, github, img, url, number } = proj
+  const { name, languages, img } = proj
 
   const openModal = async () => {
     toggleModal(true)
@@ -42,7 +41,7 @@ const ProjectBox = ({ proj, close }) => {
 
       </div>
         <div
-          className="about-content project-content"  
+          className="about-content project-content"
           onClick={e => {
             e.preventDefault()
             openModal(true)}
@@ -50,7 +49,7 @@ const ProjectBox = ({ proj, close }) => {
         >
           <div className="about-img project-img">
             {img ? (
-              <img src={require(`../assets/${img}`)} />
+              <img src={require(`../assets/${img}`)} alt="project" />
             ): (<Fragment></Fragment>)}
             <div className="about-info project-info">
               <div className="project-languages">

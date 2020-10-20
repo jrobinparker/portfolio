@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Project from './Project';
 import ProjectBox from './ProjectBox';
 import Header from './Header';
 import gsap from 'gsap';
@@ -123,7 +122,6 @@ const Projects = ({ history }) => {
   const closeAnimation = async () => {
     const header = document.getElementById('projects-header')
     const projects = document.querySelector('.projects-grid')
-    const modal = document.querySelector('.project-modal')
     const removeProjects = gsap.timeline();
 
     await removeProjects

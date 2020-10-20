@@ -1,11 +1,8 @@
 import React, { Fragment, useEffect } from 'react';
 import ProjectLanguages from './ProjectLanguages';
-import AboutInfo from './AboutInfo';
 import gsap from 'gsap';
 import { createPortal } from 'react-dom';
 import { Power1 } from 'gsap';
-import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
-gsap.registerPlugin(CSSRulePlugin);
 
 const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, number }, closeModal }) => {
 
@@ -41,7 +38,7 @@ const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, 
           <div className="project-img">
           {img ? (
             <div className="modal-img">
-              <img src={require(`../assets/${img}`)} />
+              <img src={require(`../assets/${img}`)} alt="project"/>
               <div className="modal-languages">
                 <div>Languages</div>
                 <ProjectLanguages languages={languages} />
