@@ -15,6 +15,7 @@ body {
 
 html, body, canvas {
   height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
 }
@@ -317,6 +318,7 @@ svg {
   background-color: #BED38E;
 }
 
+
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
@@ -579,4 +581,132 @@ svg {
 .modal-close {
   margin-left: auto;
   cursor: pointer
+}
+
+@media only screen and (orientation: landscape) and (max-width: 2560px) {
+
+
+  #home-content {
+    position: relative;
+    top: 25%;
+    left: 5%;
+  };
+
+  .home-header-container {
+    position: relative;
+    top: 50%;
+    left: 30%;
+  };
+
+  .header-container {
+    position: relative;
+    top: 5%;
+    left: 40%;
+  };
+
+  #about, #skills, #exp, #projects, .modal {
+    top: 5%;
+  };
+
+  .about-content {
+    padding: 20px;
+  };
+
+  .about-img {
+    width: 50%;
+  };
+
+  .about-info {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  };
+
+  .about-text {
+    opacity: 0;
+    font-size: 1.75rem;
+  }
+
+  .about-text span {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .skills-content p {
+    font-size: 1.5rem;
+  }
+
+  .about-text span {
+    font-size: 2rem;
+  }
+
+  .other-exp-text {
+    font-size: 2rem;
+  }
+
+  .project-content {
+    padding: 0;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 85%;
+  }
+
+  .fab, .far {
+    font-size: 2rem;
+    margin-right: 2.5%;
+  }
+
+  .project-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-header {
+    font-size: 3.5rem;
+    letter-spacing: -5px;
+  }
+
+  .modal-img img {
+    height: 90%;
+    width: 100%;
+  }
+
+  .modal-languages div, .tech-list div {
+    font-family: 'VCR';
+    font-size: 2rem;
+  }
+
+  .modal-languages i {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+
+  .tech-list {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .tech-list ul {
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+
+  .tech-list ul li {
+    font-size: 1.5rem;
+  }
+
+  .modal-content .about-header {
+    font-size: 2.5rem;
+  }
+
+  .modal-text {
+    font-size: 1.5rem;
+  }
+
+  .modal-content .about-info p {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
 }

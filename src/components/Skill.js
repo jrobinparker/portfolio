@@ -8,7 +8,7 @@ const Skill = ({ skills, skillName, close }) => {
           <span>{skillName}</span>
           <i class="fas fa-times" onClick={() => close()}/>
         </div>
-        <div className="about-content skills-content fade-in">
+        <div className="about-content skills-content">
           {skills.map((skill, i) => <p key={i}>{skill}</p>)}
         </div>
       </div>

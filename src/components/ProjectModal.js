@@ -54,7 +54,7 @@ const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, 
           </div>
             <div className="about-info">
               <div className="about-header">About the Project</div>
-              {about}
+              <p>{about}</p>
             </div>
 
         </div>
