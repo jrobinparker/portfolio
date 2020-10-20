@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 const AboutInfo = ({ itemType, itemText, number, order, itemLink }) => {
-  let count = 0;
   let index = 0;
   let currentText = '';
   let letter = '';

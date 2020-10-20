@@ -1,12 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import AboutInfo from './AboutInfo';
 import Header from './Header';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
-import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
-import VisibilitySensor from 'react-visibility-sensor';
 import { Redirect, withRouter } from 'react-router-dom';
-gsap.registerPlugin(CSSRulePlugin);
 
 const About = ({ history }) => {
   const [ aboutInfo ] = useState([
@@ -53,10 +50,8 @@ const About = ({ history }) => {
 
     const closeAnimation = async () => {
       const header = document.getElementById('about-header')
-      const abtImg = document.querySelector('.about-img')
       const abtTextCt = document.querySelector('.about-box')
       const abtText = document.querySelector('.about-content')
-      const rule = CSSRulePlugin.getRule(".about-text-container:after")
       const tl = gsap.timeline()
 
 
