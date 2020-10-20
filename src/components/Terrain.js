@@ -1,12 +1,9 @@
-import React, {useRef, Fragment, useEffect, useState} from "react";
-import { useFrame, useUpdate, useResource, useLoader, useThree } from "react-three-fiber";
+import React, { Fragment, useRef } from "react";
+import { useFrame, useUpdate, useLoader } from "react-three-fiber";
 import { noise } from './perlin';
-import { Curves } from 'three/examples/jsm/curves/CurveExtras';
 import grid from '../assets/grid.jpg';
 import grid2 from '../assets/grid2.jpg';
-import road from '../assets/road.jpg';
 import * as THREE from 'three';
-import { Sphere } from 'drei';
 
 const Terrain = () => {
 
@@ -54,29 +51,6 @@ const Terrain = () => {
     pos.needsUpdate = true;
   });
 
-  const mesh3 = useUpdate(({ geometry }) => {
-    noise.seed(Math.random());
-    let pos = geometry.getAttribute("position");
-    let pa = pos.array;
-    const hVerts = geometry.parameters.heightSegments + 1;
-    const wVerts = geometry.parameters.widthSegments + 1;
-    for (let j = 0; j < hVerts; j++) {
-      for (let i = 0; i < wVerts; i++) {
-        const ex = 1.1;
-        pa[3 * (j * wVerts + i) + 2] =
-          (noise.simplex2(i / 100, j / 100) +
-            noise.simplex2((i + 200) / 50, j / 50) * Math.pow(ex, 1) +
-            noise.simplex2((i + 400) / 25, j / 25) * Math.pow(ex, 2) +
-            noise.simplex2((i + 600) / 12.5, j / 12.5) * Math.pow(ex, 3) +
-            +(noise.simplex2((i + 800) / 6.25, j / 6.25) * Math.pow(ex, 4))) /
-          2;
-      }
-    }
-
-    pos.needsUpdate = true;
-  });
-
-  const road = useRef();
   const cityRef = useRef();
   const plane = useRef();
 
