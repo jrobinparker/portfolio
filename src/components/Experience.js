@@ -42,15 +42,7 @@ const Experience = ({ history }) => {
 
     const tl = gsap.timeline()
 
-    gsap.set(header, {opacity: 0, y: 50})
-    gsap.set(abtImg, {opacity: 0})
-    gsap.set(bar, {opacity: 0})
-    gsap.set(otherBar, {opacity: 0})
-    gsap.set(close, {opacity: 0})
-    gsap.set(otherBarClose, {opacity: 0})
-    gsap.set(abtTextCt, {height: '0vh', width: '0vh'})
-    gsap.set(otherCont, {opacity: 0, height: '0vh', width: '0vh'})
-    gsap.set(otherText, {opacity: 0})
+    gsap.set(header, {y: 50})
 
     if (window.innerWidth >= 700) {
       tl.to(header, .5, {opacity: 1, y: 0})
