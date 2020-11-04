@@ -98,10 +98,11 @@ const Projects = ({ history }) => {
     const project6 = document.querySelectorAll('.project-box')[5]
     const project7 = document.querySelectorAll('.project-box')[6]
     const project8 = document.querySelectorAll('.project-box')[7]
+
     const displayProjects = gsap.timeline();
 
-    gsap.set(header, {opacity: 0, y: 50})
-    gsap.set(projects, {opacity: 0, y: 50})
+    gsap.set(header, {y: 50})
+    gsap.set(projects, {y: 50})
 
     displayProjects
         .to(header, .25, {delay: .25, opacity: 1, y: 0})

@@ -47,7 +47,7 @@ const ProjectBox = ({ proj, close }) => {
             openModal(true)}
           }
         >
-          <div className="about-img project-img">
+          <div className="project-img">
             {img ? (
               <img src={require(`../assets/${img}`)} alt="project" />
             ): (<Fragment></Fragment>)}
