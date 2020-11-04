@@ -34,11 +34,7 @@ const About = ({ history }) => {
       const bar = document.querySelector('.about-bar-title')
       const tl = gsap.timeline()
 
-      gsap.set(header, { opacity: 0, y: 50 })
-      gsap.set(abtImg, { opacity: 0 })
-      gsap.set(abtTextCt, {height: '0vh', width: '0vh', opacity: 0 })
-      gsap.set(abtText, {opacity: 0 })
-      gsap.set(bar, { opacity: 0 })
+      gsap.set(header, { y: 50 })
 
       tl.to(header, .5, { opacity: 1, y: 0 })
         .to(abtTextCt, .5, { opacity: 1, ease: Power1.easeIn, height: '60vh', width: '80vw' })

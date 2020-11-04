@@ -64,6 +64,7 @@ canvas {
   position: relative;
   text-shadow:
   0.02em 0 0 white;
+  opacity: 0;
 }
 
 svg {
@@ -131,6 +132,9 @@ svg {
   background-color: rgba(38, 48, 86, .75);
   color: white;
   border: 1px solid #7E5E9A;
+  opacity: 0;
+  height: 0vh;
+  width: 0vh;
 }
 
 .about-bar {
@@ -149,6 +153,7 @@ svg {
 
 .about-bar-title {
   margin-left: 11px;
+  opacity: 0;
 }
 
 .about-bar i {
@@ -167,6 +172,7 @@ svg {
   height: 100%;
   width: 100%;
   color: white;
+  opacity: 0;
 }
 
 .about-info {
@@ -202,6 +208,7 @@ svg {
   padding-right: 2%;
   margin-left: auto;
   font-size: 1.25rem;
+  opacity: 0;
 }
 
 .about-text span {
@@ -239,6 +246,7 @@ svg {
 
 .skills-grid {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
@@ -565,6 +573,14 @@ svg {
   margin-top: 10px;
 }
 
+.tech-list ul li {
+  font-family: 'VCR';
+  background-color: #7E5E9A;
+  color: white;
+  padding: 2.5px;
+  margin-bottom: 5px;
+}
+
 .about-header {
   font-family: 'VCR';
   font-size: 1.5rem;
@@ -617,6 +633,10 @@ svg {
     width: 100%;
   }
 
+  #about .header {
+    left: -5%;
+  }
+
   .about-content {
     height: 100%;
     flex-direction: column;
@@ -633,7 +653,7 @@ svg {
   };
 
   .about-img img {
-    width: 20%;
+    width: 25%;
     height: auto;
     margin-right: 2.5%;
   };
@@ -644,7 +664,7 @@ svg {
 
   .about-text span {
     display: block;
-    font-size: 1.75vh;
+    font-size: 1.65vh;
     margin-left: 15px;
     margin-bottom: 10px;
   }
@@ -719,7 +739,7 @@ svg {
   }
 
   .exp-text span {
-    font-size: 1.3vh;
+    font-size: 1.35vh;
   }
 
   #exp-content .other-box {
@@ -735,7 +755,7 @@ svg {
   }
 
   .other-exp-text div {
-    font-size: 1.25vh;
+    font-size: 1.35vh;
     margin-right: 15px;
     text-align: center;
     width: 100%;
@@ -907,7 +927,7 @@ svg {
     }
 
     .about-text span {
-      font-size: .5rem;
+      font-size: 1.75vh;
       margin-left: 15px;
       margin-bottom: 10px;
     }
@@ -1269,7 +1289,7 @@ svg {
     }
 
     .about-info {
-      font-size: .75rem;
+      font-size: 2.2vh;
     };
 
     .about-text {
@@ -1277,9 +1297,15 @@ svg {
     }
 
     .about-text span {
-      font-size: .9rem;
+      font-size: 2.2vh;
       margin-left: 25px;
       margin-bottom: 10px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     .skills-grid .project-box {
@@ -1308,7 +1334,7 @@ svg {
     }
 
     #exp-content .about-bar span, #exp-content .about-bar i {
-      font-size: .75rem;
+      font-size: 1.75vh;
     }
 
     #exp-content .about-img {
@@ -1427,7 +1453,7 @@ svg {
 }
 
 
-@media only screen and (orientation: landscape) and (min-width: 1000px) and (max-width: 1110px) {
+@media only screen and (orientation: landscape) and (min-width: 1000px) and (max-width: 1129px) {
 
     .home-header-container {
       left: 25%;
@@ -1459,7 +1485,7 @@ svg {
 
     .about-text span {
       display: block;
-      font-size: 1rem;
+      font-size: 2.45vh;
       margin-left: 15px;
       margin-bottom: 10px;
     }
@@ -1469,7 +1495,7 @@ svg {
     }
 
     #exp-content .about-text span, .other-exp-text {
-      font-size: .9rem;
+      font-size: 1.75vh;
     }
 
     .project-content {
@@ -1546,134 +1572,6 @@ svg {
 
 }
 
-@media only screen and (orientation: landscape) and (min-width: 1129px) {
-
-    #home-content {
-      position: relative;
-    };
-
-    .home-header-container {
-      left: 25%;
-    }
-
-    #home-content .items {
-      font-size: 2.25rem;
-    }
-
-    #about, #skills, #exp, #projects {
-      top: 5%;
-    };
-
-    .about-content {
-      padding: 20px;
-    };
-
-    .about-img {
-      width: 50%;
-    };
-
-    .about-info {
-      font-size: 1rem;
-    };
-
-    .about-text {
-      opacity: 0;
-    }
-
-    .about-text span {
-      display: block;
-      font-size: 1.25rem;
-      margin-left: 15px;
-      margin-bottom: 10px;
-    }
-
-    .skills-content p {
-      font-size: 1rem;
-    }
-
-    #exp-content .about-text span {
-      font-size: 1rem;
-    }
-
-    .other-exp-text {
-      font-size: .9rem;
-    }
-
-    .project-content {
-      padding: 0;
-    }
-
-    .project-bar {
-      font-size: .8rem
-    }
-
-    .project-img {
-      width: 100%;
-      height: 75%;
-    }
-
-    .fab, .far {
-      font-size: 2rem;
-      margin-right: 2.5%;
-    }
-
-    .project-img img {
-      width: 100%;
-      height: 100%;
-    }
-
-    .modal {
-      top: 12.5%;
-    }
-
-    .modal-header {
-      font-size: 2.5rem;
-      letter-spacing: -5px;
-    }
-
-    .modal-img img {
-      height: 90%;
-      width: 100%;
-    }
-
-    .modal-languages div, .tech-list div {
-      font-size: 1.5rem;
-    }
-
-    .modal-languages i {
-      margin-top: 20px;
-      font-size: 2.5rem;
-    }
-
-    .tech-list {
-      width: 100%;
-      font-size: 1.5rem;
-    }
-
-    .tech-list ul {
-      margin-left: -10px;
-      margin-top: 10px;
-    }
-
-    .tech-list ul li {
-      font-size: 1rem;
-    }
-
-    .modal-content .about-header {
-      font-size: 2rem;
-    }
-
-    .modal-text {
-      font-size: 1.5rem;
-    }
-
-    .modal-content .about-info p {
-      font-size: 1.25rem;
-    }
-
-
-}
-
 @media only screen and (orientation: landscape) and (min-width: 1130px) and (max-width: 1440px) {
 
 
@@ -1708,7 +1606,7 @@ svg {
     };
 
     .about-info {
-      font-size: 1rem;
+      font-size: 2vh;
     };
 
     .about-text {
@@ -1716,15 +1614,19 @@ svg {
     }
 
     .about-text span {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
 
     .skills-content p {
       font-size: 1rem;
     }
 
+    #exp-content .about-text span {
+      font-size: 1.9vh;
+    }
+
     .other-exp-text {
-      font-size: 1.1rem;
+      font-size: 1.9vh;
     }
 
     .project-content {
@@ -1732,12 +1634,16 @@ svg {
     }
 
     .project-bar {
-      font-size: .8rem
+      font-size: 1.85vh
     }
 
     .project-img {
       width: 100%;
-      height: 80%;
+      height: 70%;
+    }
+
+    .modal {
+      top: 12.5%;
     }
 
     .modal-languages div, .tech-list div {
@@ -1772,7 +1678,7 @@ svg {
     }
 
     .modal-content .about-info p {
-      font-size: 1.5rem;
+      font-size: 3vh;
     }
 }
 
