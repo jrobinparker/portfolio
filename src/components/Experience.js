@@ -52,18 +52,47 @@ const Experience = ({ history }) => {
     gsap.set(otherCont, {opacity: 0, height: '0vh', width: '0vh'})
     gsap.set(otherText, {opacity: 0})
 
-    tl.to(header, .5, {opacity: 1, y: 0})
-      .to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '50vh', width: '80vw' })
-      .to(bar, .25, {opacity: 1})
-      .to(close, .1, {opacity: 1})
-      .to(abtText, .25, { opacity: 1 })
-      .to(abtImg, .25, { opacity: 1 })
-      .to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '50vh', width: '80vw' })
-      .to(otherBar, .25, {opacity: 1})
-      .to(otherBarClose, .1, {opacity: 1})
-      .to(otherText, .25, { opacity: 1 })
+    if (window.innerWidth >= 700) {
+      tl.to(header, .5, {opacity: 1, y: 0})
+        .to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '50vh', width: '80vw' })
+        .to(bar, .25, {opacity: 1})
+        .to(close, .1, {opacity: 1})
+        .to(abtText, .25, { opacity: 1 })
+        .to(abtImg, .25, { opacity: 1 })
+        .to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '50vh', width: '20vw' })
+        .to(otherBar, .25, {opacity: 1})
+        .to(otherBarClose, .1, {opacity: 1})
+        .to(otherText, .25, { opacity: 1 })
+    }
+
+    if (window.innerWidth <= 699) {
+      tl.to(header, .5, {opacity: 1, y: 0})
+        .to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '50vh', width: '80vw' })
+        .to(bar, .25, {opacity: 1})
+        .to(close, .1, {opacity: 1})
+        .to(abtText, .25, { opacity: 1 })
+        .to(abtImg, .25, { opacity: 1 })
+        .to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '15vh', width: '80vw' })
+        .to(otherBar, .25, {opacity: 1})
+        .to(otherBarClose, .1, {opacity: 1})
+        .to(otherText, .25, { opacity: 1 })
+    }
 
     }, [])
+
+  useEffect(() => {
+    const otherCont = document.querySelector('.other-box')
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 700) {
+        gsap.to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '50vh', width: '20vw' })
+      }
+
+      if (window.innerWidth <= 699) {
+        gsap.to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '15vh', width: '80vw' })
+      }
+    })
+  })
 
   const closeAnimation = async () => {
     const header = document.getElementById('about-header')
@@ -100,12 +129,12 @@ const Experience = ({ history }) => {
             <i class="fas fa-times" style={{ marginLeft: 'auto' }} onClick={() => close()}/>
           </div>
             <div className="about-content">
-            <div className="about-img" style={{ width: '25%', marginRight: '10px' }}>
+            <div className="about-img">
               <div className="about-info">
                 {agInfo.map((abt, i) => <AboutInfo itemType={'text'} itemText={abt} number={i} />)}
               </div>
             </div>
-              <div className="about-text">
+              <div className="about-text exp-text">
               <span>Developed a solution to deliver higher quality employee metrics for case staffing and marketing initiatives by analyzing employee resumes using natural language processing and Pandas.</span>
               <span>Built a desktop GUI app using tkinter, Selenium, and pandas to get language proficiency data from 1000+ employee profiles, providing essential data for international marketing initiatives.</span>
               <span>Created a data visualization dashboard to analyze deeply-nested JSON data from the firm's events app with Pandas, Bokeh, Flask, React, and Bulma.</span>
@@ -126,10 +155,10 @@ const Experience = ({ history }) => {
                   {experience.map(exp => {
                     return (
                       <div className="other-exp-text">
-                        {exp.company} <br />
-                        {exp.location} <br />
-                        {exp.title} <br />
-                        {exp.length} <br />
+                        <div>{exp.company}</div>
+                        <div>{exp.location}</div>
+                        <div>{exp.title}</div>
+                        <div>{exp.length}</div>
                       </div>
                     )
                   })}

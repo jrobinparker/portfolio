@@ -8,7 +8,7 @@ const Projects = ({ history }) => {
       {
         name: 'Event App Data Dashboard',
         languages: ['js', 'python', 'html', 'css'],
-        tech: ['bulma', 'bokeh', 'pandas', 'flask', 'react', 'react router', 'react visibility sensor'],
+        tech: ['bokeh', 'pandas', 'flask', 'react', 'react router', 'react visibility sensor'],
         about: 'Every year I help support the A/V elements of the annual New Hire Orientation event, including the mobile app, which includes useful information for attendees. The event project leaders wanted usage statistics for a better understanding of the ROI of the app. Unfortunately, reporting on this data was limited, and could only be exported as deeply-nested JSON. I created a data visualization dashboard to present analysis of usage data with Pandas, Bokeh, Flask, React, and Bulma, which helped the event project leaders quickly gain useful insights into how attendees were utilizing the app.',
         github: null,
         img: 'ago-app-gif.gif',
@@ -48,7 +48,7 @@ const Projects = ({ history }) => {
       {
         name: 'MFC Online University',
         languages: ['js', 'html', 'css'],
-        tech: ['node', 'express', 'mongodb', 'mongoose', 'bcrypt', 'jwt', 'react', 'react router', 'redux', 'ffmpeg', 'react player', 'paypal api'],
+        tech: ['node', 'express', 'mongodb', 'mongoose', 'bcrypt', 'jwt', 'react', 'react router', 'redux', 'ffmpeg', 'paypal api'],
         about: 'This is the proposed page for an upcoming martial arts tournament in southern New Jersey.',
         github: 'https://github.com/jrobinparker/battle-at-the-shore',
         img: 'bats-gif.gif',

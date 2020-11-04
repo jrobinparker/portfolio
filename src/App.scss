@@ -228,7 +228,7 @@ svg {
   top: 5%;
 }
 
-.skills-container, .edu-container {
+.skills-container {
   height: 40vh;
   width: 100vw;
 }
@@ -583,8 +583,851 @@ svg {
   cursor: pointer
 }
 
+@media only screen and (orientation: portrait) and (min-width: 400px) and (max-width: 699px) {
 
-@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  .header {
+    font-size: 4rem;
+  }
+
+  svg {
+    display: none;
+  }
+
+  #home-content {
+    width: 100vw;
+    position: relative;
+    left: -5%;
+  }
+
+  #home-content .header {
+    position: relative;
+    left: 0%;
+  }
+
+  #home-content .items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5rem;
+    position: relative;
+    left: 5%;
+  }
+
+  #home-content .items .item {
+    width: 100%;
+  }
+
+  .about-content {
+    height: 100%;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+  };
+
+  .about-img {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+  };
+
+  .about-img img {
+    width: 20%;
+    height: auto;
+    margin-right: 2.5%;
+  };
+
+  .about-info {
+    font-size: .75rem;
+  };
+
+  .about-text span {
+    display: block;
+    font-size: 1.75vh;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+  }
+
+  .skills-grid .about-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .skills-grid .about-bar {
+    font-size: 2vh;
+  }
+
+  .skills-grid .about-bar span {
+    padding-left: 5px;
+  }
+
+  .skills-content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .skills-content p {
+    display: inline-block;
+    margin: 7px 7px 7px 0px;
+  }
+
+  .skills-content p:last-of-type {
+    margin-right: 0;
+  }
+
+  #exp .header {
+    left: -5%;
+  }
+
+  #exp-content {
+    flex-direction: column;
+    position: relative;
+    left: 5%;
+  }
+
+  #exp-content .about-box {
+    width: 100%;
+    height: 50%;
+  }
+
+  #exp-content .about-content {
+    width: 95%;
+    height: 100%;
+    padding-top: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #exp-content .about-img {
+    width: 100%;
+    align-self: flex-start;
+    margin-bottom: 5px;
+  }
+
+  #exp-content .about-box .about-text {
+    padding-left: 0px;
+    margin-left: 0px;
+    align-self: center;
+  }
+
+  .exp-text {
+  }
+
+  .exp-text span {
+    font-size: 1.3vh;
+  }
+
+  #exp-content .other-box {
+    margin-top: 10px;
+    max-width: 80%;
+  }
+
+  .other-box .about-text {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .other-exp-text div {
+    font-size: 1.25vh;
+    margin-right: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .other-exp-text div:last-of-type {
+    margin-right: 0px;
+  }
+
+  .projects-grid {
+  }
+
+  .project-box {
+    height: 50%;
+    width: 30%;
+  }
+
+  .project-bar span, .project-bar i {
+    font-size: .7rem;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .project-img img {
+    height: 75%;
+    width: 100%;
+  }
+
+  .project-languages i {
+    font-size: 1.5rem;
+  }
+
+  .modal {
+    top: 12.5%;
+  }
+
+  .modal-header {
+    font-size: 1rem;
+  }
+
+  .modal-content {
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+  }
+
+  .modal-img {
+    height: 85%;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .modal-img img {
+    height: 100%;
+    width: 70%;
+    align-self: center;
+  }
+
+  #modal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-languages, .tech-list {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .tech-list {
+    text-align: center;
+  }
+
+  .modal-languages div, .tech-list div {
+    display: none;
+  }
+
+  .modal-languages i {
+    font-size: 1.25rem;
+  }
+
+  .tech-list {
+    font-size: 1rem;
+  }
+
+  .tech-list ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    width: 70%;
+    padding: 0;
+    margin-left: 25px;
+  }
+
+  .tech-list ul li {
+    font-size: .75rem;
+    font-family: 'VCR';
+    background-color: #7E5E9A;
+    color: white;
+    padding: 2.5px;
+    margin-bottom: 5px;
+  }
+
+  .modal-content .about-header {
+    font-size: 1rem;
+    align-self: center;
+  }
+
+  .modal-content .about-info p {
+    font-size: 2vh;
+    width: 90%;
+    padding-left: -5px;
+  }
+
+  .modal-close {
+    margin-left: auto;
+    cursor: pointer
+  }
+
+}
+
+
+@media only screen and (orientation: landscape) and (min-width: 500px) and (max-width: 599px) {
+
+    .header {
+      font-size: 3rem;
+    }
+
+    svg {
+      display: none;
+    }
+
+    #home-content .items {
+      font-size: 1rem;
+    }
+
+    #about, #skills, #exp, #projects {
+      top: 0%;
+    };
+
+    .about-content {
+      padding: 10px;
+    };
+
+    .about-img {
+      width: 50%;
+      height: 20%;
+    };
+
+    .about-img img {
+      width: 100%;
+      height: auto;
+    }
+
+    .about-info {
+      font-size: .4rem;
+    };
+
+    .about-text {
+      opacity: 0;
+    }
+
+    .about-text span {
+      font-size: .5rem;
+      margin-left: 15px;
+      margin-bottom: 10px;
+    }
+
+    .skills-grid .project-box {
+      height: 27vh;
+    }
+
+    .skills-grid .project-bar {
+      padding-top: 10px;
+    }
+
+    .skills-grid .project-bar span, .skills-grid .project-bar i {
+      margin-top: -10px;
+      font-size: .75rem;
+    }
+
+    .skills-content {
+      padding-top: 0;
+    }
+
+    .skills-content p {
+      font-size: .3rem;
+    }
+
+    #exp-content .about-content {
+      padding: 10px;
+    }
+
+    #exp-content .about-bar span, #exp-content .about-bar i {
+      font-size: .5rem;
+    }
+
+    #exp-content .about-img {
+      width: 20%;
+    }
+
+    .exp-text span, .other-exp-text {
+      font-size: 2vh;
+    }
+
+    .exp-text span {
+      margin-bottom: 5px;
+    }
+
+    .project-content {
+      padding: 0;
+    }
+
+    .projects-grid .project-bar, .projects-grid .project-bar i {
+      font-size: .5rem
+    }
+
+    .project-img {
+      width: 100%;
+      height: 55%;
+      margin-bottom: 1px;
+    }
+
+    .fab, .far {
+      font-size: 1rem;
+      margin-right: 2.5%;
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 90%;
+    }
+
+    .modal {
+      top: 12.5%;
+    }
+
+    .modal-header {
+      font-size: 1rem;
+    }
+
+    .modal-img img {
+      height: 90%;
+      width: 100%;
+    }
+
+    #modal-info {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .modal-languages, .tech-list {
+      font-size: 1rem;
+    }
+
+    .modal-languages div, .tech-list div {
+      display: none;
+    }
+
+    .modal-languages i {
+      font-size: 1.25rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .tech-list {
+      font-size: 1rem;
+      margin-top: -15px;
+    }
+
+    .tech-list ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .tech-list ul li {
+      font-size: .75rem;
+      font-family: 'VCR';
+      background-color: #7E5E9A;
+      color: white;
+      padding: 2.5px;
+      margin-bottom: 5px;
+    }
+
+    .about-header {
+      font-size: 1rem;
+    }
+
+    .modal-text {
+      font-size: 1.5rem;
+    }
+
+    .about-info p {
+      font-size: .75rem;
+    }
+
+    .modal-close {
+      margin-left: auto;
+      cursor: pointer
+    }
+
+
+}
+
+@media only screen and (orientation: landscape) and (min-width: 600px) and (max-width: 699px) {
+
+    .header {
+      font-size: 4rem;
+    }
+
+    svg {
+      display: none;
+    }
+
+    #home-content .items {
+      font-size: 1.25rem;
+    }
+
+    #about, #skills, #exp, #projects {
+      top: 0%;
+    };
+
+    .about-content {
+      padding: 10px;
+    };
+
+    .about-img {
+      width: 50%;
+      height: 20%;
+    };
+
+    .about-img img {
+      width: 100%;
+      height: auto;
+    }
+
+    .about-info {
+      font-size: .5rem;
+    };
+
+    .about-text {
+      opacity: 0;
+    }
+
+    .about-text span {
+      font-size: .7rem;
+      margin-left: 15px;
+      margin-bottom: 10px;
+    }
+
+    .skills-grid .project-box {
+      height: 27vh;
+    }
+
+    .skills-grid .project-bar {
+      padding-top: 10px;
+    }
+
+    .skills-grid .project-bar span, .skills-grid .project-bar i {
+      margin-top: -10px;
+      font-size: .75rem;
+    }
+
+    .skills-content {
+      padding-top: 0;
+    }
+
+    .skills-content p {
+      font-size: .5rem;
+    }
+
+    #exp-content .about-content {
+      padding: 10px;
+    }
+
+    #exp-content .about-bar span, #exp-content .about-bar i {
+      font-size: .5rem;
+    }
+
+    #exp-content .about-img {
+      width: 20%;
+    }
+
+    .exp-text span, .other-exp-text {
+      font-size: 2vh;
+    }
+
+    .exp-text span {
+      margin-bottom: 5px;
+    }
+
+    .project-content {
+      padding: 0;
+    }
+
+    .projects-grid .project-bar, .projects-grid .project-bar i {
+      font-size: .5rem
+    }
+
+    .project-img {
+      width: 100%;
+      height: 55%;
+      margin-bottom: 1px;
+    }
+
+    .fab, .far {
+      font-size: 1rem;
+      margin-right: 2.5%;
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .modal {
+      top: 12.5%;
+    }
+
+    .modal-header {
+      font-size: 1rem;
+    }
+
+    .modal-img img {
+      height: 90%;
+      width: 100%;
+    }
+
+    #modal-info {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .modal-languages, .tech-list {
+      font-size: 1rem;
+    }
+
+    .modal-languages div, .tech-list div {
+      display: none;
+    }
+
+    .modal-languages i {
+      font-size: 1.25rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .tech-list {
+      font-size: 1rem;
+      margin-top: -15px;
+    }
+
+    .tech-list ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .tech-list ul li {
+      font-size: .75rem;
+      font-family: 'VCR';
+      background-color: #7E5E9A;
+      color: white;
+      padding: 2.5px;
+      margin-bottom: 5px;
+    }
+
+    .about-header {
+      font-size: 1rem;
+    }
+
+    .modal-text {
+      font-size: 1.5rem;
+    }
+
+    .about-info p {
+      font-size: .75rem;
+    }
+
+    .modal-close {
+      margin-left: auto;
+      cursor: pointer
+    }
+
+
+}
+
+@media only screen and (orientation: landscape) and (min-width: 700px) and (max-width: 999px) {
+
+    .header {
+      font-size: 4rem;
+    }
+
+    svg {
+      display: none;
+    }
+
+    #home-content .items {
+      font-size: 1.4rem;
+    }
+
+    #about, #skills, #exp, #projects {
+      top: 5%;
+    };
+
+    .about-content {
+      padding: 20px;
+    };
+
+    .about-img {
+      width: 100%;
+      height: 20%;
+    };
+
+    .about-img img {
+      width: 100%;
+      height: auto;
+    }
+
+    .about-info {
+      font-size: .75rem;
+    };
+
+    .about-text {
+      opacity: 0;
+    }
+
+    .about-text span {
+      font-size: .9rem;
+      margin-left: 25px;
+      margin-bottom: 10px;
+    }
+
+    .skills-grid .project-box {
+      height: 27vh;
+    }
+
+    .skills-grid .project-bar {
+      padding-top: 10px;
+    }
+
+    .skills-grid .project-bar span, .skills-grid .project-bar i {
+      margin-top: -10px;
+      font-size: .65rem;
+    }
+
+    .skills-content {
+      padding-top: 0;
+    }
+
+    .skills-content p {
+      font-size: .5rem;
+    }
+
+    #exp-content .about-content {
+      padding: 15px;
+    }
+
+    #exp-content .about-bar span, #exp-content .about-bar i {
+      font-size: .75rem;
+    }
+
+    #exp-content .about-img {
+      width: 30%;
+    }
+
+    .exp-text span{
+      font-size: 1.5vh;
+    }
+
+    .other-exp-text div {
+      font-size: 1.75vh;
+      margin-left: -10px;
+    }
+
+    .project-content {
+      padding: 0;
+    }
+
+    .projects-grid .project-bar, .projects-grid .project-bar i {
+      font-size: .70rem
+    }
+
+    .project-img {
+      width: 100%;
+      height: 80%;
+    }
+
+    .fab, .far {
+      font-size: 1rem;
+      margin-right: 2.5%;
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .modal {
+      top: 12.5%;
+    }
+
+    .modal-header {
+      font-size: 1rem;
+    }
+
+    .modal-img {
+      width: 90%;
+      height: auto;
+    }
+
+    .modal-img img {
+      height: 100%;
+      width: 100%;
+    }
+
+    #modal-info {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .modal-languages, .tech-list {
+      font-size: 1.5rem;
+    }
+
+    .modal-languages div, .tech-list div {
+      display: none;
+    }
+
+    .modal-languages i {
+      font-size: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .tech-list {
+      font-size: 1.5rem;
+      margin-top: -15px;
+    }
+
+    .tech-list ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .tech-list ul li {
+      font-size: .75rem;
+      font-family: 'VCR';
+      background-color: #7E5E9A;
+      color: white;
+      padding: 2.5px;
+      margin-bottom: 5px;
+    }
+
+    .about-header {
+      font-size: 1.5rem;
+    }
+
+    .modal-text {
+      font-size: 2rem;
+    }
+
+    .about-info p {
+      font-size: 1rem;
+    }
+
+    .modal-close {
+      margin-left: auto;
+      cursor: pointer
+    }
+
+
+}
+
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) and (max-width: 1110px) {
 
     .home-header-container {
       left: 25%;
@@ -703,7 +1546,7 @@ svg {
 
 }
 
-@media only screen and (orientation: landscape) and (min-width: 1100px) {
+@media only screen and (orientation: landscape) and (min-width: 1129px) {
 
     #home-content {
       position: relative;

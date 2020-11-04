@@ -16,12 +16,12 @@ const About = ({ history }) => {
     },
     {
       type: 'link',
-      text: 'Github: jrobinparker',
+      text: 'View Github',
       url: 'https://github.com/jrobinparker'
     },
     {
       type: 'link',
-      text: 'LinkedIn: jrobinparker',
+      text: 'View LinkedIn',
       url: 'https://www.linkedin.com/in/jrobinparker/'
     }
   ])
