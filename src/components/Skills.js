@@ -13,18 +13,18 @@ const Skills = ({ history }) => {
 
   const openAnimation = () => {
     const header = document.getElementById('skills-header')
-    const skills = document.querySelectorAll('.about-box')
-    const skill1 = document.querySelectorAll('.about-box')[0]
-    const skill2 = document.querySelectorAll('.about-box')[1]
-    const skill3 = document.querySelectorAll('.about-box')[2]
-    const skill4 = document.querySelectorAll('.about-box')[3]
-    const skill5 = document.querySelectorAll('.about-box')[4]
-    const skill6 = document.querySelectorAll('.about-box')[5]
+    const skills = document.querySelectorAll('.skills-box')
+    const skill1 = document.querySelectorAll('.skills-box')[0]
+    const skill2 = document.querySelectorAll('.skills-box')[1]
+    const skill3 = document.querySelectorAll('.skills-box')[2]
+    const skill4 = document.querySelectorAll('.skills-box')[3]
+    const skill5 = document.querySelectorAll('.skills-box')[4]
+    const skill6 = document.querySelectorAll('.skills-box')[5]
 
     const tl = gsap.timeline();
 
-    gsap.set(header, {opacity: 0, y: 50})
-    gsap.set(skills, {opacity: 0, y: 50})
+    gsap.set(header, {y: 50})
+    gsap.set(skills, {y: 50})
 
     tl
         .to(header, .25, {delay: .25, opacity: 1, y: 0})
@@ -38,7 +38,7 @@ const Skills = ({ history }) => {
 
   const closeAnimation = async () => {
     const header = document.getElementById('skills-header')
-    const skills = document.querySelectorAll('.about-box')
+    const skills = document.querySelectorAll('.skills-box')
     const tl = gsap.timeline();
 
     await tl

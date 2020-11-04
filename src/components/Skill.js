@@ -3,7 +3,7 @@ import React from 'react';
 const Skill = ({ skills, skillName, close }) => {
 
     return (
-      <div className="about-box skill-box" id={`${skillName}`} style={{ cursor: 'default' }}>
+      <div className="skills-box" id={`${skillName}`} style={{ cursor: 'default' }}>
         <div className="about-bar">
           <span>{skillName}</span>
           <i class="fas fa-times" onClick={() => close()}/>
