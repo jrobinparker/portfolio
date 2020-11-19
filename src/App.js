@@ -12,7 +12,7 @@ import Scene from './components/Scene';
 const App = () => {
 
     return (
-      <Fragment>
+      <div className="app">
         <Router>
           <Switch>
             <div className="container">
@@ -30,7 +30,7 @@ const App = () => {
             </Suspense>
 
         </Canvas>
-    </Fragment>
+    </div>
   );
 }
 
