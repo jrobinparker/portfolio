@@ -1,10 +1,11 @@
 import React, { Fragment, useEffect } from 'react';
 import ProjectLanguages from './ProjectLanguages';
+import ModalButton from './ModalButton';
 import gsap from 'gsap';
 import { createPortal } from 'react-dom';
 import { Power1 } from 'gsap';
 
-const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, number }, closeModal }) => {
+const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, number, type }, closeModal }) => {
 
   useEffect(() => {
     const header = document.getElementById('about-header')
@@ -55,8 +56,9 @@ const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, 
             <div className="about-info">
               <div className="about-header">About the Project</div>
               <p>{about}</p>
+              {!github ? null : <ModalButton text={'view github'} link={github} />}
+              {!url ? null : <ModalButton text={'view site'} link={url} />}
             </div>
-
         </div>
       </div>
     </div>

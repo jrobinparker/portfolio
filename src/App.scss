@@ -467,21 +467,6 @@ svg {
   margin-right: 50px;
 }
 
-.git {
-  display: flex;
-  flex-direction: column;
-}
-
-.git-link, .web-link {
-  opacity: 0;
-  margin-left: 2px;
-  background-color: #BED38E;
-  color: #2A2A35;
-  width: 50%;
-  align-self: flex-start;
-  text-align: center;
-}
-
 .project-modal {
   position: absolute;
   z-index: 999;
@@ -592,6 +577,7 @@ svg {
   font-family: 'VCR';
   font-size: 1.5rem;
   margin-bottom: 2.5%;
+  text-align: center;
 }
 
 .modal-text {
@@ -604,6 +590,28 @@ svg {
 .modal-close {
   margin-left: auto;
   cursor: pointer
+}
+
+.modal-button {
+  font-family: 'VCR';
+  background-color: #7E5E9A;
+  font-size: 1.5rem;
+  display: block;
+  border: none;
+  width: 30%;
+  padding: 10px;
+  position: relative;
+  left: 35%;
+  cursor: pointer;
+}
+
+.modal-button:first-of-type {
+  margin-bottom: 20px;
+}
+
+.modal-button a {
+  text-decoration: none;
+  color: white;
 }
 
 @media only screen and (orientation: portrait) and (min-width: 400px) and (max-width: 699px) {

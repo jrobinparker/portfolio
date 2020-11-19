@@ -40,7 +40,7 @@ const Projects = ({ history }) => {
         languages: ['js', 'html', 'css'],
         tech: ['react', 'axios'],
         about: 'Our learning management system, Docebo, does not have an easy way to download course content outside of the command line. I created an app that connects to the API and allows users to easily download course content.',
-        github: 'https://github.com/jrobinparker/jchain',
+        github: null,
         img: 'agu-img.png',
         url: null,
         type: 'work'
@@ -50,10 +50,10 @@ const Projects = ({ history }) => {
         languages: ['js', 'html', 'css'],
         tech: ['node', 'express', 'mongodb', 'mongoose', 'bcrypt', 'jwt', 'react', 'react router', 'redux', 'ffmpeg', 'paypal api'],
         about: 'This is the proposed page for an upcoming martial arts tournament in southern New Jersey.',
-        github: 'https://github.com/jrobinparker/battle-at-the-shore',
+        github: null,
         img: 'mfc-img.png',
         url: 'https://www.mfcuniversity.com',
-        type: 'personal'
+        type: 'freelance'
       },
       {
         name: 'Renshu',
