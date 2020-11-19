@@ -1,4 +1,4 @@
-import React, { Fragment, Suspense } from 'react';
+import React, { Suspense } from 'react';
 import Home from './components/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import About from './components/About';
