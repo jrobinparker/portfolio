@@ -144,6 +144,7 @@ canvas {
 #home-content {
   position: relative;
   top: 25%;
+  opacity: 0;
 }
 
 .home-header-container {
@@ -170,6 +171,7 @@ canvas {
 }
 
 svg {
+  opacity: 0;
   position: absolute;
   z-index: -300;
   top: 70%;

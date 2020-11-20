@@ -13,9 +13,8 @@ const Home = () => {
 
       const tl = gsap.timeline()
 
-      gsap.set(home, { opacity: 0 })
-      gsap.set(header, { opacity: 0, y: 50 })
-      gsap.set(line, { opacity: 0, scaleX: 0 })
+      gsap.set(header, { y: 50 })
+      gsap.set(line, { scaleX: 0 })
       gsap.set(links, { opacity: 0 })
       tl.to(home, .5, {opacity: 1 })
         .to(header, .5, { opacity: 1, y: 0})
