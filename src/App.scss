@@ -10,7 +10,8 @@
 
 body {
   overflow: hidden;
-  font-family: "Work Sans"
+  font-family: "Work Sans";
+  background-color: black;
 }
 
 html, body, canvas {
@@ -29,11 +30,9 @@ canvas {
   height: 100vh;
   width: 100vw;
   background-color: black;
-  animation: fadeIn ease 1s;
-  -webkit-animation: fadeIn ease 1s;
-  -moz-animation: fadeIn ease 1s;
-  -webkit-transition: fadeOut 3s ease-in-out;
-  -moz-transition: fadeOut 3s ease-in-out;
+  animation: fadeIn ease .25s;
+  -webkit-animation: fadeIn ease .25s;
+  -moz-animation: fadeIn ease .25s;
 }
 
 .glitch {
@@ -51,7 +50,7 @@ canvas {
 
 .glitch span {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 35%;
 }
 
@@ -128,9 +127,7 @@ canvas {
 .app {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to top, rgba(255,105,180, .5) 0%, rgba(120,120,120, .75) 100%),
-    url('./assets/background.jpg');
-  background-size: cover;
+
 }
 
 .container {

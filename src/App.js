@@ -11,6 +11,7 @@ import './App.scss';
 import { Canvas } from 'react-three-fiber';
 
 const App = () => {
+
     return (
           <div className="app">
             <Router>
