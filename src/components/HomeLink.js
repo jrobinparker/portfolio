@@ -25,7 +25,7 @@ const HomeLink = ({ link, text, number }) => {
     setTimeout(() => {
       type()
     }, 1500)
-  }, [])
+  })
 
   return (
     <div className="item link">

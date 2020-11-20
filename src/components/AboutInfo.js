@@ -8,8 +8,7 @@ const AboutInfo = ({ itemType, itemText, number, order, itemLink }) => {
 
   useEffect(() => {
     type()
-    console.log(itemLink)
-  }, [])
+  })
 
   function type() {
       if (!document.querySelectorAll('.about-data-item')[number]) {
