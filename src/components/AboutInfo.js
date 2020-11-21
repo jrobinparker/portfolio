@@ -27,12 +27,12 @@ const AboutInfo = ({ itemType, itemText, number, order, itemLink }) => {
 
     return itemType !== 'link' ? (
         <div className="item">
-          <span className="about-data-item" style={{ color: 'white' }}></span>
+          <span className="about-data-item"></span>
         </div>
       ) : (
         <div className="item">
           <a href={`${itemLink}`} target='blank'>
-            <span className="about-data-item" style={{ color: 'white' }}></span>
+            <span className="about-data-item"></span>
           </a>
         </div>
       )
