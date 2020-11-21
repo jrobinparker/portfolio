@@ -1612,7 +1612,7 @@ svg {
 @media only screen and (orientation: landscape) and (min-width: 500px) and (max-width: 599px) {
 
     .header {
-      font-size: 3rem;
+      font-size: 15vh;
     }
 
     svg {
@@ -1622,22 +1622,19 @@ svg {
     #home-content {
       width: 100vw;
       position: relative;
-      left: -5%;
+      left: -0.5%;
       top: 25%;
-    }
-
-    #home-content .header {
-      position: relative;
-      left: -15%;
+      align-items: center;
     }
 
     #home-content .items {
       display: flex;
-      flex-direction: column;
       text-align: center;
       font-size: 5vh;
-      position: relative;
-      left: 5%;
+    }
+
+    #home-content .link::after {
+      width: 2.25%;
     }
 
     #about, #skills, #exp, #projects {
@@ -1814,7 +1811,7 @@ svg {
 @media only screen and (orientation: landscape) and (min-width: 600px) and (max-width: 699px) {
 
     .header {
-      font-size: 4rem;
+      font-size: 15vh;
     }
 
     svg {
@@ -1824,24 +1821,23 @@ svg {
     #home-content {
       width: 100vw;
       position: relative;
-      left: -5%;
+      left: -2%;
       top: 25%;
     }
 
     #home-content .header {
       position: relative;
-      left: -15%;
     }
 
     #home-content .items {
       display: flex;
-      flex-direction: column;
       text-align: center;
       font-size: 5vh;
-      position: relative;
-      left: 5%;
     }
 
+    #home-content .items .link::after {
+      width: 2.5%;
+    }
 
     #about, #skills, #exp, #projects {
       top: 0%;
@@ -2018,11 +2014,19 @@ svg {
 @media only screen and (orientation: landscape) and (min-width: 700px) and (max-width: 799px) {
 
     .header {
-      font-size: 8vh;
+      font-size: 15vh;
+    }
+
+    svg {
+      display: none;
     }
 
     #home-content .items {
-      font-size: 3vh;
+      font-size: 5vh;
+    }
+
+    #home-content .items .link::after {
+      width: 2.5%;
     }
 
     #about, #skills, #exp, #projects {
@@ -2204,7 +2208,7 @@ svg {
 @media only screen and (orientation: landscape) and (min-width: 800px) and (max-width: 1184px) {
 
     .header {
-      font-size: 8vh;
+      font-size: 15vh;
     }
 
     svg {
@@ -2212,7 +2216,11 @@ svg {
     }
 
     #home-content .items {
-      font-size: 3vh;
+      font-size: 4vh;
+    }
+
+    #home-content .items .link::after {
+      width: 2.5%;
     }
 
     #about, #skills, #exp, #projects {
@@ -2408,7 +2416,7 @@ svg {
     }
 
     #home-content .items {
-      font-size: 3vh;
+      font-size: 5vh;
     }
 
     .link::after {
@@ -2654,7 +2662,7 @@ svg {
 }
 
 /* iPhone X, iPhone 11 Pro, and iPhone 12 Mini - Portrait */
-@media only screen and (orientation: portrait) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (orientation: portrait) and (device-width: 812px) and (device-height: 375px) and (-webkit-device-pixel-ratio: 3) {
 
     html {
       overflow-y: hidden;
@@ -2662,7 +2670,7 @@ svg {
     }
 
     .header {
-      font-size: 8vh;
+      font-size: 15vh;
     }
 
     svg {
