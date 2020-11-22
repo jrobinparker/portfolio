@@ -26,7 +26,7 @@ const Projects = ({ history }) => {
         type: 'work'
       },
       {
-        name: 'Employee Language Scraper Bot',
+        name: 'Employee Language Scraper',
         languages: ['python'],
         tech: ['beautiful soup', 'pandas', 'selenium', 'tkinter'],
         about: 'The need for language speakers data continued to grow as Analysis Group expanded internationally. We did not have a reporting solution to obtain on language data, making case staffing for international projects and pitches to new clients difficult. Using Selenium and Beautiful Soup to scrape intranet profiles and Pandas to build the spreadsheet, I developed an app to get language proficiency data from 1000+ employee profiles, providing essential data for international projects and marketing initiatives. I also ported this to a GUI in tkinter for my teammates and separately scheduled the code to run nightly and save the spreadsheet to a shared team folder.',

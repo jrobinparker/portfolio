@@ -2113,14 +2113,17 @@ svg {
       padding: 0;
     }
 
-    .projects-grid .project-bar, .projects-grid .project-bar i {
-      font-size: .5rem
+    .project-box .project-bar {
+      height: 3%
+    }
+
+    .project-box .project-bar, .project-box .project-bar i {
+      font-size: 1.5vh
     }
 
     .project-img {
       width: 100%;
-      height: 55%;
-      margin-bottom: 1px;
+      height: 20vh;
     }
 
     .fab, .far {
@@ -2130,15 +2133,15 @@ svg {
 
     .project-img img {
       width: 100%;
-      height: 90%;
+      height: 100%;
     }
 
     .modal {
       top: 12.5%;
     }
 
-    .modal-header {
-      font-size: 2vh;
+    .modal .project-bar {
+      height: 2.5%;
     }
 
     .modal-img img {
@@ -2185,6 +2188,10 @@ svg {
 
     .about-info p {
       font-size: 2vh;
+    }
+
+    .modal-button {
+      font-size: 3vh;
     }
 
     .modal-close {
@@ -2305,14 +2312,17 @@ svg {
       padding: 0;
     }
 
-    .projects-grid .project-bar, .projects-grid .project-bar i {
-      font-size: .5rem
+    .project-box .project-bar {
+      height: 3%
+    }
+
+    .project-box .project-bar, .project-box .project-bar i {
+      font-size: 1.5vh
     }
 
     .project-img {
       width: 100%;
-      height: 55%;
-      margin-bottom: 1px;
+      height: 20vh;
     }
 
     .fab, .far {
@@ -2376,7 +2386,7 @@ svg {
     }
 
     .modal-content .about-info p {
-      font-size: 3vh;
+      font-size: 2.75vh;
       line-height: 15px;
     }
 
@@ -2498,7 +2508,7 @@ svg {
     }
 
     .project-box {
-      height: 25vh;
+      height: 30vh;
     }
 
     .projects-grid .project-bar, .projects-grid .project-bar i {
@@ -2510,17 +2520,25 @@ svg {
       margin-right: 2.5%;
     }
 
-    .project-img img {
+    .project-box .project-bar {
+      height: 3%
+    }
+
+    .project-box .project-bar, .project-box .project-bar i {
+      font-size: 1.5vh
+    }
+
+    .project-img {
       width: 100%;
-      height: 70%;
+      height: 20vh;
     }
 
     .modal {
       top: 12.5%;
     }
 
-    .modal-header {
-      font-size: 1rem;
+    .modal .project-bar {
+      height: 2%;
     }
 
     .modal-img {
@@ -2840,6 +2858,10 @@ svg {
 
     #projects {
       top: -1.5%;
+    }
+
+    .project-box .project-bar {
+      font-size: 1.5vh;
     }
 
     .project-content {
