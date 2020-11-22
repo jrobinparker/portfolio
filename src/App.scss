@@ -461,7 +461,9 @@ svg {
   margin-bottom: 10px;
 }
 
-
+#projects .header {
+  left: 5%;
+}
 
 .projects-grid {
   display: flex;
@@ -471,7 +473,7 @@ svg {
   height: 50%;
   position: relative;
   left: -10%;
-  top: 2%;
+  top: 5%;
 }
 
 .project-box {
@@ -490,7 +492,7 @@ svg {
   align-items: flex-start;
   align-content: baseline;
   font-family: 'VCR';
-  font-size: 1rem;
+  font-size: 2vh;
 }
 
 .project-bar span {
@@ -499,7 +501,7 @@ svg {
 }
 
 .project-bar i {
-  font-size: 1rem;
+  font-size: 2vh;
 }
 
 .project-content {
@@ -519,6 +521,10 @@ svg {
   text-align: center;
 }
 
+.project-languages i {
+  font-size: 3vh;
+}
+
 .project-button {
   width: 100%;
   border: none;
@@ -532,7 +538,7 @@ svg {
 
 
 .project-img {
-  height: 80%;
+  height: 21vh;
   width: 100%;
 }
 
@@ -564,11 +570,6 @@ svg {
 .project-img img {
   width: 100%;
   height: 100%;
-}
-
-.no-img {
-  position: relative;
-  left: -27%;
 }
 
 .project-header {
@@ -609,11 +610,10 @@ svg {
 
 .modal-card {
   position: relative;
-  top: 10%;
+  top: 30%;
   left: 25%;
   height: 80vh;
   max-width: 100vw;
-  width: 50%;
   background-color: #BED38E;
   padding: 0% 2% 0% 2%;
   opacity: 0;
@@ -647,7 +647,7 @@ svg {
   opacity: 0;
   display: flex;
   height: 100%;
-  padding: 10% 2.5% 0% 2.5%;
+  padding: 10px;
 }
 
 .modal-body {
@@ -655,33 +655,37 @@ svg {
   display: flex;
 }
 
+.modal-content .project-img {
+  height: 100%;
+  width: 60%;
+}
+
 .modal-img {
-  width: 80%;
-  height: 80%;
+  width: auto;
+  height: 40vh;
   display: flex;
   flex-direction: column;
 }
 
 .modal-img img {
-  height: 90%;
+  height: 100%;
   width: 100%;
 }
 
 .modal-languages {
   width: 100%;
   text-align: center;
-  font-size: 1.5rem;
-  margin-top: 20px;
+  font-size: 2vh;
   margin-bottom: 20px;
 }
 
-.modal-languages div, .tech-list div {
+.tech-list div {
   font-family: 'VCR';
 }
 
 .modal-languages i {
   margin-top: 20px;
-  font-size: 2.5rem;
+  font-size: 6vh;
 }
 
 .tech-list {
@@ -695,10 +699,16 @@ svg {
 
 .tech-list ul li {
   font-family: 'VCR';
+  font-size: 3vh;
   background-color: #7E5E9A;
   color: white;
   padding: 2.5px;
   margin-bottom: 5px;
+}
+
+.modal-content .about-info {
+  width: 80%;
+  padding-left: 20px;
 }
 
 .about-header {
@@ -712,11 +722,10 @@ svg {
   width: 70%;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  font-size: 1.25rem;
 }
 
 .modal-content .about-info p {
-  font-size: 1.5rem;
+  font-size: 3vh;
 }
 
 .modal-close {
@@ -735,6 +744,7 @@ svg {
   position: relative;
   left: 35%;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .modal-button:first-of-type {
@@ -1574,16 +1584,16 @@ svg {
         margin-right: 0px;
       }
 
-      .projects-grid {
+      #projects {
+        top: 10%;
       }
 
       .project-box {
-        height: 50%;
-        width: 30%;
+        height: 25vh;
       }
 
-      .project-bar span, .project-bar i {
-        font-size: .7rem;
+      .project-box .project-bar span, .project-box .project-bar i {
+        font-size: 1.25vh;
       }
 
       .project-img {
@@ -1598,7 +1608,7 @@ svg {
       }
 
       .project-languages i {
-        font-size: 1.5rem;
+        font-size: 3vh;
       }
 
       .modal {
@@ -1606,69 +1616,57 @@ svg {
       }
 
       .modal-header {
-        font-size: 1rem;
+        font-size: 2vh;
       }
 
       .modal-content {
         flex-direction: column;
         align-self: center;
         justify-content: center;
-        width: 95%;
+        width: 90%;
         height: 100%;
+        padding: 10px;
+      }
+
+      .modal-content .project-img {
+        height: 40%;
+        width: 100%;
+        align-self: center;
       }
 
       .modal-img {
-        height: 85%;
-        width: 100%;
+        display: flex;
         flex-direction: row;
+        justify-content: center;
       }
 
       .modal-img img {
-        height: 100%;
-        width: 70%;
-        align-self: center;
+        height: 60%;
+        width: 50%;
       }
 
       #modal-info {
         display: flex;
         flex-direction: column;
-        align-items: center;
-      }
-
-      .modal-languages, .tech-list {
-        font-size: 1rem;
         width: 100%;
       }
 
-      .tech-list {
-        text-align: center;
-      }
-
-      .modal-languages div, .tech-list div {
-        display: none;
-      }
-
       .modal-languages i {
-        font-size: 1.25rem;
-      }
-
-      .tech-list {
-        font-size: 1rem;
+        font-size: 4vh;
       }
 
       .tech-list ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-self: center;
         justify-content: center;
-        width: 70%;
+        width: 100%;
         padding: 0;
-        margin-left: 25px;
+        margin-left: 10px;
       }
 
       .tech-list ul li {
-        font-size: .75rem;
+        font-size: 2vh;
         font-family: 'VCR';
         background-color: #7E5E9A;
         color: white;
@@ -1676,15 +1674,18 @@ svg {
         margin-bottom: 5px;
       }
 
-      .modal-content .about-header {
-        font-size: 1rem;
+      .modal-content .about-info {
+        width: 90%;
         align-self: center;
       }
 
       .modal-content .about-info p {
+        font-size: 1.65vh;
+        text-align: center;
+      }
+
+      .modal-content .about-info .modal-button {
         font-size: 2vh;
-        width: 90%;
-        padding-left: -5px;
       }
 
       .modal-close {
@@ -1851,8 +1852,6 @@ svg {
         align-self: center;
       }
 
-      .exp-text {
-      }
 
       .exp-text span {
         font-size: 1.35vh;
@@ -1879,9 +1878,6 @@ svg {
 
       .other-exp-text div:last-of-type {
         margin-right: 0px;
-      }
-
-      .projects-grid {
       }
 
       .project-box {
@@ -1942,25 +1938,8 @@ svg {
         align-items: center;
       }
 
-      .modal-languages, .tech-list {
-        font-size: 1rem;
-        width: 100%;
-      }
-
-      .tech-list {
-        text-align: center;
-      }
-
-      .modal-languages div, .tech-list div {
-        display: none;
-      }
-
       .modal-languages i {
-        font-size: 1.25rem;
-      }
-
-      .tech-list {
-        font-size: 1rem;
+        font-size: 2vh;
       }
 
       .tech-list ul {
@@ -1975,7 +1954,7 @@ svg {
       }
 
       .tech-list ul li {
-        font-size: .75rem;
+        font-size: 1vh;
         font-family: 'VCR';
         background-color: #7E5E9A;
         color: white;
@@ -1984,7 +1963,7 @@ svg {
       }
 
       .modal-content .about-header {
-        font-size: 1rem;
+        font-size: 2vh;
         align-self: center;
       }
 
@@ -2158,8 +2137,6 @@ svg {
         align-self: center;
       }
 
-      .exp-text {
-      }
 
       .exp-text span {
         font-size: 1.35vh;
@@ -2188,16 +2165,17 @@ svg {
         margin-right: 0px;
       }
 
-      .projects-grid {
-      }
-
       .project-box {
         height: 50%;
         width: 30%;
       }
 
+      .project-box .project-bar span, .project-box .project-bar i {
+        font-size: 1vh;
+      }
+
       .project-bar span, .project-bar i {
-        font-size: .7rem;
+        font-size: 1.75vh;
       }
 
       .project-img {
@@ -2212,34 +2190,36 @@ svg {
       }
 
       .project-languages i {
-        font-size: 1.5rem;
+        font-size: 3vh;
       }
 
       .modal {
         top: 12.5%;
       }
 
-      .modal-header {
-        font-size: 1rem;
-      }
-
       .modal-content {
         flex-direction: column;
         align-self: center;
-        justify-content: center;
         width: 95%;
         height: 100%;
       }
 
+      .modal-content .project-img {
+        height: 40%;
+        width: 100%;
+
+      }
+
       .modal-img {
-        height: 85%;
+        height: 70%;
         width: 100%;
         flex-direction: row;
+        justify-content: center;
       }
 
       .modal-img img {
-        height: 100%;
-        width: 70%;
+        height: 90%;
+        width: 50%;
         align-self: center;
       }
 
@@ -2249,25 +2229,8 @@ svg {
         align-items: center;
       }
 
-      .modal-languages, .tech-list {
-        font-size: 1rem;
-        width: 100%;
-      }
-
-      .tech-list {
-        text-align: center;
-      }
-
-      .modal-languages div, .tech-list div {
-        display: none;
-      }
-
       .modal-languages i {
-        font-size: 1.25rem;
-      }
-
-      .tech-list {
-        font-size: 1rem;
+        font-size: 4vh;
       }
 
       .tech-list ul {
@@ -2276,13 +2239,13 @@ svg {
         flex-wrap: wrap;
         align-self: center;
         justify-content: center;
-        width: 70%;
+        width: 100%;
         padding: 0;
         margin-left: 25px;
       }
 
       .tech-list ul li {
-        font-size: .75rem;
+        font-size: 2vh;
         font-family: 'VCR';
         background-color: #7E5E9A;
         color: white;
@@ -2290,15 +2253,18 @@ svg {
         margin-bottom: 5px;
       }
 
+      .modal-content .about-info {
+        width: 100%;
+        height: 60%;
+      }
+
       .modal-content .about-header {
-        font-size: 1rem;
+        font-size: 3vh;
         align-self: center;
       }
 
       .modal-content .about-info p {
         font-size: 2vh;
-        width: 90%;
-        padding-left: -5px;
       }
 
       .modal-close {
@@ -2438,7 +2404,7 @@ svg {
     }
 
     .modal-header {
-      font-size: 1rem;
+      font-size: 2vh;
     }
 
     .modal-img img {
@@ -2453,22 +2419,13 @@ svg {
       align-items: center;
     }
 
-    .modal-languages, .tech-list {
-      font-size: 1rem;
-    }
-
-    .modal-languages div, .tech-list div {
-      display: none;
-    }
-
     .modal-languages i {
-      font-size: 1.25rem;
-      margin-top: 0;
+      font-size: 5vh;
+      margin-top: 10px;
       margin-bottom: 0;
     }
 
     .tech-list {
-      font-size: 1rem;
       margin-top: -15px;
     }
 
@@ -2479,7 +2436,7 @@ svg {
     }
 
     .tech-list ul li {
-      font-size: .75rem;
+      font-size: 2vh;
       font-family: 'VCR';
       background-color: #7E5E9A;
       color: white;
@@ -2488,15 +2445,12 @@ svg {
     }
 
     .about-header {
-      font-size: 1rem;
+      font-size: 4vh;
     }
 
-    .modal-text {
-      font-size: 1.5rem;
-    }
 
     .about-info p {
-      font-size: .75rem;
+      font-size: 2vh;
     }
 
     .modal-close {
@@ -2651,17 +2605,9 @@ svg {
       align-items: center;
     }
 
-    .modal-languages, .tech-list {
-      font-size: 1rem;
-    }
-
-    .modal-languages div, .tech-list div {
-      display: none;
-    }
-
     .modal-languages i {
-      font-size: 1.25rem;
-      margin-top: 0;
+      font-size: 5vh;
+      margin-top: 10px;
       margin-bottom: 0;
     }
 
@@ -2677,7 +2623,7 @@ svg {
     }
 
     .tech-list ul li {
-      font-size: .75rem;
+      font-size: 3vh;
       font-family: 'VCR';
       background-color: #7E5E9A;
       color: white;
@@ -2685,16 +2631,17 @@ svg {
       margin-bottom: 5px;
     }
 
-    .about-header {
-      font-size: 1rem;
+    .modal-content .about-header {
+      font-size: 4vh;
     }
 
-    .modal-text {
-      font-size: 1.5rem;
+    .modal-content .about-info p {
+      font-size: 3vh;
+      line-height: 15px;
     }
 
-    .about-info p {
-      font-size: .75rem;
+    .modal-button {
+      font-size: 3vh;
     }
 
     .modal-close {
@@ -2798,17 +2745,21 @@ svg {
       margin-left: -10px;
     }
 
+    #projects .header {
+      font-size: 10vh;
+      left: 5%;
+    }
+
     .project-content {
       padding: 0;
     }
 
-    .projects-grid .project-bar, .projects-grid .project-bar i {
-      font-size: .70rem
+    .project-box {
+      height: 25vh;
     }
 
-    .project-img {
-      width: 100%;
-      height: 80%;
+    .projects-grid .project-bar, .projects-grid .project-bar i {
+      font-size: 1.5vh
     }
 
     .fab, .far {
@@ -2818,7 +2769,7 @@ svg {
 
     .project-img img {
       width: 100%;
-      height: 100%;
+      height: 70%;
     }
 
     .modal {
@@ -2846,33 +2797,24 @@ svg {
       align-items: center;
     }
 
-    .modal-languages, .tech-list {
-      font-size: 1.5rem;
-    }
-
-    .modal-languages div, .tech-list div {
-      display: none;
-    }
-
     .modal-languages i {
-      font-size: 1.5rem;
-      margin-top: 0;
+      font-size: 5vh;
+      margin-top: 10px;
       margin-bottom: 0;
     }
 
     .tech-list {
-      font-size: 1.5rem;
-      margin-top: -15px;
+      align-self: baseline;
+      width: 90%;
     }
 
     .tech-list ul {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-direction: column;
     }
 
     .tech-list ul li {
-      font-size: .75rem;
+      font-size: 2vh;
       font-family: 'VCR';
       background-color: #7E5E9A;
       color: white;
@@ -2880,16 +2822,12 @@ svg {
       margin-bottom: 5px;
     }
 
-    .about-header {
-      font-size: 1.5rem;
+    .modal-content .about-header {
+      font-size: 3vh;
     }
 
-    .modal-text {
-      font-size: 2rem;
-    }
-
-    .about-info p {
-      font-size: 1rem;
+    .modal-content .about-info p {
+      font-size: 2vh;
     }
 
     .modal-close {
@@ -2980,27 +2918,24 @@ svg {
       margin-left: -10px;
     }
 
+    #projects {
+      top: 1%;
+    }
+
+    .project-box {
+      height: 35vh;
+    }
+
     .project-content {
       padding: 0;
     }
 
     .projects-grid .project-bar, .projects-grid .project-bar i {
-      font-size: .70rem
-    }
-
-    .project-img {
-      width: 100%;
-      height: 80%;
+      font-size: 1.5vh
     }
 
     .fab, .far {
-      font-size: 1rem;
       margin-right: 2.5%;
-    }
-
-    .project-img img {
-      width: 100%;
-      height: 100%;
     }
 
     .modal {
@@ -3008,17 +2943,11 @@ svg {
     }
 
     .modal-header {
-      font-size: 1rem;
-    }
-
-    .modal-img {
-      width: 90%;
-      height: auto;
+      font-size: 2vh;
     }
 
     .modal-img img {
-      height: 100%;
-      width: 100%;
+      height: auto;
     }
 
     #modal-info {
@@ -3028,23 +2957,17 @@ svg {
       align-items: center;
     }
 
-    .modal-languages, .tech-list {
-      font-size: 1.5rem;
-    }
-
-    .modal-languages div, .tech-list div {
-      display: none;
+    .modal-languages {
+      width: 100%;
     }
 
     .modal-languages i {
-      font-size: 1.5rem;
-      margin-top: 0;
-      margin-bottom: 0;
+      font-size: 5vh;
     }
 
     .tech-list {
-      font-size: 1.5rem;
-      margin-top: -15px;
+      width: 60%;
+      align-self: center;
     }
 
     .tech-list ul {
@@ -3054,24 +2977,26 @@ svg {
     }
 
     .tech-list ul li {
-      font-size: .75rem;
+      font-size: 2vh;
       font-family: 'VCR';
       background-color: #7E5E9A;
+      width: 100%;
       color: white;
       padding: 2.5px;
       margin-bottom: 5px;
+      margin-left: -15px;
     }
 
     .about-header {
-      font-size: 1.5rem;
+      font-size: 3vh;
     }
 
     .modal-text {
-      font-size: 2rem;
+      font-size: 3vh;
     }
 
-    .about-info p {
-      font-size: 1rem;
+    .modal-content .about-info p {
+      font-size: 2.25vh;
     }
 
     .modal-close {
@@ -3139,6 +3064,10 @@ svg {
 
     .other-box .about-bar-title {
       font-size: 1.5vh;
+    }
+
+    #projects {
+      top: -1.5%;
     }
 
     .project-content {
