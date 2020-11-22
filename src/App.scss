@@ -1058,7 +1058,6 @@ svg {
     background-color: #7E5E9A;
     color: white;
     padding: 2.5px;
-    margin-bottom: 5px;
   }
 
   .modal-content .about-info {
@@ -1067,17 +1066,23 @@ svg {
 
   .modal-content .about-header {
     font-size: 2vh;
-    align-self: center;
+  }
+
+  .modal-content .about-info {
+    margin: 0px;
+    padding-left: 0px;
+    width: 100%;
   }
 
   .modal-content .about-info p {
-    font-size: 1.5vh;
+    font-size: 1.75vh;
     width: 100%;
-    line-height: 15px;
+    padding-left: 0px;
+    margin-left: 0px;
   }
 
   .modal-button {
-    font-size: 2vh;
+    font-size: 1.25vh;
   }
 
   .modal-close {
@@ -2565,6 +2570,10 @@ svg {
     }
 
     .modal-content .about-info p {
+      font-size: 2.5vh;
+    }
+
+    .modal-button {
       font-size: 2vh;
     }
 
@@ -2666,7 +2675,7 @@ svg {
     }
 
     .project-box {
-      height: 35vh;
+      height: 30vh;
     }
 
     .project-content {
@@ -2687,6 +2696,11 @@ svg {
 
     .modal-header {
       font-size: 2vh;
+    }
+
+    .modal-img {
+      justify-content: center;
+      height: 100%;
     }
 
     .modal-img img {
@@ -2740,6 +2754,10 @@ svg {
 
     .modal-content .about-info p {
       font-size: 2.25vh;
+    }
+
+    .modal-button {
+      font-size: 2vh;
     }
 
     .modal-close {
@@ -2850,8 +2868,8 @@ svg {
       top: 12.5%;
     }
 
-    .modal-header {
-      font-size: 1.5rem;
+    .modal-card {
+      top: 10%;
     }
 
     .modal-img img {
@@ -2859,13 +2877,9 @@ svg {
       width: 100%;
     }
 
-    .modal-languages div, .tech-list div {
-      font-size: 1rem;
-    }
-
     .modal-languages i {
       margin-top: 20px;
-      font-size: 2.5rem;
+      font-size: 5vh;
     }
 
     .tech-list {
@@ -2874,24 +2888,20 @@ svg {
     }
 
     .tech-list ul {
-      margin-left: -10px;
+      margin-left: -20px;
       margin-top: 10px;
     }
 
     .tech-list ul li {
-      font-size: 1rem;
+      font-size: 3vh;
     }
 
     .modal-content .about-header {
-      font-size: 1.75rem;
-    }
-
-    .modal-text {
-      font-size: 1.5rem;
+      font-size: 4vh;
     }
 
     .modal-content .about-info p {
-      font-size: 1.25rem;
+      font-size: 3vh;
     }
 
 
