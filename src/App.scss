@@ -2394,7 +2394,7 @@ svg {
     }
 
     .header {
-      font-size: 15vh;
+      font-size: 10vh;
     }
 
     svg {
@@ -2402,7 +2402,7 @@ svg {
     }
 
     #home-content .items {
-      font-size: 5vh;
+      font-size: 3.25vh;
     }
 
     #home-content .items .link::after {
@@ -2594,7 +2594,7 @@ svg {
     }
 
     #home-content .items {
-      font-size: 4vh;
+      font-size: 3.5vh;
     }
 
     #home-content .items .link::after {
@@ -2752,11 +2752,11 @@ svg {
 
 }
 
-@media only screen and (orientation: landscape) and (min-width: 1185px) and (max-width: 1366px) {
+@media only screen and (orientation: landscape) and (min-width: 1185px) and (max-width: 1425px) {
 
     .glitch {
       top: 40%;
-      left: -10%;
+      left: -2.5%;
       font-size: 10vh;
     }
 
