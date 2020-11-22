@@ -823,23 +823,25 @@ svg {
 
   .about-img {
     width: 90%;
-    height: 20%;
+    height: 30%;
     display: flex;
     flex-direction: row;
     align-self: flex-end;
   };
 
   .about-img img {
-    width: 30%;
+    width: 40%;
     height: auto;
     margin-right: 2.5%;
   };
 
   .about-text span {
-    display: block;
     font-size: 1.65vh;
     margin-left: 15px;
-    margin-bottom: 10px;
+  }
+
+  .about-data-item {
+    margin-bottom: -10px;
   }
 
   .about-data-item::after {
@@ -847,11 +849,11 @@ svg {
   }
 
   .about-text span {
-    font-size: 1.5vh;
+    font-size: 1.25vh;
   }
 
   #skills {
-    top: -10%;
+    top: -11%;
     left: 2.5%;
   }
 
@@ -936,9 +938,6 @@ svg {
     align-self: center;
   }
 
-  .exp-text {
-  }
-
   .exp-text span {
     font-size: 1.35vh;
   }
@@ -997,7 +996,6 @@ svg {
   .modal {
     top: 12.5%;
   }
-
 
   .modal-content {
     flex-direction: column;
@@ -1145,15 +1143,15 @@ svg {
       };
 
       .about-img {
-        width: 80%;
-        height: 20%;
+        width: 50%;
+        height: 30%;
         display: flex;
         flex-direction: row;
-        align-self: flex-end;
+        align-self: center;
       };
 
       .about-img img {
-        width: 25%;
+        width: 40%;
         height: auto;
         margin-right: 2.5%;
       };
@@ -1171,6 +1169,10 @@ svg {
         font-size: 1.75vh;
         margin-left: 15px;
         margin-bottom: 10px;
+      }
+
+      #skills {
+        top: -10%;
       }
 
       .skills-grid {
@@ -1197,7 +1199,7 @@ svg {
       }
 
       .skills-content {
-        padding: 10px 0px 10px 0px;
+        padding: 5px 0px 5px 0px;
         text-align: center;
       }
 
@@ -1463,7 +1465,7 @@ svg {
 
       .about-img {
         width: 70%;
-        height: 20%;
+        height: 40%;
         display: flex;
         flex-direction: row;
         align-self: flex-end;
@@ -1509,7 +1511,7 @@ svg {
       }
 
       .skills-content {
-        padding: 10px 0px 10px 0px;
+        padding: 15px 0px 15px 0px;
         text-align: center;
       }
 
@@ -1755,14 +1757,14 @@ svg {
 
       .about-img {
         width: 75%;
-        height: 20%;
+        height: 30%;
         display: flex;
         flex-direction: row;
-        align-self: flex-end;
+        align-self: center;
       };
 
       .about-img img {
-        width: 20%;
+        width: 40%;
         height: auto;
         margin-right: 2.5%;
       };
@@ -1794,6 +1796,7 @@ svg {
 
       .skills-grid .about-bar {
         font-size: 2vh;
+        height: 2.5%;
       }
 
       .skills-grid .about-bar span {
@@ -1801,7 +1804,7 @@ svg {
       }
 
       .skills-content {
-        padding: 10px 0px 10px 0px;
+        padding: 15px 0px 15px 0px;
         text-align: center;
       }
 
@@ -2390,7 +2393,7 @@ svg {
     .glitch {
       top: 40%;
       left: -10%;
-      font-size: 15vh;
+      font-size: 10vh;
     }
 
     .header {
@@ -2414,21 +2417,15 @@ svg {
     };
 
     .about-img {
-      width: 50%;
-      height: 20%;
+      width: 100%;
     };
 
     .about-img img {
-      width: 100%;
-      height: auto;
+      width: 80%;
     }
 
-    .about-info {
-      font-size: 2.2vh;
-    };
-
-    .about-text {
-      line-height: 1px;
+    .about-data-item {
+      font-size: 2vh;
     }
 
     .about-text span {
@@ -2437,8 +2434,8 @@ svg {
       margin-bottom: 10px;
     }
 
-    #skills .header{
-      font-size: 15vh;
+    #skills .header {
+      font-size: 10vh;
     }
 
     .skills-grid .about-bar {
@@ -2607,18 +2604,16 @@ svg {
 
 
     .about-img {
-      width: 100%;
-      height: 20%;
+      width: 80%;
     };
 
     .about-img img {
-      width: 100%;
-      height: auto;
+      width: 80%;
     }
 
-    .about-info {
+    .about-data-item {
       font-size: 2vh;
-    };
+    }
 
     .about-text span {
       font-size: 2vh;
@@ -2787,12 +2782,16 @@ svg {
     };
 
     .about-img {
-      width: 50%;
+      width: 70%;
     };
 
-    .about-info {
-      font-size: 1rem;
-    };
+    .about-img img {
+      width: 80%;
+    }
+
+    .about-data-item {
+      font-size: 2vh;
+    }
 
     .about-text {
       opacity: 0;
