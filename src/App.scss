@@ -903,8 +903,12 @@ svg {
     content: ''
   }
 
+  #exp {
+    top: 1%;
+  }
+
   #exp .header {
-    left: -5%;
+    left: -12.5%;
   }
 
   #exp-content {
@@ -919,9 +923,9 @@ svg {
   }
 
   #exp-content .about-content {
-    width: 95%;
+    width: 100%;
     height: 100%;
-    padding-top: 10px;
+    padding: 10px 0px 0px 0px;
     flex-direction: column;
     text-align: center;
   }
@@ -929,17 +933,20 @@ svg {
   #exp-content .about-img {
     width: 100%;
     align-self: flex-start;
-    margin-bottom: 5px;
   }
 
   #exp-content .about-box .about-text {
-    padding-left: 0px;
+    padding: 0px;
     margin-left: 0px;
     align-self: center;
   }
 
+
   .exp-text span {
-    font-size: 1.35vh;
+    font-size: 1.15vh;
+    margin-left: 0px;
+    width: 100%;
+    text-align: left;
   }
 
   #exp-content .other-box {
@@ -955,7 +962,7 @@ svg {
   }
 
   .other-exp-text div {
-    font-size: 1.35vh;
+    font-size: 1.15vh;
     margin-right: 15px;
     text-align: center;
     width: 100%;
@@ -1249,8 +1256,7 @@ svg {
 
       #exp-content .about-img {
         width: 100%;
-        align-self: flex-start;
-        margin-bottom: 5px;
+        height: 10%;
       }
 
       #exp-content .about-box .about-text {
@@ -1557,8 +1563,7 @@ svg {
 
       #exp-content .about-img {
         width: 100%;
-        align-self: flex-start;
-        margin-bottom: 5px;
+        height: 10%;
       }
 
       #exp-content .about-box .about-text {
@@ -1850,8 +1855,7 @@ svg {
 
       #exp-content .about-img {
         width: 100%;
-        align-self: flex-start;
-        margin-bottom: 5px;
+        height: 10%;
       }
 
       #exp-content .about-box .about-text {
@@ -2454,6 +2458,10 @@ svg {
       padding: 15px;
     }
 
+    #exp-content .about-bar {
+      height: 3%;
+    }
+
     #exp-content .about-bar span, #exp-content .about-bar i {
       font-size: 1.75vh;
     }
@@ -2470,13 +2478,12 @@ svg {
       font-size: 1.5vh;
     }
 
-    .exp-text span, .other-exp-text div{
+    .exp-text span, .other-exp-text div {
       font-size: 1.5vh;
-      line-height: 10px;
     }
 
     .other-exp-text div {
-      font-size: 1.75vh;
+      font-size: 1.5vh;
       margin-left: -10px;
     }
 
