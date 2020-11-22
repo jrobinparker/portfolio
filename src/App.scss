@@ -1155,7 +1155,7 @@ svg {
       };
 
       .about-img {
-        width: 50%;
+        width: 60%;
         height: 30%;
         display: flex;
         flex-direction: row;
@@ -1163,13 +1163,14 @@ svg {
       };
 
       .about-img img {
-        width: 40%;
+        width: 50%;
         height: auto;
         margin-right: 2.5%;
       };
 
       .about-info {
         font-size: 2vh;
+        width: 100%;
       };
 
       .about-data-item::after {
@@ -1268,6 +1269,10 @@ svg {
 
       .about-content {
         width: 100%;
+      }
+
+      .about-img img {
+        width: 45%;
       }
 
       .exp-text span {
@@ -2039,6 +2044,10 @@ svg {
       top: 0%;
     };
 
+    .about-box .about-bar {
+      height: 4%;
+    }
+
     .about-content {
       padding: 10px;
     };
@@ -2057,14 +2066,16 @@ svg {
       font-size: 2vh;
     };
 
+    .about-info .item {
+      margin-bottom: 5px;
+    }
+
     .about-text {
       opacity: 0;
     }
 
     .about-text span {
       font-size: 2vh;
-      margin-left: 15px;
-      margin-bottom: 10px;
     }
 
     .skills-grid .project-box {
@@ -2242,6 +2253,10 @@ svg {
     #about, #skills, #exp, #projects {
       top: 0%;
     };
+
+    .about-box .about-bar {
+      height: 4%;
+    }
 
     .about-content {
       padding: 10px;
@@ -2431,15 +2446,23 @@ svg {
       top: 5%;
     };
 
+    .about-box .about-bar {
+      height: 4%;
+    }
+
     .about-img {
-      width: 100%;
+      width: 80%;
     };
 
     .about-img img {
-      width: 80%;
+      width: 50%;
     }
 
-    .about-data-item {
+    .about-info .item {
+      margin-bottom: 0px;
+    }
+
+    .about-info .about-data-item {
       font-size: 2vh;
     }
 
