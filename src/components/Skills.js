@@ -5,7 +5,7 @@ import gsap from 'gsap';
 
 const Skills = ({ history }) => {
   const [ languages ] = useState(['JavaScript', 'Python', 'Ruby', 'SQL' ])
-  const [ frontEnd ] = useState([ 'HTML5 | CSS3', 'React | Redux', 'GSAP | threejs', 'SCSS' ])
+  const [ frontEnd ] = useState([ 'HTML5 | CSS3', 'React | Redux', 'GSAP', 'threejs' ])
   const [ backEnd ] = useState([ 'Node.js | Express', 'Django | Flask', 'Rails | Sinatra', 'Mongoose' ])
   const [ dataScience ] = useState([ 'Pandas', 'Bokeh', 'NLTK', 'Data Cleansing' ])
   const [ research ] = useState([ 'Bloomberg', 'Thomson One', 'Legal Research', 'Patent Research' ])

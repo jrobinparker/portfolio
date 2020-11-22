@@ -341,7 +341,11 @@ svg {
 
 #skills-content {
   position: relative;
-  top: 5%;
+  top: 15%;
+}
+
+#skills-content .header {
+  left: 7%;
 }
 
 .skills-container {
@@ -369,10 +373,24 @@ svg {
   width: 30%;
   background-color: rgba(38, 48, 86, .75);
   color: white;
+  font-size: 2vh;
   border: 1px solid #7E5E9A;
   opacity: 0;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.skills-box .about-bar span {
+  margin-left: 10px;
+}
+
+#exp {
+  top: 10%;
+}
+
+#exp .header {
+  font-size: 10vh;
+  left: 5%;
 }
 
 #exp-content {
@@ -387,7 +405,7 @@ svg {
   max-width: 80%;
   max-height: 100%;
   margin-right: 10px;
-  font-size: 1rem;
+  font-size: 2vh;
 }
 
 #exp-content .other-box {
@@ -397,14 +415,13 @@ svg {
 
 #exp-content .about-box .about-content .about-text {
   width: 90%;
-  font-size: 1.1rem;
+  font-size: 1.75vh;
 }
 
 .exp-container {
   display: flex;
   flex-direction: column;
 }
-
 
 .exp-area {
   height: 50vh;
@@ -415,7 +432,15 @@ svg {
   background-color: green;
   width: 30%;
   justify-content: flex-start;
-  font-size: 1.5rem;
+  font-size: 2vh;
+}
+
+.exp-content .about-img {
+  width: 40%;
+}
+
+.exp-content .about-data-item {
+  font-size: 3vh;
 }
 
 .exp-text-container {
@@ -423,17 +448,13 @@ svg {
   margin-left: 20px;
 }
 
-.exp-text {
-  font-size: 1rem;
+.exp-text span, .other-exp-text {
+  font-size: 2vh;
 }
 
 .other-exp-items {
   display: inline-block;
   width: 33%;
-}
-
-.other-exp-item {
-  font-size: 1.5rem;
 }
 
 .other-exp-text {
@@ -1032,7 +1053,7 @@ svg {
 
 }
 
-@media only screen and (orientation: portrait) and (min-width: 500px) and (max-width: 680px) {
+@media only screen and (orientation: portrait) and (min-width: 320px) and (max-width: 415px) {
 
   html {
     overflow-y: hidden;
@@ -1055,7 +1076,7 @@ svg {
   }
 
   .home-header-container {
-    left: 2.5%;
+    left: 22.5%;
     text-align: center;
   }
 
@@ -1115,6 +1136,15 @@ svg {
     font-size: 1.5vh;
   }
 
+  #skills {
+    top: -10%;
+    left: 2.5%;
+  }
+
+  #skills-content .header {
+    left: 2.5%;
+  }
+
   .skills-grid {
     flex-direction: column;
     align-items: center;
@@ -1127,6 +1157,7 @@ svg {
 
   .skills-grid .about-bar {
     font-size: 2vh;
+    height: 2.5%;
   }
 
   .skills-grid .about-bar span {
@@ -1134,17 +1165,26 @@ svg {
   }
 
   .skills-content {
-    padding: 0;
+    padding: 5px 0px 5px 0px;
     text-align: center;
   }
 
   .skills-content p {
+    font-size: 1.75vh;
     display: inline-block;
     margin: 7px 7px 7px 0px;
   }
 
+  .skills-content p::after {
+    content: ', '
+  }
+
   .skills-content p:last-of-type {
     margin-right: 0;
+  }
+
+  .skills-content p:last-of-type::after {
+    content: ''
   }
 
   #exp .header {
@@ -1334,7 +1374,7 @@ svg {
 
 
 /* Tablets - Portrait */
-@media only screen and (orientation: portrait) and (min-width: 680px) and (max-width: 800px)  {
+@media only screen and (orientation: portrait) and (min-width: 415px) and (max-width: 800px)  {
 
       html {
         overflow-y: hidden;
@@ -1439,13 +1479,30 @@ svg {
         text-align: center;
       }
 
+      .skills-content {
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+      }
+
       .skills-content p {
         display: inline-block;
         margin: 7px 7px 7px 0px;
       }
 
+      .skills-content p::after {
+        content: ', '
+      }
+
       .skills-content p:last-of-type {
         margin-right: 0;
+      }
+
+      .skills-content p:last-of-type::after {
+        content: ''
+      }
+
+      #exp {
+        top: 1%;
       }
 
       #exp .header {
@@ -1483,11 +1540,15 @@ svg {
         align-self: center;
       }
 
-      .exp-text {
+      .about-content {
+        width: 100%;
       }
 
       .exp-text span {
         font-size: 1.35vh;
+        width: 110%;
+        margin-left: -10px;
+        text-align: left;
       }
 
       #exp-content .other-box {
@@ -1505,7 +1566,7 @@ svg {
       .other-exp-text div {
         font-size: 1.35vh;
         margin-right: 15px;
-        text-align: center;
+        text-align: left;
         width: 100%;
       }
 
@@ -1734,7 +1795,7 @@ svg {
       }
 
       .skills-content {
-        padding: 0;
+        padding: 10px 0px 10px 0px;
         text-align: center;
       }
 
@@ -1743,8 +1804,16 @@ svg {
         margin: 7px 7px 7px 0px;
       }
 
+      .skills-content p::after {
+        content: ', '
+      }
+
       .skills-content p:last-of-type {
         margin-right: 0;
+      }
+
+      .skills-content p:last-of-type::after {
+        content: ''
       }
 
       #exp .header {
@@ -2033,7 +2102,7 @@ svg {
       }
 
       .skills-content {
-        padding: 0;
+        padding: 10px 0px 10px 0px;
         text-align: center;
       }
 
@@ -2042,8 +2111,16 @@ svg {
         margin: 7px 7px 7px 0px;
       }
 
+      .skills-content p::after {
+        content: ', '
+      }
+
       .skills-content p:last-of-type {
         margin-right: 0;
+      }
+
+      .skills-content p:last-of-type::after {
+        content: ''
       }
 
       #exp .header {
@@ -2294,8 +2371,8 @@ svg {
       height: 27vh;
     }
 
-    .skills-grid .project-bar {
-      padding-top: 10px;
+    .skills-grid .about-bar {
+      height: 2.5%;
     }
 
     .skills-grid .project-bar span, .skills-grid .project-bar i {
@@ -2316,19 +2393,20 @@ svg {
     }
 
     #exp-content .about-bar span, #exp-content .about-bar i {
-      font-size: .5rem;
+      font-size: 3vh;
+    }
+
+    #exp-content .other-bar span {
+      font-size: 2vh;
+      height: 5%;
     }
 
     #exp-content .about-img {
       width: 20%;
     }
 
-    .exp-text span, .other-exp-text {
-      font-size: 2vh;
-    }
-
-    .exp-text span {
-      margin-bottom: 5px;
+    .exp-text span, .other-exp-text div  {
+      font-size: 1.85vh;
     }
 
     .project-content {
@@ -2493,17 +2571,12 @@ svg {
       margin-bottom: 10px;
     }
 
-    .skills-grid .project-box {
+    .skills-grid .about-box {
       height: 27vh;
     }
 
-    .skills-grid .project-bar {
-      padding-top: 10px;
-    }
-
-    .skills-grid .project-bar span, .skills-grid .project-bar i {
-      margin-top: -10px;
-      font-size: .75rem;
+    .skills-grid .about-bar {
+      height: 5%;
     }
 
     .skills-content {
@@ -2511,7 +2584,7 @@ svg {
     }
 
     .skills-content p {
-      font-size: .5rem;
+      font-size: 2vh;
     }
 
     #exp-content .about-content {
@@ -2651,7 +2724,7 @@ svg {
       width: 2.5%;
     }
 
-    #about, #skills, #exp, #projects {
+    #about, #exp, #projects {
       top: 5%;
     };
 
@@ -2683,13 +2756,8 @@ svg {
       font-size: 15vh;
     }
 
-    .skills-grid .project-bar {
-      padding-top: 10px;
-    }
-
-    .skills-grid .project-bar span, .skills-grid .project-bar i {
-      margin-top: -10px;
-      font-size: .65rem;
+    .skills-grid .about-bar {
+      height: 5%;
     }
 
     .skills-content {
@@ -2712,8 +2780,17 @@ svg {
       width: 30%;
     }
 
-    .exp-text span{
+    #exp-content .other-bar {
+      height: 3.5%;
+    }
+
+    #exp-content .other-bar span {
       font-size: 1.5vh;
+    }
+
+    .exp-text span, .other-exp-text div{
+      font-size: 1.5vh;
+      line-height: 10px;
     }
 
     .other-exp-text div {
@@ -2841,7 +2918,7 @@ svg {
       width: 2.5%;
     }
 
-    #about, #skills, #exp, #projects {
+    #about, #exp, #projects {
       top: 5%;
     };
 
@@ -2866,17 +2943,8 @@ svg {
       margin-bottom: 10px;
     }
 
-    #skills .header{
-      font-size: 15vh;
-    }
-
-    .skills-grid .project-bar {
-      padding-top: 10px;
-    }
-
-    .skills-grid .project-bar span, .skills-grid .project-bar i {
-      margin-top: -10px;
-      font-size: .65rem;
+    .skills-grid .about-bar {
+      height: 10%;
     }
 
     .skills-content {
@@ -2891,15 +2959,19 @@ svg {
       padding: 15px;
     }
 
-    #exp-content .about-bar span, #exp-content .about-bar i {
-      font-size: 1.75vh;
-    }
-
     #exp-content .about-img {
       width: 30%;
     }
 
     .exp-text span{
+      font-size: 1.75vh;
+    }
+
+    .other-bar {
+      height: 5%;
+    }
+
+    .other-bar span  {
       font-size: 1.5vh;
     }
 
@@ -3010,7 +3082,7 @@ svg {
 
 }
 
-@media only screen and (orientation: landscape) and (min-width: 1185px) and (max-width: 1350px) {
+@media only screen and (orientation: landscape) and (min-width: 1185px) and (max-width: 1366px) {
 
     #home-content {
       position: relative;
@@ -3034,7 +3106,7 @@ svg {
       width: 2%;
     }
 
-    #about, #skills, #exp, #projects {
+    #about, #projects {
       top: 5%;
     };
 
@@ -3063,6 +3135,10 @@ svg {
 
     #exp-content .about-text span, .other-exp-text {
       font-size: 1.75vh;
+    }
+
+    .other-box .about-bar-title {
+      font-size: 1.5vh;
     }
 
     .project-content {
@@ -3179,8 +3255,12 @@ svg {
     margin-bottom: 10px;
   }
 
+  .other-exp-text div {
+    font-size: 2vh;
+  }
+
   .skills-content p {
-    font-size: 1.5rem;
+    font-size: 2vh;
   }
 
   .other-exp-text {

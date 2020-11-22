@@ -44,7 +44,7 @@ const Experience = ({ history }) => {
 
     gsap.set(header, {y: 50})
 
-    if (window.innerWidth >= 700) {
+    if (window.innerWidth >= 751) {
       tl.to(header, .5, {opacity: 1, y: 0})
         .to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '50vh', width: '80vw' })
         .to(bar, .25, {opacity: 1})
@@ -57,7 +57,7 @@ const Experience = ({ history }) => {
         .to(otherText, .25, { opacity: 1 })
     }
 
-    if (window.innerWidth <= 699) {
+    if (window.innerWidth <= 750) {
       tl.to(header, .5, {opacity: 1, y: 0})
         .to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '50vh', width: '80vw' })
         .to(bar, .25, {opacity: 1})
@@ -76,11 +76,11 @@ const Experience = ({ history }) => {
     const otherCont = document.querySelector('.other-box')
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth >= 700) {
+      if (window.innerWidth >= 751) {
         gsap.to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '50vh', width: '20vw' })
       }
 
-      if (window.innerWidth <= 699) {
+      if (window.innerWidth <= 750) {
         gsap.to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '15vh', width: '80vw' })
       }
     })
