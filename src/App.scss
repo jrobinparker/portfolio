@@ -1084,7 +1084,7 @@ svg {
   }
 
   .modal-content .about-info p {
-    font-size: 1.75vh;
+    font-size: 1.5vh;
     width: 100%;
     padding-left: 0px;
     margin-left: 0px;
@@ -1281,7 +1281,7 @@ svg {
       }
 
       #exp-content .about-box .about-content .exp-text span{
-        font-size: 1.5vh;
+        font-size: 1.25vh;
         margin-left: -10px;
         text-align: left;
       }
@@ -1405,7 +1405,7 @@ svg {
       }
 
       .modal-content .about-info p {
-        font-size: 1.65vh;
+        font-size: 1.5vh;
         text-align: center;
       }
 
@@ -2543,6 +2543,10 @@ svg {
       height: 30vh;
     }
 
+    .project-box .project-img {
+      height: 20vh;
+    }
+
     .fab, .far {
       font-size: 1rem;
       margin-right: 2.5%;
@@ -2616,7 +2620,7 @@ svg {
     }
 
     .modal-content .about-info p {
-      font-size: 2.5vh;
+      font-size: 2.25vh;
     }
 
     .modal-button {
@@ -2721,7 +2725,11 @@ svg {
     }
 
     .project-box {
-      height: 30vh;
+      height: 35vh;
+    }
+
+    .project-box .project-img {
+      height: 20vh;
     }
 
     .project-content {
@@ -2744,13 +2752,14 @@ svg {
       font-size: 2vh;
     }
 
-    .modal-img {
-      justify-content: center;
-      height: 100%;
+    .modal-content .modal-img {
+      height: 70%;
     }
 
     .modal-img img {
-      height: auto;
+      height: 50%;
+      width: 50%;
+      align-self: center;
     }
 
     #modal-info {
