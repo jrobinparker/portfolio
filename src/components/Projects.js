@@ -48,7 +48,7 @@ const Projects = ({ history }) => {
       {
         name: 'MFC Online University',
         languages: ['js', 'html', 'css'],
-        tech: ['node', 'express', 'mongodb', 'mongoose', 'bcrypt', 'jwt', 'react', 'react router', 'redux', 'heroku', 'grid-fs', 'ffmpeg', 'paypal api'],
+        tech: ['node', 'mongodb', 'bcrypt', 'jwt', 'react', 'redux', 'grid-fs'],
         about: 'MFC Online University is an online training portal for Modern Fighting Concepts in Absecon, New Jersey. Primarily designed for students who cannot attend live classes due to COVID-19, users can create a paid account to view online videos uploaded by the instructors. This MERN app uses express and mongodb on the back end, bcrypt and jwt for authentication, redux for state management, and react for the front end. Videos are processed using ffmpeg and saved in mongodb using grid-fs.',
         github: null,
         img: 'mfc-img.png',
