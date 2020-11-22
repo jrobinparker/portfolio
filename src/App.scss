@@ -2420,7 +2420,7 @@ svg {
     }
 
     #home-content .items {
-      font-size: 3.25vh;
+      font-size: 3vh;
     }
 
     #home-content .items .link::after {
@@ -2511,21 +2511,17 @@ svg {
       height: 30vh;
     }
 
-    .projects-grid .project-bar, .projects-grid .project-bar i {
-      font-size: 1.5vh
-    }
-
     .fab, .far {
       font-size: 1rem;
       margin-right: 2.5%;
     }
 
     .project-box .project-bar {
-      height: 3%
+      height: 6%
     }
 
-    .project-box .project-bar, .project-box .project-bar i {
-      font-size: 1.5vh
+    .project-box .project-bar span, .project-box .project-bar i {
+      font-size: 1.25vh
     }
 
     .project-img {
