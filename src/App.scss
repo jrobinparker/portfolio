@@ -500,6 +500,7 @@ svg {
 
 .project-bar span {
   padding-left: 5px;
+  font-size: 1.5vh;
   align-self: baseline;
 }
 
@@ -1319,11 +1320,14 @@ svg {
       }
 
       #projects {
-        top: 10%;
+        height: 110vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
       }
 
       .project-box {
-        height: 25vh;
+        height: 50vh;
+        width: 50vh;
       }
 
       .project-box .project-bar span, .project-box .project-bar i {
@@ -1339,6 +1343,19 @@ svg {
       .project-img img {
         height: 75%;
         width: 100%;
+      }
+
+      .project-img .project-languages {
+        height: 20%;
+        width: 240%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .project-img .project-languages i {
+        font-size: 5vh;
       }
 
       .project-languages i {
@@ -1618,19 +1635,26 @@ svg {
         margin-right: 0px;
       }
 
-      .project-box {
-        height: 50%;
-        width: 30%;
+      #projects {
+        height: 110vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
       }
 
-      .project-bar span, .project-bar i {
-        font-size: .7rem;
+      .project-box {
+        height: 50vh;
+        width: 50vh;
+      }
+
+      .project-box .project-bar span, .project-box .project-bar i {
+        font-size: 1.25vh;
       }
 
       .project-img {
         width: 100%;
         height: 100%;
         flex-direction: column;
+        align-items: center;
       }
 
       .project-img img {
@@ -1638,8 +1662,20 @@ svg {
         width: 100%;
       }
 
-      .project-languages i {
-        font-size: 1.5rem;
+      .project-img .project-languages {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .project-img .project-languages i {
+        font-size: 5vh;
+      }
+
+      .project-bar span, .project-bar i {
+        font-size: .7rem;
       }
 
       .modal {
@@ -1647,52 +1683,57 @@ svg {
       }
 
       .modal-header {
-        font-size: 1rem;
+        font-size: 2vh;
       }
 
       .modal-content {
         flex-direction: column;
         align-self: center;
         justify-content: center;
-        width: 95%;
+        width: 90%;
         height: 100%;
+        padding: 10px;
+      }
+
+      .modal-content .project-img {
+        height: 40%;
+        width: 100%;
+        align-self: center;
       }
 
       .modal-img {
-        height: 85%;
-        width: 100%;
+        display: flex;
         flex-direction: row;
+        justify-content: center;
       }
 
       .modal-img img {
-        height: 100%;
-        width: 70%;
-        align-self: center;
+        height: 60%;
+        width: 50%;
       }
 
       #modal-info {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        width: 100%;
       }
 
       .modal-languages i {
-        font-size: 2vh;
+        font-size: 4vh;
       }
 
       .tech-list ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-self: center;
         justify-content: center;
-        width: 70%;
+        width: 100%;
         padding: 0;
-        margin-left: 25px;
+        margin-left: 10px;
       }
 
       .tech-list ul li {
-        font-size: 1vh;
+        font-size: 2vh;
         font-family: 'VCR';
         background-color: #7E5E9A;
         color: white;
@@ -1700,15 +1741,18 @@ svg {
         margin-bottom: 5px;
       }
 
-      .modal-content .about-header {
-        font-size: 2vh;
+      .modal-content .about-info {
+        width: 90%;
         align-self: center;
       }
 
       .modal-content .about-info p {
+        font-size: 1.5vh;
+        text-align: center;
+      }
+
+      .modal-content .about-info .modal-button {
         font-size: 2vh;
-        width: 90%;
-        padding-left: -5px;
       }
 
       .modal-close {
@@ -1919,23 +1963,26 @@ svg {
         height: 10%;
       }
 
+      #projects {
+        height: 110vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+
       .project-box {
-        height: 50%;
-        width: 30%;
+        height: 50vh;
+        width: 50vh;
       }
 
       .project-box .project-bar span, .project-box .project-bar i {
-        font-size: 1vh;
-      }
-
-      .project-bar span, .project-bar i {
-        font-size: 1.75vh;
+        font-size: 1.25vh;
       }
 
       .project-img {
         width: 100%;
         height: 100%;
         flex-direction: column;
+        align-items: center;
       }
 
       .project-img img {
@@ -1943,44 +1990,59 @@ svg {
         width: 100%;
       }
 
-      .project-languages i {
-        font-size: 3vh;
+      .project-img .project-languages {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .project-img .project-languages i {
+        font-size: 5vh;
+      }
+
+      .project-bar span, .project-bar i {
+        font-size: .7rem;
       }
 
       .modal {
         top: 12.5%;
       }
 
+      .modal-header {
+        font-size: 2vh;
+      }
+
       .modal-content {
         flex-direction: column;
         align-self: center;
-        width: 95%;
+        justify-content: center;
+        width: 90%;
         height: 100%;
+        padding: 10px;
       }
 
       .modal-content .project-img {
         height: 40%;
         width: 100%;
-
+        align-self: center;
       }
 
       .modal-img {
-        height: 70%;
-        width: 100%;
+        display: flex;
         flex-direction: row;
         justify-content: center;
       }
 
       .modal-img img {
-        height: 90%;
+        height: 60%;
         width: 50%;
-        align-self: center;
       }
 
       #modal-info {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        width: 100%;
       }
 
       .modal-languages i {
@@ -1991,11 +2053,10 @@ svg {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-self: center;
         justify-content: center;
         width: 100%;
         padding: 0;
-        margin-left: 25px;
+        margin-left: 10px;
       }
 
       .tech-list ul li {
@@ -2008,22 +2069,23 @@ svg {
       }
 
       .modal-content .about-info {
-        width: 100%;
-        height: 60%;
-      }
-
-      .modal-content .about-header {
-        font-size: 3vh;
+        width: 90%;
         align-self: center;
       }
 
       .modal-content .about-info p {
+        font-size: 1.5vh;
+        text-align: center;
+      }
+
+      .modal-content .about-info .modal-button {
         font-size: 2vh;
       }
 
       .modal-close {
         margin-left: auto;
       }
+
 
 }
 
@@ -2352,7 +2414,7 @@ svg {
       font-size: 1.5vh
     }
 
-    .project-img {
+    .project-box .project-img {
       width: 100%;
       height: 20vh;
     }
@@ -2580,14 +2642,14 @@ svg {
       height: 2%;
     }
 
-    .modal-img {
-      width: 90%;
-      height: auto;
+    .modal-content .modal-img {
+      height: 70%;
     }
 
     .modal-img img {
-      height: 100%;
-      width: 100%;
+      height: 50%;
+      width: 70%;
+      align-self: center;
     }
 
     #modal-info {
@@ -2735,19 +2797,23 @@ svg {
     }
 
     .project-box {
-      height: 35vh;
+      height: 28vh;
     }
 
     .project-box .project-img {
-      height: 20vh;
+      height: 18vh;
+    }
+
+    .project-box .project-languages {
+      margin-top: 10px;
     }
 
     .project-content {
       padding: 0;
     }
 
-    .projects-grid .project-bar, .projects-grid .project-bar i {
-      font-size: 1.5vh
+    .projects-grid .project-bar span, .projects-grid .project-bar i {
+      font-size: 1.25vh
     }
 
     .fab, .far {
@@ -2768,7 +2834,7 @@ svg {
 
     .modal-img img {
       height: 50%;
-      width: 50%;
+      width: 70%;
       align-self: center;
     }
 
@@ -2899,8 +2965,12 @@ svg {
       top: -1.5%;
     }
 
-    .project-box .project-bar {
-      font-size: 1.5vh;
+    .project-box {
+      height: 28vh;
+    }
+
+    .project-box .project-bar span, .project-box .project-bar i {
+      font-size: 1.25vh;
     }
 
     .project-content {
@@ -2959,11 +3029,11 @@ svg {
     }
 
     .modal-content .about-header {
-      font-size: 4vh;
+      font-size: 3vh;
     }
 
     .modal-content .about-info p {
-      font-size: 3vh;
+      font-size: 2.5vh;
     }
 
 
@@ -3031,9 +3101,17 @@ svg {
     margin-right: 2.5%;
   }
 
+  .project-box .project-img {
+    height: 22vh;
+  }
+
   .project-img img {
     width: 100%;
     height: 100%;
+  }
+
+  .modal {
+    top: 15%;
   }
 
   .modal-header {
@@ -3071,16 +3149,12 @@ svg {
   }
 
   .modal-content .about-header {
-    font-size: 2.5rem;
-  }
-
-  .modal-text {
-    font-size: 1.5rem;
+    font-size: 3vh;
   }
 
   .modal-content .about-info p {
-    font-size: 2rem;
-    line-height: 40px;
+    font-size: 2.5vh;
+
   }
 
 }
