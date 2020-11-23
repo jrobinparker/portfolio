@@ -1,8 +1,8 @@
 import React, { Fragment, useRef } from "react";
 import { useFrame, useUpdate, useLoader } from "react-three-fiber";
 import { noise } from './perlin';
-import grid from '../assets/grid.jpg';
-import grid2 from '../assets/grid2.jpg';
+import grid from '../../assets/grid.jpg';
+import grid2 from '../../assets/grid2.jpg';
 import * as THREE from 'three';
 
 const Terrain = () => {
