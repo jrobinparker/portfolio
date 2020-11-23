@@ -23,6 +23,11 @@ const About = ({ history }) => {
       type: 'link',
       text: 'View LinkedIn',
       url: 'https://www.linkedin.com/in/jrobinparker/'
+    },
+    {
+      type: 'link',
+      text: 'Email Me',
+      url: 'mailto:jrobinparker@gmail.com'
     }
   ])
 
