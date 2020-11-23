@@ -39,7 +39,7 @@ const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, 
           <div className="project-img">
           {img ? (
             <div className="modal-img">
-              <img src={require(`../assets/${img}`)} alt="project"/>
+              <img src={require(`../../assets/${img}`)} alt="project"/>
               <div id="modal-info">
                 <div className="modal-languages">
                   <ProjectLanguages languages={languages} />

@@ -5,7 +5,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
-import Projects from './components/Projects';
+import Projects from './components/Projects/Projects';
 import LoadingScreen from './components/LoadingScreen';
 import './App.scss';
 import { Canvas } from 'react-three-fiber';

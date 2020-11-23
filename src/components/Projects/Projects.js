@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ProjectBox from './ProjectBox';
-import Header from './Header';
+import Header from '../Header';
 import gsap from 'gsap';
 
 const Projects = ({ history }) => {

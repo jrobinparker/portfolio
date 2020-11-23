@@ -49,7 +49,7 @@ const ProjectBox = ({ proj, close }) => {
         >
           <div className="project-img">
             {img ? (
-              <img src={require(`../assets/${img}`)} alt="project" />
+              <img src={require(`../../assets/${img}`)} alt="project" />
             ): (<Fragment></Fragment>)}
             <div className="about-info project-info">
               <div className="project-languages">
