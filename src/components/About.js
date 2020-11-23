@@ -77,10 +77,10 @@ const About = ({ history }) => {
                   </div>
                 </div>
                 <div className="about-text">
-                  <span>I've improved employee data reporting using data science tools in Python, built a full-stack data visualization app for firm's Orientation event data with Flask and React, created responsive HTML5 pages for the firm's learning management system, and developed custom JavaScript solutions for the Articulate Storyline training software.</span>
-                  <span>I've also expanded my company's online learning offerings with the latest in L&D tech and co-led the effort to modernize the firm's online curriculum with a new LMS.</span>
-                  <span>I have a number of personal projects, including a community-driven Japanese language learning app built on the MERN stack, available in my GitHub repository.</span>
-                  <span>Aside from the world of L&D, data science, and web development, I'm also a Japanese speaker and a big fan of all things 80's, art, nature, sushi, and crab cakes.</span>
+                  <span>Hey there. I'm Jeremy Parker, a self-taught web developer focusing on JavaScript and Python.</span>
+                  <span>Hoping to expand functionality in Captivate, Adobe's training course software, I started my programming journey in 2017 by learning about basic web development in HTML and CSS. That first step introducted me to Ruby on Rails, my gateway into the world of web development and programming.</span>
+                  <span>After learning Ruby casually, I decided to pursue programming seriously after discovering React. Since then, I've built a full-stack MERN app for a martial arts school in New Jersey and improved workplace processes with data science solutions in Python.</span>
+                  <span>When I'm not working, coding, or taking care of my daughter Nina, I love to run, cook Japanese and French cuisine, and scour thrift stores for vintage ephemera.</span>
                 </div>
               </div>
             </div>
