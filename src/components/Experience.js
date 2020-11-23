@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from './Header';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
-import AboutInfo from './AboutInfo';
+import AboutInfo from './About/AboutInfo';
 
 const Experience = ({ history }) => {
   const [ agInfo ] = useState(['Analysis Group', 'Senior L&D Tech Specialist', '10/2011 - present'])

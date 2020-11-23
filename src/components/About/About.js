@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AboutInfo from './AboutInfo';
-import Header from './Header';
+import Header from '../../components/Header';
 import gsap from 'gsap';
 import { Power1 } from 'gsap';
 
@@ -76,7 +76,7 @@ const About = ({ history }) => {
             </div>
               <div className="about-content">
                 <div className="about-img">
-                  <img src={require('../assets/photo.jpeg')} alt="headshot"/>
+                  <img src={require('../../assets/photo.jpeg')} alt="headshot"/>
                   <div className="about-info">
                     {aboutInfo.map((abt, i) => <AboutInfo itemType={abt.type} itemText={abt.text} itemLink={abt.url} number={i} />)}
                   </div>
