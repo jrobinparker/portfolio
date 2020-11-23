@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import gsap from 'gsap';
 import HomeLink from './HomeLink';
-import { ReactComponent as Line } from '../assets/untitled.svg';
+import { ReactComponent as Line } from '../../assets/header-line.svg';
 
 const Home = () => {
 

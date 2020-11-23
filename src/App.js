@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Scene from './components/Scene';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
