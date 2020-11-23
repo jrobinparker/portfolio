@@ -612,6 +612,10 @@ svg {
   background-color: rgba(0, 0, 0, .8);
 }
 
+.modal {
+  top: 10%;
+}
+
 .modal-card {
   position: relative;
   top: 30%;
@@ -639,11 +643,10 @@ svg {
   align-items: baseline;
   font-size: 2rem;
   width: 100%;
-  margin-bottom: 2.5%;
 }
 
 .modal-header {
-  font-size: 3.5rem;
+  font-size: 5vh;
   letter-spacing: -5px;
 }
 
@@ -689,7 +692,7 @@ svg {
 
 .modal-languages i {
   margin-top: 20px;
-  font-size: 6vh;
+  font-size: 5vh;
 }
 
 .tech-list {
@@ -703,7 +706,7 @@ svg {
 
 .tech-list ul li {
   font-family: 'VCR';
-  font-size: 3vh;
+  font-size: 2vh;
   background-color: #7E5E9A;
   color: white;
   padding: 2.5px;
@@ -729,7 +732,7 @@ svg {
 }
 
 .modal-content .about-info p {
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 
 .modal-close {
@@ -3021,7 +3024,6 @@ svg {
 
     .tech-list {
       width: 100%;
-      font-size: 1.5rem;
     }
 
     .tech-list ul {
@@ -3030,7 +3032,7 @@ svg {
     }
 
     .tech-list ul li {
-      font-size: 3vh;
+      font-size: 2vh;
     }
 
     .modal-content .about-header {
