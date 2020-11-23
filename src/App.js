@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Skills from './components/Skills';
+import Skills from './components/Skills/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects/Projects';
 import Scene from './components/Background/Scene';
