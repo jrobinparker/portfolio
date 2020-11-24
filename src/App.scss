@@ -3182,15 +3182,356 @@ svg {
 }
 
 /* iPhone X, iPhone 11 Pro, and iPhone 12 Mini - Portrait */
-@media only screen and (orientation: portrait) and (device-width: 812px) and (device-height: 375px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (orientation: portrait) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+  html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .glitch {
+    top: 35%;
+    left: -15%;
+    font-size: 10vh;
+    text-align: center;
+  }
+
+  .header {
+    font-size: 8vh;
+  }
+
+  svg {
+    display: none;
+  }
+
+  #home-content {
+    position: relative;
+    left: -2.5%;
+    top: 25%;
+    align-content: center;
+  }
+
+  .home-header-container {
+    left: 2.5%;
+    text-align: center;
+  }
+
+  #home-content .items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 5vh;
+  }
+
+  #home-content .items .item {
+    width: 100%;
+  }
+
+  .link::after {
+    width: 3%;
+  }
+
+  #about .header {
+    left: -5%;
+  }
+
+  .about-content {
+    height: 100%;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+  };
+
+  .about-img {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
+  };
+
+  .about-img img {
+    width: 25%;
+    height: auto;
+    align-self: center;
+  };
+
+  .about-info {
+    font-size: 2vh;
+    width: 40%;
+    margin-left: 10px;
+    align-self: center;
+  };
+
+  .about-data-item::after {
+    width: 2.5%;
+  }
+
+  .about-text {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .about-text span {
+    display: block;
+    font-size: 1.75vh;
+    margin-bottom: 10px;
+  }
+
+  #skills {
+    top: -10%;
+  }
+
+  #skills .header {
+    left: -2.5%;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-grid .skills-box {
+    width: 80vw;
+    margin-bottom: 10px;
+  }
+
+  .skills-grid .about-bar {
+    font-size: 2vh;
+  }
+
+  .skills-grid .about-bar span {
+    padding-left: 5px;
+  }
+
+  .skills-content {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .skills-content {
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+  }
+
+  .skills-content p {
+    display: inline-block;
+    margin: 7px 7px 7px 0px;
+  }
+
+  .skills-content p::after {
+    content: ', '
+  }
+
+  .skills-content p:last-of-type {
+    margin-right: 0;
+  }
+
+  .skills-content p:last-of-type::after {
+    content: ''
+  }
+
+  #exp .header {
+    left: -10%;
+    font-size: 7vh;
+  }
+
+  #exp-content {
+    flex-direction: column;
+    position: relative;
+    left: 5%;
+  }
+
+  #exp-content .about-box {
+    width: 100%;
+    height: 50%;
+  }
+
+  #exp-content .about-content {
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  #exp-content .about-img {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+  }
+
+  #exp-content .about-img .about-info {
+    width: 100%;
+  }
+
+  #exp-content .about-box .about-text {
+    height: 75%;
+    width: 100%;
+    padding: 0px;
+  }
+
+  #exp-content .about-box .about-content .exp-text span {
+    font-size: 1.15vh;
+  }
+
+  #exp-content .other-box {
+    margin-top: 10px;
+    max-width: 80%;
+    padding: 0px;
+  }
+
+  .other-box .about-text {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .other-exp-text div {
+    font-size: 1.1vh;
+    width: 100%;
+  }
+
+  .other-exp-text div:last-of-type {
+    margin-right: 0px;
+  }
+
+  #projects {
+    height: 110vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  #projects .header {
+    left: -10%;
+  }
+
+  .project-box {
+    height: 40vh;
+    width: 40vh;
+  }
+
+  .project-box .project-bar span, .project-box .project-bar i {
+    font-size: 1.25vh;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .project-img img {
+    height: 75%;
+    width: 100%;
+  }
+
+  .project-img .project-languages {
+    height: 20%;
+    width: 240%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .project-img .project-languages i {
+    font-size: 5vh;
+  }
+
+  .project-languages i {
+    font-size: 3vh;
+  }
+
+  .modal {
+    top: 12.5%;
+  }
+
+  .modal-header {
+    font-size: 2vh;
+  }
+
+  .modal-content {
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .modal-content .project-img {
+    height: 40%;
+    width: 100%;
+    align-self: center;
+  }
+
+  .modal-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .modal-img img {
+    height: 60%;
+    width: 100%;
+  }
+
+  #modal-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .modal-languages {
+    display: none;
+  }
+
+  .tech-list {
+    display: none;
+  }
+
+  .modal-content .about-info {
+    width: 90%;
+    align-items: center;
+    position: relative;
+    top: -5%;
+  }
+
+  .modal-content .about-info p {
+    font-size: 1.5vh;
+    text-align: center;
+  }
+
+  .modal-content .about-info .modal-button {
+    font-size: 2vh;
+    width: 60%;
+    left: 22.5%;
+  }
+
+  .modal-close {
+    margin-left: auto;
+  }
+
+}
+
+/* iPhone 11, iPhone 11 Pro Max - Portrait */
+@media only screen and (orientation: portrait) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
 
     html {
       overflow-y: hidden;
       overflow-x: hidden;
     }
 
+    .glitch {
+      top: 35%;
+      left: -15%;
+      font-size: 10vh;
+      text-align: center;
+    }
+
     .header {
-      font-size: 15vh;
+      font-size: 8vh;
     }
 
     svg {
@@ -3198,15 +3539,15 @@ svg {
     }
 
     #home-content {
-      width: 100vw;
       position: relative;
-      left: -5%;
+      left: -2.5%;
       top: 25%;
+      align-content: center;
     }
 
-    #home-content .header {
-      position: relative;
-      left: -15%;
+    .home-header-container {
+      left: 2.5%;
+      text-align: center;
     }
 
     #home-content .items {
@@ -3214,8 +3555,6 @@ svg {
       flex-direction: column;
       text-align: center;
       font-size: 5vh;
-      position: relative;
-      left: 5%;
     }
 
     #home-content .items .item {
@@ -3223,7 +3562,7 @@ svg {
     }
 
     .link::after {
-      width: 4%;
+      width: 3%;
     }
 
     #about .header {
@@ -3238,28 +3577,48 @@ svg {
     };
 
     .about-img {
-      width: 50%;
-      height: 20%;
+      width: 100%;
+      height: 30%;
       display: flex;
       flex-direction: row;
-      align-self: flex-end;
+      justify-content: center;
+      margin-bottom: 5px;
     };
 
     .about-img img {
       width: 25%;
       height: auto;
-      margin-right: 2.5%;
+      align-self: center;
     };
 
     .about-info {
       font-size: 2vh;
+      width: 40%;
+      margin-left: 10px;
+      align-self: center;
     };
+
+    .about-data-item::after {
+      width: 2.5%;
+    }
+
+    .about-text {
+      width: 100%;
+      padding: 10px;
+    }
 
     .about-text span {
       display: block;
-      font-size: 2vh;
-      margin-left: 15px;
+      font-size: 1.75vh;
       margin-bottom: 10px;
+    }
+
+    #skills {
+      top: -10%;
+    }
+
+    #skills .header {
+      left: -2.5%;
     }
 
     .skills-grid {
@@ -3283,6 +3642,12 @@ svg {
     .skills-content {
       padding: 0;
       text-align: center;
+      width: 100%;
+    }
+
+    .skills-content {
+      padding: 5px 0px 5px 0px;
+      text-align: center;
     }
 
     .skills-content p {
@@ -3290,12 +3655,21 @@ svg {
       margin: 7px 7px 7px 0px;
     }
 
+    .skills-content p::after {
+      content: ', '
+    }
+
     .skills-content p:last-of-type {
       margin-right: 0;
     }
 
+    .skills-content p:last-of-type::after {
+      content: ''
+    }
+
     #exp .header {
-      left: -5%;
+      left: -10%;
+      font-size: 7vh;
     }
 
     #exp-content {
@@ -3310,48 +3684,45 @@ svg {
     }
 
     #exp-content .about-content {
-      width: 95%;
+      width: 90%;
       height: 100%;
-      padding-top: 10px;
       flex-direction: column;
-      text-align: center;
     }
 
     #exp-content .about-img {
       width: 100%;
-      align-self: flex-start;
-      margin-bottom: 5px;
+      height: 25%;
+      text-align: center;
+    }
+
+    #exp-content .about-img .about-info {
+      width: 100%;
     }
 
     #exp-content .about-box .about-text {
-      padding-left: 0px;
-      margin-left: 0px;
-      align-self: center;
+      height: 75%;
+      width: 100%;
+      padding: 0px;
     }
 
-    .exp-text {
-    }
-
-    .exp-text span {
-      font-size: 1.35vh;
+    #exp-content .about-box .about-content .exp-text span {
+      font-size: 1.15vh;
     }
 
     #exp-content .other-box {
       margin-top: 10px;
       max-width: 80%;
+      padding: 0px;
     }
 
     .other-box .about-text {
       display: flex;
       flex-direction: row;
       width: 100%;
-      justify-content: center;
     }
 
     .other-exp-text div {
-      font-size: 1.35vh;
-      margin-right: 15px;
-      text-align: center;
+      font-size: 1.1vh;
       width: 100%;
     }
 
@@ -3359,16 +3730,23 @@ svg {
       margin-right: 0px;
     }
 
-    .projects-grid {
+    #projects {
+      height: 110vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    #projects .header {
+      left: -10%;
     }
 
     .project-box {
-      height: 50%;
-      width: 30%;
+      height: 40vh;
+      width: 40vh;
     }
 
-    .project-bar span, .project-bar i {
-      font-size: .7rem;
+    .project-box .project-bar span, .project-box .project-bar i {
+      font-size: 1.25vh;
     }
 
     .project-img {
@@ -3382,8 +3760,21 @@ svg {
       width: 100%;
     }
 
+    .project-img .project-languages {
+      height: 20%;
+      width: 240%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .project-img .project-languages i {
+      font-size: 5vh;
+    }
+
     .project-languages i {
-      font-size: 1.5rem;
+      font-size: 3vh;
     }
 
     .modal {
@@ -3391,386 +3782,68 @@ svg {
     }
 
     .modal-header {
-      font-size: 1rem;
+      font-size: 2vh;
     }
 
     .modal-content {
       flex-direction: column;
       align-self: center;
       justify-content: center;
-      width: 95%;
+      width: 90%;
       height: 100%;
+      padding: 10px;
+    }
+
+    .modal-content .project-img {
+      height: 40%;
+      width: 100%;
+      align-self: center;
     }
 
     .modal-img {
-      height: 85%;
-      width: 100%;
-      flex-direction: row;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .modal-img img {
-      height: 100%;
-      width: 70%;
-      align-self: center;
+      height: 60%;
+      width: 100%;
     }
 
     #modal-info {
       display: flex;
       flex-direction: column;
-      align-items: center;
-    }
-
-    .modal-languages, .tech-list {
-      font-size: 1rem;
       width: 100%;
     }
 
-    .tech-list {
-      text-align: center;
-    }
-
-    .modal-languages div, .tech-list div {
+    .modal-languages {
       display: none;
     }
 
-    .modal-languages i {
-      font-size: 1.25rem;
-    }
-
     .tech-list {
-      font-size: 1rem;
+      display: none;
     }
 
-    .tech-list ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-self: center;
-      justify-content: center;
-      width: 70%;
-      padding: 0;
-      margin-left: 25px;
-    }
-
-    .tech-list ul li {
-      font-size: .75rem;
-      font-family: 'VCR';
-      background-color: #7E5E9A;
-      color: white;
-      padding: 2.5px;
-      margin-bottom: 5px;
-    }
-
-    .modal-content .about-header {
-      font-size: 1rem;
-      align-self: center;
+    .modal-content .about-info {
+      width: 90%;
+      align-items: center;
+      position: relative;
+      top: -5%;
     }
 
     .modal-content .about-info p {
+      font-size: 1.5vh;
+      text-align: center;
+    }
+
+    .modal-content .about-info .modal-button {
       font-size: 2vh;
-      width: 90%;
-      padding-left: -5px;
+      width: 60%;
+      left: 22.5%;
     }
 
     .modal-close {
       margin-left: auto;
     }
-
-}
-
-/* iPhone 11, iPhone 11 Pro Max - Portrait */
-@media only screen and (orientation: portrait) and (device-width: 896px) and (device-height: 414px) and (-webkit-device-pixel-ratio: 2) {
-
-      html {
-        overflow-y: hidden;
-        overflow-x: hidden;
-      }
-
-      .header {
-        font-size: 8vh;
-      }
-
-      svg {
-        display: none;
-      }
-
-      #home-content {
-        width: 100vw;
-        position: relative;
-        left: -5%;
-        top: 25%;
-      }
-
-      #home-content .header {
-        position: relative;
-        left: -15%;
-      }
-
-      #home-content .items {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: 5vh;
-        position: relative;
-        left: 5%;
-      }
-
-      #home-content .items .item {
-        width: 100%;
-      }
-
-      .link::after {
-        width: 4%;
-      }
-
-      #about .header {
-        left: -5%;
-      }
-
-      .about-content {
-        height: 100%;
-        flex-direction: column;
-        align-self: center;
-        justify-content: space-around;
-      };
-
-      .about-img {
-        width: 80%;
-        height: 20%;
-        display: flex;
-        flex-direction: row;
-        align-self: flex-end;
-      };
-
-      .about-img img {
-        width: 25%;
-        height: auto;
-        margin-right: 2.5%;
-      };
-
-      .about-info {
-        font-size: .75rem;
-      };
-
-      .about-text span {
-        display: block;
-        font-size: 1.65vh;
-        margin-left: 15px;
-        margin-bottom: 10px;
-      }
-
-      .skills-grid {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .skills-grid .skills-box {
-        width: 80vw;
-        margin-bottom: 10px;
-      }
-
-      .skills-grid .about-bar {
-        font-size: 2vh;
-      }
-
-      .skills-grid .about-bar span {
-        padding-left: 5px;
-      }
-
-      .skills-content {
-        padding: 0;
-        text-align: center;
-      }
-
-      .skills-content p {
-        display: inline-block;
-        margin: 7px 7px 7px 0px;
-      }
-
-      .skills-content p:last-of-type {
-        margin-right: 0;
-      }
-
-      #exp .header {
-        left: -5%;
-      }
-
-      #exp-content {
-        flex-direction: column;
-        position: relative;
-        left: 5%;
-      }
-
-      #exp-content .about-box {
-        width: 100%;
-        height: 50%;
-      }
-
-      #exp-content .about-content {
-        width: 95%;
-        height: 100%;
-        padding-top: 10px;
-        flex-direction: column;
-        text-align: center;
-      }
-
-      #exp-content .about-img {
-        width: 100%;
-        align-self: flex-start;
-        margin-bottom: 5px;
-      }
-
-      #exp-content .about-box .about-text {
-        padding-left: 0px;
-        margin-left: 0px;
-        align-self: center;
-      }
-
-      .exp-text {
-      }
-
-      .exp-text span {
-        font-size: 1.35vh;
-      }
-
-      #exp-content .other-box {
-        margin-top: 10px;
-        max-width: 80%;
-      }
-
-      .other-box .about-text {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-      }
-
-      .other-exp-text div {
-        font-size: 1.35vh;
-        margin-right: 15px;
-        text-align: center;
-        width: 100%;
-      }
-
-      .other-exp-text div:last-of-type {
-        margin-right: 0px;
-      }
-
-      .projects-grid {
-      }
-
-      .project-box {
-        height: 50%;
-        width: 30%;
-      }
-
-      .project-bar span, .project-bar i {
-        font-size: .7rem;
-      }
-
-      .project-img {
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-      }
-
-      .project-img img {
-        height: 75%;
-        width: 100%;
-      }
-
-      .project-languages i {
-        font-size: 1.5rem;
-      }
-
-      .modal {
-        top: 12.5%;
-      }
-
-      .modal-header {
-        font-size: 1rem;
-      }
-
-      .modal-content {
-        flex-direction: column;
-        align-self: center;
-        justify-content: center;
-        width: 95%;
-        height: 100%;
-      }
-
-      .modal-img {
-        height: 85%;
-        width: 100%;
-        flex-direction: row;
-      }
-
-      .modal-img img {
-        height: 100%;
-        width: 70%;
-        align-self: center;
-      }
-
-      #modal-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .modal-languages, .tech-list {
-        font-size: 1rem;
-        width: 100%;
-      }
-
-      .tech-list {
-        text-align: center;
-      }
-
-      .modal-languages div, .tech-list div {
-        display: none;
-      }
-
-      .modal-languages i {
-        font-size: 1.25rem;
-      }
-
-      .tech-list {
-        font-size: 1rem;
-      }
-
-      .tech-list ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-self: center;
-        justify-content: center;
-        width: 70%;
-        padding: 0;
-        margin-left: 25px;
-      }
-
-      .tech-list ul li {
-        font-size: .75rem;
-        font-family: 'VCR';
-        background-color: #7E5E9A;
-        color: white;
-        padding: 2.5px;
-        margin-bottom: 5px;
-      }
-
-      .modal-content .about-header {
-        font-size: 1rem;
-        align-self: center;
-      }
-
-      .modal-content .about-info p {
-        font-size: 2vh;
-        width: 90%;
-        padding-left: -5px;
-      }
-
-      .modal-close {
-        margin-left: auto;
-      }
-
 }
