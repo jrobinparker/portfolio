@@ -129,10 +129,10 @@ const Experience = ({ history }) => {
               <div className="about-text exp-text">
               <span>Developed a solution to deliver higher quality employee metrics for case staffing and marketing initiatives by analyzing employee resumes using natural language processing and Pandas.</span>
               <span>Built a desktop GUI app using tkinter, Selenium, and pandas to get language proficiency data from 1000+ employee profiles, providing essential data for international marketing initiatives.</span>
-              <span>Created a data visualization dashboard to analyze deeply-nested JSON data from the firm's events app with Pandas, Bokeh, Flask, React, and Bulma.</span>
-              <span>Create responsive HTML5 pages for LMS.</span>
-              <span>Develop custom JavaScript solutions for the Articulate Storyline course builder software.</span>
-              <span>Build detailed SharePoint workflows to manage compliance tasks, from task allocation for medical writing teams to a compliance management system for new hire onboarding, saving over $15,000 in yearly vendor fees.</span>
+              <span>Created data visualization dashboard to analyze deeply-nested JSON data from the firm's events app with Pandas, Bokeh, Flask, React, and Bulma.</span>
+              <span>Developed an app that connects to the LMS API using React and axios, allowing users to download content to repurpose into new training courses.</span>
+              <span>Administer the firm's LMS, where I manage onboarding processes, build responsive HTML5 pages, and support the development of technical training courses.</span>
+              <span>I've also created detailed SharePoint workflows to manage compliance tasks, from task allocation for medical writing teams to a compliance management system for new hire onboarding, saving over $15,000 in yearly vendor fees.</span>
             </div>
           </div>
           </div>

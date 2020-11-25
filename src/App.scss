@@ -854,9 +854,9 @@ svg {
     width: 100%;
   }
 
-    .about-text span {
-      font-size: 1.15vh;
-    }
+  .about-text span {
+    font-size: 1.15vh;
+  }
 
 
   #skills {
@@ -950,7 +950,7 @@ svg {
   }
 
   #exp-content .about-box .about-text {
-    padding-left: 0px;
+    padding-left: 10px;
     margin-left: 0px;
   }
 
@@ -1276,7 +1276,6 @@ svg {
       }
 
       #exp .header {
-        left: -10%;
         font-size: 8vh;
       }
 
@@ -1310,7 +1309,7 @@ svg {
       #exp-content .about-box .about-text {
         height: 75%;
         width: 100%;
-        padding: 0px;
+        padding-left: 5px;
       }
 
       #exp-content .about-box .about-content .exp-text span {
@@ -2423,7 +2422,7 @@ svg {
     }
 
     #exp-content .about-box .about-content .about-text span, .other-exp-text {
-      font-size: 1.75vh;
+      font-size: 1.65vh;
     }
 
     .exp-text span {
@@ -3373,11 +3372,11 @@ svg {
   #exp-content .about-box .about-text {
     height: 75%;
     width: 100%;
-    padding: 0px;
+    padding-left: 10px;
   }
 
   #exp-content .about-box .about-content .exp-text span {
-    font-size: 1.15vh;
+    font-size: 1vh;
   }
 
   #exp-content .other-box {
@@ -3696,7 +3695,7 @@ svg {
 
     #exp-content .about-img {
       width: 100%;
-      height: 25%;
+      height: 30%;
       text-align: center;
     }
 
@@ -3707,11 +3706,11 @@ svg {
     #exp-content .about-box .about-text {
       height: 75%;
       width: 100%;
-      padding: 0px;
+      padding-left: 10px;
     }
 
     #exp-content .about-box .about-content .exp-text span {
-      font-size: 1.15vh;
+      font-size: 1.1vh;
     }
 
     #exp-content .other-box {
