@@ -84,8 +84,9 @@ const About = ({ history }) => {
                 <div className="about-text">
                   <span>Hey there. I'm Jeremy Parker, a self-taught web developer focusing on JavaScript and Python.</span>
                   <span>Hoping to expand functionality in Captivate, Adobe's training course software, I started my programming journey in 2017 by learning about basic web development in HTML and CSS. That first step introducted me to Ruby on Rails, my gateway into the world of web development and programming.</span>
-                  <span>After learning Ruby casually, I decided to pursue programming seriously after discovering React. Since then, I've built a full-stack MERN app for a martial arts school in New Jersey and improved workplace processes with data science solutions in Python.</span>
-                  <span>When I'm not working, coding, or taking care of my daughter Nina, I love to run, cook Japanese and French cuisine, and scour thrift stores for vintage ephemera.</span>
+                  <span>After learning Ruby casually, I decided to pursue programming seriously after discovering React in 2018 and Python the following year. Since then, I've built a full-stack MERN app for a martial arts school in New Jersey and improved workplace processes with data science solutions in Python.</span>
+                  <span>In my day-to-day career, I manage my company's LMS and work with trainers to build technical training courses. I'm also a Japanese speaker and have translated financial and medical documents.</span>
+                  <span>Outside of working, coding, and taking care of my daughter Nina, I love running, cooking, watching Japanese TV, playing retro video games, and listening to 80's music.</span>
                 </div>
               </div>
             </div>
