@@ -50,7 +50,7 @@ const Projects = ({ history }) => {
         languages: ['js', 'html', 'css'],
         tech: ['node', 'mongodb', 'bcrypt', 'jwt', 'react', 'redux', 'grid-fs'],
         about: 'MFC Online University is an online training portal for Modern Fighting Concepts in Absecon, New Jersey. Primarily designed for students who cannot attend live classes due to COVID-19, users can create a paid account to view online videos uploaded by the instructors. This MERN app uses express and mongodb on the back end, bcrypt and jwt for authentication, redux for state management, and react for the front end. Videos are processed using ffmpeg and saved in mongodb using grid-fs.',
-        github: null,
+        github: 'https://github.com/jrobinparker/mfc',
         img: 'mfc-img.png',
         url: 'https://www.mfcuniversity.com',
         type: 'freelance'
@@ -82,7 +82,7 @@ const Projects = ({ history }) => {
         about: 'Taking inspiration from a number of blockchain and cryptocurrency sites, I created a site for a fictional blockchain. This site uses React Visibility Sensor and GSAP for animations. The timeline resizes and reorients with an event listener that watches for window resizes and orientation changes.',
         github: 'https://github.com/jrobinparker/jchain',
         img: 'jchain-img.png',
-        url: 'https://j-chain.herokuapp.com/',
+        url: 'https://jchain.netlify.app/',
         type: 'personal'
       }
     ])
