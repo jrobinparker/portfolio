@@ -18,12 +18,20 @@ const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, 
     gsap.set(abtTextCt, {height: '0vh', width: '0vh', visibility: 'hidden', opacity: 0})
     gsap.set(abtText, { opacity: 0 })
 
-    tl.to(header, .5, {opacity: 1, y: 0})
-      .to(abtTextCt, { duration: .5, ease: Power1.easeIn, visibility: 'visible', opacity: 1, height: '75vh', width: '80vw' })
-      .to(title, {opacity: 1})
-      .to(abtText, .25, { opacity: 1 })
+    if (window.matchMedia("(orientation: portrait)").matches) {
+      tl.to(header, .5, {opacity: 1, y: 0})
+        .to(abtTextCt, { duration: .5, ease: Power1.easeIn, visibility: 'visible', opacity: 1, height: '90vh', width: '95vw' })
+        .to(title, {opacity: 1})
+        .to(abtText, .25, { opacity: 1 })
+    } else {
+      tl.to(header, .5, {opacity: 1, y: 0})
+        .to(abtTextCt, { duration: .5, ease: Power1.easeIn, visibility: 'visible', opacity: 1, height: '90vh', width: '60vw' })
+        .to(title, {opacity: 1})
+        .to(abtText, .25, { opacity: 1 })
+    }
 
   }, []);
+
 
   return createPortal(
     <div className="project-modal">
@@ -35,16 +43,13 @@ const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, 
         }}/>
       </div>
         <div className="modal-content">
-          <div className="project-img">
           {img ? (
             <div className="modal-img">
               <img src={require(`../../assets/${img}`)} alt="project"/>
             </div>
           ) : <Fragment></Fragment>}
-          </div>
             <div className="about-info">
-              <div className="about-header">About the Project</div>
-              <p>{about}</p>
+                <p>{about}</p>
               <div className="modal-buttons">
                 {!github ? null : <ModalButton text={'view github'} link={github} />}
                 {!url ? null : <ModalButton text={'view site'} link={url} />}

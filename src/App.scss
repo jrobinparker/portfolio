@@ -318,12 +318,12 @@ svg {
   padding-left: 2%;
   padding-right: 2%;
   margin-left: auto;
-  font-size: 2.5vh;
   opacity: 0;
 }
 
 .about-text span {
   display: block;
+  font-size: 2vh;
   margin-bottom: 10px;
 }
 
@@ -452,7 +452,7 @@ svg {
 }
 
 #exp-content .about-box .about-content .about-text span, .other-exp-text {
-  font-size: 2vh;
+  font-size: 1.75vh;
 }
 
 .other-exp-items {
@@ -613,13 +613,14 @@ svg {
 }
 
 .modal {
-  top: 10%;
+  top: 2%;
+  left: 25%;
 }
 
 .modal-card {
   position: relative;
-  top: 30%;
-  left: 25%;
+  top: 0%;
+  left: 15%;
   height: 80vh;
   max-width: 100vw;
   background-color: #BED38E;
@@ -653,6 +654,7 @@ svg {
 .modal-content {
   opacity: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   height: 100%;
   padding: 10px;
@@ -663,19 +665,9 @@ svg {
   display: flex;
 }
 
-.modal-content .project-img {
-  height: 100%;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .modal-img {
-  width: auto;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 60%;
 }
 
 .modal-img img {
@@ -690,36 +682,13 @@ svg {
   margin-bottom: 20px;
 }
 
-.tech-list div {
-  font-family: 'VCR';
-}
-
 .modal-languages i {
   margin-top: 20px;
   font-size: 5vh;
 }
 
-.tech-list {
-  width: 100%;
-}
-
-.tech-list ul {
-  margin-left: -10px;
-  margin-top: 10px;
-}
-
-.tech-list ul li {
-  font-family: 'VCR';
-  font-size: 2vh;
-  background-color: #7E5E9A;
-  color: white;
-  padding: 2.5px;
-  margin-bottom: 5px;
-}
-
 .modal-content .about-info {
-  width: 80%;
-  padding-left: 20px;
+  width: 100%;
 }
 
 .about-header {
@@ -736,12 +705,21 @@ svg {
 }
 
 .modal-content .about-info p {
-  font-size: 2.5vh;
+  font-size: 2.25vh;
 }
 
 .modal-close {
   margin-left: auto;
   cursor: pointer
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  left: -10%;
+  width: 70%;
 }
 
 .modal-button {
@@ -750,12 +728,11 @@ svg {
   font-size: 1.5rem;
   display: block;
   border: none;
-  width: 30%;
   padding: 10px;
   position: relative;
   left: 35%;
   cursor: pointer;
-  align-self: flex-end;
+  align-self: baseline;
 }
 
 .modal-button:first-of-type {
@@ -1035,86 +1012,28 @@ svg {
     font-size: 3vh;
   }
 
-  .modal {
-    top: 12.5%;
-  }
-
   .modal-content {
     flex-direction: column;
     width: 90%;
     height: 100%;
   }
 
-  .modal-content .project-img {
-    height: 50%;
-    width: 100%;
-    align-items: center;
+  .modal {
+    left: 2.5%;
   }
 
   .modal-img {
+    height: 40%;
     width: 100%;
-    flex-direction: row;
   }
 
   .modal-img img {
-    height: 70%;
-    width: 50%;
-    background: black;
-  }
-
-  #modal-info {
-    width: 70%;
-    height: 100%;
-    align-items: center;
-    margin-left: 10px;
-  }
-
-  .modal-languages {
-    margin-left: 0px;
-  }
-
-  .modal-languages i {
-    font-size: 3vh;
-  }
-
-  .tech-list ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-    margin-top: 0;
-    margin-left: 0px;
-  }
-
-  .tech-list ul li {
-    font-size: 1.25vh;
-    font-family: 'VCR';
-    background-color: #7E5E9A;
-    color: white;
-    padding: 2.5px;
-  }
-
-  .modal-content .about-info {
     width: 100%;
   }
 
-  .modal-content .about-header {
-    font-size: 2vh;
-  }
-
-  .modal-content .about-info {
-    margin: 0px;
-    padding-left: 0px;
-    width: 100%;
-  }
 
   .modal-content .about-info p {
-    font-size: 1.5vh;
-    width: 100%;
-    padding-left: 0px;
-    margin-left: 0px;
+    font-size: 2vh;
   }
 
   .modal-button {
@@ -1390,7 +1309,7 @@ svg {
       }
 
       .modal {
-        top: 12.5%;
+        left: 2.5%;
       }
 
       .modal-header {
@@ -1405,71 +1324,18 @@ svg {
         padding: 10px;
       }
 
-      .modal-content .project-img {
-        height: 50%;
-        width: 100%;
-      }
-
       .modal-img img {
-        height: 80%;
-        width: 100%;
-      }
-
-      #modal-info {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .modal-languages i {
-        font-size: 4vh;
-      }
-
-      .tech-list ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-        margin-left: 10px;
-      }
-
-      .tech-list ul li {
-        font-size: 2vh;
-        font-family: 'VCR';
-        background-color: #7E5E9A;
-        color: white;
-        padding: 2.5px;
-        margin-bottom: 5px;
-      }
-
-      .modal-content .about-info {
-        width: 90%;
-        align-self: center;
+        height: 100%;
       }
 
       .modal-content .about-info p {
-        font-size: 1.5vh;
+        font-size: 2vh;
         text-align: center;
       }
 
-      .modal-buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: baseline;
-        align-content: baseline;
-        align-self: center;
-        width: 70%;
-        position: relative;
-        left: -10%;
-      }
-
-      .modal-content .about-info .modal-button {
-        font-size: 2vh;
+      .modal-button {
         width: 40%;
-        align-self: baseline;
+        font-size: 1.5vh;
       }
 
       .modal-close {
@@ -1713,11 +1579,11 @@ svg {
       }
 
       .project-bar span, .project-bar i {
-        font-size: .7rem;
+        font-size: 2vh;
       }
 
       .modal {
-        top: 12.5%;
+        left: 2.5%;
       }
 
       .modal-header {
@@ -1733,59 +1599,9 @@ svg {
         padding: 10px;
       }
 
-      .modal-content .project-img {
-        height: 40%;
-        width: 100%;
-        align-self: center;
-      }
-
-      .modal-img {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-
-      .modal-img img {
-        height: 60%;
-        width: 50%;
-      }
-
-      #modal-info {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .modal-languages i {
-        font-size: 4vh;
-      }
-
-      .tech-list ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-        margin-left: 10px;
-      }
-
-      .tech-list ul li {
-        font-size: 2vh;
-        font-family: 'VCR';
-        background-color: #7E5E9A;
-        color: white;
-        padding: 2.5px;
-        margin-bottom: 5px;
-      }
-
-      .modal-content .about-info {
-        width: 90%;
-        align-self: center;
-      }
 
       .modal-content .about-info p {
-        font-size: 1.5vh;
+        font-size: 2vh;
         text-align: center;
       }
 
@@ -1800,7 +1616,7 @@ svg {
 }
 
 /* Tablets - Portrait */
-@media only screen and (orientation: portrait) and (min-width: 951px) and (max-width: 1200px)  {
+@media only screen and (orientation: portrait) and (min-width: 951px) and (max-width: 1210px)  {
 
       html {
         overflow-y: hidden;
@@ -2040,11 +1856,19 @@ svg {
       }
 
       .project-bar span, .project-bar i {
-        font-size: .7rem;
+        font-size: 2vh;
       }
 
       .modal {
-        top: 12.5%;
+        left: 2.5%;
+      }
+
+      .modal-img {
+        width: 100%;
+      }
+
+      .modal-img img {
+        height: 100%;
       }
 
       .modal-header {
@@ -2060,59 +1884,9 @@ svg {
         padding: 10px;
       }
 
-      .modal-content .project-img {
-        height: 40%;
-        width: 100%;
-        align-self: center;
-      }
-
-      .modal-img {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-
-      .modal-img img {
-        height: 60%;
-        width: 50%;
-      }
-
-      #modal-info {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .modal-languages i {
-        font-size: 4vh;
-      }
-
-      .tech-list ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-        margin-left: 10px;
-      }
-
-      .tech-list ul li {
-        font-size: 2vh;
-        font-family: 'VCR';
-        background-color: #7E5E9A;
-        color: white;
-        padding: 2.5px;
-        margin-bottom: 5px;
-      }
-
-      .modal-content .about-info {
-        width: 90%;
-        align-self: center;
-      }
 
       .modal-content .about-info p {
-        font-size: 1.5vh;
+        font-size: 2vh;
         text-align: center;
       }
 
@@ -2266,55 +2040,18 @@ svg {
       height: 100%;
     }
 
-    .modal {
-      top: 12.5%;
-    }
-
     .modal .project-bar {
       height: 2.5%;
     }
 
+    .modal-img {
+      height: 50%;
+    }
+
     .modal-img img {
-      height: 90%;
+      height: 100%;
       width: 100%;
     }
-
-    #modal-info {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .modal-languages i {
-      font-size: 5vh;
-      margin-top: 10px;
-      margin-bottom: 0;
-    }
-
-    .tech-list {
-      margin-top: -15px;
-    }
-
-    .tech-list ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .tech-list ul li {
-      font-size: 2vh;
-      font-family: 'VCR';
-      background-color: #7E5E9A;
-      color: white;
-      padding: 2.5px;
-      margin-bottom: 5px;
-    }
-
-    .about-header {
-      font-size: 4vh;
-    }
-
 
     .about-info p {
       font-size: 2vh;
@@ -2467,58 +2204,13 @@ svg {
       height: 100%;
     }
 
-    .modal {
-      top: 12.5%;
-    }
-
     .modal-header {
       font-size: 1rem;
     }
 
-    .modal-img img {
-      height: 90%;
-      width: 100%;
-    }
-
-    #modal-info {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .modal-languages i {
-      font-size: 5vh;
-      margin-top: 10px;
-      margin-bottom: 0;
-    }
-
-    .tech-list {
-      font-size: 1rem;
-      margin-top: -15px;
-    }
-
-    .tech-list ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .tech-list ul li {
-      font-size: 3vh;
-      font-family: 'VCR';
-      background-color: #7E5E9A;
-      color: white;
-      padding: 2.5px;
-      margin-bottom: 5px;
-    }
-
-    .modal-content .about-header {
-      font-size: 4vh;
-    }
 
     .modal-content .about-info p {
-      font-size: 2.75vh;
+      font-size: 2vh;
       line-height: 15px;
     }
 
@@ -2672,62 +2364,12 @@ svg {
       height: 20vh;
     }
 
-    .modal {
-      top: 12.5%;
-    }
-
     .modal .project-bar {
       height: 2%;
     }
 
-    .modal-content .modal-img {
-      height: 70%;
-    }
-
-    .modal-img img {
-      height: 50%;
-      width: 70%;
-      align-self: center;
-    }
-
-    #modal-info {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .modal-languages i {
-      font-size: 5vh;
-      margin-top: 10px;
-      margin-bottom: 0;
-    }
-
-    .tech-list {
-      align-self: baseline;
-      width: 90%;
-    }
-
-    .tech-list ul {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .tech-list ul li {
-      font-size: 2vh;
-      font-family: 'VCR';
-      background-color: #7E5E9A;
-      color: white;
-      padding: 2.5px;
-      margin-bottom: 5px;
-    }
-
-    .modal-content .about-header {
-      font-size: 3vh;
-    }
-
     .modal-content .about-info p {
-      font-size: 2.25vh;
+      font-size: 2vh;
     }
 
     .modal-button {
@@ -2814,7 +2456,7 @@ svg {
     }
 
     #exp-content .about-box .about-content .about-text span{
-      font-size: 1.75vh;
+      font-size: 1.5vh;
     }
 
     .other-bar {
@@ -2858,72 +2500,8 @@ svg {
       margin-right: 2.5%;
     }
 
-    .modal {
-      top: 12.5%;
-    }
-
-    .modal-header {
-      font-size: 2vh;
-    }
-
-    .modal-content .modal-img {
-      height: 70%;
-    }
-
-    .modal-img img {
-      height: 50%;
-      width: 70%;
-      align-self: center;
-    }
-
-    #modal-info {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .modal-languages {
-      width: 100%;
-      margin-bottom: 0px;
-    }
-
-    .modal-languages i {
-      font-size: 5vh;
-    }
-
-    .tech-list {
-      width: 60%;
-      align-self: center;
-    }
-
-    .tech-list ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .tech-list ul li {
-      font-size: 2vh;
-      font-family: 'VCR';
-      background-color: #7E5E9A;
-      width: 100%;
-      color: white;
-      padding: 2.5px;
-      margin-bottom: 5px;
-      margin-left: -15px;
-    }
-
-    .about-header {
-      font-size: 3vh;
-    }
-
-    .modal-text {
-      font-size: 3vh;
-    }
-
     .modal-content .about-info p {
-      font-size: 2.25vh;
+      font-size: 2vh;
     }
 
     .modal-button {
@@ -2992,7 +2570,7 @@ svg {
     }
 
     #exp-content .about-box .about-content .about-text span, .other-exp-text {
-      font-size: 1.75vh;
+      font-size: 1.5vh;
     }
 
     .other-box .about-bar-title {
@@ -3029,50 +2607,10 @@ svg {
       margin-right: 2.5%;
     }
 
-    .project-img img {
-      width: 100%;
-      height: 100%;
-    }
-
-    .modal {
-      top: 12.5%;
-    }
-
-    .modal-card {
-      top: 10%;
-    }
-
     .modal-img img {
       height: 90%;
       width: 100%;
     }
-
-    .modal-languages i {
-      margin-top: 20px;
-      font-size: 5vh;
-    }
-
-    .tech-list {
-      width: 100%;
-    }
-
-    .tech-list ul {
-      margin-left: -20px;
-      margin-top: 10px;
-    }
-
-    .tech-list ul li {
-      font-size: 2vh;
-    }
-
-    .modal-content .about-header {
-      font-size: 3vh;
-    }
-
-    .modal-content .about-info p {
-      font-size: 2.5vh;
-    }
-
 
 }
 
@@ -3142,23 +2680,18 @@ svg {
     height: 22vh;
   }
 
-  .project-img img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .modal {
-    top: 15%;
-  }
 
   .modal-header {
     font-size: 3.5rem;
     letter-spacing: -5px;
   }
 
+
   .modal-img img {
-    height: 90%;
-    width: 100%;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    left: 30%;
   }
 
   .modal-languages div, .tech-list div {
@@ -3431,9 +2964,7 @@ svg {
   }
 
   .project-img {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
+    display: none;
   }
 
   .project-img img {
@@ -3458,59 +2989,8 @@ svg {
     font-size: 3vh;
   }
 
-  .modal {
-    top: 12.5%;
-  }
-
   .modal-header {
     font-size: 2vh;
-  }
-
-  .modal-content {
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
-    width: 90%;
-    height: 100%;
-    padding: 10px;
-  }
-
-  .modal-content .project-img {
-    height: 40%;
-    width: 100%;
-    align-self: center;
-  }
-
-  .modal-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .modal-img img {
-    height: 60%;
-    width: 100%;
-  }
-
-  #modal-info {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .modal-languages {
-    display: none;
-  }
-
-  .tech-list {
-    display: none;
-  }
-
-  .modal-content .about-info {
-    width: 90%;
-    align-items: center;
-    position: relative;
-    top: -5%;
   }
 
   .modal-content .about-info p {
@@ -3792,10 +3272,6 @@ svg {
       font-size: 3vh;
     }
 
-    .modal {
-      top: 12.5%;
-    }
-
     .modal-header {
       font-size: 2vh;
     }
@@ -3815,47 +3291,15 @@ svg {
       align-self: center;
     }
 
-    .modal-img {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .modal-img img {
-      height: 60%;
-      width: 100%;
-    }
-
-    #modal-info {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .modal-languages {
-      display: none;
-    }
-
-    .tech-list {
-      display: none;
-    }
-
-    .modal-content .about-info {
-      width: 90%;
-      align-items: center;
-      position: relative;
-      top: -5%;
-    }
 
     .modal-content .about-info p {
-      font-size: 1.5vh;
+      font-size: 2vh;
       text-align: center;
     }
 
     .modal-content .about-info .modal-button {
-      font-size: 2vh;
-      width: 60%;
-      left: 22.5%;
+      font-size: 1.75vh;
+      width: 40%;
     }
 
     .modal-close {

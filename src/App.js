@@ -14,17 +14,17 @@ const App = () => {
 
     return (
           <div className="app">
+          <div className="container">
             <Router>
               <Switch>
-                <div className="container">
                     <Route exact path='/' component={Home} />
                     <Route exact path='/about-me' component={About} />
                     <Route exact path='/skills' component={Skills} />
                     <Route exact path='/experience' component={Experience} />
                     <Route exact path='/projects' component={Projects} />
-                </div>
               </Switch>
             </Router>
+            </div>
             <Canvas camera={{ zoom: 15, position: [-4, 0, 40]}}>
               <Suspense fallback={<LoadingScreen/>}>
                   <Scene />

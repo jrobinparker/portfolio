@@ -37,7 +37,7 @@ const ProjectBox = ({ proj, close }) => {
       <div className="about-box project-box" id={`${name}`}>
       <div className="about-bar project-bar">
         <span>{name}</span>
-        <i class="fas fa-times" onClick={() => close()}/>
+        <i className="fas fa-times" onClick={() => close()}/>
 
       </div>
         <div
