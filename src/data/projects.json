@@ -1,0 +1,74 @@
+[
+    {
+      "name": "Event App Data Dashboard",
+      "languages": ["js", "python", "html", "css"],
+      "tech": ["bokeh", "pandas", "flask", "react", "react router", "react visibility sensor"],
+      "about": "Every year I help support the A/V elements of the annual New Hire Orientation event, including the mobile app, which includes useful information for attendees. The event project leaders wanted usage statistics for a better understanding of the ROI of the app. Unfortunately, reporting on this data was limited, and could only be exported as deeply-nested JSON. I created a data visualization dashboard to present analysis of usage data with Pandas, Bokeh, Flask, React, and Bulma, which helped the event project leaders quickly gain useful insights into how attendees were utilizing the app.",
+      "github": null,
+      "img": "ago-img.png",
+      "url": null
+    },
+    {
+      "name": "Resume Analysis",
+      "languages": ["python"],
+      "tech": ["nltk", "pandas"],
+      "about": "Case leaders at Analysis Group use employee data--such as past work experience--to assemble case teams for projects. While employee resumes are posted on the corporate intranet, the search engine does not index the contents of them. I used natural language processing tools and Pandas to analyze employee resumes for specific keywords, delivering higher quality employee metrics for case staffing and marketing initiatives.",
+      "github": null,
+      "img": "resume-img.png",
+      "url": null
+    },
+    {
+      "name": "Employee Language Scraper",
+      "languages": ["python"],
+      "tech": ["beautiful soup", "pandas", "selenium", "tkinter"],
+      "about": "The need for language speakers data continued to grow as Analysis Group expanded internationally. We did not have a reporting solution to obtain on language data, making case staffing for international projects and pitches to new clients difficult. Using Selenium and Beautiful Soup to scrape intranet profiles and Pandas to build the spreadsheet, I developed an app to get language proficiency data from 1000+ employee profiles, providing essential data for international projects and marketing initiatives. I also ported this to a GUI in tkinter for my teammates and separately scheduled the code to run nightly and save the spreadsheet to a shared team folder.",
+      "github": null,
+      "img": "languages-img.png",
+      "url": null
+    },
+    {
+      "name": "LMS Content Downloader",
+      "languages": ["js", "html", "css"],
+      "tech": ["react", "axios"],
+      "about": "This summer, as we were building out the training program for summer interns, a number of trainers mentioned the need to be able to combine course content from separate courses into one large course. Our learning management system, Docebo, does not allow course instructors or admins to download video content through the browser. On top of that, the screen recording program used by the LMS only saves recorded videos to the server, so instructors had no way to upload their created content into new courses. I created an app that connects to the API and allows users to easily download course content. This app saved instructors from having to recreate videos from scratch, and allowed us to quickly create custom courses for the intern training program using existing content.",
+      "github": null,
+      "img": "agu-img.png",
+      "url": null
+    },
+    {
+      "name": "MFC Online University",
+      "languages": ["js", "html", "css"],
+      "tech": ["node", "mongodb", "bcrypt", "jwt", "react", "redux", "grid-fs"],
+      "about": "MFC Online University is an online training portal for Modern Fighting Concepts in Absecon, New Jersey. Primarily designed for students who cannot attend live classes due to COVID-19, users can create a paid account to view online videos uploaded by the instructors. This MERN app uses express and mongodb on the back end, bcrypt and jwt for authentication, redux for state management, and react for the front end. Videos are processed using ffmpeg and saved in mongodb using grid-fs.",
+      "github": "https://github.com/jrobinparker/mfc",
+      "img": "mfc-img.png",
+      "url": "https://www.mfcuniversity.com"
+    },
+    {
+      "name": "jchain",
+      "languages": ["js", "html", "css"],
+      "tech": ["react", "react router", "react hooks", "firebase", "styled-components", "chart.js", "react visibility sensor", "gsap"],
+      "about": "Taking inspiration from a number of blockchain and EV company home pages, I created a site with a dashboard mockup for a fictional blockchain. This serverless SPA uses Firebase for authentication and data storage, styled components, Chart.js graphs, and React Visibility Sensor and GSAP for animations.",
+      "github": "https://github.com/jrobinparker/jchain",
+      "img": "jchain-img.png",
+      "url": "https://jchain.netlify.app/"
+    },
+    {
+      "name": "jDictSearch",
+      "languages": ["js", "html", "css"],
+      "tech": ["axios", "cheerio", "gsap", "react"],
+      "about": "When translating, it is useful to search multiple dictionaries to get a wide array of matching terms. This is essential when translating Japanese, as words can have a number of different corresponding meanings in English. This app searches three separate Japanese-English dictionaries in one search, saving time, effort, and overlap. I used axios to send the search term to each of the dictionaries and cheerio to extract the results from the returned data. The results are animated with GSAP and displayed in modals.",
+      "github": "https://github.com/jrobinparker/jdictsearch",
+      "img": "jdict-img.png",
+      "url": "https://jrobinparker.github.io/jdictsearch"
+    },
+    {
+      "name": "Renshu",
+      "languages": ["js", "html", "css"],
+      "tech": ["node", "express", "mongodb", "mongoose", "bcrypt", "jwt", "react", "react router", "redux", "heroku"],
+      "about": "Renshu--my first full-stack MERN app--is a community for Japanese learners to create and share lessons with text, videos, and flash card decks. Users can also combine multiple lessons into a course and view a list of courses created and completed. The app uses express and mongodb on the back end, bcrypt and jwt for authentication, redux for state management, and react for the front end.",
+      "github": "https://github.com/jrobinparker/renshu",
+      "img": "renshu-img.png",
+      "url": "https://guarded-escarpment-15012.herokuapp.com/"
+    }
+]

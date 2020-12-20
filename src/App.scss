@@ -653,6 +653,7 @@ svg {
 .modal-content {
   opacity: 0;
   display: flex;
+  align-items: center;
   height: 100%;
   padding: 10px;
 }
@@ -665,6 +666,9 @@ svg {
 .modal-content .project-img {
   height: 100%;
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .modal-img {
@@ -1042,7 +1046,7 @@ svg {
   }
 
   .modal-content .project-img {
-    height: 40%;
+    height: 50%;
     width: 100%;
     align-items: center;
   }
@@ -1053,8 +1057,9 @@ svg {
   }
 
   .modal-img img {
-    height: 50%;
+    height: 70%;
     width: 50%;
+    background: black;
   }
 
   #modal-info {
@@ -1395,27 +1400,19 @@ svg {
       .modal-content {
         flex-direction: column;
         align-self: center;
-        justify-content: center;
         width: 90%;
         height: 100%;
         padding: 10px;
       }
 
       .modal-content .project-img {
-        height: 40%;
+        height: 50%;
         width: 100%;
-        align-self: center;
-      }
-
-      .modal-img {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
       }
 
       .modal-img img {
-        height: 60%;
-        width: 50%;
+        height: 80%;
+        width: 100%;
       }
 
       #modal-info {
@@ -1457,8 +1454,22 @@ svg {
         text-align: center;
       }
 
+      .modal-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        align-content: baseline;
+        align-self: center;
+        width: 70%;
+        position: relative;
+        left: -10%;
+      }
+
       .modal-content .about-info .modal-button {
         font-size: 2vh;
+        width: 40%;
+        align-self: baseline;
       }
 
       .modal-close {

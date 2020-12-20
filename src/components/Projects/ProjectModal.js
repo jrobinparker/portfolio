@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect } from 'react';
-import ProjectLanguages from './ProjectLanguages';
 import ModalButton from './ModalButton';
 import gsap from 'gsap';
 import { createPortal } from 'react-dom';
@@ -40,24 +39,16 @@ const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, 
           {img ? (
             <div className="modal-img">
               <img src={require(`../../assets/${img}`)} alt="project"/>
-              <div id="modal-info">
-                <div className="modal-languages">
-                  <ProjectLanguages languages={languages} />
-                </div>
-                <span className="tech-list">
-                  <ul>
-                    {tech.map(t => <li>{t}</li>)}
-                  </ul>
-                </span>
-              </div>
             </div>
           ) : <Fragment></Fragment>}
           </div>
             <div className="about-info">
               <div className="about-header">About the Project</div>
               <p>{about}</p>
-              {!github ? null : <ModalButton text={'view github'} link={github} />}
-              {!url ? null : <ModalButton text={'view site'} link={url} />}
+              <div className="modal-buttons">
+                {!github ? null : <ModalButton text={'view github'} link={github} />}
+                {!url ? null : <ModalButton text={'view site'} link={url} />}
+              </div>
             </div>
         </div>
       </div>
