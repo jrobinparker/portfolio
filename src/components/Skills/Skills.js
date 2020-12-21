@@ -5,11 +5,11 @@ import gsap from 'gsap';
 
 const Skills = ({ history }) => {
   const [ languages ] = useState(['JavaScript', 'Python', 'Ruby', 'SQL' ])
-  const [ frontEnd ] = useState([ 'HTML5 | CSS3', 'React | Redux', 'GSAP', 'threejs' ])
-  const [ backEnd ] = useState([ 'Node.js | Express', 'Django | Flask', 'Rails | Sinatra', 'Mongoose' ])
+  const [ frontEnd ] = useState([ 'HTML5 | CSS3', 'React | Redux', 'styled-components', 'Three.js' ])
+  const [ backEnd ] = useState([ 'Node.js', 'Django | Flask', 'Ruby on Rails', 'Firebase' ])
   const [ dataScience ] = useState([ 'Pandas', 'Bokeh', 'NLTK', 'Data Cleansing' ])
-  const [ research ] = useState([ 'Bloomberg', 'Thomson One', 'Legal Research', 'Patent Research' ])
-  const [ other ] = useState(['SharePoint | SP Workflows', 'Training Software', 'Video & Audio Editing', 'Japanese (JLPT N2)'])
+  const [ dataStructures ] = useState([ 'Linked lists', 'Hash tables', 'Stacks', 'Algorithms' ])
+  const [ other ] = useState(['Scrum', 'SharePoint', 'Video & Audio Editing', 'Japanese (JLPT N2)'])
 
   const openAnimation = () => {
     const header = document.getElementById('skills-header')
@@ -67,7 +67,7 @@ const Skills = ({ history }) => {
             </div>
             <div className="skills-grid">
               <Skill skillName={'Data Science'} skills={dataScience} close={close} />
-              <Skill skillName={'Research'} skills={research} close={close} />
+              <Skill skillName={'Data Structures'} skills={dataStructures} close={close} />
               <Skill skillName={'Other'} skills={other} close={close} />
             </div>
           </div>
