@@ -45,7 +45,7 @@ const ProjectModal = ({ proj: { name, languages, tech, about, github, img, url, 
         <div className="modal-content">
           {img ? (
             <div className="modal-img">
-              <img src={require(`../../assets/${img}`)} alt="project"/>
+              <img src={`${img}`} alt="project"/>
             </div>
           ) : <Fragment></Fragment>}
             <div className="about-info">

@@ -76,7 +76,7 @@ const About = ({ history }) => {
             </div>
               <div className="about-content">
                 <div className="about-img">
-                  <img src={require('../../assets/portrait.JPG')} alt="headshot"/>
+                  <img src='/images/portrait.JPG' alt="headshot"/>
                   <div className="about-info">
                     {aboutInfo.map((abt, i) => <AboutInfo itemType={abt.type} itemText={abt.text} itemLink={abt.url} number={i} />)}
                   </div>
