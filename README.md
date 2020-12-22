@@ -2,7 +2,7 @@
 http://www.jrobinparker.com/
 
 # about
-As a huge fan 80's movies & music, retro tech, and cyberpunk, I thought it would be fun to integrate these styles into my portfolio. 
+As a huge fan 80's movies & music, retro tech, and cyberpunk, I thought it would be fun to integrate these styles into my portfolio. I created this React app with background graphics and animations using react-three-fiber, a React renderer for three.js, and a car model created with Vectary. The retro-style PC windows are animated with GSAP. 
 
 # features / frameworks / npm packages used
 * React
