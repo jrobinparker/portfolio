@@ -57,18 +57,18 @@
       "name": "jDictSearch",
       "languages": ["js", "html", "css"],
       "tech": ["axios", "cheerio", "gsap", "react"],
-      "about": "When translating, it is useful to search multiple dictionaries to get a wide array of matching terms. This is essential when translating Japanese, as words can have a number of different corresponding meanings in English. This app searches three separate Japanese-English dictionaries in one search, saving time, effort, and overlap. I used axios to send the search term to each of the dictionaries and cheerio to extract the results from the returned data. The results are animated with GSAP and displayed in modals.",
+      "about": "This app searches three separate Japanese-English dictionaries in one search, saving time, effort, and overlap. I used axios to send the search term to each of the dictionaries and cheerio to extract the results from the returned data. The results are animated with GSAP and displayed in modals. The animated background displays preoloaded images returned from the Unsplash API.",
       "github": "https://github.com/jrobinparker/jdictsearch",
       "img": "jdict-img.png",
       "url": "https://jrobinparker.github.io/jdictsearch"
     },
     {
-      "name": "Renshu",
+      "name": "Portfolio",
       "languages": ["js", "html", "css"],
-      "tech": ["node", "express", "mongodb", "mongoose", "bcrypt", "jwt", "react", "react router", "redux", "heroku"],
-      "about": "Renshu--my first full-stack MERN app--is a community for Japanese learners to create and share lessons with text, videos, and flash card decks. Users can also combine multiple lessons into a course and view a list of courses created and completed. The app uses express and mongodb on the back end, bcrypt and jwt for authentication, redux for state management, and react for the front end.",
-      "github": "https://github.com/jrobinparker/renshu",
-      "img": "renshu-img.png",
-      "url": "https://guarded-escarpment-15012.herokuapp.com/"
+      "tech": ["react", "react router", "react-three-fiber / threejs", "gsap"],
+      "about": "As a huge fan 80's movies & music, retro tech, and cyberpunk, I thought it would be fun to integrate these styles into my portfolio. I created this React app with background graphics and animations using react-three-fiber, a React renderer for three.js, and a car model created with Vectary. The retro-style PC windows are animated with GSAP.",
+      "github": "https://github.com/jrobinparker/portfolio",
+      "img": "portfolio-img.png",
+      "url": "http://www.jrobinparker.com"
     }
 ]
