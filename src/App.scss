@@ -283,10 +283,11 @@ svg {
   height: 70%;
   color: white;
   opacity: 0;
+  box-sizing: border-box;
 }
 
 .about-img img {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -2122,11 +2123,6 @@ svg {
       padding: 10px;
     };
 
-    .about-img {
-      width: 15%;
-      height: 50%;
-    };
-
     .about-info {
       font-size: 3vh;
       line-height: 1px;
@@ -2259,11 +2255,6 @@ svg {
     .about-box .about-bar {
       height: 4%;
     }
-
-    .about-img {
-      width: 15%;
-      height: 40%;
-    };
 
 
     .about-info .item {
@@ -2412,12 +2403,6 @@ svg {
       top: 5%;
     };
 
-
-    .about-img {
-      width: 15%;
-      height: 40%;
-    };
-
     .about-data-item {
       font-size: 2vh;
     }
@@ -2545,10 +2530,6 @@ svg {
     #about, #projects {
       top: 5%;
     };
-
-    .about-img {
-      height: 50%;
-    }
 
     .about-data-item {
       font-size: 2vh;
