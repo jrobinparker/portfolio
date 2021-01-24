@@ -801,49 +801,62 @@ svg {
     width: 5%;
   }
 
+  #about {
+    top: -5%;
+  }
+
   #about .header {
     left: -5%;
+  }
+
+  .about-box {
+    left:5%;
+    overflow-y: hidden;
   }
 
   .about-content {
     height: 100%;
     flex-direction: column;
+    align-self: center;
     justify-content: space-around;
   };
 
   .about-img {
-    width: 90%;
-    height: 30%;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
+    justify-content: center;
   };
 
   .about-img img {
-    width: 40%;
+    width: 35%;
     height: auto;
-    margin-right: 2.5%;
+    position: relative;
   };
 
   .about-info {
+    font-size: 2.25vh;
+    width: 40%;
+    margin-left: 20px;
     align-self: center;
-  }
-
-  .about-info .item {
-    margin-bottom: 5px;
-  }
+  };
 
   .about-data-item::after {
     width: 2.5%;
-    margin-top: 2.5px;
   }
 
   .about-text {
-    width: 100%;
+    width: 96%;
+    height: 100%;
+    overflow-y: scroll;
   }
 
   .about-text span {
-    font-size: 1.15vh;
+    display: block;
+    font-size: .8rem;
+    margin-bottom: 10px;
   }
 
 
@@ -1134,14 +1147,14 @@ svg {
       };
 
       .about-img img {
-        width: 25%;
+        width: 35%;
         height: auto;
         position: relative;
       };
 
       .about-info {
         font-size: 2.25vh;
-        width: 30%;
+        width: 40%;
         margin-left: 20px;
         align-self: center;
       };
@@ -1413,31 +1426,36 @@ svg {
         left: -5%;
       }
 
+      .about-box {
+        left:5%;
+      }
+
       .about-content {
         height: 100%;
         flex-direction: column;
+        align-self: center;
         justify-content: space-around;
       };
 
       .about-img {
         width: 100%;
-        height: 30%;
+        height: 20%;
+        margin-bottom: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-bottom: 5px;
       };
 
       .about-img img {
         width: 25%;
         height: auto;
-        align-self: center;
+        position: relative;
       };
 
       .about-info {
-        font-size: 2vh;
-        width: 40%;
-        margin-left: 10px;
+        font-size: 2.25vh;
+        width: 30%;
+        margin-left: 20px;
         align-self: center;
       };
 
@@ -1446,12 +1464,14 @@ svg {
       }
 
       .about-text {
-        width: 100%;
+        width: 96%;
+        height: 77%;
+        overflow-y: scroll;
       }
 
       .about-text span {
         display: block;
-        font-size: 1.5vh;
+        font-size: 2rem;
         margin-bottom: 10px;
       }
 
@@ -1681,36 +1701,45 @@ svg {
         width: 3%;
       }
 
+      #about {
+        top: -5%;
+      }
+
       #about .header {
         left: -5%;
       }
 
-      .about-bar {
-        height: 4%;
+      .about-box {
+        left:5%;
       }
 
       .about-content {
         height: 100%;
         flex-direction: column;
+        align-self: center;
         justify-content: space-around;
       };
 
       .about-img {
-        width: 75%;
+        width: 100%;
         height: 20%;
+        margin-bottom: 10px;
         display: flex;
         flex-direction: row;
-        align-self: flex-end;
+        justify-content: center;
       };
 
       .about-img img {
-        width: 20%;
+        width: 25%;
         height: auto;
-        margin-right: 2.5%;
+        position: relative;
       };
 
       .about-info {
-        font-size: 2vh;
+        font-size: 2.25vh;
+        width: 30%;
+        margin-left: 20px;
+        align-self: center;
       };
 
       .about-data-item::after {
@@ -1718,13 +1747,14 @@ svg {
       }
 
       .about-text {
-        width: 100%;
-        padding: 10px;
+        width: 96%;
+        height: 77%;
+        overflow-y: scroll;
       }
 
       .about-text span {
         display: block;
-        font-size: 1.5vh;
+        font-size: 2rem;
         margin-bottom: 10px;
       }
 
@@ -2775,7 +2805,11 @@ svg {
   }
 
   #about .header {
-    left: -15%;
+    left: -17%;
+  }
+
+  .about-box {
+    left:5%;
   }
 
   .about-content {
@@ -2787,23 +2821,23 @@ svg {
 
   .about-img {
     width: 100%;
-    height: 30%;
+    height: 20%;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 5px;
   };
 
   .about-img img {
-    width: 25%;
+    width: 35%;
     height: auto;
-    align-self: center;
+    position: relative;
   };
 
   .about-info {
-    font-size: 2vh;
-    width: 60%;
-    margin-left: 10px;
+    font-size: 2.25vh;
+    width: 50%;
+    margin-left: 20px;
     align-self: center;
   };
 
@@ -2812,13 +2846,14 @@ svg {
   }
 
   .about-text {
-    width: 100%;
-    padding: 10px;
+    width: 96%;
+    height: 77%;
+    overflow-y: scroll;
   }
 
   .about-text span {
     display: block;
-    font-size: 1.25vh;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
 
@@ -3056,7 +3091,11 @@ svg {
     }
 
     #about .header {
-      left: -5%;
+      left: -15%;
+    }
+
+    .about-box {
+      left:5%;
     }
 
     .about-content {
@@ -3068,23 +3107,23 @@ svg {
 
     .about-img {
       width: 100%;
-      height: 40%;
+      height: 20%;
+      margin-bottom: 10px;
       display: flex;
       flex-direction: row;
       justify-content: center;
-      margin-bottom: 5px;
     };
 
     .about-img img {
-      width: 25%;
+      width: 35%;
       height: auto;
-      align-self: center;
+      position: relative;
     };
 
     .about-info {
-      font-size: 2vh;
-      width: 60%;
-      margin-left: 10px;
+      font-size: 2.25vh;
+      width: 50%;
+      margin-left: 20px;
       align-self: center;
     };
 
@@ -3093,13 +3132,14 @@ svg {
     }
 
     .about-text {
-      width: 100%;
-      padding: 10px;
+      width: 96%;
+      height: 77%;
+      overflow-y: scroll;
     }
 
     .about-text span {
       display: block;
-      font-size: 1.25vh;
+      font-size: 1rem;
       margin-bottom: 10px;
     }
 
