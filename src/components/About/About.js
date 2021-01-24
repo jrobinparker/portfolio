@@ -57,12 +57,7 @@ const About = ({ history }) => {
     }, [])
 
     useEffect(() => {
-      const header = document.getElementById('about-header')
-      const abtImg = document.querySelector('.about-img')
       const abtTextCt = document.querySelector('.about-box')
-      const abtText = document.querySelector('.about-text')
-      const bar = document.querySelector('.about-bar-title')
-      const tl = gsap.timeline()
 
       window.addEventListener('resize', () => {
         if (window.matchMedia('(orientation: portrait)').matches) {
