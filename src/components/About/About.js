@@ -43,7 +43,7 @@ const About = ({ history }) => {
 
       if (window.matchMedia('(orientation: portrait)').matches) {
         tl.to(header, .5, { opacity: 1, y: 0 })
-          .to(abtTextCt, .5, { opacity: 1, ease: Power1.easeIn, height: '85vh', width: '80vw' })
+          .to(abtTextCt, .5, { opacity: 1, ease: Power1.easeIn, height: '85vh', width: '90vw' })
           .to(bar, { opacity: 1 })
           .to(abtText, .25, { opacity: 1 })
           .to(abtImg, .25, { opacity: 1 })
@@ -55,6 +55,23 @@ const About = ({ history }) => {
           .to(abtImg, .25, { opacity: 1 })
       }
     }, [])
+
+    useEffect(() => {
+      const header = document.getElementById('about-header')
+      const abtImg = document.querySelector('.about-img')
+      const abtTextCt = document.querySelector('.about-box')
+      const abtText = document.querySelector('.about-text')
+      const bar = document.querySelector('.about-bar-title')
+      const tl = gsap.timeline()
+
+      window.addEventListener('resize', () => {
+        if (window.matchMedia('(orientation: portrait)').matches) {
+          gsap.to(abtTextCt, .5, { opacity: 1, ease: Power1.easeIn, height: '85vh', width: '90vw' })
+        } else {
+          gsap.to(abtTextCt, .5, { opacity: 1, ease: Power1.easeIn, height: '60vh', width: '80vw' })
+        }
+      })
+    })
 
     const closeAnimation = async () => {
       const header = document.getElementById('about-header')
@@ -90,11 +107,10 @@ const About = ({ history }) => {
                   </div>
                 </div>
                 <div className="about-text">
-                  <span>Hey there. I'm Jeremy Parker, a self-taught web developer focusing on JavaScript and Python.</span>
-                  <span>Hoping to expand functionality in Captivate, Adobe's training course software, I started my programming journey in 2017 by learning about basic web development in HTML and CSS. That first step introduced me to Ruby on Rails, my gateway into the world of web development and programming.</span>
-                  <span>After learning Ruby casually, I decided to pursue programming seriously after discovering React in 2018 and Python the following year. Since then, I've built a full-stack MERN app for a martial arts school in New Jersey and improved workplace processes with data science solutions in Python.</span>
-                  <span>In my day-to-day career, I manage my company's LMS and work with trainers to build technical training courses. I'm also a Japanese speaker and have translated financial and medical documents.</span>
-                  <span>Outside of working, coding, and taking care of my daughter Nina, I love running, cooking, watching Japanese TV, playing retro video games, and listening to 80's music.</span>
+                  <span>I'm Jeremy Parker, a trainer and LMS admin turned full-stack developer who loves making life a little more enjoyable through fun and creative software.</span>
+                  <span>I started my journey in web development by trying to improve a less than exciting piece of corporate training software. Adding a bit of custom HTML, CSS, and JavaScript really improved the quality of the course. From there, I was hooked.</span>
+                  <span>At Analysis Group, I've developed automated solutions in Python to improve case staffing initiatives, saving turn-around times by over 50%. I've also built React apps to connect to our LMS's API and a data dashboard with a Python backend and React front-end that provided actionable insights into app usage, reducing the following year's cost by 25%.</span>
+                  <span>I recently developed a full-stack app for a martial arts school in New Jersey to allow students to connect with the dojo sensei and watch online training content during the COVID-19 pandemic.</span>
                 </div>
               </div>
             </div>
