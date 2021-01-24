@@ -41,11 +41,19 @@ const About = ({ history }) => {
 
       gsap.set(header, { y: 50 })
 
-      tl.to(header, .5, { opacity: 1, y: 0 })
-        .to(abtTextCt, .5, { opacity: 1, ease: Power1.easeIn, height: '60vh', width: '80vw' })
-        .to(bar, { opacity: 1 })
-        .to(abtText, .25, { opacity: 1 })
-        .to(abtImg, .25, { opacity: 1 })
+      if (window.matchMedia('(orientation: portrait)').matches) {
+        tl.to(header, .5, { opacity: 1, y: 0 })
+          .to(abtTextCt, .5, { opacity: 1, ease: Power1.easeIn, height: '85vh', width: '80vw' })
+          .to(bar, { opacity: 1 })
+          .to(abtText, .25, { opacity: 1 })
+          .to(abtImg, .25, { opacity: 1 })
+      } else {
+        tl.to(header, .5, { opacity: 1, y: 0 })
+          .to(abtTextCt, .5, { opacity: 1, ease: Power1.easeIn, height: '60vh', width: '80vw' })
+          .to(bar, { opacity: 1 })
+          .to(abtText, .25, { opacity: 1 })
+          .to(abtImg, .25, { opacity: 1 })
+      }
     }, [])
 
     const closeAnimation = async () => {

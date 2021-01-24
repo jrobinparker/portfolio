@@ -8,7 +8,7 @@ const Skills = ({ history }) => {
   const [ frontEnd ] = useState([ 'HTML5 | CSS3', 'React | Redux', 'styled-components', 'Three.js' ])
   const [ backEnd ] = useState([ 'Node.js', 'Django | Flask', 'Ruby on Rails', 'Firebase' ])
   const [ dataScience ] = useState([ 'Pandas', 'Bokeh', 'NLTK', 'Data Cleansing' ])
-  const [ dataStructures ] = useState([ 'Linked lists', 'Hash tables', 'Stacks', 'Algorithms' ])
+  const [ computerScience ] = useState([ 'Data structures', 'Object-oriented design', 'Algorithms', 'Complexity analysis' ])
   const [ other ] = useState(['Scrum', 'SharePoint', 'Video & Audio Editing', 'Japanese (JLPT N2)'])
 
   const openAnimation = () => {
@@ -67,7 +67,7 @@ const Skills = ({ history }) => {
             </div>
             <div className="skills-grid">
               <Skill skillName={'Data Science'} skills={dataScience} close={close} />
-              <Skill skillName={'Data Structures'} skills={dataStructures} close={close} />
+              <Skill skillName={'Computer Science'} skills={computerScience} close={close} />
               <Skill skillName={'Other'} skills={other} close={close} />
             </div>
           </div>
