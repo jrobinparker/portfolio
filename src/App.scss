@@ -350,7 +350,7 @@ svg {
 
 #skills-content {
   position: relative;
-  top: 15%;
+  top: 0%;
 }
 
 #skills-content .header {
@@ -358,7 +358,7 @@ svg {
 }
 
 .skills-container {
-  height: 40vh;
+  height: 100%;
   width: 100vw;
 }
 
@@ -380,6 +380,7 @@ svg {
   flex-direction: column;
   align-items: flex-start;
   width: 30%;
+  height: 35vh;
   background-color: rgba(38, 48, 86, .75);
   color: white;
   font-size: 2vh;
@@ -391,6 +392,10 @@ svg {
 
 .skills-box .about-bar span {
   margin-left: 10px;
+}
+
+.skills-box .skills-content p {
+  font-size: 2.5vh;
 }
 
 #exp {
@@ -861,7 +866,7 @@ svg {
 
 
   #skills {
-    top: -11%;
+    top: 0%;
     left: 2.5%;
   }
 
@@ -876,12 +881,12 @@ svg {
 
   .skills-grid .skills-box {
     width: 80vw;
+    height: 12.5vh;
     margin-bottom: 10px;
   }
 
   .skills-grid .about-bar {
     font-size: 2vh;
-    height: 2.5%;
   }
 
   .skills-grid .about-bar span {
@@ -889,14 +894,18 @@ svg {
   }
 
   .skills-content {
-    padding: 5px 0px 5px 0px;
+    padding: 0;
     text-align: center;
-    width: 100%;
   }
 
-  .skills-content p {
-    font-size: 1.75vh;
+  .skills-content {
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+  }
+
+  .skills-box .skills-content p {
     display: inline-block;
+    font-size: 1.75vh;
     margin: 7px 7px 7px 0px;
   }
 
@@ -1176,11 +1185,11 @@ svg {
       }
 
       #skills {
-        top: -10%;
+        top: 2.5%;
       }
 
       #skills .header {
-        left: -2.5%;
+        left: 5%;
       }
 
       .skills-grid {
@@ -1190,6 +1199,7 @@ svg {
 
       .skills-grid .skills-box {
         width: 80vw;
+        height: 12vh;
         margin-bottom: 10px;
       }
 
@@ -1211,8 +1221,9 @@ svg {
         text-align: center;
       }
 
-      .skills-content p {
+      .skills-box .skills-content p {
         display: inline-block;
+        font-size: 2vh;
         margin: 7px 7px 7px 0px;
       }
 
@@ -1765,12 +1776,13 @@ svg {
 
       .skills-grid .skills-box {
         width: 80vw;
+        height: 13.5vh;
         margin-bottom: 10px;
       }
 
       .skills-grid .about-bar {
         font-size: 2vh;
-        height: 2.5%;
+        height: 25%;
       }
 
       .skills-grid .about-bar span {
@@ -1778,13 +1790,18 @@ svg {
       }
 
       .skills-content {
-        width: 100%;
+        padding: 0;
         text-align: center;
-        padding: 15px 0px 15px 0px;
       }
 
-      .skills-content p {
+      .skills-content {
+        padding: 5px 0px 5px 0px;
+        text-align: center;
+      }
+
+      .skills-box .skills-content p {
         display: inline-block;
+        font-size: 2.5vh;
         margin: 7px 7px 7px 0px;
       }
 
@@ -2463,8 +2480,8 @@ svg {
       padding-top: 0;
     }
 
-    .skills-content p {
-      font-size: 2vh;
+    .skills-box .skills-content p {
+      font-size: 3vh;
     }
 
     #exp-content .about-bar {
@@ -2589,8 +2606,8 @@ svg {
       margin-bottom: 10px;
     }
 
-    .skills-content p {
-      font-size: 2vh;
+    .skills-box .skills-content p {
+      font-size: 3vh;
     }
 
     #exp-content .about-box .about-content .about-text span, .other-exp-text {
@@ -2857,9 +2874,6 @@ svg {
     margin-bottom: 10px;
   }
 
-  #skills {
-    top: -10%;
-  }
 
   #skills .header {
     left: -2.5%;
@@ -3141,10 +3155,6 @@ svg {
       display: block;
       font-size: 1rem;
       margin-bottom: 10px;
-    }
-
-    #skills {
-      top: -10%;
     }
 
     #skills .header {
