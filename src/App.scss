@@ -399,7 +399,7 @@ svg {
 }
 
 #exp {
-  top: 10%;
+  top: 0%;
 }
 
 #exp .header {
@@ -416,7 +416,7 @@ svg {
 }
 
 #exp-content .about-box:first-of-type {
-  max-width: 80%;
+  max-width: 100%;
   max-height: 100%;
   margin-right: 10px;
 }
@@ -463,8 +463,9 @@ svg {
   margin-left: 20px;
 }
 
+
 #exp-content .about-box .about-content .about-text span, .other-exp-text {
-  font-size: 1.75vh;
+  font-size: 2.25vh;
 }
 
 .other-exp-items {
@@ -968,7 +969,7 @@ svg {
     width: 45%;
   }
 
-  #exp-content .about-box .about-content .exp-text span{
+  #exp-content .about-box .about-content .exp-text span {
     font-size: 1.2vh;
     margin-left: -10px;
     text-align: left;
@@ -1239,61 +1240,75 @@ svg {
         content: ''
       }
 
+      #exp {
+        top: 0%;
+        left: 0%;
+      }
+
       #exp .header {
+        left: -2.5%;
         font-size: 8vh;
       }
 
       #exp-content {
         flex-direction: column;
-        position: relative;
-        left: 5%;
+        align-items: center;
+        width: 100%;
+        left: 0%;
       }
 
       #exp-content .about-box {
-        width: 100%;
-        height: 50%;
+        left: 0%;
       }
 
       #exp-content .about-content {
-        width: 90%;
+        width: 95%;
         height: 100%;
         flex-direction: column;
       }
 
       #exp-content .about-img {
         width: 100%;
-        height: 25%;
-        text-align: center;
+        height: 10%;
       }
 
       #exp-content .about-img .about-info {
-        width: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+      }
+
+      #exp-content .about-img .about-info .about-data-item {
+        font-size: 2vh;
       }
 
       #exp-content .about-box .about-text {
-        height: 75%;
+        height: 90%;
         width: 100%;
-        padding-left: 5px;
       }
 
       #exp-content .about-box .about-content .exp-text span {
-        font-size: 1.15vh;
+        font-size: 1.8vh;
       }
 
       #exp-content .other-box {
         margin-top: 10px;
-        max-width: 80%;
-        padding: 0px;
+        max-width: 100%;
+        padding: 0;
       }
 
       .other-box .about-text {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        justify-content: space-around;
+        padding: 10px;
+        margin-top: -10px;
+        margin-left: -10px;
       }
 
       .other-exp-text div {
-        font-size: 1.1vh;
+        font-size: 1.6vh;
         width: 100%;
       }
 
@@ -1527,19 +1542,25 @@ svg {
         content: ''
       }
 
+      #exp {
+        top: 0%;
+        left: 0%;
+      }
+
       #exp .header {
-        left: -5%;
+        left: -2.5%;
+        font-size: 8vh;
       }
 
       #exp-content {
         flex-direction: column;
-        position: relative;
-        left: 5%;
+        align-items: center;
+        width: 100%;
+        left: 0%;
       }
 
       #exp-content .about-box {
-        width: 100%;
-        height: 50%;
+        left: 0%;
       }
 
       #exp-content .about-content {
@@ -1550,35 +1571,46 @@ svg {
 
       #exp-content .about-img {
         width: 100%;
-        height: 20%;
-        text-align: center;
+        height: 10%;
+      }
+
+      #exp-content .about-img .about-info {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+      }
+
+      #exp-content .about-img .about-info .about-data-item {
+        font-size: 2vh;
       }
 
       #exp-content .about-box .about-text {
-        height: 70%;
+        height: 90%;
+        width: 100%;
       }
 
-
-      #exp-content .about-box .about-content .about-text span {
-        font-size: 1.5vh;
+      #exp-content .about-box .about-content .exp-text span {
+        font-size: 2.1vh;
       }
 
       #exp-content .other-box {
         margin-top: 10px;
-        max-width: 80%;
+        max-width: 100%;
+        padding: 0;
       }
 
       .other-box .about-text {
         display: flex;
         flex-direction: row;
-        width: 100%;
-        justify-content: center;
+        justify-content: space-around;
+        padding: 10px;
+        margin-top: -10px;
+        margin-left: -10px;
       }
 
       .other-exp-text div {
-        font-size: 1.35vh;
-        margin-right: 15px;
-        text-align: center;
+        font-size: 2vh;
         width: 100%;
       }
 
@@ -1817,19 +1849,25 @@ svg {
         content: ''
       }
 
+      #exp {
+        top: 0%;
+        left: 0%;
+      }
+
       #exp .header {
-        left: -5%;
+        left: -2.5%;
+        font-size: 8vh;
       }
 
       #exp-content {
         flex-direction: column;
-        position: relative;
-        left: 5%;
+        align-items: center;
+        width: 100%;
+        left: 0%;
       }
 
       #exp-content .about-box {
-        width: 100%;
-        height: 50%;
+        left: 0%;
       }
 
       #exp-content .about-content {
@@ -1840,35 +1878,46 @@ svg {
 
       #exp-content .about-img {
         width: 100%;
-        height: 20%;
-        text-align: center;
+        height: 10%;
+      }
+
+      #exp-content .about-img .about-info {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+      }
+
+      #exp-content .about-img .about-info .about-data-item {
+        font-size: 2vh;
       }
 
       #exp-content .about-box .about-text {
-        width: 80%;
+        height: 90%;
+        width: 100%;
       }
 
-      #exp-content .about-box .about-content .exp-text span{
-        font-size: 1.5vh;
-        margin-left: -10px;
-        text-align: left;
+      #exp-content .about-box .about-content .exp-text span {
+        font-size: 2vh;
       }
 
       #exp-content .other-box {
         margin-top: 10px;
-        max-width: 80%;
+        max-width: 100%;
+        padding: 0;
       }
 
       .other-box .about-text {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
+        padding: 10px;
+        margin-top: -10px;
+        margin-left: -10px;
       }
 
       .other-exp-text div {
-        font-size: 1.35vh;
-        margin-right: 15px;
-        text-align: left;
+        font-size: 1.7vh;
         width: 100%;
       }
 
@@ -2342,6 +2391,10 @@ svg {
       font-size: 2vh;
     }
 
+    #exp {
+      top: 0%;
+    }
+
     #exp-content .about-content {
       padding: 15px;
     }
@@ -2367,11 +2420,11 @@ svg {
     }
 
     #exp-content .about-box .about-content .about-text span{
-      font-size: 1.5vh;
+      font-size: 1.9vh;
     }
 
     .other-exp-text div {
-      font-size: 1.5vh;
+      font-size: 2vh;
       margin-left: -10px;
     }
 
@@ -2484,6 +2537,10 @@ svg {
       font-size: 3vh;
     }
 
+    #exp {
+      top: 0%;
+    }
+
     #exp-content .about-bar {
       height: 3%;
     }
@@ -2497,7 +2554,7 @@ svg {
     }
 
     #exp-content .about-box .about-content .about-text span{
-      font-size: 1.5vh;
+      font-size: 2vh;
     }
 
     .other-bar {
@@ -2505,11 +2562,11 @@ svg {
     }
 
     .other-bar span  {
-      font-size: 1.5vh;
+      font-size: 2vh;
     }
 
     .other-exp-text div {
-      font-size: 1.75vh;
+      font-size: 2vh;
       margin-left: -10px;
     }
 
@@ -2608,10 +2665,6 @@ svg {
 
     .skills-box .skills-content p {
       font-size: 3vh;
-    }
-
-    #exp-content .about-box .about-content .about-text span, .other-exp-text {
-      font-size: 1.5vh;
     }
 
     .other-box .about-bar-title {
@@ -2925,68 +2978,81 @@ svg {
     content: ''
   }
 
-  #exp .header {
-    left: -10%;
-    font-size: 7vh;
-  }
+    #exp {
+      top: 0%;
+      left: 0%;
+    }
 
-  #exp-content {
-    flex-direction: column;
-    position: relative;
-    left: 5%;
-  }
+    #exp .header {
+      left: -15%;
+      font-size: 8vh;
+    }
 
-  #exp-content .about-box {
-    width: 100%;
-    height: 50%;
-  }
+    #exp-content {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      left: 0%;
+    }
 
-  #exp-content .about-content {
-    width: 90%;
-    height: 100%;
-    flex-direction: column;
-  }
+    #exp-content .about-box {
+      left: 0%;
+    }
 
-  #exp-content .about-img {
-    width: 100%;
-    height: 25%;
-    text-align: center;
-  }
+    #exp-content .about-content {
+      width: 95%;
+      height: 100%;
+      flex-direction: column;
+    }
 
-  #exp-content .about-img .about-info {
-    width: 100%;
-  }
+    #exp-content .about-img {
+      width: 100%;
+      height: 10%;
+    }
 
-  #exp-content .about-box .about-text {
-    height: 75%;
-    width: 100%;
-    padding-left: 10px;
-  }
+    #exp-content .about-img .about-info {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-left: -5px;
+    }
 
-  #exp-content .about-box .about-content .exp-text span {
-    font-size: 1vh;
-  }
+    #exp-content .about-img .about-info .about-data-item {
+      font-size: 1.5vh;
+    }
 
-  #exp-content .other-box {
-    margin-top: 10px;
-    max-width: 80%;
-    padding: 0px;
-  }
+    #exp-content .about-box .about-text {
+      height: 90%;
+      width: 100%;
+    }
 
-  .other-box .about-text {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
+    #exp-content .about-box .about-content .exp-text span {
+      font-size: 1.8vh;
+    }
 
-  .other-exp-text div {
-    font-size: 1.1vh;
-    width: 100%;
-  }
+    #exp-content .other-box {
+      margin-top: 10px;
+      max-width: 100%;
+      padding: 0;
+    }
 
-  .other-exp-text div:last-of-type {
-    margin-right: 0px;
-  }
+    .other-box .about-text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 10px;
+      margin-top: -10px;
+      margin-left: -10px;
+    }
+
+    .other-exp-text div {
+      font-size: 1.25vh;
+      width: 100%;
+    }
+
+    .other-exp-text div:last-of-type {
+      margin-right: 0px;
+    }
 
   #projects {
     height: 110vh;
@@ -3207,62 +3273,75 @@ svg {
       content: ''
     }
 
+    #exp {
+      top: 0%;
+      left: 0%;
+    }
+
     #exp .header {
-      left: -10%;
-      font-size: 7vh;
+      left: -15%;
+      font-size: 8vh;
     }
 
     #exp-content {
       flex-direction: column;
-      position: relative;
-      left: 5%;
+      align-items: center;
+      width: 100%;
+      left: 0%;
     }
 
     #exp-content .about-box {
-      width: 100%;
-      height: 50%;
+      left: 0%;
     }
 
     #exp-content .about-content {
-      width: 90%;
+      width: 95%;
       height: 100%;
       flex-direction: column;
     }
 
     #exp-content .about-img {
       width: 100%;
-      height: 30%;
-      text-align: center;
+      height: 10%;
     }
 
     #exp-content .about-img .about-info {
       width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-left: -5px;
+    }
+
+    #exp-content .about-img .about-info .about-data-item {
+      font-size: 1.5vh;
     }
 
     #exp-content .about-box .about-text {
-      height: 75%;
+      height: 90%;
       width: 100%;
-      padding-left: 10px;
     }
 
     #exp-content .about-box .about-content .exp-text span {
-      font-size: 1.1vh;
+      font-size: 1.8vh;
     }
 
     #exp-content .other-box {
       margin-top: 10px;
-      max-width: 80%;
-      padding: 0px;
+      max-width: 100%;
+      padding: 0;
     }
 
     .other-box .about-text {
       display: flex;
       flex-direction: row;
-      width: 100%;
+      justify-content: space-around;
+      padding: 10px;
+      margin-top: -10px;
+      margin-left: -10px;
     }
 
     .other-exp-text div {
-      font-size: 1.1vh;
+      font-size: 1.6vh;
       width: 100%;
     }
 

@@ -46,12 +46,12 @@ const Experience = ({ history }) => {
 
     if (window.matchMedia('(orientation: landscape)').matches) {
       tl.to(header, .5, {opacity: 1, y: 0})
-        .to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '50vh', width: '80vw' })
+        .to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '70vh', width: '80vw' })
         .to(bar, .25, {opacity: 1})
         .to(close, .1, {opacity: 1})
         .to(abtText, .25, { opacity: 1 })
         .to(abtImg, .25, { opacity: 1 })
-        .to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '50vh', width: '20vw' })
+        .to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '70vh', width: '20vw' })
         .to(otherBar, .25, {opacity: 1})
         .to(otherBarClose, .1, {opacity: 1})
         .to(otherText, .25, { opacity: 1 })
@@ -59,12 +59,12 @@ const Experience = ({ history }) => {
 
     if (window.matchMedia('(orientation: portrait)').matches) {
       tl.to(header, .5, {opacity: 1, y: 0})
-        .to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '50vh', width: '80vw' })
+        .to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '60vh', width: '90vw' })
         .to(bar, .25, {opacity: 1})
         .to(close, .1, {opacity: 1})
         .to(abtText, .25, { opacity: 1 })
         .to(abtImg, .25, { opacity: 1 })
-        .to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '15vh', width: '80vw' })
+        .to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '15vh', width: '90vw' })
         .to(otherBar, .25, {opacity: 1})
         .to(otherBarClose, .1, {opacity: 1})
         .to(otherText, .25, { opacity: 1 })
@@ -74,14 +74,17 @@ const Experience = ({ history }) => {
 
   useEffect(() => {
     const otherCont = document.querySelector('.other-box')
+    const abtTextCt = document.querySelector('.about-box')
 
     window.addEventListener('resize', () => {
       if (window.matchMedia('(orientation: landscape)').matches) {
-        gsap.to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '50vh', width: '20vw' })
+        gsap.to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '70vh', width: '80vw' })
+        gsap.to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '70vh', width: '20vw' })
       }
 
       if (window.matchMedia('(orientation: portrait)').matches) {
-        gsap.to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '15vh', width: '80vw' })
+        gsap.to(abtTextCt, .25, {delay: .1, ease: Power1.easeIn, opacity: 1, height: '60vh', width: '90vw' })
+        gsap.to(otherCont, .25, {ease: Power1.easeIn, opacity: 1, height: '15vh', width: '90vw' })
       }
     })
   })
