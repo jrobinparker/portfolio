@@ -685,7 +685,7 @@ svg {
 
 .modal-img img {
   height: 100%;
-  width: 100%;
+  width: 60%;
 }
 
 .modal-languages {
@@ -2009,10 +2009,12 @@ svg {
 
       .modal-img {
         width: 100%;
+        text-align: center;
       }
 
       .modal-img img {
         height: 100%;
+        width: 70%;
       }
 
       .modal-header {
@@ -2187,12 +2189,12 @@ svg {
     }
 
     .modal-img {
-      height: 50%;
+      text-align: center;
     }
 
     .modal-img img {
       height: 100%;
-      width: 100%;
+      width: 70%;
     }
 
     .about-info p {
@@ -2745,9 +2747,13 @@ svg {
       font-size: 2vh;
     }
 
+    .modal-img {
+      text-align: center;
+    }
+
     .modal-img img {
       height: 90%;
-      width: 100%;
+      width: 70%;
     }
 
 }
@@ -2825,12 +2831,13 @@ svg {
     letter-spacing: -5px;
   }
 
+  .modal-img {
+    text-align: center;
+  }
 
   .modal-img img {
     height: 100%;
-    width: 50%;
-    position: relative;
-    left: 30%;
+    width: 70%;
   }
 
   .modal-languages div, .tech-list div {
