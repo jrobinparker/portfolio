@@ -1,8 +1,8 @@
-import React from 'react';
-import { Html, useProgress } from '@react-three/drei'
+import React from "react";
+import { Html, useProgress } from "@react-three/drei";
 
 const LoadingScreen = () => {
-  const { progress } = useProgress()
+  const { progress } = useProgress();
   return (
     <Html center>
       <div className="loading">
@@ -13,7 +13,7 @@ const LoadingScreen = () => {
         </div>
       </div>
     </Html>
-  )
-}
+  );
+};
 
 export default LoadingScreen;

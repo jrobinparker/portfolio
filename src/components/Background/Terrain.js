@@ -1,12 +1,11 @@
 import React, { Fragment, useRef } from "react";
 import { useFrame, useUpdate, useLoader } from "react-three-fiber";
-import { noise } from './perlin';
-import grid from '../../assets/grid.jpg';
-import grid2 from '../../assets/grid2.jpg';
-import * as THREE from 'three';
+import { noise } from "./perlin";
+import grid from "../../assets/grid.jpg";
+import grid2 from "../../assets/grid2.jpg";
+import * as THREE from "three";
 
 const Terrain = () => {
-
   const mesh = useUpdate(({ geometry }) => {
     noise.seed(Math.random());
     let pos = geometry.getAttribute("position");
@@ -54,48 +53,56 @@ const Terrain = () => {
   const cityRef = useRef();
   const plane = useRef();
 
-  const [texture, texture2] = useLoader(THREE.TextureLoader, [grid, grid2])
+  const [texture, texture2] = useLoader(THREE.TextureLoader, [grid, grid2]);
 
   if (texture) {
-        texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-        texture.repeat.set(30, 2000);
-    }
+    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+    texture.repeat.set(30, 2000);
+  }
 
   if (texture2) {
-        texture2.wrapS = texture2.wrapT = THREE.RepeatWrapping;
-        texture2.repeat.set(1, 1);
-    }
+    texture2.wrapS = texture2.wrapT = THREE.RepeatWrapping;
+    texture2.repeat.set(1, 1);
+  }
 
-
-  let city = [], num = 100, distance = -20, offset = .0001
+  let city = [],
+    num = 100,
+    distance = -20,
+    offset = 0.0001;
 
   for (let i = 0; i < num; i++) {
-    offset += .5
+    offset += 0.5;
     city.push(
       <mesh key={i} position={[distance + offset, -3, -800]}>
-        <boxBufferGeometry attach="geometry" args={[Math.random() * 3, Math.random() * 15, 0]} />
+        <boxBufferGeometry
+          attach="geometry"
+          args={[Math.random() * 3, Math.random() * 15, 0]}
+        />
         <meshPhongMaterial attach="material" map={texture2} depthTest />
       </mesh>
-    )
+    );
   }
 
   useFrame(() => {
-    plane.current.position.z += 1
-  })
-
+    plane.current.position.z += 1;
+  });
 
   return (
     <Fragment>
-    <mesh ref={plane} rotation={[-Math.PI / 2, 0, 0]} position={[0, -1.5, -100]}>
-      <planeBufferGeometry attach="geometry" args={[200, 100000, 10, 10]} />
-      <meshLambertMaterial
-        attach="material"
-        map={texture}
-        depthTest
-      />
-    </mesh>
+      <mesh
+        ref={plane}
+        rotation={[-Math.PI / 2, 0, 0]}
+        position={[0, -1.5, -100]}
+      >
+        <planeBufferGeometry attach="geometry" args={[200, 100000, 10, 10]} />
+        <meshLambertMaterial attach="material" map={texture} depthTest />
+      </mesh>
 
-      <mesh ref={mesh} rotation={[-Math.PI / 2, 0, 190]} position={[-120, -2, -600]}>
+      <mesh
+        ref={mesh}
+        rotation={[-Math.PI / 2, 0, 190]}
+        position={[-120, -2, -600]}
+      >
         <planeBufferGeometry attach="geometry" args={[400, 200, 400, 500]} />
         <meshPhongMaterial
           attach="material"
@@ -106,11 +113,13 @@ const Terrain = () => {
         />
       </mesh>
 
-      <group ref={cityRef}>
-      {city}
-      </group>
+      <group ref={cityRef}>{city}</group>
 
-      <mesh ref={mesh2} rotation={[-Math.PI / 2, 0, 190]} position={[120, -2, -600]}>
+      <mesh
+        ref={mesh2}
+        rotation={[-Math.PI / 2, 0, 190]}
+        position={[120, -2, -600]}
+      >
         <planeBufferGeometry attach="geometry" args={[400, 200, 400, 500]} />
         <meshPhongMaterial
           attach="material"
@@ -120,7 +129,6 @@ const Terrain = () => {
           smoothShading
         />
       </mesh>
-
     </Fragment>
   );
 };

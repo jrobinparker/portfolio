@@ -1,37 +1,38 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const HomeLink = ({ link, text, number }) => {
   let index = 0;
-  let currentText = '';
-  let letter = '';
-
+  let currentText = "";
+  let letter = "";
 
   function type() {
-    if (!document.querySelectorAll('.link-text')[number]) {
-      return
+    if (!document.querySelectorAll(".link-text")[number]) {
+      return;
     } else {
       currentText = text;
-      letter = currentText.slice(0, ++index)
-      document.querySelectorAll('.link-text')[number].textContent = letter;
+      letter = currentText.slice(0, ++index);
+      document.querySelectorAll(".link-text")[number].textContent = letter;
       if (letter.length === currentText.length) {
         index = letter.length;
       }
-      setTimeout(type, 150)
+      setTimeout(type, 150);
     }
-  };
+  }
 
   useEffect(() => {
     setTimeout(() => {
-      type()
-    }, 1500)
-  })
+      type();
+    }, 1500);
+  });
 
   return (
     <div className="item link">
-      <Link to={`/${link}`}><span className="link-text"></span></Link>
+      <Link to={`/${link}`}>
+        <span className="link-text"></span>
+      </Link>
     </div>
-  )
+  );
 };
 
 export default HomeLink;
