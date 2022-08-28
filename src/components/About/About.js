@@ -136,19 +136,17 @@ const About = ({ history }) => {
           </div>
           <div className="about-text">
             <span>
-              I'm a highly positive and outgoing frontend JavaScript developer
-              who loves teamwork and collaboration.
+              I'm a highly positive and outgoing JavaScript developer
+              who builds data-driven user interfaces for one of the largest
+              agricultural software platforms in the world.
             </span>
             <span>
-              Formerly a corporate trainer and LMS admin, I am now a software
-              engineer who develops data-driven apps for some of the largest
-              agribusinesses in the world at Agrian.
-            </span>
-            <span>
-              I started my journey in web development by trying to improve a
-              less than exciting piece of corporate training software. Adding a
-              bit of custom HTML, CSS, and JavaScript really improved the
-              quality of the course. From there, I was hooked.
+              I started my journey in web development during my days as a
+              corporate trainer and LMS admin. One day, I thought I'd try my
+              hand at improving one of our less than exciting corporate training
+              courses. I found that with a bit of custom HTML, CSS, and
+              JavaScript, I was able to drastically improve the quality of the
+              course. From there, I was hooked.
             </span>
             <span>
               While at Analysis Group, I developed automated solutions in Python
