@@ -8,8 +8,8 @@ const Skills = ({ history }) => {
   const [frontEnd] = useState([
     "Ember",
     "React | Redux",
-    "Tailwind",
-    "Three.js",
+    "Tailwind | styled-components",
+    "QUnit | jest",
   ]);
   const [backEnd] = useState([
     "Node.js | Express",
