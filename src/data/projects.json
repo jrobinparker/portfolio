@@ -30,7 +30,7 @@
       "name": "LMS Content Downloader",
       "languages": ["js", "html", "css"],
       "tech": ["react", "axios"],
-      "about": "This summer, as we were building out the training program for summer interns, a number of trainers mentioned the need to be able to combine course content from separate courses into one large course. Our learning management system, Docebo, does not allow course instructors or admins to download video content through the browser. On top of that, the screen recording program used by the LMS only saves recorded videos to the server, so instructors had no way to upload their created content into new courses. I created an app that connects to the API and allows users to easily download course content. This app saved instructors from having to recreate videos from scratch, and allowed us to quickly create custom courses for the intern training program using existing content.",
+      "about": "As I as helping to build out the training program for summer interns at Analysis Group, a number of trainers mentioned the need to be able to combine course content from separate courses into one large course. Our learning management system, Docebo, does not allow course instructors or admins to download video content through the browser. On top of that, the screen recording program used by the LMS only saves recorded videos to the server, so instructors had no way to upload their created content into new courses. I created an app that connects to the API and allows users to easily download course content. This app saved instructors from having to recreate videos from scratch, and allowed us to quickly create custom courses for the intern training program using existing content.",
       "github": null,
       "img": "/images/agu-img.png",
       "url": null
@@ -56,11 +56,11 @@
     {
       "name": "jDictSearch",
       "languages": ["js", "html", "css"],
-      "tech": ["axios", "cheerio", "gsap", "react"],
+      "tech": ["axios", "cheerio", "gsap", "react", "styled-components", "vite"],
       "about": "This app searches three separate Japanese-English dictionaries in one search, saving time, effort, and overlap. I used axios to send the search term to each of the dictionaries and cheerio to extract the results from the returned data. The results are animated with GSAP and displayed in modals. The animated background displays preloaded images returned from the Unsplash API.",
       "github": "https://github.com/jrobinparker/jdictsearch",
       "img": "/images/jdict-img.png",
-      "url": "https://jrobinparker.github.io/jdictsearch"
+      "url": "https://jdictsearch.netlify.app/"
     },
     {
       "name": "Portfolio",

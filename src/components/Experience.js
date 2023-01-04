@@ -203,8 +203,12 @@ const Experience = ({ history }) => {
                 agriculture software platforms in the world.
               </span>
               <span>
-                Developed a custom agricultural product dashboard, record
-                sharing dashboard, various compliance verification components,
+                Developed a custom agricultural product dashboard for Sollio, the largest agriculture cooperative in Canada,
+                allowing users to create and manage custom fertilizer and pesticide mixes for Canada’s Good Agricultural
+                Practices program.
+              </span>
+              <span>
+                Developed a record sharing dashboard, various compliance verification components,
                 and a historical weather component that derives historical
                 forecasts from the geographic centroid of multiple plots of
                 land.
@@ -214,9 +218,8 @@ const Experience = ({ history }) => {
                 apps, including high-priority hotfixes.
               </span>
               <span>
-                In charge of managerial and administrative duties for the team,
-                from daily standups, sprint planning, and releases to scheduling
-                and timesheet approvals.
+                Mentor multiple devs and lead daily standups, sprint plannings, 
+                and sprint retrospectives.
               </span>
             </div>
           </div>
