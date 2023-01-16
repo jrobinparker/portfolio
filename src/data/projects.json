@@ -56,8 +56,8 @@
     {
       "name": "jDictSearch",
       "languages": ["js", "html", "css"],
-      "tech": ["axios", "cheerio", "gsap", "react", "styled-components", "vite"],
-      "about": "This app searches three separate Japanese-English dictionaries in one search, saving time, effort, and overlap. I used axios to send the search term to each of the dictionaries and cheerio to extract the results from the returned data. The results are animated with GSAP and displayed in modals. The animated background displays preloaded images returned from the Unsplash API.",
+      "tech": ["axios", "cheerio", "react", "styled-components", "typescript", "vite"],
+      "about": "This app searches three separate Japanese-English dictionaries in one search, saving time, effort, and overlap. I used axios to send the search term to each of the dictionaries and cheerio to extract the results from the returned data. The animated background displays preloaded images returned from the Unsplash API.",
       "github": "https://github.com/jrobinparker/jdictsearch",
       "img": "/images/jdict-img.png",
       "url": "https://jdictsearch.netlify.app/"
